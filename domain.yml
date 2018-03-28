@@ -22,6 +22,13 @@ intents:
   - inform
   - request_info
 
+entities:
+  - location
+  - info
+  - people
+  - price
+  - cuisine
+
 templates:
   utter_ask_cuisine:
     - "What kind of cuisine would you like?"
