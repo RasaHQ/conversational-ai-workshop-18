@@ -1,0 +1,37 @@
+slots:
+  cuisine:
+    type: unfeaturized
+  people:
+    type: unfeaturized
+  location:
+    type: unfeaturized
+  price:
+    type: unfeaturized
+  info:
+    type: unfeaturized
+  matches:
+    type: list
+  start_date:
+    type: unfeaturized
+  end_date:
+    type: unfeaturized
+
+intents:
+  - request_restaurant
+  - request_hotel
+  - inform
+  - request_info
+
+templates:
+  utter_ask_cuisine:
+    - "What kind of cuisine would you like?"
+  utter_ask_people:
+    - "How many people will you be?"
+  utter_ask_location:
+    - "Where?"
+  utter_ask_price:
+    - "What price range?"
+  utter_ask_start_date:
+    - "When should your hotel stay start?"
+  utter_ask_end_date:
+    - "When should your hotel stay end?"
