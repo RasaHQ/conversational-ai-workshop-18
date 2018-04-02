@@ -27,6 +27,10 @@ class ActionRestaurant(FormAction):
     def name(self):
         return "action_restaurant"
 
+    def submit(self, dispatcher, tracker, domain):
+        dispatcher.utter_template('utter_search')
+        return [SlotSet('restaurant', 'restaurant 1')]
+
 
 class ActionHotel(FormAction):
 
@@ -38,5 +42,15 @@ class ActionHotel(FormAction):
         EntityFormField("date", "end_date")
     ]
 
+    OPTIONAL_FIELDS = [
+        EntityFormField("has_gym", "has_gym"),
+        EntityFormField("has_spa", "has_spa"),
+        EntityFormField("breakfast", "breakfast")
+    ]
+
     def name(self):
-        return "action_restaurant"
+        return "action_hotel"
+
+    def submit(self, dispatcher, tracker, domain):
+        dispatcher.utter_template('utter_search')
+        return [SlotSet('hotel', 'hotel 1')]

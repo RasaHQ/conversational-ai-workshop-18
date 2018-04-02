@@ -9,11 +9,25 @@ slots:
     type: unfeaturized
   info:
     type: unfeaturized
-  matches:
-    type: list
+  restaurant:
+    type: text
+  hotel:
+    type: text
   start_date:
     type: unfeaturized
   end_date:
+    type: unfeaturized
+  outdoor_seating:
+    type: unfeaturized
+  reservations:
+    type: unfeaturized
+  date_suitable:
+    type: unfeaturized
+  has_gym:
+    type: unfeaturized
+  has_spa:
+    type: unfeaturized
+  breakfast:
     type: unfeaturized
 
 intents:
@@ -28,6 +42,12 @@ entities:
   - people
   - price
   - cuisine
+  - outdoor_seating
+  - reservations
+  - date_suitable
+  - has_gym
+  - has_spa
+  - breakfast
 
 templates:
   utter_ask_cuisine:
@@ -42,3 +62,16 @@ templates:
     - "When should your hotel stay start?"
   utter_ask_end_date:
     - "When should your hotel stay end?"
+  utter_search:
+    - "Ok, let me search"
+
+actions:
+  - utter_ask_cuisine
+  - utter_ask_people
+  - utter_ask_location
+  - utter_ask_price
+  - utter_ask_start_date
+  - utter_ask_end_date
+  - utter_search
+  - actions.ActionHotel
+  - actions.ActionRestaurant
