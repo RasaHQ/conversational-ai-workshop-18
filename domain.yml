@@ -1,4 +1,6 @@
 slots:
+  requested_slot:
+    type: unfeaturized
   cuisine:
     type: unfeaturized
   people:
@@ -35,6 +37,9 @@ intents:
   - request_hotel
   - inform
   - request_info
+  - about
+  - did_that_work
+  - affirm
 
 entities:
   - location
@@ -63,7 +68,17 @@ templates:
   utter_ask_end_date:
     - "When should your hotel stay end?"
   utter_search:
-    - "Ok, let me search"
+    - "I'm looking for restaurants"
+  utter_finish:
+    - "Ok, I have everything I need now."
+  utter_suggest_restaurant:
+    - "Here is what I found: {restaurant}. Does that work?"
+  utter_suggest_hotel:
+    - "Here is what I found: {hotel}. Does that work?"
+  utter_happy:
+    - "Great!"
+  utter_worked:
+    - "Yes it worked!"
 
 actions:
   - utter_ask_cuisine
@@ -73,5 +88,13 @@ actions:
   - utter_ask_start_date
   - utter_ask_end_date
   - utter_search
+  - utter_finish
+  - utter_suggest_restaurant
+  - utter_suggest_hotel
+  - utter_happy
+  - utter_worked
   - actions.ActionHotel
   - actions.ActionRestaurant
+  - actions.ActionSearchRestaurant
+  - actions.ActionSearchHotel
+  - actions.ActionExplain
