@@ -3,7 +3,7 @@ from rasa_nlu import utils as nlu_utils
 from rasa_core.interpreter import RegexInterpreter
 
 from rasa_core.training.structures import StoryGraph
-from rasa_core.training.generator import TrainingsDataGenerator
+from rasa_core.training.generator import TrainingDataGenerator
 from rasa_core.agent import Agent
 
 
@@ -43,7 +43,7 @@ def load_data(
                                     exclusion_file=exclusion_file,
                                     exclusion_percentage=exclusion_percentage)
 
-        g = TrainingsDataGenerator(graph, domain,
+        g = TrainingDataGenerator(graph, domain,
                                    remove_duplicates,
                                    augmentation_factor,
                                    max_number_of_trackers,

@@ -15,9 +15,9 @@ slots:
     type: text
   hotel:
     type: text
-  start_date:
+  startdate:
     type: unfeaturized
-  end_date:
+  enddate:
     type: unfeaturized
   outdoor_seating:
     type: unfeaturized
@@ -41,6 +41,7 @@ intents:
   - did_that_work
   - affirm
   - correct
+  - chitchat
 
 entities:
   - location
@@ -54,7 +55,8 @@ entities:
   - has_gym
   - has_spa
   - breakfast
-  - date
+  - startdate
+  - enddate
 
 templates:
   utter_ask_cuisine:
@@ -65,9 +67,9 @@ templates:
     - "Where?"
   utter_ask_price:
     - "What price range?"
-  utter_ask_start_date:
+  utter_ask_startdate:
     - "When should your hotel stay start?"
-  utter_ask_end_date:
+  utter_ask_enddate:
     - "When should your hotel stay end?"
   utter_search:
     - "I'm looking for restaurants"
@@ -81,22 +83,29 @@ templates:
     - "Great!"
   utter_worked:
     - "Yes it worked!"
+  utter_chitchat:
+    - "Bla bla"
+  utter_filled_slots:
+    - "Ok, I have all the information I need now."
+  utter_ask_details:
+    - "Anything specific?"
 
 actions:
   - utter_ask_cuisine
   - utter_ask_people
   - utter_ask_location
   - utter_ask_price
-  - utter_ask_start_date
-  - utter_ask_end_date
+  - utter_ask_startdate
+  - utter_ask_enddate
   - utter_search
   - utter_finish
   - utter_suggest_restaurant
   - utter_suggest_hotel
   - utter_happy
   - utter_worked
-  - actions.ActionHotel
-  - actions.ActionRestaurant
+  - utter_chitchat
+  - utter_ask_details
+  - utter_filled_slots
   - actions.ActionSearchRestaurant
   - actions.ActionSearchHotel
   - actions.ActionExplain

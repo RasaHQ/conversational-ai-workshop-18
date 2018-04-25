@@ -18,21 +18,23 @@ logger = logging.getLogger(__name__)
 def train_domain_policy(story_filename,
                         output_path=None,
                         exclusion_file=None,
-                        exclusion_percentage=None):
+                        exclusion_percentage=None,
+                        starspace=True):
     """Trains a new deterministic domain policy using the stories
     (json format) in `story_filename`."""
-    starspace = True
     if starspace:
         featurizer = FullDialogueTrackerFeaturizer(
                         LabelTokenizerSingleStateFeaturizer())
         policies = [EmbeddingPolicy(featurizer)]
         epochs = 1200
+        output_path = 'models/dialogue_embed'
     else:
         featurizer = MaxHistoryTrackerFeaturizer(
                         LabelTokenizerSingleStateFeaturizer(),
                         max_history=10)
         policies = [KerasPolicy(featurizer)]
         epochs = 200
+        output_path = 'models/dialogue_keras'
 
     agent = CustomAgent("domain.yml",
                         policies=policies)

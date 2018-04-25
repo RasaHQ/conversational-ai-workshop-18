@@ -14,7 +14,7 @@ from rasa_core.agent import Agent
 from rasa_core.events import ActionExecuted, UserUttered
 from rasa_core.interpreter import RegexInterpreter
 from rasa_core.training import extract_story_graph
-from rasa_core.training.generator import TrainingsDataGenerator
+from rasa_core.training.generator import TrainingDataGenerator
 
 logger = logging.getLogger(__name__)
 
@@ -55,7 +55,7 @@ def run_story_evaluation(story_file, policy_model_path,
     story_graph = extract_story_graph(story_file, agent.domain,
                                       interpreter)
 
-    g = TrainingsDataGenerator(story_graph, agent.domain,
+    g = TrainingDataGenerator(story_graph, agent.domain,
                                use_story_concatenation=False,
                                tracker_limit=100,
                                augmentation_factor=0)
