@@ -11,13 +11,10 @@ from tqdm import tqdm
 
 from rasa_core import utils
 from rasa_core.agent import Agent
-from rasa_extensions.core.full_agent import FullAgent
 from rasa_core.events import ActionExecuted, UserUttered
 from rasa_core.interpreter import RegexInterpreter
 from rasa_core.training import (
     extract_story_graph, TrainingsDataGenerator)
-
-from rasa_extensions.core.generator import AlignedSequenceGenerator
 
 logger = logging.getLogger(__name__)
 
@@ -53,37 +50,17 @@ def run_story_evaluation(story_file, policy_model_path,
 
     interpreter = RegexInterpreter()
 
-    if 'dialogue' in policy_model_path:
-        agent = FullAgent.load(policy_model_path, interpreter=interpreter)
+    agent = Agent.load(policy_model_path, interpreter=interpreter)
 
-        story_graph = extract_story_graph(story_file, agent.domain,
-                                          interpreter)
+    story_graph = extract_story_graph(story_file, agent.domain,
+                                      interpreter)
 
-        max_history = agent.policy_ensemble.policies[0].max_history
+    g = TrainingsDataGenerator(story_graph, agent.domain,
+                               use_story_concatenation=False,
+                               tracker_limit=100,
+                               augmentation_factor=0)
+    completed_trackers, _ = g.generate()
 
-        g = AlignedSequenceGenerator(story_graph, agent.domain,
-                                     agent.featurizer,
-                                     max_history=max_history,
-                                     use_story_concatenation=False,
-                                     tracker_limit=100)
-        data = g.generate()
-
-    else:
-        agent = Agent.load(policy_model_path, interpreter=interpreter)
-
-        story_graph = extract_story_graph(story_file, agent.domain,
-                                          interpreter)
-
-        max_history = agent.policy_ensemble.policies[0].max_history
-
-        g = TrainingsDataGenerator(story_graph, agent.domain,
-                                   agent.featurizer,
-                                   max_history=max_history,
-                                   use_story_concatenation=False,
-                                   tracker_limit=100)
-        data = g.generate()
-
-    completed_trackers = data.metadata["trackers"]
     logger.info(
             "Evaluating {} stories\nProgress:".format(len(completed_trackers)))
 
@@ -93,8 +70,6 @@ def run_story_evaluation(story_file, policy_model_path,
         sender_id = "default-" + uuid.uuid4().hex
 
         events = list(tracker.events)
-        actions_between_utterances = []
-        last_prediction = []
 
         action_to_log = None
         events_to_log = []
@@ -127,6 +102,10 @@ def run_story_evaluation(story_file, policy_model_path,
 
         print("=====================")
         print("actions in story: {}".format(len(actual)))
+        # print(actual)
+
+        # print("predicted actions: ")
+        # print(preds)
 
         if preds == actual:
             num_correct += 1
@@ -139,14 +118,19 @@ def run_story_evaluation(story_file, policy_model_path,
                 else:
                     print("{:30} {:30}".format(a, preds[idx]))
 
-    logger.info("{} stories correct out of {}".format(num_correct, len(completed_trackers)))
+    logger.info("{} stories correct out of {}".format(num_correct,
+                                                      len(completed_trackers)))
+
+    return num_correct
+
 
 if __name__ == '__main__':
+    # configure_logging()
     # Running as standalone python application
     arg_parser = create_argument_parser()
     cmdline_args = arg_parser.parse_args()
 
-    logging.basicConfig(level=cmdline_args.loglevel)
+    logging.basicConfig(level='INFO')
     run_story_evaluation(cmdline_args.stories,
                          cmdline_args.core,
                          cmdline_args.max_stories)

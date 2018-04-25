@@ -5,33 +5,48 @@ from __future__ import unicode_literals
 
 import logging
 
-from rasa_extensions.core.full_agent import FullAgent
-from rasa_extensions.core.babi_starspace_policy import bAbIStarspacePolicy
-from rasa_extensions.core.label_featurizer import LabelFeaturizer
+from core_extensions.policy_trainer import CustomAgent
+from rasa_core.featurizers import (LabelTokenizerSingleStateFeaturizer,
+                                   FullDialogueTrackerFeaturizer,
+                                   MaxHistoryTrackerFeaturizer)
+from rasa_core.policies.embedding_policy import EmbeddingPolicy
+from rasa_core.policies.keras_policy import KerasPolicy
 
 logger = logging.getLogger(__name__)
 
 
-def train_domain_policy(story_filename, output_path=None):
+def train_domain_policy(story_filename,
+                        output_path=None,
+                        exclusion_file=None,
+                        exclusion_percentage=None):
     """Trains a new deterministic domain policy using the stories
     (json format) in `story_filename`."""
+    starspace = True
+    if starspace:
+        featurizer = FullDialogueTrackerFeaturizer(
+                        LabelTokenizerSingleStateFeaturizer())
+        policies = [EmbeddingPolicy(featurizer)]
+    else:
+        featurizer = MaxHistoryTrackerFeaturizer(
+                        LabelTokenizerSingleStateFeaturizer(),
+                        max_history=10)
+        policies = [KerasPolicy(featurizer)]
 
-    policies = [bAbIStarspacePolicy()]
-    featurizer = LabelFeaturizer()
-
-    agent = FullAgent("domain.yml",
-                      featurizer=featurizer,
-                      policies=policies)
-
+    agent = CustomAgent("domain.yml",
+                        policies=policies)
     agent.train(story_filename,
                 remove_duplicates=True,
-                epochs=200,
+                epochs=1200,
                 model_path=output_path,
-                augmentation_factor=0)
+                augmentation_factor=0,
+                exclusion_file=exclusion_file,
+                exclusion_percentage=exclusion_percentage)
 
 
 if __name__ == '__main__':
     logging.basicConfig(level="DEBUG")
-    train_domain_policy(story_filename="data/train/",
-                        output_path='models/dialogue')
+    train_domain_policy(story_filename="data/train/restaurant_happy.md",
+                        output_path='models/dialogue_keras',
+                        exclusion_file='data/train/hotel_happy.md',
+                        exclusion_percentage=20)
     logger.info("Finished training domain policy.")
