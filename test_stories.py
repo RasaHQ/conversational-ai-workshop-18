@@ -13,8 +13,8 @@ from rasa_core import utils
 from rasa_core.agent import Agent
 from rasa_core.events import ActionExecuted, UserUttered
 from rasa_core.interpreter import RegexInterpreter
-from rasa_core.training import (
-    extract_story_graph, TrainingsDataGenerator)
+from rasa_core.training import extract_story_graph
+from rasa_core.training.generator import TrainingsDataGenerator
 
 logger = logging.getLogger(__name__)
 
@@ -59,7 +59,7 @@ def run_story_evaluation(story_file, policy_model_path,
                                use_story_concatenation=False,
                                tracker_limit=100,
                                augmentation_factor=0)
-    completed_trackers, _ = g.generate()
+    completed_trackers = g.generate()
 
     logger.info(
             "Evaluating {} stories\nProgress:".format(len(completed_trackers)))

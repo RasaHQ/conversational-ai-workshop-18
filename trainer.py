@@ -21,7 +21,7 @@ def train_domain_policy(story_filename,
                         exclusion_percentage=None):
     """Trains a new deterministic domain policy using the stories
     (json format) in `story_filename`."""
-    starspace = True
+    starspace = False
     if starspace:
         featurizer = FullDialogueTrackerFeaturizer(
                         LabelTokenizerSingleStateFeaturizer())
@@ -34,19 +34,22 @@ def train_domain_policy(story_filename,
 
     agent = CustomAgent("domain.yml",
                         policies=policies)
-    agent.train(story_filename,
-                remove_duplicates=True,
-                epochs=1200,
-                model_path=output_path,
-                augmentation_factor=0,
-                exclusion_file=exclusion_file,
-                exclusion_percentage=exclusion_percentage)
+    data = agent.load_data(story_filename,
+                           remove_duplicates=True,
+                           augmentation_factor=0,
+                           exclusion_file=exclusion_file,
+                           exclusion_percentage=exclusion_percentage)
+
+    agent.train(data,
+                epochs=200)
+
+    agent.persist(model_path=output_path)
 
 
 if __name__ == '__main__':
     logging.basicConfig(level="DEBUG")
     train_domain_policy(story_filename="data/train/restaurant_happy.md",
                         output_path='models/dialogue_keras',
-                        exclusion_file='data/train/hotel_happy.md',
+                        exclusion_file='data/train/restaurant_happy.md',
                         exclusion_percentage=20)
     logger.info("Finished training domain policy.")
