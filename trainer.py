@@ -21,16 +21,18 @@ def train_domain_policy(story_filename,
                         exclusion_percentage=None):
     """Trains a new deterministic domain policy using the stories
     (json format) in `story_filename`."""
-    starspace = False
+    starspace = True
     if starspace:
         featurizer = FullDialogueTrackerFeaturizer(
                         LabelTokenizerSingleStateFeaturizer())
         policies = [EmbeddingPolicy(featurizer)]
+        epochs = 1200
     else:
         featurizer = MaxHistoryTrackerFeaturizer(
                         LabelTokenizerSingleStateFeaturizer(),
                         max_history=10)
         policies = [KerasPolicy(featurizer)]
+        epochs = 200
 
     agent = CustomAgent("domain.yml",
                         policies=policies)
@@ -41,7 +43,7 @@ def train_domain_policy(story_filename,
                            exclusion_percentage=exclusion_percentage)
 
     agent.train(data,
-                epochs=200)
+                epochs=epochs)
 
     agent.persist(model_path=output_path)
 

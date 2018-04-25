@@ -49,7 +49,7 @@ if __name__ == '__main__':
     logging.basicConfig(level='INFO')
     for i in [0, 10, 30, 50, 70, 100]:
         train_domain_policy('data/train/',
-                            'models/dialogue_keras',
+                            'models/dialogue_embed',
                             exclusion_file='data/train/restaurant_happy.md',
                             exclusion_percentage=i
                             )
