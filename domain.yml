@@ -40,6 +40,7 @@ intents:
   - about
   - did_that_work
   - affirm
+  - correct
 
 entities:
   - location
@@ -53,6 +54,7 @@ entities:
   - has_gym
   - has_spa
   - breakfast
+  - date
 
 templates:
   utter_ask_cuisine:
