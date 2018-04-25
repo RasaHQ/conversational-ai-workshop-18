@@ -24,7 +24,7 @@
     - action_restaurant
 * inform{"people": "4"}
     - action_restaurant
-* correct{"people:"5""}
+* correct{"people":"5"}
     - action_restaurant
 * inform{"price": "expensive"}
     - action_restaurant
