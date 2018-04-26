@@ -53,7 +53,7 @@ def train_domain_policy(story_filename,
 
 if __name__ == '__main__':
     logging.basicConfig(level="DEBUG")
-    train_domain_policy(story_filename="data/train/restaurant_happy.md",
+    train_domain_policy(story_filename="data/train/",
                         output_path='models/dialogue_keras',
                         exclusion_file='data/train/restaurant_happy.md',
                         exclusion_percentage=20)
