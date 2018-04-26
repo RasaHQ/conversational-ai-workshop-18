@@ -45,7 +45,7 @@ if __name__ == '__main__':
     num_correct = defaultdict(list)
 
     logging.basicConfig(level='INFO')
-    percentages = [0, 10, 30, 50, 70, 100]
+    percentages = [0, 5, 25, 50, 70, 90, 97, 100]
     for i in percentages:
         train_domain_policy('data/train/',
                             starspace=True,
@@ -67,11 +67,15 @@ if __name__ == '__main__':
         no = run_story_evaluation(cmdline_args.stories,
                                   'models/dialogue_keras')
         num_correct['keras'].append(no)
+    print(num_correct)
+    percentages = [100-x for x in percentages]
 
-    percentages = [0, 30, 50, 70, 90, 100]
-    memo = [0, 0.3, 0.5, 0.7, 0.9, 1]
-    num_correct['keras'] = [x/17.0 for x in num_correct['keras'][::-1]]
-    num_correct['embed'] = [x/17.0 for x in num_correct['embed'][::-1]]
+    memo = [x/100.0 for x in percentages]
+    print(percentages)
+    num_correct['keras'] = [x/30.0 for x in num_correct['keras']]
+    num_correct['embed'] = [x/30.0 for x in num_correct['embed']]
+    # num_correct['keras'] = [x/30.0 for x in [29, 28, 21, 16, 14, 4, 1, 0]]
+    # num_correct['embed'] = [x/30.0 for x in [29, 27, 24, 20, 14, 7, 4, 0]]
     plt.plot(percentages, num_correct['keras'], label='keras', marker='.')
     plt.plot(percentages, num_correct['embed'], label='embed', marker='.')
     plt.plot(percentages, memo, '--', label='memoization')
@@ -82,6 +86,6 @@ if __name__ == '__main__':
 
     plt.legend(loc=4)
     plt.show()
-
+    # defaultdict(<type 'list'>, {u'embed': [29, 27, 24, 20, 14, 7, 4, 0], u'keras': [29, 28, 21, 16, 14, 4, 1, 0]})
     print(num_correct)
     logger.info("Finished evaluation")

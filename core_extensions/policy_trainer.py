@@ -69,7 +69,7 @@ class StoryReader(StoryFileReader):
             if exclusion_file and exclusion_percentage != 0:
                 if f == exclusion_file:
                     # need to make this round up
-                    idx = int(exclusion_percentage/100.0 * len(steps))
+                    idx = int(round(exclusion_percentage/100.0 * len(steps)))
                     steps = steps[:-idx]
 
             story_steps.extend(steps)

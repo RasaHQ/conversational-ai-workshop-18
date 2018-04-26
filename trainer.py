@@ -26,14 +26,14 @@ def train_domain_policy(story_filename,
         featurizer = FullDialogueTrackerFeaturizer(
                         LabelTokenizerSingleStateFeaturizer())
         policies = [EmbeddingPolicy(featurizer)]
-        epochs = 1200
+        epochs = 2000
         output_path = 'models/dialogue_embed'
     else:
         featurizer = MaxHistoryTrackerFeaturizer(
                         LabelTokenizerSingleStateFeaturizer(),
                         max_history=10)
         policies = [KerasPolicy(featurizer)]
-        epochs = 200
+        epochs = 400
         output_path = 'models/dialogue_keras'
 
     agent = CustomAgent("domain.yml",
@@ -45,6 +45,7 @@ def train_domain_policy(story_filename,
                            exclusion_percentage=exclusion_percentage)
 
     agent.train(data,
+                rnn_size=64,
                 epochs=epochs)
 
     agent.persist(model_path=output_path)
