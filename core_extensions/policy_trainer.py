@@ -70,9 +70,7 @@ class StoryReader(StoryFileReader):
                 if f == exclusion_file:
                     # need to make this round up
                     idx = int(round(exclusion_percentage/100.0 * len(steps)))
-                    print(steps)
                     random.shuffle(steps)
-                    print(steps)
                     steps = steps[:-idx]
 
             story_steps.extend(steps)
