@@ -40,12 +40,15 @@ if __name__ == '__main__':
     # configure_logging()
     # Running as standalone python application
     from collections import defaultdict
+    from rasa_core.training.dsl import StoryFileReader
+    from rasa_core.domain import TemplateDomain
     arg_parser = create_argument_parser()
     cmdline_args = arg_parser.parse_args()
     num_correct = defaultdict(list)
 
     logging.basicConfig(level='INFO')
     percentages = [0, 5, 25, 50, 70, 90, 97, 100]
+    # while
     for i in percentages:
         train_domain_policy('data/train/',
                             starspace=True,
@@ -72,8 +75,11 @@ if __name__ == '__main__':
 
     memo = [x/100.0 for x in percentages]
     print(percentages)
-    num_correct['keras'] = [x/30.0 for x in num_correct['keras']]
-    num_correct['embed'] = [x/30.0 for x in num_correct['embed']]
+    no_stories = len(StoryFileReader.read_from_file(cmdline_args.exclude,
+                                                    TemplateDomain.load(
+                                                        'domain.yml')))
+    num_correct['keras'] = [x/float(no_stories) for x in num_correct['keras']]
+    num_correct['embed'] = [x/float(no_stories) for x in num_correct['embed']]
     # num_correct['keras'] = [x/30.0 for x in [29, 28, 21, 16, 14, 4, 1, 0]]
     # num_correct['embed'] = [x/30.0 for x in [29, 27, 24, 20, 14, 7, 4, 0]]
     plt.plot(percentages, num_correct['keras'], label='keras', marker='.')
