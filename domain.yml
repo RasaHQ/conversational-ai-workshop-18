@@ -89,6 +89,19 @@ templates:
     - "Ok, I have all the information I need now."
   utter_ask_details:
     - "Anything specific?"
+  utter_explain_details:
+    - "I need some details on your trip to find a suitable hotel"
+  utter_explain_startdate:
+    - "I'll need to know when you want to go to check availability."
+  utter_explain_enddate:
+    - "I need to know when you'll check out"
+  utter_explain_location:
+    - "To show you relevant results, I'll have to know where you are going"
+  utter_explain_people:
+    - "I'll need to know how many of you there are to check which rooms are suitable."
+  utter_explain_price:
+    - "Knowing an approximate price range lets me narrow down search results."
+
 
 actions:
   - utter_ask_cuisine
@@ -102,6 +115,12 @@ actions:
   - utter_suggest_restaurant
   - utter_suggest_hotel
   - utter_happy
+  - utter_explain_details
+  - utter_explain_enddate
+  - utter_explain_location
+  - utter_explain_people
+  - utter_explain_price
+  - utter_explain_startdate
   - utter_worked
   - utter_chitchat
   - utter_ask_details
