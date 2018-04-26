@@ -38,11 +38,11 @@ intents:
   - inform
   - request_info
   - about
-  - did_that_work
   - affirm
   - correct
   - chitchat
   - explain
+  - did_that_work
 
 entities:
   - location
@@ -82,8 +82,6 @@ templates:
     - "Here is what I found: {hotel}. Does that work?"
   utter_happy:
     - "Great!"
-  utter_worked:
-    - "Yes it worked!"
   utter_chitchat:
     - "Bla bla"
   utter_filled_slots:
@@ -116,6 +114,10 @@ templates:
     - "Ok, I've changed your checkout date to {enddate}"
   utter_correct_startdate:
     - "Ok, I've changed your check in date to {startdate}"
+  utter_worked:
+    - "Yes, based on the info you gave me I have the following recommendation:"
+  utter_more_info:
+    - "No, I still need some more information from you."
 
 
 actions:
@@ -147,6 +149,7 @@ actions:
   - utter_correct_people
   - utter_correct_startdate
   - utter_correct_enddate
+  - utter_more_info
   - actions.ActionSearchRestaurant
   - actions.ActionSearchHotel
   - actions.ActionExplain
