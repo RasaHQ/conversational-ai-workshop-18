@@ -42,6 +42,7 @@ intents:
   - affirm
   - correct
   - chitchat
+  - explain
 
 entities:
   - location
@@ -101,6 +102,20 @@ templates:
     - "I'll need to know how many of you there are to check which rooms are suitable."
   utter_explain_price:
     - "Knowing an approximate price range lets me narrow down search results."
+  utter_explain_cuisine:
+    - "Knowing which cuisine you want will help me narrow down the results."
+  utter_correct_price:
+    - "Ok, I've changed the price to {price}"
+  utter_correct_people:
+    - "Ok, I've changed the number of people to {people}"
+  utter_correct_cuisine:
+    - "Ok, I've changed the cuisine to {cuisine}"
+  utter_correct_location:
+    - "Ok, I've changed the location to {location}"
+  utter_correct_enddate:
+    - "Ok, I've changed your checkout date to {enddate}"
+  utter_correct_startdate:
+    - "Ok, I've changed your check in date to {startdate}"
 
 
 actions:
@@ -121,10 +136,17 @@ actions:
   - utter_explain_people
   - utter_explain_price
   - utter_explain_startdate
+  - utter_explain_cuisine
   - utter_worked
   - utter_chitchat
   - utter_ask_details
   - utter_filled_slots
+  - utter_correct_location
+  - utter_correct_cuisine
+  - utter_correct_price
+  - utter_correct_people
+  - utter_correct_startdate
+  - utter_correct_enddate
   - actions.ActionSearchRestaurant
   - actions.ActionSearchHotel
   - actions.ActionExplain
