@@ -1,8 +1,8 @@
-## restaurant chitchat 1.1
+## restaurant didthatwork 1.1
 * request_restaurant
     - utter_ask_details
-* chitchat
-    - utter_chitchat
+* did_that_work
+    - utter_more_info
     - utter_ask_details
 * inform{"location": "paris"}
     - utter_ask_people
@@ -18,13 +18,13 @@
 * affirm
     - utter_happy
 
-## restaurant chitchat 1.2
+## restaurant didthatwork 1.2
 * request_restaurant
     - utter_ask_details
 * inform{"location": "paris"}
     - utter_ask_people
-* chitchat
-    - utter_chitchat
+* did_that_work
+    - utter_more_info
     - utter_ask_people
 * inform{"people": "4"}
     - utter_ask_price
@@ -38,15 +38,15 @@
 * affirm
     - utter_happy
 
-## restaurant chitchat 1.3
+## restaurant didthatwork 1.3
 * request_restaurant
     - utter_ask_details
 * inform{"location": "paris"}
     - utter_ask_people
 * inform{"people": "4"}
     - utter_ask_price
-* chitchat
-    - utter_chitchat
+* did_that_work
+    - utter_more_info
     - utter_ask_price
 * inform{"price": "expensive"}
     - utter_ask_cuisine
@@ -58,27 +58,7 @@
 * affirm
     - utter_happy
 
-## restaurant chitchat 1.4
-* request_restaurant
-    - utter_ask_details
-* inform{"location": "paris"}
-    - utter_ask_people
-* inform{"people": "4"}
-    - utter_ask_price
-* inform{"price": "expensive"}
-    - utter_ask_cuisine
-* chitchat
-    - utter_chitchat
-    - utter_ask_cuisine
-* inform{"cuisine": "italian"}
-    - utter_filled_slots
-    - action_search_restaurant
-    - slot{"restaurant": "restaurant"}
-    - utter_suggest_restaurant
-* affirm
-    - utter_happy
-
-## restaurant chitchat 1.5
+## restaurant didthatwork 1.4
 * request_restaurant
     - utter_ask_details
 * inform{"location": "paris"}
@@ -87,28 +67,8 @@
     - utter_ask_price
 * inform{"price": "expensive"}
     - utter_ask_cuisine
-* inform{"cuisine": "italian"}
-    - utter_filled_slots
-    - action_search_restaurant
-    - slot{"restaurant": "restaurant"}
-    - utter_suggest_restaurant
-* chitchat
-    - utter_chitchat
-    - utter_suggest_restaurant
-* affirm
-    - utter_happy
-
-## restaurant chitchat 2.1
-* request_restaurant
-    - utter_ask_details
-* chitchat
-    - utter_chitchat
-    - utter_ask_details
-* inform{"people": "4"}
-    - utter_ask_location
-* inform{"location": "paris"}
-    - utter_ask_price
-* inform{"price": "expensive"}
+* did_that_work
+    - utter_more_info
     - utter_ask_cuisine
 * inform{"cuisine": "italian"}
     - utter_filled_slots
@@ -118,13 +78,33 @@
 * affirm
     - utter_happy
 
-## restaurant chitchat 2.2
+## restaurant didthatwork 1.5
 * request_restaurant
     - utter_ask_details
+* inform{"location": "paris"}
+    - utter_ask_people
 * inform{"people": "4"}
-    - utter_ask_location
-* chitchat
-    - utter_chitchat
+    - utter_ask_price
+* inform{"price": "expensive"}
+    - utter_ask_cuisine
+* inform{"cuisine": "italian"}
+    - utter_filled_slots
+    - action_search_restaurant
+    - slot{"restaurant": "restaurant"}
+    - utter_suggest_restaurant
+* did_that_work
+    - utter_worked
+    - utter_suggest_restaurant
+* affirm
+    - utter_happy
+
+## restaurant didthatwork 2.1
+* request_restaurant
+    - utter_ask_details
+* did_that_work
+    - utter_more_info
+    - utter_ask_details
+* inform{"people": "4"}
     - utter_ask_location
 * inform{"location": "paris"}
     - utter_ask_price
@@ -138,50 +118,13 @@
 * affirm
     - utter_happy
 
-## restaurant chitchat 2.3
+## restaurant didthatwork 2.2
 * request_restaurant
     - utter_ask_details
 * inform{"people": "4"}
     - utter_ask_location
-* inform{"location": "paris"}
-    - utter_ask_price
-* chitchat
-    - utter_chitchat
-    - utter_ask_price
-* inform{"price": "expensive"}
-    - utter_ask_cuisine
-* inform{"cuisine": "italian"}
-    - utter_filled_slots
-    - action_search_restaurant
-    - slot{"restaurant": "restaurant"}
-    - utter_suggest_restaurant
-* affirm
-    - utter_happy
-
-## restaurant chitchat 2.4
-* request_restaurant
-    - utter_ask_details
-* inform{"people": "4"}
-    - utter_ask_location
-* inform{"location": "paris"}
-    - utter_ask_price
-* inform{"price": "expensive"}
-    - utter_ask_cuisine
-* chitchat
-    - utter_chitchat
-    - utter_ask_cuisine
-* inform{"cuisine": "italian"}
-    - utter_filled_slots
-    - action_search_restaurant
-    - slot{"restaurant": "restaurant"}
-    - utter_suggest_restaurant
-* affirm
-    - utter_happy
-
-## restaurant chitchat 2.5
-* request_restaurant
-    - utter_ask_details
-* inform{"people": "4"}
+* did_that_work
+    - utter_more_info
     - utter_ask_location
 * inform{"location": "paris"}
     - utter_ask_price
@@ -192,25 +135,22 @@
     - action_search_restaurant
     - slot{"restaurant": "restaurant"}
     - utter_suggest_restaurant
-* chitchat
-    - utter_chitchat
-    - utter_suggest_restaurant
 * affirm
     - utter_happy
 
-## restaurant chitchat 3.1
+## restaurant didthatwork 2.3
 * request_restaurant
     - utter_ask_details
-* chitchat
-    - utter_chitchat
-    - utter_ask_details
-* inform{"price": "expensive"}
-    - utter_ask_people
 * inform{"people": "4"}
-    - utter_ask_cuisine
-* inform{"cuisine": "italian"}
     - utter_ask_location
 * inform{"location": "paris"}
+    - utter_ask_price
+* did_that_work
+    - utter_more_info
+    - utter_ask_price
+* inform{"price": "expensive"}
+    - utter_ask_cuisine
+* inform{"cuisine": "italian"}
     - utter_filled_slots
     - action_search_restaurant
     - slot{"restaurant": "restaurant"}
@@ -218,19 +158,19 @@
 * affirm
     - utter_happy
 
-## restaurant chitchat 3.2
+## restaurant didthatwork 2.4
 * request_restaurant
     - utter_ask_details
-* inform{"price": "expensive"}
-    - utter_ask_people
-* chitchat
-    - utter_chitchat
-    - utter_ask_people
 * inform{"people": "4"}
-    - utter_ask_cuisine
-* inform{"cuisine": "italian"}
     - utter_ask_location
 * inform{"location": "paris"}
+    - utter_ask_price
+* inform{"price": "expensive"}
+    - utter_ask_cuisine
+* did_that_work
+    - utter_more_info
+    - utter_ask_cuisine
+* inform{"cuisine": "italian"}
     - utter_filled_slots
     - action_search_restaurant
     - slot{"restaurant": "restaurant"}
@@ -238,48 +178,31 @@
 * affirm
     - utter_happy
 
-## restaurant chitchat 3.3
+## restaurant didthatwork 2.5
 * request_restaurant
     - utter_ask_details
-* inform{"price": "expensive"}
-    - utter_ask_people
 * inform{"people": "4"}
-    - utter_ask_cuisine
-* chitchat
-    - utter_chitchat
-    - utter_ask_cuisine
-* inform{"cuisine": "italian"}
     - utter_ask_location
 * inform{"location": "paris"}
+    - utter_ask_price
+* inform{"price": "expensive"}
+    - utter_ask_cuisine
+* inform{"cuisine": "italian"}
     - utter_filled_slots
     - action_search_restaurant
     - slot{"restaurant": "restaurant"}
     - utter_suggest_restaurant
-* affirm
-    - utter_happy
-
-## restaurant chitchat 3.4
-* request_restaurant
-    - utter_ask_details
-* inform{"price": "expensive"}
-    - utter_ask_people
-* inform{"people": "4"}
-    - utter_ask_cuisine
-* inform{"cuisine": "italian"}
-    - utter_ask_location
-* chitchat
-    - utter_chitchat
-    - utter_ask_location
-* inform{"location": "paris"}
-    - utter_filled_slots
-    - action_search_restaurant
-    - slot{"restaurant": "restaurant"}
+* did_that_work
+    - utter_worked
     - utter_suggest_restaurant
 * affirm
     - utter_happy
 
-## restaurant chitchat 3.5
+## restaurant didthatwork 3.1
 * request_restaurant
+    - utter_ask_details
+* did_that_work
+    - utter_more_info
     - utter_ask_details
 * inform{"price": "expensive"}
     - utter_ask_people
@@ -292,17 +215,94 @@
     - action_search_restaurant
     - slot{"restaurant": "restaurant"}
     - utter_suggest_restaurant
-* chitchat
-    - utter_chitchat
+* affirm
+    - utter_happy
+
+## restaurant didthatwork 3.2
+* request_restaurant
+    - utter_ask_details
+* inform{"price": "expensive"}
+    - utter_ask_people
+* did_that_work
+    - utter_more_info
+    - utter_ask_people
+* inform{"people": "4"}
+    - utter_ask_cuisine
+* inform{"cuisine": "italian"}
+    - utter_ask_location
+* inform{"location": "paris"}
+    - utter_filled_slots
+    - action_search_restaurant
+    - slot{"restaurant": "restaurant"}
     - utter_suggest_restaurant
 * affirm
     - utter_happy
 
-## restaurant chitchat 4.1
+## restaurant didthatwork 3.3
 * request_restaurant
     - utter_ask_details
-* chitchat
-    - utter_chitchat
+* inform{"price": "expensive"}
+    - utter_ask_people
+* inform{"people": "4"}
+    - utter_ask_cuisine
+* did_that_work
+    - utter_more_info
+    - utter_ask_cuisine
+* inform{"cuisine": "italian"}
+    - utter_ask_location
+* inform{"location": "paris"}
+    - utter_filled_slots
+    - action_search_restaurant
+    - slot{"restaurant": "restaurant"}
+    - utter_suggest_restaurant
+* affirm
+    - utter_happy
+
+## restaurant didthatwork 3.4
+* request_restaurant
+    - utter_ask_details
+* inform{"price": "expensive"}
+    - utter_ask_people
+* inform{"people": "4"}
+    - utter_ask_cuisine
+* inform{"cuisine": "italian"}
+    - utter_ask_location
+* did_that_work
+    - utter_more_info
+    - utter_ask_location
+* inform{"location": "paris"}
+    - utter_filled_slots
+    - action_search_restaurant
+    - slot{"restaurant": "restaurant"}
+    - utter_suggest_restaurant
+* affirm
+    - utter_happy
+
+## restaurant didthatwork 3.5
+* request_restaurant
+    - utter_ask_details
+* inform{"price": "expensive"}
+    - utter_ask_people
+* inform{"people": "4"}
+    - utter_ask_cuisine
+* inform{"cuisine": "italian"}
+    - utter_ask_location
+* inform{"location": "paris"}
+    - utter_filled_slots
+    - action_search_restaurant
+    - slot{"restaurant": "restaurant"}
+    - utter_suggest_restaurant
+* did_that_work
+    - utter_worked
+    - utter_suggest_restaurant
+* affirm
+    - utter_happy
+
+## restaurant didthatwork 4.1
+* request_restaurant
+    - utter_ask_details
+* did_that_work
+    - utter_more_info
     - utter_ask_details
 * inform{"cuisine": "italian"}
     - utter_ask_price
@@ -318,13 +318,13 @@
 * affirm
     - utter_happy
 
-## restaurant chitchat 4.2
+## restaurant didthatwork 4.2
 * request_restaurant
     - utter_ask_details
 * inform{"cuisine": "italian"}
     - utter_ask_price
-* chitchat
-    - utter_chitchat
+* did_that_work
+    - utter_more_info
     - utter_ask_price
 * inform{"price": "expensive"}
     - utter_ask_location
@@ -338,15 +338,15 @@
 * affirm
     - utter_happy
 
-## restaurant chitchat 4.3
+## restaurant didthatwork 4.3
 * request_restaurant
     - utter_ask_details
 * inform{"cuisine": "italian"}
     - utter_ask_price
 * inform{"price": "expensive"}
     - utter_ask_location
-* chitchat
-    - utter_chitchat
+* did_that_work
+    - utter_more_info
     - utter_ask_location
 * inform{"location": "paris"}
     - utter_ask_people
@@ -358,7 +358,7 @@
 * affirm
     - utter_happy
 
-## restaurant chitchat 4.4
+## restaurant didthatwork 4.4
 * request_restaurant
     - utter_ask_details
 * inform{"cuisine": "italian"}
@@ -367,8 +367,8 @@
     - utter_ask_location
 * inform{"location": "paris"}
     - utter_ask_people
-* chitchat
-    - utter_chitchat
+* did_that_work
+    - utter_more_info
     - utter_ask_people
 * inform{"people": "4"}
     - utter_filled_slots
@@ -378,7 +378,7 @@
 * affirm
     - utter_happy
 
-## restaurant chitchat 4.5
+## restaurant didthatwork 4.5
 * request_restaurant
     - utter_ask_details
 * inform{"cuisine": "italian"}
@@ -392,8 +392,8 @@
     - action_search_restaurant
     - slot{"restaurant": "restaurant"}
     - utter_suggest_restaurant
-* chitchat
-    - utter_chitchat
+* did_that_work
+    - utter_worked
     - utter_suggest_restaurant
 * affirm
     - utter_happy
