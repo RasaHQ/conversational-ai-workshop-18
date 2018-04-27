@@ -55,7 +55,7 @@ if __name__ == '__main__':
 
     logging.basicConfig(level='INFO')
     # percentages = [0, 5, 25, 50, 70, 90, 97, 100]
-    percentages = [0, 5, 10, 30]
+    percentages = [70, 90, 95, 100]
     count = 0
     while count < 3:
         correct_keras = []
