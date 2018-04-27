@@ -76,7 +76,7 @@ if __name__ == '__main__':
                                       'models/dialogue_keras')
             correct_keras.append(no)
         num_correct['keras'].append(correct_keras)
-        num_correct['embed'].append(correct_keras)
+        num_correct['embed'].append(correct_embed)
         count += 1
     percentages = [100-x for x in percentages]
 
