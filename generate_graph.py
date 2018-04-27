@@ -42,56 +42,63 @@ if __name__ == '__main__':
     from collections import defaultdict
     from rasa_core.training.dsl import StoryFileReader
     from rasa_core.domain import TemplateDomain
+    import pickle
+    # from math import log
     arg_parser = create_argument_parser()
     cmdline_args = arg_parser.parse_args()
     num_correct = defaultdict(list)
 
     logging.basicConfig(level='INFO')
     percentages = [0, 5, 25, 50, 70, 90, 97, 100]
-    # while
-    for i in percentages:
-        train_domain_policy('data/train/',
-                            starspace=True,
-                            exclusion_file=cmdline_args.exclude,
-                            exclusion_percentage=i
-                            )
+    count = 0
+    while count < 3:
+        correct_keras = []
+        correct_embed = []
+        for i in percentages:
+            train_domain_policy('data/train/',
+                                starspace=True,
+                                exclusion_file=cmdline_args.exclude,
+                                exclusion_percentage=i
+                                )
 
-        no = run_story_evaluation(cmdline_args.stories,
-                                  'models/dialogue_embed')
+            no = run_story_evaluation(cmdline_args.stories,
+                                      'models/dialogue_embed')
 
-        num_correct['embed'].append(no)
+            correct_embed.append(no)
 
-        train_domain_policy('data/train/',
-                            starspace=False,
-                            exclusion_file=cmdline_args.exclude,
-                            exclusion_percentage=i
-                            )
+            train_domain_policy('data/train/',
+                                starspace=False,
+                                exclusion_file=cmdline_args.exclude,
+                                exclusion_percentage=i
+                                )
 
-        no = run_story_evaluation(cmdline_args.stories,
-                                  'models/dialogue_keras')
-        num_correct['keras'].append(no)
-    print(num_correct)
+            no = run_story_evaluation(cmdline_args.stories,
+                                      'models/dialogue_keras')
+            correct_keras.append(no)
+        num_correct['keras'].append(correct_keras)
+        num_correct['embed'].append(correct_keras)
+        count += 1
     percentages = [100-x for x in percentages]
 
     memo = [x/100.0 for x in percentages]
-    print(percentages)
     no_stories = len(StoryFileReader.read_from_file(cmdline_args.exclude,
                                                     TemplateDomain.load(
                                                         'domain.yml')))
-    num_correct['keras'] = [x/float(no_stories) for x in num_correct['keras']]
-    num_correct['embed'] = [x/float(no_stories) for x in num_correct['embed']]
-    # num_correct['keras'] = [x/30.0 for x in [29, 28, 21, 16, 14, 4, 1, 0]]
-    # num_correct['embed'] = [x/30.0 for x in [29, 27, 24, 20, 14, 7, 4, 0]]
-    plt.plot(percentages, num_correct['keras'], label='keras', marker='.')
-    plt.plot(percentages, num_correct['embed'], label='embed', marker='.')
-    plt.plot(percentages, memo, '--', label='memoization')
-    plt.xlabel('percentage of data present')
-    plt.ylabel('accuracy')
-    plt.xlim([0, 100])
-    plt.ylim([0, 1.05])
-
-    plt.legend(loc=4)
-    plt.show()
+    num_correct['no_of_stories'] = [round((x/100.0) * no_stories) for x in percentages]
+    file_name = cmdline_args.exclude.split('/')[2][:-3] + '.p'
+    pickle.dump(num_correct, open(file_name, 'wb'))
+    # num_correct['keras'] = [x/float(no_stories) for x in num_correct['keras']]
+    # num_correct['embed'] = [x/float(no_stories) for x in num_correct['embed']]
+    # plt.plot(percentages, num_correct['keras'], label='keras', marker='.')
+    # plt.plot(percentages, num_correct['embed'], label='embed', marker='.')
+    # plt.plot(percentages, memo, '--', label='memoization')
+    # plt.xlabel('percentage of data present')
+    # plt.ylabel('accuracy')
+    # plt.xlim([0, 100])
+    # plt.ylim([0, 1.05])
+    #
+    # plt.legend(loc=4)
+    # plt.show()
     # defaultdict(<type 'list'>, {u'embed': [29, 27, 24, 20, 14, 7, 4, 0], u'keras': [29, 28, 21, 16, 14, 4, 1, 0]})
-    print(num_correct)
+    # print(num_correct)
     logger.info("Finished evaluation")
