@@ -31,6 +31,11 @@ def create_argument_parser():
             type=str,
             default=None,
             help="file to exclude from training")
+    parser.add_argument(
+            '--data',
+            type=str,
+            default='data/train',
+            help="training data")
 
     utils.add_logging_option_arguments(parser)
     return parser
@@ -55,7 +60,7 @@ if __name__ == '__main__':
         correct_keras = []
         correct_embed = []
         for i in percentages:
-            train_domain_policy('data/train/',
+            train_domain_policy(cmdline_args.data,
                                 starspace=True,
                                 exclusion_file=cmdline_args.exclude,
                                 exclusion_percentage=i
@@ -66,7 +71,7 @@ if __name__ == '__main__':
 
             correct_embed.append(no)
 
-            train_domain_policy('data/train/',
+            train_domain_policy(cmdline_args.data,
                                 starspace=False,
                                 exclusion_file=cmdline_args.exclude,
                                 exclusion_percentage=i
@@ -85,7 +90,7 @@ if __name__ == '__main__':
                                                     TemplateDomain.load(
                                                         'domain.yml')))
     num_correct['no_of_stories'] = [round((x/100.0) * no_stories) for x in percentages]
-    file_name = cmdline_args.exclude.split('/')[2][:-3] + '.p'
+    file_name = cmdline_args.exclude[:-3] + '.p'
     pickle.dump(num_correct, open(file_name, 'wb'))
     # num_correct['keras'] = [x/float(no_stories) for x in num_correct['keras']]
     # num_correct['embed'] = [x/float(no_stories) for x in num_correct['embed']]
