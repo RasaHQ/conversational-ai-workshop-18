@@ -54,7 +54,8 @@ if __name__ == '__main__':
     num_correct = defaultdict(list)
 
     logging.basicConfig(level='INFO')
-    percentages = [0, 5, 25, 50, 70, 90, 97, 100]
+    # percentages = [0, 5, 25, 50, 70, 90, 97, 100]
+    percentages = [0, 5, 10, 30]
     count = 0
     while count < 3:
         correct_keras = []
