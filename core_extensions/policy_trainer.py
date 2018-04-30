@@ -44,11 +44,11 @@ def load_data(
                                     exclusion_percentage=exclusion_percentage)
 
         g = TrainingDataGenerator(graph, domain,
-                                   remove_duplicates,
-                                   augmentation_factor,
-                                   max_number_of_trackers,
-                                   tracker_limit,
-                                   use_story_concatenation)
+                                  remove_duplicates,
+                                  augmentation_factor,
+                                  max_number_of_trackers,
+                                  tracker_limit,
+                                  use_story_concatenation)
         return g.generate()
     else:
         return []
@@ -65,16 +65,18 @@ class StoryReader(StoryFileReader):
         random.seed(666)
         story_steps = []
         for f in nlu_utils.list_files(resource_name):
-            steps = StoryFileReader.read_from_file(f, domain, interpreter,
-                                                   template_variables)
-            if exclusion_file and exclusion_percentage != 0:
-                if f == exclusion_file:
-                    # need to make this round up
-                    idx = int(round(exclusion_percentage/100.0 * len(steps)))
-                    random.shuffle(steps)
-                    steps = steps[:-idx]
 
-            story_steps.extend(steps)
+            if (f.split('_')[1] == 'happy.md' or f.split('_')[1] ==
+                    exclusion_file.split('_')[1]):
+                steps = StoryFileReader.read_from_file(f, domain, interpreter,
+                                                       template_variables)
+                if exclusion_file and exclusion_percentage != 0:
+                    if f == exclusion_file:
+                        idx = int(round(exclusion_percentage/100.0 * len(steps)))
+                        random.shuffle(steps)
+                        steps = steps[:-idx]
+
+                story_steps.extend(steps)
         return story_steps
 
 
