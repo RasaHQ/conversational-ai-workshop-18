@@ -19,14 +19,15 @@ def train_domain_policy(story_filename,
                         output_path=None,
                         exclusion_file=None,
                         exclusion_percentage=None,
-                        starspace=True):
+                        starspace=True,
+                        epoch_no=2000):
     """Trains a new deterministic domain policy using the stories
     (json format) in `story_filename`."""
     if starspace:
         featurizer = FullDialogueTrackerFeaturizer(
                         LabelTokenizerSingleStateFeaturizer())
         policies = [EmbeddingPolicy(featurizer)]
-        epochs = 2000
+        epochs = epoch_no
         output_path = 'models/dialogue_embed'
     else:
         featurizer = MaxHistoryTrackerFeaturizer(
