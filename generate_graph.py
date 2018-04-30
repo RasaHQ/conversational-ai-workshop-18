@@ -36,6 +36,11 @@ def create_argument_parser():
             type=str,
             default='data/train',
             help="training data")
+    parser.add_argument(
+            '--epochs',
+            type=int,
+            default=2000,
+            help="number of epochs")
 
     utils.add_logging_option_arguments(parser)
     return parser
@@ -54,8 +59,7 @@ if __name__ == '__main__':
     num_correct = defaultdict(list)
 
     logging.basicConfig(level='INFO')
-    # percentages = [0, 5, 25, 50, 70, 90, 97, 100]
-    percentages = [70, 90, 95, 100]
+    percentages = [0, 5, 25, 50, 70, 90, 95, 100]
     count = 0
     while count < 3:
         correct_keras = []
@@ -64,7 +68,8 @@ if __name__ == '__main__':
             train_domain_policy(cmdline_args.data,
                                 starspace=True,
                                 exclusion_file=cmdline_args.exclude,
-                                exclusion_percentage=i
+                                exclusion_percentage=i,
+                                epoch_no=cmdline_args.epochs
                                 )
 
             no = run_story_evaluation(cmdline_args.stories,
