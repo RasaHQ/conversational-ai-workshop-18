@@ -69,7 +69,8 @@ if __name__ == '__main__':
                                 starspace=True,
                                 exclusion_file=cmdline_args.exclude,
                                 exclusion_percentage=i,
-                                epoch_no=cmdline_args.epochs
+                                epoch_no=cmdline_args.epochs,
+                                embed_dim=20
                                 )
 
             no = run_story_evaluation(cmdline_args.stories,
