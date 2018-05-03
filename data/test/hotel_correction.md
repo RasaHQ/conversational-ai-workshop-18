@@ -28,7 +28,7 @@
 * inform{"people": "4"}
     - utter_ask_price
 * correct{"people": "5"}
-    - utter_correct_location
+    - utter_correct_people
     - utter_ask_price
 * inform{"price": "expensive"}
     - utter_ask_startdate
