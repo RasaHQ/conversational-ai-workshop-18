@@ -49,8 +49,7 @@ def train_domain_policy(story_filename,
     agent.train(data,
                 rnn_size=64,
                 epochs=epochs,
-                embed_dim=embed_dim,
-                sparse_attention=True)
+                embed_dim=embed_dim)
 
     agent.persist(model_path=output_path)
 
