@@ -62,7 +62,7 @@ class StoryReader(StoryFileReader):
                          exclusion_percentage=None):
         """Given a path reads all contained story files."""
         import random
-        random.seed(666)
+        # random.seed(666)
         story_steps = []
         for f in nlu_utils.list_files(resource_name):
 

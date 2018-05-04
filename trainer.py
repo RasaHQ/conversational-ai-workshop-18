@@ -33,7 +33,7 @@ def train_domain_policy(story_filename,
     else:
         featurizer = MaxHistoryTrackerFeaturizer(
                         LabelTokenizerSingleStateFeaturizer(),
-                        max_history=10)
+                        max_history=20)
         policies = [KerasPolicy(featurizer)]
         epochs = 400
         output_path = 'models/dialogue_keras'
@@ -49,7 +49,8 @@ def train_domain_policy(story_filename,
     agent.train(data,
                 rnn_size=64,
                 epochs=epochs,
-                embed_dim=embed_dim)
+                embed_dim=embed_dim,
+                sparse_attention=True)
 
     agent.persist(model_path=output_path)
 

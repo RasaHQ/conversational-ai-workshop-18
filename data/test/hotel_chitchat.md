@@ -20,7 +20,7 @@
 * affirm
     - utter_happy
 
-## hotel happy 1.2
+## hotel chitchat 1.2
 * request_hotel
     - utter_ask_details
 * inform{"location": "paris"}
@@ -42,7 +42,7 @@
 * affirm
     - utter_happy
 
-## hotel happy 1.3
+## hotel chitchat 1.3
 * request_hotel
     - utter_ask_details
 * inform{"location": "paris"}
@@ -64,7 +64,7 @@
 * affirm
     - utter_happy
 
-## hotel happy 1.4
+## hotel chitchat 1.4
 * request_hotel
     - utter_ask_details
 * inform{"location": "paris"}
@@ -86,7 +86,7 @@
 * affirm
     - utter_happy
 
-## hotel happy 1.5
+## hotel chitchat 1.5
 * request_hotel
     - utter_ask_details
 * inform{"location": "paris"}
@@ -108,7 +108,7 @@
 * affirm
     - utter_happy
 
-## hotel happy 1.6
+## hotel chitchat 1.6
 * request_hotel
     - utter_ask_details
 * inform{"location": "paris"}
