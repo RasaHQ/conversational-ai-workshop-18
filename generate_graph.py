@@ -78,15 +78,15 @@ if __name__ == '__main__':
 
             correct_embed.append(no)
 
-            train_domain_policy(cmdline_args.data,
-                                starspace=False,
-                                exclusion_file=cmdline_args.exclude,
-                                exclusion_percentage=i
-                                )
-
-            no = run_story_evaluation(cmdline_args.stories,
-                                      'models/dialogue_keras')
-            correct_keras.append(no)
+            # train_domain_policy(cmdline_args.data,
+            #                     starspace=False,
+            #                     exclusion_file=cmdline_args.exclude,
+            #                     exclusion_percentage=i
+            #                     )
+            #
+            # no = run_story_evaluation(cmdline_args.stories,
+            #                           'models/dialogue_keras')
+            # correct_keras.append(no)
         num_correct['keras'].append(correct_keras)
         num_correct['embed'].append(correct_embed)
         count += 1
