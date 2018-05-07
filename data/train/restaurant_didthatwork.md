@@ -2,7 +2,7 @@
 * request_restaurant
     - utter_ask_details
 * did_that_work
-    - utter_more_info
+    - utter_more_info_restaurant
     - utter_ask_details
 * inform{"location": "paris"}
     - utter_ask_people
@@ -24,7 +24,7 @@
 * inform{"location": "paris"}
     - utter_ask_people
 * did_that_work
-    - utter_more_info
+    - utter_more_info_restaurant
     - utter_ask_people
 * inform{"people": "4"}
     - utter_ask_price
@@ -46,7 +46,7 @@
 * inform{"people": "4"}
     - utter_ask_price
 * did_that_work
-    - utter_more_info
+    - utter_more_info_restaurant
     - utter_ask_price
 * inform{"price": "expensive"}
     - utter_ask_cuisine
@@ -68,7 +68,7 @@
 * inform{"price": "expensive"}
     - utter_ask_cuisine
 * did_that_work
-    - utter_more_info
+    - utter_more_info_restaurant
     - utter_ask_cuisine
 * inform{"cuisine": "italian"}
     - utter_filled_slots
@@ -93,7 +93,7 @@
     - slot{"restaurant": "restaurant"}
     - utter_suggest_restaurant
 * did_that_work
-    - utter_worked
+    - utter_worked_restaurant
     - utter_suggest_restaurant
 * affirm
     - utter_happy
@@ -102,7 +102,7 @@
 * request_restaurant
     - utter_ask_details
 * did_that_work
-    - utter_more_info
+    - utter_more_info_restaurant
     - utter_ask_details
 * inform{"people": "4"}
     - utter_ask_location
@@ -124,7 +124,7 @@
 * inform{"people": "4"}
     - utter_ask_location
 * did_that_work
-    - utter_more_info
+    - utter_more_info_restaurant
     - utter_ask_location
 * inform{"location": "paris"}
     - utter_ask_price
@@ -146,7 +146,7 @@
 * inform{"location": "paris"}
     - utter_ask_price
 * did_that_work
-    - utter_more_info
+    - utter_more_info_restaurant
     - utter_ask_price
 * inform{"price": "expensive"}
     - utter_ask_cuisine
@@ -168,7 +168,7 @@
 * inform{"price": "expensive"}
     - utter_ask_cuisine
 * did_that_work
-    - utter_more_info
+    - utter_more_info_restaurant
     - utter_ask_cuisine
 * inform{"cuisine": "italian"}
     - utter_filled_slots
@@ -193,7 +193,7 @@
     - slot{"restaurant": "restaurant"}
     - utter_suggest_restaurant
 * did_that_work
-    - utter_worked
+    - utter_worked_restaurant
     - utter_suggest_restaurant
 * affirm
     - utter_happy
@@ -202,7 +202,7 @@
 * request_restaurant
     - utter_ask_details
 * did_that_work
-    - utter_more_info
+    - utter_more_info_restaurant
     - utter_ask_details
 * inform{"price": "expensive"}
     - utter_ask_people
@@ -224,7 +224,7 @@
 * inform{"price": "expensive"}
     - utter_ask_people
 * did_that_work
-    - utter_more_info
+    - utter_more_info_restaurant
     - utter_ask_people
 * inform{"people": "4"}
     - utter_ask_cuisine
@@ -246,7 +246,7 @@
 * inform{"people": "4"}
     - utter_ask_cuisine
 * did_that_work
-    - utter_more_info
+    - utter_more_info_restaurant
     - utter_ask_cuisine
 * inform{"cuisine": "italian"}
     - utter_ask_location
@@ -268,7 +268,7 @@
 * inform{"cuisine": "italian"}
     - utter_ask_location
 * did_that_work
-    - utter_more_info
+    - utter_more_info_restaurant
     - utter_ask_location
 * inform{"location": "paris"}
     - utter_filled_slots
@@ -293,7 +293,7 @@
     - slot{"restaurant": "restaurant"}
     - utter_suggest_restaurant
 * did_that_work
-    - utter_worked
+    - utter_worked_restaurant
     - utter_suggest_restaurant
 * affirm
     - utter_happy
@@ -302,7 +302,7 @@
 * request_restaurant
     - utter_ask_details
 * did_that_work
-    - utter_more_info
+    - utter_more_info_restaurant
     - utter_ask_details
 * inform{"cuisine": "italian"}
     - utter_ask_price
@@ -324,7 +324,7 @@
 * inform{"cuisine": "italian"}
     - utter_ask_price
 * did_that_work
-    - utter_more_info
+    - utter_more_info_restaurant
     - utter_ask_price
 * inform{"price": "expensive"}
     - utter_ask_location
@@ -346,7 +346,7 @@
 * inform{"price": "expensive"}
     - utter_ask_location
 * did_that_work
-    - utter_more_info
+    - utter_more_info_restaurant
     - utter_ask_location
 * inform{"location": "paris"}
     - utter_ask_people
@@ -368,7 +368,7 @@
 * inform{"location": "paris"}
     - utter_ask_people
 * did_that_work
-    - utter_more_info
+    - utter_more_info_restaurant
     - utter_ask_people
 * inform{"people": "4"}
     - utter_filled_slots
@@ -393,7 +393,7 @@
     - slot{"restaurant": "restaurant"}
     - utter_suggest_restaurant
 * did_that_work
-    - utter_worked
+    - utter_worked_restaurant
     - utter_suggest_restaurant
 * affirm
     - utter_happy

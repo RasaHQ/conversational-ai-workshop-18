@@ -2,7 +2,7 @@
 * request_restaurant
     - utter_ask_details
 * explain
-    - utter_explain_details
+    - utter_explain_details_restaurant
     - utter_ask_details
 * inform{"location": "paris"}
     - utter_ask_people
@@ -24,7 +24,7 @@
 * inform{"location": "paris"}
     - utter_ask_people
 * explain
-    - utter_explain_people
+    - utter_explain_people_restaurant
     - utter_ask_people
 * inform{"people": "4"}
     - utter_ask_price
@@ -46,7 +46,7 @@
 * inform{"people": "4"}
     - utter_ask_price
 * explain
-    - utter_explain_price
+    - utter_explain_price_restaurant
     - utter_ask_price
 * inform{"price": "expensive"}
     - utter_ask_cuisine
@@ -68,7 +68,7 @@
 * inform{"price": "expensive"}
     - utter_ask_cuisine
 * explain
-    - utter_explain_cuisine
+    - utter_explain_cuisine_restaurant
     - utter_ask_cuisine
 * inform{"cuisine": "italian"}
     - utter_filled_slots
@@ -82,7 +82,7 @@
 * request_restaurant
     - utter_ask_details
 * explain
-    - utter_explain_details
+    - utter_explain_details_restaurant
     - utter_ask_details
 * inform{"people": "4"}
     - utter_ask_location
@@ -104,7 +104,7 @@
 * inform{"people": "4"}
     - utter_ask_location
 * explain
-    - utter_explain_location
+    - utter_explain_location_restaurant
     - utter_ask_location
 * inform{"location": "paris"}
     - utter_ask_price
@@ -126,7 +126,7 @@
 * inform{"location": "paris"}
     - utter_ask_price
 * explain
-    - utter_explain_price
+    - utter_explain_price_restaurant
     - utter_ask_price
 * inform{"price": "expensive"}
     - utter_ask_cuisine
@@ -148,7 +148,7 @@
 * inform{"price": "expensive"}
     - utter_ask_cuisine
 * explain
-    - utter_explain_cuisine
+    - utter_explain_cuisine_restaurant
     - utter_ask_cuisine
 * inform{"cuisine": "italian"}
     - utter_filled_slots
@@ -162,7 +162,7 @@
 * request_restaurant
     - utter_ask_details
 * explain
-    - utter_explain_details
+    - utter_explain_details_restaurant
     - utter_ask_details
 * inform{"price": "expensive"}
     - utter_ask_people
@@ -184,7 +184,7 @@
 * inform{"price": "expensive"}
     - utter_ask_people
 * explain
-    - utter_explain_people
+    - utter_explain_people_restaurant
     - utter_ask_people
 * inform{"people": "4"}
     - utter_ask_cuisine
@@ -206,7 +206,7 @@
 * inform{"people": "4"}
     - utter_ask_cuisine
 * explain
-    - utter_explain_cuisine
+    - utter_explain_cuisine_restaurant
     - utter_ask_cuisine
 * inform{"cuisine": "italian"}
     - utter_ask_location
@@ -228,7 +228,7 @@
 * inform{"cuisine": "italian"}
     - utter_ask_location
 * explain
-    - utter_explain_location
+    - utter_explain_location_restaurant
     - utter_ask_location
 * inform{"location": "paris"}
     - utter_filled_slots
@@ -242,7 +242,7 @@
 * request_restaurant
     - utter_ask_details
 * explain
-    - utter_explain_details
+    - utter_explain_details_restaurant
     - utter_ask_details
 * inform{"cuisine": "italian"}
     - utter_ask_price
@@ -264,7 +264,7 @@
 * inform{"cuisine": "italian"}
     - utter_ask_price
 * explain
-    - utter_explain_price
+    - utter_explain_price_restaurant
     - utter_ask_price
 * inform{"price": "expensive"}
     - utter_ask_location
@@ -286,7 +286,7 @@
 * inform{"price": "expensive"}
     - utter_ask_location
 * explain
-    - utter_explain_location
+    - utter_explain_location_restaurant
     - utter_ask_location
 * inform{"location": "paris"}
     - utter_ask_people
@@ -308,7 +308,7 @@
 * inform{"location": "paris"}
     - utter_ask_people
 * explain
-    - utter_explain_people
+    - utter_explain_people_restaurant
     - utter_ask_people
 * inform{"people": "4"}
     - utter_filled_slots
