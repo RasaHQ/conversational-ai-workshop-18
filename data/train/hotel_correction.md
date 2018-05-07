@@ -442,7 +442,6 @@
     - utter_correct_people
     - action_search_hotel
     - slot{"hotel": "hotel"}
-    - utter_chitchat
     - utter_suggest_hotel
 * affirm
     - utter_happy

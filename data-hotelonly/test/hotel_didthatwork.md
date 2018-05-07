@@ -290,7 +290,7 @@
 * inform{"price": "expensive"}
     - utter_ask_people
 * did_that_work
-    - utter_worked
+    - utter_more_info
     - utter_ask_people
 * inform{"people": "4"}
     - utter_ask_startdate
