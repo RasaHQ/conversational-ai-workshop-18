@@ -4,7 +4,7 @@
 * inform{"location": "paris"}
     - utter_ask_people
 * correct{"location": "rome"}
-    - utter_correct_location
+    - utter_correct_location_restaurant
     - utter_ask_people
 * inform{"people": "4"}
     - utter_ask_price
@@ -26,7 +26,7 @@
 * inform{"people": "4"}
     - utter_ask_price
 * correct{"people": "3"}
-    - utter_correct_people
+    - utter_correct_people_restaurant
     - utter_ask_price
 * inform{"price": "expensive"}
     - utter_ask_cuisine
@@ -48,7 +48,7 @@
 * inform{"price": "expensive"}
     - utter_ask_cuisine
 * correct{"price": "cheap"}
-    - utter_correct_price
+    - utter_correct_price_restaurant
     - utter_ask_cuisine
 * inform{"cuisine": "italian"}
     - utter_filled_slots
@@ -73,7 +73,7 @@
     - slot{"restaurant": "restaurant"}
     - utter_suggest_restaurant
 * correct{"cuisine": "french"}
-    - utter_correct_cuisine
+    - utter_correct_cuisine_restaurant
     - action_search_restaurant
     - slot{"restaurant": "restaurant"}
     - utter_suggest_restaurant
@@ -86,7 +86,7 @@
 * inform{"people": "4"}
     - utter_ask_location
 * correct{"people": "3"}
-    - utter_correct_people
+    - utter_correct_people_restaurant
     - utter_ask_location
 * inform{"location": "paris"}
     - utter_ask_price
@@ -108,7 +108,7 @@
 * inform{"location": "paris"}
     - utter_ask_price
 * correct{"location": "rome"}
-    - utter_correct_location
+    - utter_correct_location_restaurant
     - utter_ask_price
 * inform{"price": "expensive"}
     - utter_ask_cuisine
@@ -130,7 +130,7 @@
 * inform{"price": "expensive"}
     - utter_ask_cuisine
 * correct{"price": "cheap"}
-    - utter_correct_price
+    - utter_correct_price_restaurant
     - utter_ask_cuisine
 * inform{"cuisine": "italian"}
     - utter_filled_slots
@@ -155,7 +155,7 @@
     - slot{"restaurant": "restaurant"}
     - utter_suggest_restaurant
 * correct{"cuisine": "french"}
-    - utter_correct_cuisine
+    - utter_correct_cuisine_restaurant
     - action_search_restaurant
     - slot{"restaurant": "restaurant"}
     - utter_suggest_restaurant
@@ -168,7 +168,7 @@
 * inform{"price": "expensive"}
     - utter_ask_people
 * correct{"price": "cheap"}
-    - utter_correct_price
+    - utter_correct_price_restaurant
     - utter_ask_people
 * inform{"people": "4"}
     - utter_ask_cuisine
@@ -190,7 +190,7 @@
 * inform{"people": "4"}
     - utter_ask_cuisine
 * correct{"people": "5"}
-    - utter_correct_people
+    - utter_correct_people_restaurant
     - utter_ask_cuisine
 * inform{"cuisine": "italian"}
     - utter_ask_location
@@ -212,7 +212,7 @@
 * inform{"cuisine": "italian"}
     - utter_ask_location
 * correct{"cuisine": "french"}
-    - utter_correct_cuisine
+    - utter_correct_cuisine_restaurant
     - utter_ask_location
 * inform{"location": "paris"}
     - utter_filled_slots
@@ -237,7 +237,7 @@
     - slot{"restaurant": "restaurant"}
     - utter_suggest_restaurant
 * correct{"location": "rome"}
-    - utter_correct_location
+    - utter_correct_location_restaurant
     - action_search_restaurant
     - slot{"restaurant": "restaurant"}
     - utter_suggest_restaurant
@@ -250,7 +250,7 @@
 * inform{"cuisine": "italian"}
     - utter_ask_price
 * correct{"cuisine": "french"}
-    - utter_correct_cuisine
+    - utter_correct_cuisine_restaurant
     - utter_ask_price
 * inform{"price": "expensive"}
     - utter_ask_location
@@ -272,7 +272,7 @@
 * inform{"price": "expensive"}
     - utter_ask_location
 * correct{"price": "cheap"}
-    - utter_correct_price
+    - utter_correct_price_restaurant
     - utter_ask_location
 * inform{"location": "paris"}
     - utter_ask_people
@@ -294,7 +294,7 @@
 * inform{"location": "paris"}
     - utter_ask_people
 * correct{"location": "rome"}
-    - utter_correct_location
+    - utter_correct_location_restaurant
     - utter_ask_people
 * inform{"people": "4"}
     - utter_filled_slots
@@ -319,7 +319,7 @@
     - slot{"restaurant": "restaurant"}
     - utter_suggest_restaurant
 * correct{"people": "5"}
-    - utter_correct_people
+    - utter_correct_people_restaurant
     - action_search_restaurant
     - slot{"restaurant": "restaurant"}
     - utter_suggest_restaurant
