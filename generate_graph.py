@@ -49,6 +49,7 @@ def create_argument_parser():
 if __name__ == '__main__':
     # configure_logging()
     # Running as standalone python application
+    logging.basicConfig(level="DEBUG")
     from collections import defaultdict
     from rasa_core.training.dsl import StoryFileReader
     from rasa_core.domain import TemplateDomain
@@ -64,13 +65,15 @@ if __name__ == '__main__':
     while count < 3:
         correct_keras = []
         correct_embed = []
+        correct_embed_noattn = []
         for i in percentages:
             train_domain_policy(cmdline_args.data,
                                 starspace=True,
                                 exclusion_file=cmdline_args.exclude,
                                 exclusion_percentage=i,
                                 epoch_no=cmdline_args.epochs,
-                                embed_dim=20
+                                embed_dim=20,
+                                output_path='models/dialogue_embed'
                                 )
 
             no = run_story_evaluation(cmdline_args.stories,
@@ -78,17 +81,34 @@ if __name__ == '__main__':
 
             correct_embed.append(no)
 
-            # train_domain_policy(cmdline_args.data,
-            #                     starspace=False,
-            #                     exclusion_file=cmdline_args.exclude,
-            #                     exclusion_percentage=i
-            #                     )
-            #
-            # no = run_story_evaluation(cmdline_args.stories,
-            #                           'models/dialogue_keras')
-            # correct_keras.append(no)
+            train_domain_policy(cmdline_args.data,
+                                starspace=True,
+                                exclusion_file=cmdline_args.exclude,
+                                exclusion_percentage=i,
+                                epoch_no=cmdline_args.epochs,
+                                embed_dim=20,
+                                droprate_mem=1.0,
+                                output_path='models/dialogue_embed_noattn'
+                                )
+
+            no = run_story_evaluation(cmdline_args.stories,
+                                      'models/dialogue_embed_noattn')
+
+            correct_embed_noattn.append(no)
+
+            train_domain_policy(cmdline_args.data,
+                                starspace=False,
+                                exclusion_file=cmdline_args.exclude,
+                                exclusion_percentage=i,
+                                output_path='models/dialogue_keras'
+                                )
+
+            no = run_story_evaluation(cmdline_args.stories,
+                                      'models/dialogue_keras')
+            correct_keras.append(no)
         num_correct['keras'].append(correct_keras)
         num_correct['embed'].append(correct_embed)
+        num_correct['embed_noattn'].append(correct_embed_noattn)
         count += 1
     percentages = [100-x for x in percentages]
 
