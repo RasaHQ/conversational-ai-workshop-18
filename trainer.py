@@ -21,8 +21,7 @@ def train_domain_policy(story_filename,
                         exclusion_percentage=None,
                         starspace=True,
                         epoch_no=2000,
-                        embed_dim=10,
-                        droprate_mem=0.3):
+                        embed_dim=10):
     """Trains a new deterministic domain policy using the stories
     (json format) in `story_filename`."""
     if starspace:
@@ -49,8 +48,7 @@ def train_domain_policy(story_filename,
                 rnn_size=64,
                 epochs=epochs,
                 embed_dim=embed_dim,
-                droprate_mem=droprate_mem,
-                embed_noise=0.0)
+                use_attention=True)
 
     agent.persist(model_path=output_path)
 
