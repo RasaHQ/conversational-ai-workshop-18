@@ -26,7 +26,6 @@
 ## hotel explain 1.2
 * request_hotel
     - utter_ask_details
-    - utter_ask_details
 * inform{"location": "paris"}
     - utter_ask_people
 * explain
@@ -51,7 +50,6 @@
 
 ## hotel explain 1.3
 * request_hotel
-    - utter_ask_details
     - utter_ask_details
 * inform{"location": "paris"}
     - utter_ask_people
@@ -78,7 +76,6 @@
 ## hotel explain 1.4
 * request_hotel
     - utter_ask_details
-    - utter_ask_details
 * inform{"location": "paris"}
     - utter_ask_people
 * explain
@@ -103,7 +100,6 @@
 
 ## hotel explain 1.5
 * request_hotel
-    - utter_ask_details
     - utter_ask_details
 * inform{"location": "paris"}
     - utter_ask_people
@@ -130,7 +126,6 @@
 ## hotel explain 1.6
 * request_hotel
     - utter_ask_details
-    - utter_ask_details
 * inform{"location": "paris"}
     - utter_ask_people
 * inform{"people": "4"}
@@ -155,7 +150,6 @@
 
 ## hotel explain 1.7
 * request_hotel
-    - utter_ask_details
     - utter_ask_details
 * chitchat
     - utter_chitchat
@@ -185,7 +179,6 @@
 ## hotel explain 1.8
 * request_hotel
     - utter_ask_details
-    - utter_ask_details
 * chitchat
     - utter_chitchat
     - utter_ask_details
@@ -214,7 +207,6 @@
 ## hotel explain 1.9
 * request_hotel
     - utter_ask_details
-    - utter_ask_details
 * chitchat
     - utter_chitchat
     - utter_ask_details
@@ -239,7 +231,6 @@
 
 ## hotel explain 1.10
 * request_hotel
-    - utter_ask_details
     - utter_ask_details
 * chitchat
     - utter_chitchat
@@ -297,7 +288,6 @@
 ## hotel didthatwork 1.2
 * request_hotel
     - utter_ask_details
-    - utter_ask_details
 * inform{"location": "paris"}
     - utter_ask_people
 * did_that_work
@@ -322,7 +312,6 @@
 
 ## hotel didthatwork 1.3
 * request_hotel
-    - utter_ask_details
     - utter_ask_details
 * inform{"location": "paris"}
     - utter_ask_people
@@ -349,7 +338,6 @@
 ## hotel didthatwork 1.4
 * request_hotel
     - utter_ask_details
-    - utter_ask_details
 * inform{"location": "paris"}
     - utter_ask_people
 * explain
@@ -374,7 +362,6 @@
 
 ## hotel didthatwork 1.5
 * request_hotel
-    - utter_ask_details
     - utter_ask_details
 * inform{"location": "paris"}
     - utter_ask_people
@@ -404,7 +391,6 @@
 ## hotel didthatwork 1.6
 * request_hotel
     - utter_ask_details
-    - utter_ask_details
 * inform{"location": "paris"}
     - utter_ask_people
 * did_that_work
@@ -432,7 +418,6 @@
 
 ## hotel didthatwork 1.7
 * request_hotel
-    - utter_ask_details
     - utter_ask_details
 * did_that_work
     - utter_more_info
@@ -462,7 +447,6 @@
 ## hotel didthatwork 1.8
 * request_hotel
     - utter_ask_details
-    - utter_ask_details
 * chitchat
     - utter_chitchat
     - utter_ask_details
@@ -491,7 +475,6 @@
 ## hotel didthatwork 1.9
 * request_hotel
     - utter_ask_details
-    - utter_ask_details
 * chitchat
     - utter_chitchat
     - utter_ask_details
@@ -519,7 +502,6 @@
 
 ## hotel didthatwork 1.10
 * request_hotel
-    - utter_ask_details
     - utter_ask_details
 * did_that_work
     - utter_more_info
