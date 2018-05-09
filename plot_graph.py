@@ -1,82 +1,107 @@
 import numpy as np
 import matplotlib.pyplot as plt
+# import seaborn as sns
+# import pandas as pd
+
+
+import pickle
 
 # restaurant present
-# chitchat = {'no_of_stories': [30.0, 29.0, 23.0, 15.0, 9.0, 3.0, 1.0, 0.0],
-#             'embed': [[30, 30, 29, 28, 24, 13, 15, 0], [30, 30, 29, 29, 22, 14, 9, 4], [30, 30, 29, 25, 25, 16, 11, 8]],
-#             'keras': [[30, 26, 25, 21, 21, 7, 4, 0], [28, 28, 28, 18, 22, 9, 8, 1], [30, 30, 28, 23, 18, 8, 5, 0]]}
+chitchat = pickle.load(open('hotel_chitchat.p', 'rb'))
 
-chitchat = {'no_of_stories': [9.0, 3.0, 2.0, 0.0],
-            'embed': [[26, 19, 13, 6], [24, 18, 11, 0], [27, 16, 21, 8]],
-            'keras': [[18, 9, 4, 0], [18, 8, 3, 0], [20, 9, 9, 0]]}
+# latest, sparse attention
 
-# restaurant not present
-# chitchat = {u'no_of_stories': [30.0, 29.0, 23.0, 15.0, 9.0, 3.0, 1.0, 0.0], u'embed': [[30, 29, 26,
-#  23, 18, 5, 2, 0], [30, 28, 27, 21, 19, 4, 2, 0], [30, 29, 27, 21, 17, 4, 2, 0]], u'keras': [[30, 28, 26, 20, 16, 4
-# , 2, 0], [30, 29, 26, 20, 15, 4, 2, 0], [30, 29, 26, 20, 15, 4, 2, 0]]}
+chitchat = pickle.load(open('experiments_0505/hotel_chitchat.p', 'rb'))
 
-# # restaurant present
-# correction = {'no_of_stories': [8.0, 3.0, 1.0, 0.0],
-#               'embed': [[0, 2, 2, 0], [4, 3, 1, 0], [3, 5, 7, 0]],
-#               'keras': [[11, 4, 3, 0], [11, 5, 3, 0], [11, 6, 3, 0]]}
-
-correction = {'no_of_stories': [8.0, 3.0, 1.0, 0.0],
-             'embed': [[8, 4, 3, 2], [10, 5, 3, 0], [6, 5, 1, 0]],
-             'keras': [[12, 4, 3, 0], [11, 3, 3, 0], [11, 4, 3, 0]]}
+# new data
+chitchat = pickle.load(open('experiments_0805/hotel_chitchat.p', 'rb'))
 
 # restaurant not present
-# correction = {'no_of_stories': [8.0, 3.0, 1.0, 0.0],
-#               'embed': [[5, 1, 1, 0], [4, 1, 0, 0], [3, 0, 0, 0]],
-#               'keras': [[9, 2, 1, 0], [9, 2, 1, 0], [9, 2, 1, 0]]}
+chitchat_no = pickle.load(open('hotel_noresto_chitchat.p', 'rb'))
 
+# restaurant present epochs 4000, embed dim 20
+
+
+correction = {'no_of_stories': [25.0, 24.0, 19.0, 13.0, 8.0, 3.0, 1.0, 0.0],
+              'embed': [[24, 24, 23, 17, 16, 7, 8, 6], [24, 24, 22, 18, 16, 7, 8, 5], [24, 24, 23, 19, 17, 9, 7, 9]],
+              'keras': [[23, 24, 18, 14, 10, 4, 3, 0], [22, 21, 18, 14, 11, 4, 3, 0], [24, 21, 19, 14, 11, 4, 3, 0]]}
+
+# latest, sparse attention
+correction = pickle.load(open('experiments_0505/hotel_correction.p', 'rb'))
+
+# new data
+correction = pickle.load(open('experiments_0805/hotel_correction.p', 'rb'))
 # restaurant present
-# didthatwork = {'no_of_stories': [9.0, 3.0, 2.0, 0.0],
-#                'embed': [[26, 18, 7, 1], [27, 22, 13, 12], [24, 18, 9, 4]],
-#                'keras': [[20, 8, 3, 0], [17, 7, 3, 0], [20, 6, 5, 0]]}
 
-didthatwork = {'no_of_stories': [9.0, 3.0, 2.0, 0.0],
-               'embed': [[28, 16, 17, 14], [22, 16, 18, 8], [24, 17, 14, 9]],
-               'keras': [[22, 9, 8, 0], [19, 7, 9, 0], [20, 9, 4, 1]]}
+didthatwork = pickle.load(open('hotel_didthatwork.p', 'rb'))
 
-# restaurant not present
-# didthatwork = {'no_of_stories': [9.0, 3.0, 2.0, 0.0],
-#                'embed': [[18, 4, 2, 0], [18, 4, 2, 0], [17, 4, 2, 0]],
-#                'keras': [[16, 4, 2, 0], [17, 4, 2, 0], [15, 4, 2, 0]]}
+# latest, sparse attention
+didthatwork = pickle.load(open('experiments_0505/hotel_didthatwork.p', 'rb'))
 
-
-# restaurant present
-# explain = {'no_of_stories': [3.0, 1.0, 1.0, 0.0],
-#            'embed': [[8, 5, 9, 0], [8, 8, 10, 0], [8, 9, 13, 4]],
-#            'keras': [[6, 4, 0, 0], [8, 2, 2, 0], [7, 6, 1, 0]]}
-explain = {'no_of_stories': [3.0, 1.0, 1.0, 0.0],
-           'embed': [[13, 10, 8, 5], [11, 11, 8, 7], [9, 5, 8, 3]],
-           'keras': [[5, 4, 3, 0], [4, 8, 5, 2], [6, 7, 9, 1]]}
-
+# new data
+didthatwork = pickle.load(open('experiments_0805/hotel_didthatwork.p', 'rb'))
 
 # restaurant not present
 
-# explain = {'no_of_stories': [3.0, 1.0, 1.0, 0.0],
-#            'embed': [[4, 5, 5, 0], [4, 1, 4, 0], [5, 5, 5, 0]],
-#            'keras': [[2, 0, 0, 0], [2, 0, 0, 0], [2, 0, 0, 0]]}
+didthatwork_no = pickle.load(open('hotel_noresto_didthatwork.p', 'rb'))
 
-# percentages = [0, 5, 25, 50, 70, 90, 97, 100]
-percentages = [70, 90, 95, 100]
-percentages = [100-x for x in percentages]
-memo = [x/100.0 for x in percentages]
+# restaurant present 4000 epochs, 20 embed dim
 
-embed = np.mean(chitchat['embed'], axis=0)
+explain = {'no_of_stories': [25.0, 24.0, 19.0, 13.0, 8.0, 3.0, 1.0, 0.0],
+           'embed': [[25, 25, 24, 19, 17, 9, 10, 9], [25, 25, 23, 21, 20, 11, 10, 10], [25, 25, 23, 19, 18, 10, 12, 11]],
+           'keras': [[25, 25, 20, 15, 13, 5, 5, 0], [25, 22, 20, 15, 13, 4, 6, 0], [25, 22, 22, 14, 14, 3, 6, 1]]}
+
+# latest, sparse attention
+explain = pickle.load(open('experiments_0505/hotel_explain.p', 'rb'))
+
+# new data
+explain = pickle.load(open('experiments_0805/hotel_explain.p', 'rb'))
+
+# restaurant not present
+
+
+explain_no = pickle.load(open('hotel_noresto_explain.p', 'rb'))
+
+
+# percentages = [0, 5, 25, 50, 70, 90, 95, 100]
+# percentages = [70, 90, 95, 100]
+# percentages = [100-x for x in percentages]
+memo = [x/30.0 for x in didthatwork_no['no_of_stories']]
+
+
+embed = np.mean(didthatwork_no['embed'], axis=0)
+embed_std = np.std(didthatwork_no['embed'], axis=0)
+
 embed = [x/30.0 for x in embed]
-keras = np.mean(chitchat['keras'], axis=0)
-keras = [x/30.0 for x in keras]
-print(embed)
 
-plt.plot(percentages, keras, label='keras', marker='.')
-plt.plot(percentages, embed, label='embed', marker='.')
-plt.plot(percentages, memo, '--', label='memoization')
-plt.xlabel('percentage of data present')
+embed_std = [x/30.0 for x in embed_std]
+
+# embed_noattn = np.mean(didthatwork_no['embed_noattn'], axis=0)
+# embed_noattn_std = np.std(didthatwork_no['embed_noattn'], axis=0)
+#
+# embed_noattn = [x/25.0 for x in embed_noattn]
+#
+# embed_noattn_std = [x/25.0 for x in embed_noattn_std]
+
+
+keras = np.mean(didthatwork_no['keras'], axis=0)
+keras = [x/30.0 for x in keras]
+keras_std = np.std(didthatwork_no['keras'],axis=0)
+keras_std = [x/30.0 for x in keras_std]
+# print(embed)
+
+plt.plot(didthatwork_no['no_of_stories'], keras, label='keras', marker='.', color='#6b2def')
+plt.fill_between(didthatwork_no['no_of_stories'], [x-y for x,y in zip(keras,keras_std)], [x+y for x,y in zip(keras,keras_std)], color='#6b2def', alpha=0.2)
+plt.plot(didthatwork_no['no_of_stories'], embed, label='embed', marker='.', color='#f22e4e')
+plt.fill_between(didthatwork_no['no_of_stories'], [x-y for x,y in zip(embed,embed_std)], [x+y for x,y in zip(embed,embed_std)], color='#f22e4e', alpha=0.2)
+# plt.plot(didthatwork_no['no_of_stories'], embed_noattn, label='embed (no attention)', marker='.', color='#42f48c')
+# plt.fill_between(didthatwork_no['no_of_stories'], [x-y for x,y in zip(embed_noattn,embed_noattn_std)], [x+y for x,y in zip(embed_noattn,embed_noattn_std)], color='#42f48c', alpha=0.2)
+plt.plot(didthatwork_no['no_of_stories'], memo, '--', label='memoization', color='#727272')
+plt.xlabel('number of stories present')
 plt.ylabel('accuracy')
-plt.xlim([0, 30])
-plt.ylim([0, 0.95])
+plt.xlim([0.0, 30.0])
+plt.ylim([0, 1.02])
 
 plt.legend(loc=4)
+plt.savefig('graphs/newest/didthatwork_no.pdf', format='pdf')
 plt.show()

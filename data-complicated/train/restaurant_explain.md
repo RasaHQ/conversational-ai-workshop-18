@@ -409,7 +409,7 @@
     - utter_ask_location
 * explain
     - utter_explain_location_restaurant
-    - utter_ask_restaurant
+    - utter_ask_location
 * inform{"location": "paris", "cuisine": "italian"}
     - utter_filled_slots
     - action_search_restaurant
