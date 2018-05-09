@@ -2,12 +2,12 @@
 * request_hotel
     - utter_ask_details
 * explain
-    - utter_explain_details
+    - utter_explain_details_hotel
     - utter_ask_details
 * inform{"location": "paris"}
     - utter_ask_people
 * explain
-    - utter_explain_people
+    - utter_explain_people_hotel
     - utter_ask_people
 * inform{"people": "4"}
     - utter_ask_price
@@ -29,12 +29,12 @@
 * inform{"location": "paris"}
     - utter_ask_people
 * explain
-    - utter_explain_people
+    - utter_explain_people_hotel
     - utter_ask_people
 * inform{"people": "4"}
     - utter_ask_price
 * explain
-    - utter_explain_price
+    - utter_explain_price_hotel
     - utter_ask_price
 * inform{"price": "expensive"}
     - utter_ask_startdate
@@ -54,14 +54,14 @@
 * inform{"location": "paris"}
     - utter_ask_people
 * explain
-    - utter_explain_people
+    - utter_explain_people_hotel
     - utter_ask_people
 * inform{"people": "4"}
     - utter_ask_price
 * inform{"price": "expensive"}
     - utter_ask_startdate
 * explain
-    - utter_explain_startdate
+    - utter_explain_startdate_hotel
     - utter_ask_startdate
 * inform{"startdate": "10.03.2018"}
     - utter_ask_enddate
@@ -79,7 +79,7 @@
 * inform{"location": "paris"}
     - utter_ask_people
 * explain
-    - utter_explain_people
+    - utter_explain_people_hotel
     - utter_ask_people
 * inform{"people": "4"}
     - utter_ask_price
@@ -88,7 +88,7 @@
 * inform{"startdate": "10.03.2018"}
     - utter_ask_enddate
 * explain
-    - utter_explain_enddate
+    - utter_explain_enddate_hotel
     - utter_ask_enddate
 * inform{"enddate": "10.03.2018"}
     - utter_filled_slots
@@ -106,14 +106,14 @@
 * inform{"people": "4"}
     - utter_ask_price
 * explain
-    - utter_explain_price
+    - utter_explain_price_hotel
     - utter_ask_price
 * inform{"price": "expensive"}
     - utter_ask_startdate
 * inform{"startdate": "10.03.2018"}
     - utter_ask_enddate
 * explain
-    - utter_explain_enddate
+    - utter_explain_enddate_hotel
     - utter_ask_enddate
 * inform{"enddate": "10.03.2018"}
     - utter_filled_slots
@@ -133,12 +133,12 @@
 * inform{"price": "expensive"}
     - utter_ask_startdate
 * explain
-    - utter_explain_startdate
+    - utter_explain_startdate_hotel
     - utter_ask_startdate
 * inform{"startdate": "10.03.2018"}
     - utter_ask_enddate
 * explain
-    - utter_explain_enddate
+    - utter_explain_enddate_hotel
     - utter_ask_enddate
 * inform{"enddate": "10.03.2018"}
     - utter_filled_slots
@@ -161,12 +161,12 @@
 * inform{"price": "expensive"}
     - utter_ask_startdate
 * explain
-    - utter_explain_startdate
+    - utter_explain_startdate_hotel
     - utter_ask_startdate
 * inform{"startdate": "10.03.2018"}
     - utter_ask_enddate
 * explain
-    - utter_explain_enddate
+    - utter_explain_enddate_hotel
     - utter_ask_enddate
 * inform{"enddate": "10.03.2018"}
     - utter_filled_slots
@@ -194,7 +194,7 @@
 * inform{"startdate": "10.03.2018"}
     - utter_ask_enddate
 * explain
-    - utter_explain_enddate
+    - utter_explain_enddate_hotel
     - utter_ask_enddate
 * inform{"enddate": "10.03.2018"}
     - utter_filled_slots
@@ -265,14 +265,14 @@
 * inform{"people": "4"}
     - utter_ask_location
 * did_that_work
-    - utter_more_info
+    - utter_more_info_hotel
     - utter_ask_location
 * inform{"location": "paris"}
     - utter_ask_price
 * inform{"price": "expensive"}
     - utter_ask_startdate
 * did_that_work
-    - utter_more_info
+    - utter_more_info_hotel
     - utter_ask_startdate
 * inform{"startdate": "10.03.2018"}
     - utter_ask_enddate
@@ -291,12 +291,12 @@
 * inform{"location": "paris"}
     - utter_ask_people
 * did_that_work
-    - utter_more_info
+    - utter_more_info_hotel
     - utter_ask_people
 * inform{"people": "4"}
     - utter_ask_price
 * explain
-    - utter_explain_price
+    - utter_explain_price_hotel
     - utter_ask_price
 * inform{"price": "expensive"}
     - utter_ask_startdate
@@ -316,7 +316,7 @@
 * inform{"location": "paris"}
     - utter_ask_people
 * did_that_work
-    - utter_more_info
+    - utter_more_info_hotel
     - utter_ask_people
 * inform{"people": "4"}
     - utter_ask_price
@@ -341,7 +341,7 @@
 * inform{"location": "paris"}
     - utter_ask_people
 * explain
-    - utter_explain_people
+    - utter_explain_people_hotel
     - utter_ask_people
 * inform{"people": "4"}
     - utter_ask_price
@@ -350,7 +350,7 @@
 * inform{"startdate": "10.03.2018"}
     - utter_ask_enddate
 * did_that_work
-    - utter_more_info
+    - utter_more_info_hotel
     - utter_ask_enddate
 * inform{"enddate": "10.03.2018"}
     - utter_filled_slots
@@ -375,7 +375,7 @@
 * inform{"startdate": "10.03.2018"}
     - utter_ask_enddate
 * did_that_work
-    - utter_more_info
+    - utter_more_info_hotel
     - utter_ask_enddate
 * inform{"enddate": "10.03.2018"}
     - utter_filled_slots
@@ -383,7 +383,7 @@
     - slot{"hotel": "hotel"}
     - utter_suggest_hotel
 * did_that_work
-    - utter_worked
+    - utter_worked_hotel
     - utter_suggest_hotel
 * affirm
     - utter_happy
@@ -394,14 +394,14 @@
 * inform{"location": "paris"}
     - utter_ask_people
 * did_that_work
-    - utter_more_info
+    - utter_more_info_hotel
     - utter_ask_people
 * inform{"people": "4"}
     - utter_ask_price
 * inform{"price": "expensive"}
     - utter_ask_startdate
 * explain
-    - utter_explain_startdate
+    - utter_explain_startdate_hotel
     - utter_ask_startdate
 * inform{"startdate": "10.03.2018"}
     - utter_ask_enddate
@@ -420,7 +420,7 @@
 * request_hotel
     - utter_ask_details
 * did_that_work
-    - utter_more_info
+    - utter_more_info_hotel
     - utter_ask_details
 * inform{"location": "paris"}
     - utter_ask_people
@@ -429,7 +429,7 @@
 * inform{"price": "expensive"}
     - utter_ask_startdate
 * did_that_work
-    - utter_more_info
+    - utter_more_info_hotel
     - utter_ask_startdate
 * inform{"startdate": "10.03.2018"}
     - utter_ask_enddate
@@ -439,7 +439,7 @@
     - slot{"hotel": "hotel"}
     - utter_suggest_hotel
 * did_that_work
-    - utter_worked
+    - utter_worked_hotel
     - utter_suggest_hotel
 * affirm
     - utter_happy
@@ -462,7 +462,7 @@
 * inform{"startdate": "10.03.2018"}
     - utter_ask_enddate
 * did_that_work
-    - utter_more_info
+    - utter_more_info_hotel
     - utter_ask_enddate
 * inform{"enddate": "10.03.2018"}
     - utter_filled_slots
@@ -481,7 +481,7 @@
 * inform{"location": "paris"}
     - utter_ask_people
 * explain
-    - utter_explain_people
+    - utter_explain_people_hotel
     - utter_ask_people
 * inform{"people": "4"}
     - utter_ask_price
@@ -495,7 +495,7 @@
     - slot{"hotel": "hotel"}
     - utter_suggest_hotel
 * did_that_work
-    - utter_worked
+    - utter_worked_hotel
     - utter_suggest_hotel
 * affirm
     - utter_happy
@@ -504,17 +504,17 @@
 * request_hotel
     - utter_ask_details
 * did_that_work
-    - utter_more_info
+    - utter_more_info_hotel
     - utter_ask_details
 * inform{"location": "paris"}
     - utter_ask_people
 * did_that_work
-    - utter_more_info
+    - utter_more_info_hotel
     - utter_ask_people
 * inform{"people": "4"}
     - utter_ask_price
 * did_that_work
-    - utter_more_info
+    - utter_more_info_hotel
     - utter_ask_price
 * inform{"price": "expensive"}
     - utter_ask_startdate
@@ -538,12 +538,12 @@
 * inform{"location": "paris"}
     - utter_ask_price
 * explain
-    - utter_explain_price
+    - utter_explain_price_hotel
     - utter_ask_price
 * inform{"price": "expensive"}
     - utter_ask_startdate
 * explain
-    - utter_explain_startdate
+    - utter_explain_startdate_hotel
     - utter_ask_startdate
 * inform{"startdate": "10.03.2018"}
     - utter_ask_enddate
@@ -567,15 +567,15 @@
 * inform{"location": "paris"}
     - utter_ask_price
 * explain
-    - utter_explain_price
+    - utter_explain_price_hotel
     - utter_ask_price
 * inform{"price": "expensive"}
     - utter_ask_startdate
 * explain
-    - utter_explain_startdate
+    - utter_explain_startdate_hotel
     - utter_ask_startdate
 * explain
-    - utter_explain_startdate
+    - utter_explain_startdate_hotel
     - utter_ask_startdate
 * inform{"startdate": "10.03.2018"}
     - utter_ask_enddate
@@ -596,7 +596,7 @@
 * inform{"people": "4"}
     - utter_ask_startdate
 * explain
-    - utter_explain_startdate
+    - utter_explain_startdate_hotel
     - utter_ask_startdate
 * inform{"startdate": "10.03.2018"}
     - utter_ask_enddate
@@ -615,14 +615,14 @@
 * request_hotel
     - utter_ask_details
 * explain
-    - utter_explain_details
+    - utter_explain_details_hotel
     - utter_ask_details
 * inform{"price": "expensive"}
     - utter_ask_people
 * inform{"people": "4"}
     - utter_ask_startdate
 * explain
-    - utter_explain_startdate
+    - utter_explain_startdate_hotel
     - utter_ask_startdate
 * inform{"startdate": "10.03.2018"}
     - utter_ask_enddate
@@ -641,14 +641,14 @@
 * request_hotel
     - utter_ask_details
 * explain
-    - utter_explain_details
+    - utter_explain_details_hotel
     - utter_ask_details
 * inform{"location": "paris", "price": "expensive", "people": "4"}
     - utter_ask_startdate
 * inform{"startdate": "10.03.2018"}
     - utter_ask_enddate
 * explain
-    - utter_explain_enddate
+    - utter_explain_enddate_hotel
     - utter_ask_enddate
 * inform{"enddate": "13.03.2018"}
     - utter_filled_slots
