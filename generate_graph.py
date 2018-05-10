@@ -9,6 +9,7 @@ import logging
 from rasa_core import utils
 
 from test_stories import run_story_evaluation
+from sim_user import evaluate_policy
 from trainer import train_domain_policy
 
 import matplotlib.pyplot as plt
@@ -41,6 +42,13 @@ def create_argument_parser():
             type=int,
             default=2000,
             help="number of epochs")
+    parser.add_argument(
+            '--eval_mode',
+            type=str,
+            default="stories",
+            choices=["stories", "simulated"],
+            help="whether to evaluate on stories or on a simulated user")
+            
 
     utils.add_logging_option_arguments(parser)
     return parser
@@ -76,8 +84,11 @@ if __name__ == '__main__':
                                 output_path='models/dialogue_embed'
                                 )
 
-            no = run_story_evaluation(cmdline_args.stories,
-                                      'models/dialogue_embed')
+            if cmdline_args.eval_mode == "simulated":
+                no = evaluate_policy('models/dialogue_embed')
+            else:
+                no = run_story_evaluation(cmdline_args.stories,
+                                          'models/dialogue_embed')
 
             correct_embed.append(no)
 
