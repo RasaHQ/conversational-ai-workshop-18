@@ -26,12 +26,11 @@ class SimulatedUser(object):
         self.state = UserState.INFORM
         self.informativeness = 1.1
         self.preferences = {
-            #"cuisine": "french",
-            "location": "paris",
-            "people": "4",
-            "start_date": "today",
-            "end_date": "tomorrow",
-            "price": "expensive"
+            "location": ["paris","london","rome"],
+            "people": ["1", "2", "4","6"],
+            "start_date": ["today", "next week", "May 25th"],
+            "end_date": ["tomorrow", "next week", "May 26th"],
+            "price": ["cheap", "mid-range", "expensive"]
         }
         self.provided = set()
         self.last_utter = None
@@ -52,8 +51,10 @@ class SimulatedUser(object):
         #print(ents)
         self.provided = self.provided.union(set(ents))
 
-        ents_str = ",".join(['"{}": "{}"'.format(k, self.preferences[k])
-                            for k in ents])
+        ents_str = ",".join([
+            '"{}": "{}"'.format(k, 
+                np.random.choice(self.preferences[k]))
+            for k in ents])
         #print(ents_str)
         return "{"+ents_str+"}"
         
@@ -124,5 +125,5 @@ def evaluate_policy(policy_model_path, num_dialogues=10):
     return n_correct
 
 
-#n = evaluate_policy("models/dialgue_all")
-#print("n correct {} ".format(n))
+n = evaluate_policy("models/dialgue_all")
+print("n correct {} ".format(n))
