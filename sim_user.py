@@ -149,5 +149,5 @@ def evaluate_policy(policy_model_path, num_dialogues=10):
     return n_correct
 
 
-n = evaluate_policy("models/dialgue_all")
-print("n correct {} ".format(n))
+#n = evaluate_policy("models/dialgue_all")
+#print("n correct {} ".format(n))
