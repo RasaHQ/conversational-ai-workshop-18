@@ -7,6 +7,7 @@ import argparse
 import logging
 
 from rasa_core import utils
+from ast import literal_eval
 
 from test_stories import run_story_evaluation
 from trainer import train_domain_policy
@@ -75,7 +76,7 @@ if __name__ == '__main__':
                                 embed_dim=20,
                                 output_path='models/dialogue_embed'
                                 )
-            for s in list(cmdline_args.stories):
+            for s in literal_eval(cmdline_args.stories):
                 no = run_story_evaluation(s, 'models/dialogue_embed')
                 correct_embed[s.split('/')[-1]].append(no)
 
@@ -86,7 +87,7 @@ if __name__ == '__main__':
                                 output_path='models/dialogue_keras'
                                 )
 
-            for s in list(cmdline_args.stories):
+            for s in literal_eval(cmdline_args.stories):
                 no = run_story_evaluation(s, 'models/dialogue_keras')
                 correct_keras[s.split('/')[-1]].append(no)
 
