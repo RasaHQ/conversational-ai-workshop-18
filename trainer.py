@@ -58,7 +58,7 @@ if __name__ == '__main__':
     train_domain_policy(story_filename="data_bAbI/train/",
                         output_path='models/dialogue_embed',
                         # exclusion_file='data/train/hotel_chitchat.md',
-                        exclusion_percentage=100,
+                        # exclusion_percentage=100,
                         embed_dim=20
                         )
     logger.info("Finished training domain policy.")
