@@ -224,7 +224,9 @@
 * correct{"people": "2"}
     - slot{"people": "2"}
     - utter_correct_people_hotel
-    - utter_ask_enddate## Generated Story -282711896088141768
+    - utter_ask_enddate
+
+## Generated Story -282711896088141768
 * request_hotel
     - utter_ask_details
 * inform{"people": "2"}
@@ -480,4 +482,19 @@
     - utter_more_info_hotel
     - utter_ask_people
 
-
+## Generated Story -1283106925127762824
+* request_hotel
+    - utter_ask_details
+* inform{"startdate": "May 25th"}
+    - slot{"startdate": "May 25th"}
+    - utter_ask_enddate
+* inform{"enddate": "tomorrow"}
+    - slot{"enddate": "tomorrow"}
+    - utter_ask_price
+* correct{"enddate": "tomorrow"}
+    - slot{"enddate": "tomorrow"}
+    - utter_correct_enddate_hotel
+    - utter_ask_price
+* did_that_work
+    - utter_more_info_hotel
+    - utter_ask_price
