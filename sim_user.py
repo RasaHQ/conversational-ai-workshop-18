@@ -158,5 +158,6 @@ def evaluate_policy(policy_model_path, num_dialogues=100):
     return n_correct
 
 
-#n = evaluate_policy("models/dialgue_all")
-#print("n correct {} ".format(n))
+if __name__ == "__main__":
+    n = evaluate_policy("models/dialgue_all")
+    print("n correct {} ".format(n))
