@@ -37,7 +37,10 @@ class SimulatedUser(object):
         self.last_system_utter = None
 
     def new_state(self):
-        self.state = np.random.choice(UserState, p=[0.8,0.05,0.05,0.05,0.05])
+        p = [0.2,0.2,0.2,0.2,0.2]
+        #p = [1.0,0.0,0.0,0.0,0.0]
+        #p = [.9,.1,0.0,0.0,0.0] # correct
+        self.state = np.random.choice(UserState, p=p)
 
     def pick_entities(self):
         # override state if none or all slots have already been provided
@@ -47,8 +50,8 @@ class SimulatedUser(object):
             self.state = UserState.INFORM
 
         if self.state == UserState.INFORM:
-            n_ent = np.random.poisson(self.informativeness - 1) + 1
             candidates = set(self.preferences.keys()) - self.provided
+            n_ent = min(np.random.poisson(self.informativeness - 1) + 1, len(candidates))
         elif self.state == UserState.CORRECT:
             n_ent = 1
             candidates = self.provided
@@ -80,7 +83,7 @@ class SimulatedUser(object):
         intent = self.last_utter["intent"]
         if intent == UserState.CHITCHAT.value:
             return action == "utter_chitchat"
-        elif intent in [UserState.INFORM.value, UserState.CORRECT.value]:
+        elif intent == UserState.INFORM.value:
             if len(self.provided) < len(self.preferences):
                 try:
                     entity = action.split("utter_ask_")[1]
@@ -89,6 +92,12 @@ class SimulatedUser(object):
                     return False
             else:
                 return action == "utter_filled_slots"
+        elif intent == UserState.CORRECT.value:
+            try:
+                entity = action.split("utter_correct_")[1].split("_hotel")[0]
+                return action == "utter_correct_{}_hotel".format(entity)
+            except:
+                return False            
         elif intent == UserState.DIDTHATWORK.value:
             if len(self.provided) < len(self.preferences):
                 return action == "utter_more_info_hotel"
@@ -139,7 +148,7 @@ def run_sim_user(agent, max_steps=8):
     return 1
 
 
-def evaluate_policy(policy_model_path, num_dialogues=10):
+def evaluate_policy(policy_model_path, num_dialogues=100):
     interpreter = RegexInterpreter()
 
     agent = Agent.load(policy_model_path, interpreter=interpreter)
@@ -149,5 +158,5 @@ def evaluate_policy(policy_model_path, num_dialogues=10):
     return n_correct
 
 
-#n = evaluate_policy("models/dialgue_all")
-#print("n correct {} ".format(n))
+n = evaluate_policy("models/dialgue_all")
+print("n correct {} ".format(n))
