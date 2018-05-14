@@ -62,10 +62,10 @@ if __name__ == '__main__':
     logging.basicConfig(level='INFO')
     percentages = [0, 5, 25, 50, 70, 90, 95, 100]
     count = 0
-    while count < 3:
-        correct_keras = []
-        correct_embed = []
-        correct_embed_noattn = []
+    while count < 1:
+        correct_keras = defaultdict(list)
+        correct_embed = defaultdict(list)
+
         for i in percentages:
             train_domain_policy(cmdline_args.data,
                                 starspace=True,
@@ -75,62 +75,30 @@ if __name__ == '__main__':
                                 embed_dim=20,
                                 output_path='models/dialogue_embed'
                                 )
+            for s in cmdline_args.stories:
+                no = run_story_evaluation(s, 'models/dialogue_embed')
+                correct_embed[s.split('/')[-1]].append(no)
 
-            no = run_story_evaluation(cmdline_args.stories,
-                                      'models/dialogue_embed')
+            train_domain_policy(cmdline_args.data,
+                                starspace=False,
+                                exclusion_file=cmdline_args.exclude,
+                                exclusion_percentage=i,
+                                output_path='models/dialogue_keras'
+                                )
 
-            correct_embed.append(no)
+            for s in cmdline_args.stories:
+                no = run_story_evaluation(s, 'models/dialogue_keras')
+                correct_keras[s.split('/')[-1]].append(no)
 
-            # train_domain_policy(cmdline_args.data,
-            #                     starspace=True,
-            #                     exclusion_file=cmdline_args.exclude,
-            #                     exclusion_percentage=i,
-            #                     epoch_no=cmdline_args.epochs,
-            #                     embed_dim=20,
-            #                     droprate_mem=1.0,
-            #                     output_path='models/dialogue_embed_noattn'
-            #                     )
-            #
-            # no = run_story_evaluation(cmdline_args.stories,
-            #                           'models/dialogue_embed_noattn')
-            #
-            # correct_embed_noattn.append(no)
-            #
-            # train_domain_policy(cmdline_args.data,
-            #                     starspace=False,
-            #                     exclusion_file=cmdline_args.exclude,
-            #                     exclusion_percentage=i,
-            #                     output_path='models/dialogue_keras'
-            #                     )
-            #
-            # no = run_story_evaluation(cmdline_args.stories,
-            #                           'models/dialogue_keras')
-            # correct_keras.append(no)
-        num_correct['keras'].append(correct_keras)
-        num_correct['embed'].append(correct_embed)
-        num_correct['embed_noattn'].append(correct_embed_noattn)
         count += 1
     percentages = [100-x for x in percentages]
 
-    memo = [x/100.0 for x in percentages]
     no_stories = len(StoryFileReader.read_from_file(cmdline_args.exclude,
                                                     TemplateDomain.load(
                                                         'domain.yml')))
-    num_correct['no_of_stories'] = [round((x/100.0) * no_stories) for x in percentages]
-    file_name = cmdline_args.exclude[:-3] + '.p'
-    pickle.dump(num_correct, open(file_name, 'wb'))
-    # num_correct['keras'] = [x/float(no_stories) for x in num_correct['keras']]
-    # num_correct['embed'] = [x/float(no_stories) for x in num_correct['embed']]
-    # plt.plot(percentages, num_correct['keras'], label='keras', marker='.')
-    # plt.plot(percentages, num_correct['embed'], label='embed', marker='.')
-    # plt.plot(percentages, memo, '--', label='memoization')
-    # plt.xlabel('percentage of data present')
-    # plt.ylabel('accuracy')
-    # plt.xlim([0, 100])
-    # plt.ylim([0, 1.05])
-    #
-    # plt.legend(loc=4)
-    # plt.show()
-    # defaultdict(<type 'list'>, {u'embed': [29, 27, 24, 20, 14, 7, 4, 0], u'keras': [29, 28, 21, 16, 14, 4, 1, 0]})
-    # print(num_correct)
+    correct_embed['no_of_stories'] = [round((x/100.0) * no_stories) for x in percentages]
+    correct_keras['no_of_stories'] = [round((x/100.0) * no_stories) for x in percentages]
+    pickle.dump(correct_embed, open('embed_results.p', 'wb'))
+    pickle.dump(correct_keras, open('embed_results.p', 'wb'))
+
     logger.info("Finished evaluation")
