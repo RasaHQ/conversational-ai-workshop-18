@@ -36,7 +36,7 @@ def train_domain_policy(story_filename,
         policies = [KerasPolicy(featurizer)]
         epochs = 400
 
-    agent = CustomAgent("domain.yml",
+    agent = CustomAgent("bAbI_domain.yml",
                         policies=policies)
     data = agent.load_data(story_filename,
                            remove_duplicates=True,
@@ -45,7 +45,7 @@ def train_domain_policy(story_filename,
                            exclusion_percentage=exclusion_percentage)
 
     agent.train(data,
-                rnn_size=64,
+                rnn_size=32,
                 epochs=epochs,
                 embed_dim=embed_dim,
                 use_attention=True)
@@ -55,8 +55,10 @@ def train_domain_policy(story_filename,
 
 if __name__ == '__main__':
     logging.basicConfig(level="DEBUG")
-    train_domain_policy(story_filename="data/train/",
-                        output_path='models/dialogue_keras',
-                        exclusion_file='data/train/restaurant_happy.md',
-                        exclusion_percentage=20)
+    train_domain_policy(story_filename="data_bAbI/train/",
+                        output_path='models/dialogue_embed',
+                        # exclusion_file='data/train/hotel_chitchat.md',
+                        exclusion_percentage=100,
+                        embed_dim=20
+                        )
     logger.info("Finished training domain policy.")

@@ -66,17 +66,17 @@ class StoryReader(StoryFileReader):
         story_steps = []
         for f in nlu_utils.list_files(resource_name):
 
-            if (f.split('_')[1] == 'happy.md' or f.split('_')[1] ==
-                    exclusion_file.split('_')[1]):
-                steps = StoryFileReader.read_from_file(f, domain, interpreter,
-                                                       template_variables)
-                if exclusion_file and exclusion_percentage != 0:
-                    if f == exclusion_file:
-                        idx = int(round(exclusion_percentage/100.0 * len(steps)))
-                        random.shuffle(steps)
-                        steps = steps[:-idx]
+            # if (f.split('_')[1] == 'happy.md' or f.split('_')[1] ==
+            #         exclusion_file.split('_')[1]):
+            steps = StoryFileReader.read_from_file(f, domain, interpreter,
+                                                   template_variables)
+            if exclusion_file and exclusion_percentage != 0:
+                if f == exclusion_file:
+                    idx = int(round(exclusion_percentage/100.0 * len(steps)))
+                    random.shuffle(steps)
+                    steps = steps[:-idx]
 
-                story_steps.extend(steps)
+            story_steps.extend(steps)
         return story_steps
 
 
