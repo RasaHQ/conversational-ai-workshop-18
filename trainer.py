@@ -33,7 +33,7 @@ def train_domain_policy(story_filename,
     else:
         featurizer = MaxHistoryTrackerFeaturizer(
                         LabelTokenizerSingleStateFeaturizer(),
-                        max_history=20)
+                        max_history=21)
         policies = [KerasPolicy(featurizer)]
         epochs = 400
         rnn_size = 64

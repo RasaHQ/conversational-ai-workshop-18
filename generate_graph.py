@@ -99,6 +99,6 @@ if __name__ == '__main__':
     correct_embed['no_of_stories'] = [round((x/100.0) * no_stories) for x in percentages]
     correct_keras['no_of_stories'] = [round((x/100.0) * no_stories) for x in percentages]
     pickle.dump(correct_embed, open('embed_results.p', 'wb'))
-    pickle.dump(correct_keras, open('embed_results.p', 'wb'))
+    pickle.dump(correct_keras, open('keras_results.p', 'wb'))
 
     logger.info("Finished evaluation")
