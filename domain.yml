@@ -1,14 +1,12 @@
 slots:
-  requested_slot:
-    type: unfeaturized
   cuisine:
-    type: unfeaturized
+    type: text
   people:
-    type: unfeaturized
+    type: text
   location:
-    type: unfeaturized
+    type: text
   price:
-    type: unfeaturized
+    type: text
   info:
     type: unfeaturized
   restaurant:
@@ -16,9 +14,9 @@ slots:
   hotel:
     type: text
   startdate:
-    type: unfeaturized
+    type: text
   enddate:
-    type: unfeaturized
+    type: text
   outdoor_seating:
     type: unfeaturized
   reservations:
