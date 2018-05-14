@@ -49,15 +49,16 @@ def train_domain_policy(story_filename,
     agent.train(data,
                 rnn_size=rnn_size,
                 epochs=epochs,
-                embed_dim=embed_dim,
-                use_attention=True)
+                embed_dim=embed_dim)
 
     agent.persist(model_path=output_path)
 
 
 if __name__ == '__main__':
     logging.basicConfig(level="DEBUG")
-    train_domain_policy(story_filename="data-complicated/train/hotel",
+    train_domain_policy(story_filename="data/train/",
+                        exclusion_file="data/train/hotel_mixed.md",
+                        exclusion_percentage=0,
                         output_path='models/dialogue_embed',
                         embed_dim=20)
     logger.info("Finished training domain policy.")
