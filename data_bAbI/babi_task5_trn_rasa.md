@@ -1,0 +1,37808 @@
+## story_02339482
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04837478
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris,people=six,price=cheap]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02278918
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,people=two,price=moderate]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02892289
+* greet
+ - action_ask_howcanhelp
+* inform[location=london,people=two,price=moderate]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04230644
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,location=london,price=expensive]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01894545
+* greet
+ - action_ask_howcanhelp
+* inform[people=two,price=cheap]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08060185
+* greet
+ - action_ask_howcanhelp
+* inform[people=two,price=expensive]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01093799
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,location=madrid,price=cheap]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04415957
+* greet
+ - action_ask_howcanhelp
+* inform[people=eight]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02655326
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,location=madrid,price=expensive]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08450117
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,people=two,price=moderate]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06802333
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,people=six,price=expensive]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00304728
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,location=london,price=expensive]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03871397
+* greet
+ - action_ask_howcanhelp
+* inform[location=madrid,people=two,price=cheap]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02202851
+* greet
+ - action_ask_howcanhelp
+* inform[people=four]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08164479
+* greet
+ - action_ask_howcanhelp
+* inform[location=rome,people=eight]
+ - action_store_slot|location,people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09064974
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris,people=four]
+ - action_store_slot|location,people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05570978
+* greet
+ - action_ask_howcanhelp
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09233068
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,people=eight,price=moderate]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01529078
+* greet
+ - action_ask_howcanhelp
+* inform[location=madrid,price=moderate]
+ - action_store_slot|location,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06690018
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02978035
+* greet
+ - action_ask_howcanhelp
+* inform[people=two,price=cheap]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07185847
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris,people=four,price=expensive]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08140677
+* greet
+ - action_ask_howcanhelp
+* inform[people=eight]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00371263
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,people=eight,price=expensive]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06642787
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,people=four,price=cheap]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00456697
+* greet
+ - action_ask_howcanhelp
+* inform[people=four,price=cheap]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09865744
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,people=four]
+ - action_store_slot|cuisine,people
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08009712
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,people=eight,price=expensive]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00014774
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,location=london,price=moderate]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03059739
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,location=london,people=four]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05810801
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,price=cheap]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04404025
+* greet
+ - action_ask_howcanhelp
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06510130
+* greet
+ - action_ask_howcanhelp
+* inform[location=london,people=two]
+ - action_store_slot|location,people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08175132
+* greet
+ - action_ask_howcanhelp
+* inform[location=london,people=eight,price=moderate]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04924882
+* greet
+ - action_ask_howcanhelp
+* inform[location=london]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08866798
+* greet
+ - action_ask_howcanhelp
+* inform[people=six]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08910828
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,location=london,price=expensive]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03182651
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,location=london,price=cheap]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01373235
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,price=cheap]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04999522
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,location=madrid]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03806792
+* greet
+ - action_ask_howcanhelp
+* inform[location=madrid,people=eight,price=cheap]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06932605
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,people=eight,price=moderate]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00725598
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,location=london]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09411772
+* greet
+ - action_ask_howcanhelp
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08470687
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,location=bombay,price=cheap]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05779616
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,location=bombay,people=two]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00924047
+* greet
+ - action_ask_howcanhelp
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05004100
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,location=paris]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05250190
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,location=madrid,people=eight]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06766783
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,price=cheap]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06089964
+* greet
+ - action_ask_howcanhelp
+* inform[location=london,price=moderate]
+ - action_store_slot|location,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02616509
+* greet
+ - action_ask_howcanhelp
+* inform[people=eight]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09155898
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,location=london,people=two]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05977470
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,location=paris,price=expensive]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03847940
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,location=rome]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08325937
+* greet
+ - action_ask_howcanhelp
+* inform[location=london,people=eight,price=expensive]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03618577
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,location=rome,people=four]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01360621
+* greet
+ - action_ask_howcanhelp
+* inform[people=two]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00340442
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,people=two,price=cheap]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06414858
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,location=madrid,people=eight]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05625560
+* greet
+ - action_ask_howcanhelp
+* inform[location=madrid,people=six]
+ - action_store_slot|location,people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07012442
+* greet
+ - action_ask_howcanhelp
+* inform[people=eight,price=expensive]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08795154
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,location=rome,people=two]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06144667
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06553819
+* greet
+ - action_ask_howcanhelp
+* inform[location=london]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01176244
+* greet
+ - action_ask_howcanhelp
+* inform[location=madrid,people=four,price=moderate]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05174247
+* greet
+ - action_ask_howcanhelp
+* inform[people=two]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03682013
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05908819
+* greet
+ - action_ask_howcanhelp
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00886946
+* greet
+ - action_ask_howcanhelp
+* inform[people=six]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08820322
+* greet
+ - action_ask_howcanhelp
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05917697
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,location=london]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01625889
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,price=moderate]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09526138
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,people=two,price=cheap]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06534070
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,location=rome,people=two]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07492254
+* greet
+ - action_ask_howcanhelp
+* inform[people=four]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08781129
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,location=bombay]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03898672
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,price=moderate]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01347970
+* greet
+ - action_ask_howcanhelp
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01895415
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,location=bombay,price=cheap]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00415816
+* greet
+ - action_ask_howcanhelp
+* inform[people=two]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05462568
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,price=moderate]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04647974
+* greet
+ - action_ask_howcanhelp
+* inform[people=eight,price=cheap]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03614290
+* greet
+ - action_ask_howcanhelp
+* inform[people=four]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04491189
+* greet
+ - action_ask_howcanhelp
+* inform[people=six]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09373957
+* greet
+ - action_ask_howcanhelp
+* inform[people=two,price=moderate]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02315466
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,location=paris]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00033859
+* greet
+ - action_ask_howcanhelp
+* inform[location=madrid,people=eight,price=cheap]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03729773
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00593837
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,people=eight]
+ - action_store_slot|cuisine,people
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02278171
+* greet
+ - action_ask_howcanhelp
+* inform[people=eight]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02668105
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,location=bombay,people=six]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06744033
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00678050
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,people=two]
+ - action_store_slot|cuisine,people
+ - action_on_it
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09005769
+* greet
+ - action_ask_howcanhelp
+* inform[location=bombay,people=four]
+ - action_store_slot|location,people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08975696
+* greet
+ - action_ask_howcanhelp
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05807624
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,price=cheap]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09005806
+* greet
+ - action_ask_howcanhelp
+* inform[location=madrid,people=eight]
+ - action_store_slot|location,people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02012141
+* greet
+ - action_ask_howcanhelp
+* inform[people=eight,price=expensive]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02372593
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris,people=four,price=cheap]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01643463
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,location=bombay,people=four]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09549542
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,people=eight,price=cheap]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00168192
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02961583
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,location=madrid,people=four]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04320143
+* greet
+ - action_ask_howcanhelp
+* inform[people=eight]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02855391
+* greet
+ - action_ask_howcanhelp
+* inform[people=four]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01944048
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris,people=four]
+ - action_store_slot|location,people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09748217
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,location=madrid]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04103784
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,people=two,price=moderate]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02683332
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,location=madrid]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06423233
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,people=four]
+ - action_store_slot|cuisine,people
+ - action_on_it
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02699394
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,price=expensive]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03790092
+* greet
+ - action_ask_howcanhelp
+* inform[location=rome,people=two,price=expensive]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02222259
+* greet
+ - action_ask_howcanhelp
+* inform[location=london]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00242791
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris,price=moderate]
+ - action_store_slot|location,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00435607
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00432149
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04766162
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris,people=four,price=cheap]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00592940
+* greet
+ - action_ask_howcanhelp
+* inform[people=four]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06990588
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04432278
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04902865
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00454446
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,location=paris,price=moderate]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06750683
+* greet
+ - action_ask_howcanhelp
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01092001
+* greet
+ - action_ask_howcanhelp
+* inform[people=four,price=expensive]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00964772
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,price=expensive]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05040218
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04509761
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08131723
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,location=madrid,price=cheap]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01078413
+* greet
+ - action_ask_howcanhelp
+* inform[people=eight]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00023590
+* greet
+ - action_ask_howcanhelp
+* inform[location=rome,people=six]
+ - action_store_slot|location,people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04863146
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,location=madrid,price=moderate]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00753517
+* greet
+ - action_ask_howcanhelp
+* inform[people=two,price=moderate]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08906925
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,people=four]
+ - action_store_slot|cuisine,people
+ - action_on_it
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04396331
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,location=london,price=expensive]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09005390
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01805569
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,price=moderate]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03604518
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,people=six,price=moderate]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07353623
+* greet
+ - action_ask_howcanhelp
+* inform[location=madrid,people=two,price=moderate]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05425211
+* greet
+ - action_ask_howcanhelp
+* inform[location=rome,people=six,price=cheap]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07250519
+* greet
+ - action_ask_howcanhelp
+* inform[location=london,people=six,price=cheap]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05457813
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,people=two,price=expensive]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02560782
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,price=cheap]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08683154
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris,people=two,price=expensive]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04981724
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,location=london]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02199988
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,location=rome]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07081147
+* greet
+ - action_ask_howcanhelp
+* inform[location=madrid,people=eight,price=expensive]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07214520
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,location=paris]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07890919
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,people=six]
+ - action_store_slot|cuisine,people
+ - action_on_it
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04384805
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,people=four]
+ - action_store_slot|cuisine,people
+ - action_on_it
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06886654
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,location=paris,price=cheap]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05014154
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02077365
+* greet
+ - action_ask_howcanhelp
+* inform[location=bombay,people=two]
+ - action_store_slot|location,people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08707149
+* greet
+ - action_ask_howcanhelp
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00778090
+* greet
+ - action_ask_howcanhelp
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08271735
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,people=six,price=moderate]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00832307
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,location=rome,people=two]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08514269
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris,people=four,price=expensive]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05374957
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,location=rome,people=eight]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07652929
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,price=cheap]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05719964
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,people=four,price=expensive]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04928057
+* greet
+ - action_ask_howcanhelp
+* inform[people=two]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04781912
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris,price=moderate]
+ - action_store_slot|location,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09341955
+* greet
+ - action_ask_howcanhelp
+* inform[location=bombay,people=six]
+ - action_store_slot|location,people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07653174
+* greet
+ - action_ask_howcanhelp
+* inform[location=rome,people=two]
+ - action_store_slot|location,people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07468201
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris,people=six,price=cheap]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09116272
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris,people=two,price=expensive]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02024576
+* greet
+ - action_ask_howcanhelp
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03143397
+* greet
+ - action_ask_howcanhelp
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07545382
+* greet
+ - action_ask_howcanhelp
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05355214
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,location=london,people=four]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06194685
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,location=london]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09797983
+* greet
+ - action_ask_howcanhelp
+* inform[people=two,price=cheap]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04276144
+* greet
+ - action_ask_howcanhelp
+* inform[people=two]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09418090
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,location=london]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08753941
+* greet
+ - action_ask_howcanhelp
+* inform[people=four,price=cheap]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03814587
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,location=london,people=six]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00809084
+* greet
+ - action_ask_howcanhelp
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06990656
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02979463
+* greet
+ - action_ask_howcanhelp
+* inform[location=rome,people=eight,price=moderate]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03929685
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,price=moderate]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04132336
+* greet
+ - action_ask_howcanhelp
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01952448
+* greet
+ - action_ask_howcanhelp
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07799499
+* greet
+ - action_ask_howcanhelp
+* inform[people=four]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07920317
+* greet
+ - action_ask_howcanhelp
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04118683
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,people=six,price=expensive]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03886465
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,people=four,price=expensive]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08209474
+* greet
+ - action_ask_howcanhelp
+* inform[location=rome,price=expensive]
+ - action_store_slot|location,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07574999
+* greet
+ - action_ask_howcanhelp
+* inform[location=london,price=expensive]
+ - action_store_slot|location,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00611305
+* greet
+ - action_ask_howcanhelp
+* inform[location=rome,people=eight,price=expensive]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05107909
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,location=madrid]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07060510
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02433227
+* greet
+ - action_ask_howcanhelp
+* inform[people=two]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05391035
+* greet
+ - action_ask_howcanhelp
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07815417
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,people=four,price=moderate]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05422745
+* greet
+ - action_ask_howcanhelp
+* inform[location=london,people=four]
+ - action_store_slot|location,people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09583455
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,people=two,price=cheap]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02648861
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris,people=eight]
+ - action_store_slot|location,people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09341035
+* greet
+ - action_ask_howcanhelp
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02263144
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,people=four]
+ - action_store_slot|cuisine,people
+ - action_on_it
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08709354
+* greet
+ - action_ask_howcanhelp
+* inform[location=bombay,people=six]
+ - action_store_slot|location,people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08840295
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris,people=eight,price=cheap]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08393549
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06057116
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris,price=moderate]
+ - action_store_slot|location,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07423374
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00476980
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,people=four,price=expensive]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07947885
+* greet
+ - action_ask_howcanhelp
+* inform[location=bombay,people=two]
+ - action_store_slot|location,people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00648418
+* greet
+ - action_ask_howcanhelp
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07517026
+* greet
+ - action_ask_howcanhelp
+* inform[people=six]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08756457
+* greet
+ - action_ask_howcanhelp
+* inform[people=four,price=cheap]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00553638
+* greet
+ - action_ask_howcanhelp
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03510748
+* greet
+ - action_ask_howcanhelp
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05124344
+* greet
+ - action_ask_howcanhelp
+* inform[people=eight,price=moderate]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06519112
+* greet
+ - action_ask_howcanhelp
+* inform[people=eight,price=cheap]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01127852
+* greet
+ - action_ask_howcanhelp
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01921742
+* greet
+ - action_ask_howcanhelp
+* inform[location=madrid,people=four,price=cheap]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08576561
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,location=paris,people=eight]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02266477
+* greet
+ - action_ask_howcanhelp
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06446682
+* greet
+ - action_ask_howcanhelp
+* inform[location=bombay,price=cheap]
+ - action_store_slot|location,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01951076
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,price=moderate]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08048533
+* greet
+ - action_ask_howcanhelp
+* inform[location=rome,price=moderate]
+ - action_store_slot|location,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02052851
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03953788
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,people=eight]
+ - action_store_slot|cuisine,people
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06053275
+* greet
+ - action_ask_howcanhelp
+* inform[people=four]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01711836
+* greet
+ - action_ask_howcanhelp
+* inform[people=four]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06596286
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,people=six]
+ - action_store_slot|cuisine,people
+ - action_on_it
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06242106
+* greet
+ - action_ask_howcanhelp
+* inform[people=two,price=moderate]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04729716
+* greet
+ - action_ask_howcanhelp
+* inform[location=bombay,price=moderate]
+ - action_store_slot|location,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03518425
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,people=four]
+ - action_store_slot|cuisine,people
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02914655
+* greet
+ - action_ask_howcanhelp
+* inform[people=eight]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03084873
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,price=expensive]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03494520
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,people=two,price=moderate]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06321148
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,location=rome,price=expensive]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08941880
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,location=london,price=cheap]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08284430
+* greet
+ - action_ask_howcanhelp
+* inform[location=london,people=four]
+ - action_store_slot|location,people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03331052
+* greet
+ - action_ask_howcanhelp
+* inform[location=london,people=two]
+ - action_store_slot|location,people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08128688
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08044623
+* greet
+ - action_ask_howcanhelp
+* inform[people=six,price=expensive]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07231021
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00505583
+* greet
+ - action_ask_howcanhelp
+* inform[location=bombay,people=six]
+ - action_store_slot|location,people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06370288
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,people=four]
+ - action_store_slot|cuisine,people
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01791543
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris,price=moderate]
+ - action_store_slot|location,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04171641
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,location=london]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06163387
+* greet
+ - action_ask_howcanhelp
+* inform[people=six]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06208973
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,location=bombay]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02058426
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,location=rome,price=moderate]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04049285
+* greet
+ - action_ask_howcanhelp
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09564188
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05643609
+* greet
+ - action_ask_howcanhelp
+* inform[location=rome,people=six,price=cheap]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05965796
+* greet
+ - action_ask_howcanhelp
+* inform[location=madrid,people=two,price=cheap]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07085268
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,location=paris,people=four]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05855353
+* greet
+ - action_ask_howcanhelp
+* inform[location=london]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07435959
+* greet
+ - action_ask_howcanhelp
+* inform[people=two]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02536628
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,people=six]
+ - action_store_slot|cuisine,people
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04264607
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,people=four]
+ - action_store_slot|cuisine,people
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00862724
+* greet
+ - action_ask_howcanhelp
+* inform[location=rome,people=six]
+ - action_store_slot|location,people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00677635
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris,people=six]
+ - action_store_slot|location,people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09725834
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,price=expensive]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03354109
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,location=london]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09296922
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,location=bombay,people=four]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06038397
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,location=paris,price=cheap]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06815415
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,location=rome,people=four]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07115368
+* greet
+ - action_ask_howcanhelp
+* inform[people=six]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03971200
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,people=six,price=expensive]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01016740
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,people=two,price=cheap]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00587776
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,people=six]
+ - action_store_slot|cuisine,people
+ - action_on_it
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03974645
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,location=rome,price=moderate]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00089345
+* greet
+ - action_ask_howcanhelp
+* inform[location=madrid,people=eight,price=expensive]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05907310
+* greet
+ - action_ask_howcanhelp
+* inform[location=bombay,price=moderate]
+ - action_store_slot|location,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05169062
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,location=paris,price=cheap]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00683063
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,people=six,price=cheap]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06454452
+* greet
+ - action_ask_howcanhelp
+* inform[location=bombay,price=cheap]
+ - action_store_slot|location,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04597031
+* greet
+ - action_ask_howcanhelp
+* inform[people=two,price=moderate]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03395833
+* greet
+ - action_ask_howcanhelp
+* inform[people=two,price=moderate]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05362915
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00755607
+* greet
+ - action_ask_howcanhelp
+* inform[location=rome]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08459840
+* greet
+ - action_ask_howcanhelp
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05479598
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,price=expensive]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08059351
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,people=eight]
+ - action_store_slot|cuisine,people
+ - action_on_it
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06393115
+* greet
+ - action_ask_howcanhelp
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01731283
+* greet
+ - action_ask_howcanhelp
+* inform[location=madrid,people=six]
+ - action_store_slot|location,people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08712248
+* greet
+ - action_ask_howcanhelp
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09185023
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,people=four]
+ - action_store_slot|cuisine,people
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07700223
+* greet
+ - action_ask_howcanhelp
+* inform[location=rome]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02558584
+* greet
+ - action_ask_howcanhelp
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02203298
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,people=four]
+ - action_store_slot|cuisine,people
+ - action_on_it
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08130513
+* greet
+ - action_ask_howcanhelp
+* inform[people=two,price=moderate]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00458936
+* greet
+ - action_ask_howcanhelp
+* inform[location=london,people=six,price=moderate]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08124906
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,people=two,price=cheap]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07256100
+* greet
+ - action_ask_howcanhelp
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04835546
+* greet
+ - action_ask_howcanhelp
+* inform[people=two,price=moderate]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00462900
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,location=paris,people=eight]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02225005
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08866420
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,location=rome,price=cheap]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04206864
+* greet
+ - action_ask_howcanhelp
+* inform[location=london,price=expensive]
+ - action_store_slot|location,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09463788
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris,people=two]
+ - action_store_slot|location,people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09472113
+* greet
+ - action_ask_howcanhelp
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06510794
+* greet
+ - action_ask_howcanhelp
+* inform[location=madrid,people=eight]
+ - action_store_slot|location,people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00210936
+* greet
+ - action_ask_howcanhelp
+* inform[people=two]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07542148
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,location=bombay]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07157420
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06001930
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06733826
+* greet
+ - action_ask_howcanhelp
+* inform[location=madrid,people=two,price=cheap]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05710887
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,location=paris,price=moderate]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06693565
+* greet
+ - action_ask_howcanhelp
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01494477
+* greet
+ - action_ask_howcanhelp
+* inform[people=four]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05573664
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,location=paris,people=eight]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08647984
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,location=paris,people=two]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07483881
+* greet
+ - action_ask_howcanhelp
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06523476
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,location=london,price=cheap]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07214134
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,people=two,price=moderate]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02288540
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,people=six,price=moderate]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02308745
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,location=rome,people=eight]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07739040
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,price=expensive]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08164742
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01769331
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,location=madrid,price=moderate]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03247273
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,location=bombay,price=expensive]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09086728
+* greet
+ - action_ask_howcanhelp
+* inform[location=bombay,people=eight]
+ - action_store_slot|location,people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00401596
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,location=bombay,people=two]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00315115
+* greet
+ - action_ask_howcanhelp
+* inform[location=rome,price=moderate]
+ - action_store_slot|location,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02274764
+* greet
+ - action_ask_howcanhelp
+* inform[location=madrid,people=six,price=expensive]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09092243
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,people=two]
+ - action_store_slot|cuisine,people
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07448884
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,location=london,price=cheap]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06046410
+* greet
+ - action_ask_howcanhelp
+* inform[people=four]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00478265
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,location=rome]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00078793
+* greet
+ - action_ask_howcanhelp
+* inform[people=four]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01244802
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,people=six,price=cheap]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01914638
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,people=four,price=moderate]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01465881
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05126754
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,location=london,people=two]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09963623
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,people=six,price=cheap]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06307973
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06392230
+* greet
+ - action_ask_howcanhelp
+* inform[people=two,price=moderate]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03671016
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,people=eight,price=cheap]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05057656
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris,people=four,price=cheap]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06061921
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris,people=eight]
+ - action_store_slot|location,people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01132865
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,location=rome,people=four]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03328290
+* greet
+ - action_ask_howcanhelp
+* inform[people=four]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09270513
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04450316
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,people=two]
+ - action_store_slot|cuisine,people
+ - action_on_it
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05621504
+* greet
+ - action_ask_howcanhelp
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08911995
+* greet
+ - action_ask_howcanhelp
+* inform[location=bombay,people=six,price=expensive]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05616006
+* greet
+ - action_ask_howcanhelp
+* inform[people=six,price=expensive]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04105494
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,price=expensive]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08866671
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris,people=four,price=expensive]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00947318
+* greet
+ - action_ask_howcanhelp
+* inform[people=two]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04958798
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,location=london,price=moderate]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03456967
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris,people=eight,price=cheap]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09780390
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,price=expensive]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09212770
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris,people=eight,price=moderate]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03503614
+* greet
+ - action_ask_howcanhelp
+* inform[people=four]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05817604
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,location=bombay]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05958291
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,people=eight,price=expensive]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09589734
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,people=two,price=moderate]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06336817
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,location=bombay,price=cheap]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00074969
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,people=four,price=moderate]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06506351
+* greet
+ - action_ask_howcanhelp
+* inform[location=rome,people=six,price=cheap]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01665250
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,people=four,price=expensive]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04287438
+* greet
+ - action_ask_howcanhelp
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04427693
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02108526
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,location=london,people=four]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00576021
+* greet
+ - action_ask_howcanhelp
+* inform[location=madrid,people=six,price=moderate]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01844138
+* greet
+ - action_ask_howcanhelp
+* inform[location=rome,people=eight]
+ - action_store_slot|location,people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01511287
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05229523
+* greet
+ - action_ask_howcanhelp
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05259729
+* greet
+ - action_ask_howcanhelp
+* inform[location=bombay,people=eight,price=expensive]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00123112
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,location=rome,people=six]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07261640
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris,price=cheap]
+ - action_store_slot|location,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02126173
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris,people=six,price=cheap]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00469572
+* greet
+ - action_ask_howcanhelp
+* inform[people=four]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04973899
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,location=paris,people=eight]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09695521
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,people=eight,price=moderate]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08950238
+* greet
+ - action_ask_howcanhelp
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01015075
+* greet
+ - action_ask_howcanhelp
+* inform[location=bombay,price=expensive]
+ - action_store_slot|location,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08026896
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,people=six,price=cheap]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09707970
+* greet
+ - action_ask_howcanhelp
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06924352
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,location=paris]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02854836
+* greet
+ - action_ask_howcanhelp
+* inform[people=two]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08068220
+* greet
+ - action_ask_howcanhelp
+* inform[people=six,price=expensive]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03171046
+* greet
+ - action_ask_howcanhelp
+* inform[people=eight]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06207889
+* greet
+ - action_ask_howcanhelp
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08461244
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,location=rome,people=two]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00462230
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,price=moderate]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00297781
+* greet
+ - action_ask_howcanhelp
+* inform[people=eight,price=expensive]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05312867
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,price=moderate]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08685546
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris,people=eight,price=moderate]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00189137
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05624678
+* greet
+ - action_ask_howcanhelp
+* inform[people=six]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06132529
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,people=four,price=cheap]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03095029
+* greet
+ - action_ask_howcanhelp
+* inform[people=four,price=expensive]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03878220
+* greet
+ - action_ask_howcanhelp
+* inform[location=london,people=four,price=moderate]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09542538
+* greet
+ - action_ask_howcanhelp
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02898949
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,people=eight,price=cheap]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08952289
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,people=four,price=moderate]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07124346
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01777608
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,location=paris,price=moderate]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07075236
+* greet
+ - action_ask_howcanhelp
+* inform[location=london,people=eight]
+ - action_store_slot|location,people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07289308
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris,people=two]
+ - action_store_slot|location,people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05829141
+* greet
+ - action_ask_howcanhelp
+* inform[people=two]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09170802
+* greet
+ - action_ask_howcanhelp
+* inform[location=london,people=six,price=expensive]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00996434
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,location=rome,people=two]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08120278
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,people=four]
+ - action_store_slot|cuisine,people
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03203888
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,people=two]
+ - action_store_slot|cuisine,people
+ - action_on_it
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02565539
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00738915
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,people=six,price=cheap]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09678975
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,location=paris,price=moderate]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04516083
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,location=paris,price=moderate]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02772999
+* greet
+ - action_ask_howcanhelp
+* inform[people=four]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09557012
+* greet
+ - action_ask_howcanhelp
+* inform[location=madrid,people=two]
+ - action_store_slot|location,people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08920795
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,price=cheap]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00217468
+* greet
+ - action_ask_howcanhelp
+* inform[location=rome]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04493329
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,location=madrid,price=cheap]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03122861
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,location=london]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07258242
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,location=rome,people=two]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00213434
+* greet
+ - action_ask_howcanhelp
+* inform[people=four,price=expensive]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00639770
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,location=rome,price=moderate]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04764985
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,location=rome,people=four]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04012717
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,price=cheap]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01014610
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,people=two,price=cheap]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03040836
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,location=paris,price=cheap]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09157730
+* greet
+ - action_ask_howcanhelp
+* inform[people=eight]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03097738
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,location=madrid,people=six]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01252059
+* greet
+ - action_ask_howcanhelp
+* inform[people=four]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04129906
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,location=paris,people=two]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06955531
+* greet
+ - action_ask_howcanhelp
+* inform[location=rome]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09736308
+* greet
+ - action_ask_howcanhelp
+* inform[location=london,people=eight,price=moderate]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06152550
+* greet
+ - action_ask_howcanhelp
+* inform[location=rome]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00132701
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,location=paris,people=six]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09425843
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,people=six,price=cheap]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00655501
+* greet
+ - action_ask_howcanhelp
+* inform[location=bombay,people=eight,price=expensive]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01702575
+* greet
+ - action_ask_howcanhelp
+* inform[people=two,price=cheap]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04600000
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04641735
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris,people=two]
+ - action_store_slot|location,people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02382428
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,location=paris]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09296847
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,location=bombay]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06741551
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,price=cheap]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04238087
+* greet
+ - action_ask_howcanhelp
+* inform[location=rome,people=four]
+ - action_store_slot|location,people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02414357
+* greet
+ - action_ask_howcanhelp
+* inform[people=four]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03032119
+* greet
+ - action_ask_howcanhelp
+* inform[people=six]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00082847
+* greet
+ - action_ask_howcanhelp
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07409035
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,location=madrid,price=cheap]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02471828
+* greet
+ - action_ask_howcanhelp
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06498072
+* greet
+ - action_ask_howcanhelp
+* inform[people=eight,price=moderate]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03580348
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,people=six,price=cheap]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09498487
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,people=four,price=cheap]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01229748
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,location=london,price=moderate]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02588820
+* greet
+ - action_ask_howcanhelp
+* inform[people=two,price=cheap]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05695490
+* greet
+ - action_ask_howcanhelp
+* inform[location=rome,people=eight,price=expensive]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04481986
+* greet
+ - action_ask_howcanhelp
+* inform[people=eight,price=cheap]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06153982
+* greet
+ - action_ask_howcanhelp
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03487036
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,price=expensive]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01954060
+* greet
+ - action_ask_howcanhelp
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05374404
+* greet
+ - action_ask_howcanhelp
+* inform[location=rome,people=eight,price=moderate]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01933446
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,people=two]
+ - action_store_slot|cuisine,people
+ - action_on_it
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05262669
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,location=paris,people=four]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09256748
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03066987
+* greet
+ - action_ask_howcanhelp
+* inform[location=london,people=six,price=cheap]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01836424
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05804996
+* greet
+ - action_ask_howcanhelp
+* inform[location=rome]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07803720
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,people=two,price=moderate]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00216082
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,people=eight]
+ - action_store_slot|cuisine,people
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06604853
+* greet
+ - action_ask_howcanhelp
+* inform[location=london,people=two]
+ - action_store_slot|location,people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04810214
+* greet
+ - action_ask_howcanhelp
+* inform[location=rome]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04341312
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,price=cheap]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02618506
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01934606
+* greet
+ - action_ask_howcanhelp
+* inform[people=four]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01312494
+* greet
+ - action_ask_howcanhelp
+* inform[location=bombay,people=two,price=moderate]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02593906
+* greet
+ - action_ask_howcanhelp
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09682472
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,price=cheap]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03506714
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,location=madrid,people=six]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03400560
+* greet
+ - action_ask_howcanhelp
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06251961
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,people=four]
+ - action_store_slot|cuisine,people
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09010808
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,price=moderate]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02059885
+* greet
+ - action_ask_howcanhelp
+* inform[people=eight]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09135603
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,location=madrid,people=six]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00933488
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,location=paris]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03025826
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,price=moderate]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05786525
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,people=two]
+ - action_store_slot|cuisine,people
+ - action_on_it
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09300770
+* greet
+ - action_ask_howcanhelp
+* inform[people=four,price=cheap]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09653777
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07572797
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,location=london,people=two]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03373139
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02005509
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,location=london,people=six]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02708180
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00195555
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris,price=cheap]
+ - action_store_slot|location,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09588654
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,location=bombay,price=expensive]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08632239
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,location=paris]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05780542
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,location=paris,price=moderate]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01105098
+* greet
+ - action_ask_howcanhelp
+* inform[location=london,price=cheap]
+ - action_store_slot|location,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01552103
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,price=moderate]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04200194
+* greet
+ - action_ask_howcanhelp
+* inform[location=london]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07339074
+* greet
+ - action_ask_howcanhelp
+* inform[location=london,people=six,price=expensive]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09130169
+* greet
+ - action_ask_howcanhelp
+* inform[location=madrid,people=eight]
+ - action_store_slot|location,people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05120208
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,people=four]
+ - action_store_slot|cuisine,people
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00569371
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,people=six,price=moderate]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06915234
+* greet
+ - action_ask_howcanhelp
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08826836
+* greet
+ - action_ask_howcanhelp
+* inform[people=two]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05549509
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,location=bombay]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09081143
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,people=two,price=moderate]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05518011
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,location=paris,price=moderate]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02082888
+* greet
+ - action_ask_howcanhelp
+* inform[location=rome,people=six,price=moderate]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02496156
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08157637
+* greet
+ - action_ask_howcanhelp
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02321472
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,price=moderate]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04622589
+* greet
+ - action_ask_howcanhelp
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00054909
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,people=two,price=expensive]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02752427
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,people=four]
+ - action_store_slot|cuisine,people
+ - action_on_it
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08750810
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09317125
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,people=six,price=moderate]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07499935
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,people=six,price=expensive]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09911977
+* greet
+ - action_ask_howcanhelp
+* inform[people=eight]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04896551
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,location=rome]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00743514
+* greet
+ - action_ask_howcanhelp
+* inform[location=rome,price=expensive]
+ - action_store_slot|location,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05355350
+* greet
+ - action_ask_howcanhelp
+* inform[people=two]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01158881
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,price=cheap]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00714311
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,people=six]
+ - action_store_slot|cuisine,people
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01239219
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,location=london,price=cheap]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08346712
+* greet
+ - action_ask_howcanhelp
+* inform[location=bombay,people=two,price=moderate]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05505395
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,location=bombay]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07269213
+* greet
+ - action_ask_howcanhelp
+* inform[people=four,price=cheap]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04381599
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,people=six,price=cheap]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09321890
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,location=paris,price=moderate]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08108203
+* greet
+ - action_ask_howcanhelp
+* inform[location=bombay,people=four]
+ - action_store_slot|location,people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08199287
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris,people=two,price=cheap]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08885998
+* greet
+ - action_ask_howcanhelp
+* inform[people=four,price=moderate]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04465700
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,location=london]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06776579
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris,people=four]
+ - action_store_slot|location,people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00204295
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,price=expensive]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09408576
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,people=six,price=expensive]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01631127
+* greet
+ - action_ask_howcanhelp
+* inform[people=four,price=moderate]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09668993
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,location=london,price=expensive]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06061171
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,location=madrid]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04530760
+* greet
+ - action_ask_howcanhelp
+* inform[people=two,price=moderate]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05881975
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02392314
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,location=bombay,people=six]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03677127
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06000169
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,people=four,price=cheap]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08532040
+* greet
+ - action_ask_howcanhelp
+* inform[people=eight,price=cheap]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07973046
+* greet
+ - action_ask_howcanhelp
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04517461
+* greet
+ - action_ask_howcanhelp
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04851413
+* greet
+ - action_ask_howcanhelp
+* inform[people=four,price=cheap]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09647933
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,people=six]
+ - action_store_slot|cuisine,people
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09229864
+* greet
+ - action_ask_howcanhelp
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02083824
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,price=cheap]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03683939
+* greet
+ - action_ask_howcanhelp
+* inform[location=london,people=two]
+ - action_store_slot|location,people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02900686
+* greet
+ - action_ask_howcanhelp
+* inform[people=eight,price=expensive]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07942152
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,people=four,price=cheap]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02451384
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09022428
+* greet
+ - action_ask_howcanhelp
+* inform[location=london,people=six,price=cheap]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01806905
+* greet
+ - action_ask_howcanhelp
+* inform[location=london,price=expensive]
+ - action_store_slot|location,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07832751
+* greet
+ - action_ask_howcanhelp
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04588539
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris,people=eight]
+ - action_store_slot|location,people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02108377
+* greet
+ - action_ask_howcanhelp
+* inform[people=eight,price=cheap]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07577645
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,price=cheap]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02720099
+* greet
+ - action_ask_howcanhelp
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01635898
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,location=rome,price=expensive]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01210913
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,people=six,price=moderate]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00742244
+* greet
+ - action_ask_howcanhelp
+* inform[location=madrid,people=six]
+ - action_store_slot|location,people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08455632
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,location=london]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05702182
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04282017
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01307799
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04822829
+* greet
+ - action_ask_howcanhelp
+* inform[people=eight]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02188619
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris,people=four]
+ - action_store_slot|location,people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06457676
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,location=madrid,people=two]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04081788
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02357596
+* greet
+ - action_ask_howcanhelp
+* inform[people=six]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09023167
+* greet
+ - action_ask_howcanhelp
+* inform[people=eight]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00795940
+* greet
+ - action_ask_howcanhelp
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02706409
+* greet
+ - action_ask_howcanhelp
+* inform[people=six]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05400835
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,people=two]
+ - action_store_slot|cuisine,people
+ - action_on_it
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09790138
+* greet
+ - action_ask_howcanhelp
+* inform[people=two]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00052024
+* greet
+ - action_ask_howcanhelp
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05833945
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04302413
+* greet
+ - action_ask_howcanhelp
+* inform[location=london,people=four,price=moderate]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06854786
+* greet
+ - action_ask_howcanhelp
+* inform[location=rome,people=eight,price=expensive]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06055727
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,people=six]
+ - action_store_slot|cuisine,people
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00154221
+* greet
+ - action_ask_howcanhelp
+* inform[people=four]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06405150
+* greet
+ - action_ask_howcanhelp
+* inform[people=six]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00123583
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,location=bombay,price=moderate]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02757907
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,location=paris,people=eight]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01474911
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,price=moderate]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05692769
+* greet
+ - action_ask_howcanhelp
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06036940
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,people=six,price=cheap]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06022336
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,location=paris,price=expensive]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03455904
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,people=eight,price=cheap]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06217292
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02422979
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,people=six]
+ - action_store_slot|cuisine,people
+ - action_on_it
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09904049
+* greet
+ - action_ask_howcanhelp
+* inform[location=bombay,people=two,price=moderate]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09286520
+* greet
+ - action_ask_howcanhelp
+* inform[people=four]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05382219
+* greet
+ - action_ask_howcanhelp
+* inform[location=rome,people=eight,price=expensive]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02122837
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,people=six]
+ - action_store_slot|cuisine,people
+ - action_on_it
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00566793
+* greet
+ - action_ask_howcanhelp
+* inform[location=madrid,people=eight,price=moderate]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02501957
+* greet
+ - action_ask_howcanhelp
+* inform[people=two,price=cheap]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00371662
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,location=paris,people=six]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00887218
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,location=london]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07191022
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,people=eight,price=expensive]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05630242
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris,people=eight]
+ - action_store_slot|location,people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02363381
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,price=moderate]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09991796
+* greet
+ - action_ask_howcanhelp
+* inform[location=rome]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09787924
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08746431
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,people=four]
+ - action_store_slot|cuisine,people
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05965171
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,people=two,price=moderate]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04394009
+* greet
+ - action_ask_howcanhelp
+* inform[location=madrid,people=four]
+ - action_store_slot|location,people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07582869
+* greet
+ - action_ask_howcanhelp
+* inform[location=bombay,people=eight,price=cheap]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03501182
+* greet
+ - action_ask_howcanhelp
+* inform[people=four,price=cheap]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09964041
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,location=rome,price=cheap]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05884784
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01291128
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,location=paris]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08269282
+* greet
+ - action_ask_howcanhelp
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08375549
+* greet
+ - action_ask_howcanhelp
+* inform[people=six]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09112330
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,location=paris,price=moderate]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07269645
+* greet
+ - action_ask_howcanhelp
+* inform[people=two]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04026045
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,price=cheap]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04858553
+* greet
+ - action_ask_howcanhelp
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09155536
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,location=bombay,people=four]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05287155
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,location=madrid,people=six]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05758248
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,price=expensive]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02198376
+* greet
+ - action_ask_howcanhelp
+* inform[people=four]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07218248
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04640222
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,people=six,price=cheap]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03579720
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,price=cheap]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05587246
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris,people=eight,price=cheap]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07690028
+* greet
+ - action_ask_howcanhelp
+* inform[location=rome]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03988628
+* greet
+ - action_ask_howcanhelp
+* inform[people=four]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06288218
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,location=paris,price=moderate]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05599767
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04505382
+* greet
+ - action_ask_howcanhelp
+* inform[location=rome]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05776075
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,people=four]
+ - action_store_slot|cuisine,people
+ - action_on_it
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08023911
+* greet
+ - action_ask_howcanhelp
+* inform[people=two,price=moderate]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05136688
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,location=madrid,price=cheap]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02015359
+* greet
+ - action_ask_howcanhelp
+* inform[location=rome,price=moderate]
+ - action_store_slot|location,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05681536
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,location=paris]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04125952
+* greet
+ - action_ask_howcanhelp
+* inform[people=four]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04269748
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,price=cheap]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02288865
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,location=madrid,people=four]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08912732
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,location=rome,price=moderate]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05334972
+* greet
+ - action_ask_howcanhelp
+* inform[location=london,price=expensive]
+ - action_store_slot|location,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04458489
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,people=two]
+ - action_store_slot|cuisine,people
+ - action_on_it
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00237407
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05625299
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08318198
+* greet
+ - action_ask_howcanhelp
+* inform[location=madrid,people=two,price=moderate]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03765977
+* greet
+ - action_ask_howcanhelp
+* inform[people=eight]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08054368
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,people=six,price=moderate]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06118598
+* greet
+ - action_ask_howcanhelp
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08371520
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,price=expensive]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07946188
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09932028
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06652080
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01768302
+* greet
+ - action_ask_howcanhelp
+* inform[people=six,price=moderate]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04377138
+* greet
+ - action_ask_howcanhelp
+* inform[location=london,people=eight,price=moderate]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04642246
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,people=eight]
+ - action_store_slot|cuisine,people
+ - action_on_it
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09114898
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03964408
+* greet
+ - action_ask_howcanhelp
+* inform[location=london,people=two,price=expensive]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02418606
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07878749
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00671715
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,location=rome,price=cheap]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01241057
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04564818
+* greet
+ - action_ask_howcanhelp
+* inform[people=eight]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05461373
+* greet
+ - action_ask_howcanhelp
+* inform[location=london]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06422806
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,location=madrid,price=expensive]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00731230
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,people=eight]
+ - action_store_slot|cuisine,people
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08127705
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,location=london,price=cheap]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01876655
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08981281
+* greet
+ - action_ask_howcanhelp
+* inform[people=two,price=expensive]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06919016
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,location=paris]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01989968
+* greet
+ - action_ask_howcanhelp
+* inform[people=six]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04536660
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,location=madrid,price=cheap]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02184914
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,people=eight,price=cheap]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01588805
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,location=bombay]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07363825
+* greet
+ - action_ask_howcanhelp
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06978930
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,price=moderate]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00667504
+* greet
+ - action_ask_howcanhelp
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09642295
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,people=two,price=moderate]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07393868
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,location=madrid]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05829866
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,people=eight,price=moderate]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01735486
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,price=moderate]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03249571
+* greet
+ - action_ask_howcanhelp
+* inform[people=four]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04174179
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,people=eight,price=cheap]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02023067
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,location=london,people=four]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04161664
+* greet
+ - action_ask_howcanhelp
+* inform[people=four]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07427404
+* greet
+ - action_ask_howcanhelp
+* inform[people=two]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07282756
+* greet
+ - action_ask_howcanhelp
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00476644
+* greet
+ - action_ask_howcanhelp
+* inform[location=london,people=two,price=moderate]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00919785
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,people=eight]
+ - action_store_slot|cuisine,people
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00972296
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,location=bombay]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05740000
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06236070
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,price=moderate]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02258214
+* greet
+ - action_ask_howcanhelp
+* inform[location=rome,people=eight,price=cheap]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02750754
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,location=paris,price=moderate]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01587592
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,people=four]
+ - action_store_slot|cuisine,people
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06949219
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,location=madrid,price=cheap]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05743117
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06294108
+* greet
+ - action_ask_howcanhelp
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09757801
+* greet
+ - action_ask_howcanhelp
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03202901
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,people=four]
+ - action_store_slot|cuisine,people
+ - action_on_it
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06129449
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,location=madrid,price=cheap]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02366020
+* greet
+ - action_ask_howcanhelp
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02513065
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,people=two,price=expensive]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07615257
+* greet
+ - action_ask_howcanhelp
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05054412
+* greet
+ - action_ask_howcanhelp
+* inform[people=four]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02006677
+* greet
+ - action_ask_howcanhelp
+* inform[location=madrid,people=two,price=expensive]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05571843
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,price=expensive]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06248774
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,people=two]
+ - action_store_slot|cuisine,people
+ - action_on_it
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03756598
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,location=paris,people=eight]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04579118
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris,price=moderate]
+ - action_store_slot|location,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05775743
+* greet
+ - action_ask_howcanhelp
+* inform[people=eight]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02784493
+* greet
+ - action_ask_howcanhelp
+* inform[location=london]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06195777
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,people=two,price=moderate]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02559607
+* greet
+ - action_ask_howcanhelp
+* inform[location=bombay,people=six]
+ - action_store_slot|location,people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04174972
+* greet
+ - action_ask_howcanhelp
+* inform[people=six,price=moderate]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07697309
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,price=cheap]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07786611
+* greet
+ - action_ask_howcanhelp
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06790470
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,people=four,price=expensive]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09864786
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,people=two,price=moderate]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00521509
+* greet
+ - action_ask_howcanhelp
+* inform[location=bombay,people=six,price=expensive]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04293193
+* greet
+ - action_ask_howcanhelp
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01957406
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,location=london,people=two]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00338255
+* greet
+ - action_ask_howcanhelp
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08012836
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,location=madrid,price=cheap]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05705307
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,location=paris,price=cheap]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07759365
+* greet
+ - action_ask_howcanhelp
+* inform[people=four]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08054157
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,location=paris,people=six]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04094738
+* greet
+ - action_ask_howcanhelp
+* inform[location=madrid,people=six]
+ - action_store_slot|location,people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09866057
+* greet
+ - action_ask_howcanhelp
+* inform[location=bombay,people=six]
+ - action_store_slot|location,people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02962708
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,location=bombay]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04832302
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,people=six]
+ - action_store_slot|cuisine,people
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01651185
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,location=bombay,people=eight]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07696486
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,people=four]
+ - action_store_slot|cuisine,people
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09042901
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,location=london,people=six]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06568968
+* greet
+ - action_ask_howcanhelp
+* inform[location=london]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05679959
+* greet
+ - action_ask_howcanhelp
+* inform[location=london,people=six]
+ - action_store_slot|location,people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04911121
+* greet
+ - action_ask_howcanhelp
+* inform[people=eight,price=expensive]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04886691
+* greet
+ - action_ask_howcanhelp
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02138657
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,location=paris,price=expensive]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04074982
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,location=paris]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01228124
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,location=rome,price=expensive]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06336504
+* greet
+ - action_ask_howcanhelp
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07307169
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris,people=two,price=moderate]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08935538
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,people=six,price=moderate]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03964299
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03259404
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris,people=six]
+ - action_store_slot|location,people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00030250
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,price=moderate]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01715933
+* greet
+ - action_ask_howcanhelp
+* inform[location=rome]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02616347
+* greet
+ - action_ask_howcanhelp
+* inform[people=four,price=moderate]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06158582
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,location=madrid,people=four]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01850594
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,location=paris,price=cheap]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08268988
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08534146
+* greet
+ - action_ask_howcanhelp
+* inform[location=madrid,price=expensive]
+ - action_store_slot|location,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07434221
+* greet
+ - action_ask_howcanhelp
+* inform[location=bombay,people=eight,price=moderate]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08425830
+* greet
+ - action_ask_howcanhelp
+* inform[people=eight]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08205296
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,location=rome,people=eight]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04367555
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris,people=six]
+ - action_store_slot|location,people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09547842
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,location=rome,people=two]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06677806
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris,people=six,price=cheap]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06070653
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,location=london]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04175732
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,price=moderate]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04594480
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,location=london]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01925957
+* greet
+ - action_ask_howcanhelp
+* inform[people=eight]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07113045
+* greet
+ - action_ask_howcanhelp
+* inform[people=eight,price=moderate]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08224411
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,people=six,price=expensive]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03390575
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,location=paris]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05787634
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris,people=eight]
+ - action_store_slot|location,people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07095635
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,location=paris,price=cheap]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03857876
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,location=rome]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08439746
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,people=four,price=moderate]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09683348
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,location=london,people=two]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00031782
+* greet
+ - action_ask_howcanhelp
+* inform[location=rome]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05355853
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,people=six,price=expensive]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08403677
+* greet
+ - action_ask_howcanhelp
+* inform[location=london]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02584355
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,location=bombay,people=two]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02834218
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris,people=six]
+ - action_store_slot|location,people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00251556
+* greet
+ - action_ask_howcanhelp
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02508338
+* greet
+ - action_ask_howcanhelp
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02514882
+* greet
+ - action_ask_howcanhelp
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02427107
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,people=four,price=cheap]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07337494
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09150867
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,location=madrid,people=six]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05016336
+* greet
+ - action_ask_howcanhelp
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00996914
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,location=london,people=two]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01013838
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris,people=four,price=expensive]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08361834
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris,people=six,price=moderate]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02164781
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,location=london,people=two]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04997016
+* greet
+ - action_ask_howcanhelp
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04818116
+* greet
+ - action_ask_howcanhelp
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09195789
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08755841
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,people=eight]
+ - action_store_slot|cuisine,people
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08192516
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00060167
+* greet
+ - action_ask_howcanhelp
+* inform[location=london]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04309320
+* greet
+ - action_ask_howcanhelp
+* inform[people=four]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01878521
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03986516
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,people=four]
+ - action_store_slot|cuisine,people
+ - action_on_it
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07558153
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,location=bombay,people=six]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07614449
+* greet
+ - action_ask_howcanhelp
+* inform[people=six]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05586416
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,people=two]
+ - action_store_slot|cuisine,people
+ - action_on_it
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01095565
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,location=bombay]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07325405
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,location=london]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09136075
+* greet
+ - action_ask_howcanhelp
+* inform[people=four,price=expensive]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03910860
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,price=moderate]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00622885
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,location=madrid,people=two]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03644862
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris,price=expensive]
+ - action_store_slot|location,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00159801
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,location=rome,people=two]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05217007
+* greet
+ - action_ask_howcanhelp
+* inform[location=london,price=cheap]
+ - action_store_slot|location,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01019943
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,location=madrid]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00610075
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,people=four,price=cheap]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09791077
+* greet
+ - action_ask_howcanhelp
+* inform[location=rome]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05896086
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02555433
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris,people=two,price=moderate]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01163430
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08733059
+* greet
+ - action_ask_howcanhelp
+* inform[location=london]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08174970
+* greet
+ - action_ask_howcanhelp
+* inform[people=two,price=moderate]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03869589
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,location=rome,price=cheap]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05775838
+* greet
+ - action_ask_howcanhelp
+* inform[people=two,price=expensive]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04310580
+* greet
+ - action_ask_howcanhelp
+* inform[people=four]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06340733
+* greet
+ - action_ask_howcanhelp
+* inform[location=bombay,price=moderate]
+ - action_store_slot|location,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04298162
+* greet
+ - action_ask_howcanhelp
+* inform[location=rome,price=cheap]
+ - action_store_slot|location,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02395181
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,location=paris,price=expensive]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03623265
+* greet
+ - action_ask_howcanhelp
+* inform[location=rome,people=four]
+ - action_store_slot|location,people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09553447
+* greet
+ - action_ask_howcanhelp
+* inform[people=eight,price=cheap]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07892534
+* greet
+ - action_ask_howcanhelp
+* inform[location=rome,people=two,price=moderate]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06512351
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,location=madrid,price=cheap]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02279960
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04491736
+* greet
+ - action_ask_howcanhelp
+* inform[people=four,price=moderate]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09433260
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,people=two,price=moderate]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01247290
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,location=london]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05978122
+* greet
+ - action_ask_howcanhelp
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05734966
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,location=madrid]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03612980
+* greet
+ - action_ask_howcanhelp
+* inform[location=london]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08929001
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,location=bombay]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07494157
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,location=madrid,price=moderate]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03377707
+* greet
+ - action_ask_howcanhelp
+* inform[people=eight,price=expensive]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02423193
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,location=madrid]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06672577
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,people=two,price=expensive]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00675223
+* greet
+ - action_ask_howcanhelp
+* inform[location=rome]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04614901
+* greet
+ - action_ask_howcanhelp
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07386612
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,price=cheap]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00771448
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,people=two]
+ - action_store_slot|cuisine,people
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09516693
+* greet
+ - action_ask_howcanhelp
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08382362
+* greet
+ - action_ask_howcanhelp
+* inform[location=london]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05756132
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,people=two,price=moderate]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00550960
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,people=eight,price=cheap]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03233514
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,people=two,price=moderate]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08257523
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,people=eight]
+ - action_store_slot|cuisine,people
+ - action_on_it
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09287007
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,price=moderate]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02698647
+* greet
+ - action_ask_howcanhelp
+* inform[location=madrid,people=two,price=cheap]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01238083
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05267076
+* greet
+ - action_ask_howcanhelp
+* inform[people=four]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09391313
+* greet
+ - action_ask_howcanhelp
+* inform[people=eight,price=cheap]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09083347
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,location=london]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01553931
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,people=eight,price=cheap]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02767160
+* greet
+ - action_ask_howcanhelp
+* inform[location=rome,people=four,price=moderate]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00058870
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,location=london]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00966140
+* greet
+ - action_ask_howcanhelp
+* inform[location=london,people=four]
+ - action_store_slot|location,people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03797137
+* greet
+ - action_ask_howcanhelp
+* inform[people=four]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03662105
+* greet
+ - action_ask_howcanhelp
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01623791
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05391563
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,price=moderate]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01744702
+* greet
+ - action_ask_howcanhelp
+* inform[location=madrid,people=four,price=cheap]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06828847
+* greet
+ - action_ask_howcanhelp
+* inform[location=rome]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01680317
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,people=four]
+ - action_store_slot|cuisine,people
+ - action_on_it
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09279034
+* greet
+ - action_ask_howcanhelp
+* inform[people=two]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09703056
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,people=eight,price=expensive]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04572708
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,people=four,price=cheap]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04795412
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,location=paris]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02063175
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris,price=moderate]
+ - action_store_slot|location,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08143314
+* greet
+ - action_ask_howcanhelp
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05456502
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,people=four,price=expensive]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08387553
+* greet
+ - action_ask_howcanhelp
+* inform[people=four,price=cheap]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02896749
+* greet
+ - action_ask_howcanhelp
+* inform[location=madrid,price=expensive]
+ - action_store_slot|location,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05358554
+* greet
+ - action_ask_howcanhelp
+* inform[location=madrid,price=expensive]
+ - action_store_slot|location,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01659834
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,location=rome]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05402332
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,price=moderate]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05156878
+* greet
+ - action_ask_howcanhelp
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04274142
+* greet
+ - action_ask_howcanhelp
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06526647
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00092857
+* greet
+ - action_ask_howcanhelp
+* inform[location=london,people=four,price=cheap]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05729582
+* greet
+ - action_ask_howcanhelp
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03333212
+* greet
+ - action_ask_howcanhelp
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02046329
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02632375
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,location=bombay]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02784275
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,price=cheap]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03092003
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,location=madrid]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02027131
+* greet
+ - action_ask_howcanhelp
+* inform[people=two]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09014453
+* greet
+ - action_ask_howcanhelp
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05242659
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00786925
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,location=paris]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07128433
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07046599
+* greet
+ - action_ask_howcanhelp
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05613145
+* greet
+ - action_ask_howcanhelp
+* inform[people=two]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09041889
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04391980
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,location=paris,people=two]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02392231
+* greet
+ - action_ask_howcanhelp
+* inform[people=six,price=cheap]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07241295
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,price=cheap]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09859626
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris,people=six,price=cheap]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02224936
+* greet
+ - action_ask_howcanhelp
+* inform[location=madrid,people=two,price=cheap]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04183292
+* greet
+ - action_ask_howcanhelp
+* inform[people=four]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08003744
+* greet
+ - action_ask_howcanhelp
+* inform[people=four,price=cheap]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01893164
+* greet
+ - action_ask_howcanhelp
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00224042
+* greet
+ - action_ask_howcanhelp
+* inform[people=four,price=cheap]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04629598
+* greet
+ - action_ask_howcanhelp
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00295829
+* greet
+ - action_ask_howcanhelp
+* inform[people=eight,price=expensive]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02155238
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,location=madrid,price=moderate]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05499764
+* greet
+ - action_ask_howcanhelp
+* inform[people=six]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05686215
+* greet
+ - action_ask_howcanhelp
+* inform[people=four]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09798584
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01139274
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,location=bombay,price=cheap]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09516181
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris,price=moderate]
+ - action_store_slot|location,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09553020
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,price=cheap]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05369349
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,location=paris,people=two]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06090341
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,price=moderate]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00531119
+* greet
+ - action_ask_howcanhelp
+* inform[location=madrid,people=four,price=expensive]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01066798
+* greet
+ - action_ask_howcanhelp
+* inform[location=madrid,people=six,price=cheap]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06217307
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,people=six,price=expensive]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07785668
+* greet
+ - action_ask_howcanhelp
+* inform[people=two,price=expensive]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06654241
+* greet
+ - action_ask_howcanhelp
+* inform[location=london,people=two]
+ - action_store_slot|location,people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00357075
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,price=moderate]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07503732
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,location=london,price=expensive]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04876660
+* greet
+ - action_ask_howcanhelp
+* inform[people=eight]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04933790
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,price=cheap]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00035554
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,location=london]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04659600
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,price=cheap]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03039870
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,location=bombay,price=moderate]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06066454
+* greet
+ - action_ask_howcanhelp
+* inform[people=four]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02230392
+* greet
+ - action_ask_howcanhelp
+* inform[location=bombay,price=moderate]
+ - action_store_slot|location,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09568316
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,location=paris,price=moderate]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09623653
+* greet
+ - action_ask_howcanhelp
+* inform[people=two]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03293014
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,location=paris,price=expensive]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08648564
+* greet
+ - action_ask_howcanhelp
+* inform[people=six,price=moderate]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08143505
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,location=madrid,price=expensive]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04879590
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,price=moderate]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07775437
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,location=london,price=expensive]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05104004
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,location=paris,price=moderate]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02453215
+* greet
+ - action_ask_howcanhelp
+* inform[people=two,price=moderate]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07487090
+* greet
+ - action_ask_howcanhelp
+* inform[location=madrid,price=cheap]
+ - action_store_slot|location,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03133182
+* greet
+ - action_ask_howcanhelp
+* inform[people=six]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01282630
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,location=london]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02451345
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,people=four,price=moderate]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00147310
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,people=four]
+ - action_store_slot|cuisine,people
+ - action_on_it
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04340457
+* greet
+ - action_ask_howcanhelp
+* inform[people=two,price=moderate]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08416737
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,location=bombay,people=two]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04958308
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,location=paris,price=expensive]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00405173
+* greet
+ - action_ask_howcanhelp
+* inform[location=rome,people=two,price=moderate]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01416413
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,location=london,people=four]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02318315
+* greet
+ - action_ask_howcanhelp
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08843226
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,people=six,price=moderate]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01840908
+* greet
+ - action_ask_howcanhelp
+* inform[location=rome,price=expensive]
+ - action_store_slot|location,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07480051
+* greet
+ - action_ask_howcanhelp
+* inform[location=london]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04101618
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,people=two]
+ - action_store_slot|cuisine,people
+ - action_on_it
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03274465
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,price=expensive]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01322079
+* greet
+ - action_ask_howcanhelp
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06164586
+* greet
+ - action_ask_howcanhelp
+* inform[location=madrid,price=expensive]
+ - action_store_slot|location,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06085875
+* greet
+ - action_ask_howcanhelp
+* inform[location=rome,price=cheap]
+ - action_store_slot|location,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08917177
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris,price=expensive]
+ - action_store_slot|location,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01627551
+* greet
+ - action_ask_howcanhelp
+* inform[location=rome,price=cheap]
+ - action_store_slot|location,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07125808
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris,price=cheap]
+ - action_store_slot|location,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00104130
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,price=expensive]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01716572
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04681214
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,location=madrid,people=six]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06513529
+* greet
+ - action_ask_howcanhelp
+* inform[location=rome,people=eight]
+ - action_store_slot|location,people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09477130
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,people=two,price=cheap]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05988129
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,location=london,people=four]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02479127
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,location=paris,people=four]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02699403
+* greet
+ - action_ask_howcanhelp
+* inform[people=eight,price=expensive]
+ - action_store_slot|people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09123231
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03870529
+* greet
+ - action_ask_howcanhelp
+* inform[people=eight]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06031439
+* greet
+ - action_ask_howcanhelp
+* inform[location=bombay,price=moderate]
+ - action_store_slot|location,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02529696
+* greet
+ - action_ask_howcanhelp
+* inform[location=london,price=expensive]
+ - action_store_slot|location,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02953678
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,location=london,price=moderate]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07378448
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,price=expensive]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06034423
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,price=cheap]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00076314
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,location=london,price=cheap]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01333242
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris,people=two,price=cheap]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05777833
+* greet
+ - action_ask_howcanhelp
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04330175
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08847716
+* greet
+ - action_ask_howcanhelp
+* inform[location=madrid,price=cheap]
+ - action_store_slot|location,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01315868
+* greet
+ - action_ask_howcanhelp
+* inform[location=bombay,people=two]
+ - action_store_slot|location,people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04580343
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07988528
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,location=rome,price=moderate]
+ - action_store_slot|cuisine,location,price
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01477788
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris,people=six]
+ - action_store_slot|location,people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06360484
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,location=paris,people=four]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_06638271
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,location=london,people=four]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09488026
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,location=paris]
+ - action_store_slot|cuisine,location
+ - action_on_it
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00091984
+* greet
+ - action_ask_howcanhelp
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_08478747
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,people=six]
+ - action_store_slot|cuisine,people
+ - action_on_it
+ - action_ask_location
+* inform[location=london]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03869304
+* greet
+ - action_ask_howcanhelp
+* inform[location=rome,people=eight,price=expensive]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03206062
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris]
+ - action_store_slot|location
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_09553452
+* greet
+ - action_ask_howcanhelp
+* inform[location=paris,people=four,price=cheap]
+ - action_store_slot|location,people,price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07174629
+* greet
+ - action_ask_howcanhelp
+* inform[people=six]
+ - action_store_slot|people
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03496577
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=spanish,people=six,price=moderate]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04207363
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=british,location=london,people=six]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00387637
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_04671741
+* greet
+ - action_ask_howcanhelp
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=spanish]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=eight]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=madrid]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03653275
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french]
+ - action_store_slot|cuisine
+ - action_on_it
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_price
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_03678460
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=french,people=four,price=cheap]
+ - action_store_slot|cuisine,people,price
+ - action_on_it
+ - action_ask_location
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[people=two]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_00184006
+* greet
+ - action_ask_howcanhelp
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_02716579
+* greet
+ - action_ask_howcanhelp
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[people=six]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* inform[cuisine=italian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* inform[location=bombay]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_05309111
+* greet
+ - action_ask_howcanhelp
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_on_it
+ - action_ask_cuisine
+* inform[cuisine=british]
+ - action_store_slot|cuisine
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=six]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[location=paris]
+ - action_store_slot|location
+ - action_ask_moreupdates
+* inform[price=expensive]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_01048541
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=italian,location=rome,people=eight]
+ - action_store_slot|cuisine,location,people
+ - action_on_it
+ - action_ask_price
+* inform[price=cheap]
+ - action_store_slot|price
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[cuisine=indian]
+ - action_store_slot|cuisine
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
+## story_07946142
+* greet
+ - action_ask_howcanhelp
+* inform[cuisine=indian,price=cheap]
+ - action_store_slot|cuisine,price
+ - action_on_it
+ - action_ask_location
+* inform[location=rome]
+ - action_store_slot|location
+ - action_ask_numpeople
+* inform[people=two]
+ - action_store_slot|people
+ - action_ack_dosearch
+ - action_search_restaurants
+* inform[price=moderate]
+ - action_store_slot|price
+ - action_ask_moreupdates
+* inform[people=four]
+ - action_store_slot|people
+ - action_ask_moreupdates
+* deny
+ - action_ack_dosearch
+ - action_search_restaurants
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* deny
+ - action_ack_findalternatives
+ - action_suggest
+* affirm
+ - action_ack_makereservation
+* request_info[info=address]
+ - action_store_slot|info
+ - action_suggest
+* request_info[info=phone]
+ - action_store_slot|info
+ - action_suggest
+* thankyou
+ - action_ask_helpmore
+
