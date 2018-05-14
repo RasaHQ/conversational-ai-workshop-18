@@ -1168,23 +1168,6 @@
     - utter_correct_location_hotel
     - utter_ask_people
 
-## Generated Story 2699131186264034456
-* request_hotel
-    - utter_ask_details
-* inform{"startdate": "next week", "location": "rome"}
-    - slot{"startdate": "next week"}
-    - slot{"location": "rome"}
-    - utter_ask_people
-* did_that_work
-    - utter_more_info_hotel
-    - utter_ask_people
-* chitchat
-    - utter_chitchat
-    - utter_ask_people
-* correct{"location": "london"}
-    - slot{"location": "london"}
-    - utter_correct_location_hotel
-    - utter_ask_people
 
 ## Generated Story -4499334457143557238
 * request_hotel
@@ -1864,6 +1847,8 @@
     - utter_correct_location_hotel
     - utter_ask_startdate
 
+
+
 ## Generated Story -7253318920602813250
 * request_hotel
     - utter_ask_details
@@ -1880,3 +1865,35 @@
 * explain
     - utter_explain_people_hotel
     - utter_ask_people
+
+
+
+## Generated Story -3571136074906726528
+* request_hotel
+    - utter_ask_details
+* inform{"people": "4"}
+    - slot{"people": "4"}
+    - utter_ask_location
+* explain
+    - utter_explain_location_hotel
+    - utter_ask_location
+* inform{"location": "paris"}
+    - slot{"location": "paris"}
+    - utter_ask_price
+* explain
+    - utter_explain_price_hotel
+    - utter_ask_price
+* inform{"price": "expensive"}
+    - slot{"price": "expensive"}
+    - utter_ask_startdate
+* inform{"startdate": "next week"}
+    - slot{"startdate": "next week"}
+    - utter_ask_enddate
+* correct{"startdate": "next week"}
+    - slot{"startdate": "next week"}
+    - utter_correct_startdate_hotel
+    - utter_ask_enddate
+* correct{"people": "2"}
+    - slot{"people": "2"}
+    - utter_correct_people_hotel
+    - utter_ask_enddate
