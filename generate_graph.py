@@ -75,7 +75,7 @@ if __name__ == '__main__':
                                 embed_dim=20,
                                 output_path='models/dialogue_embed'
                                 )
-            for s in cmdline_args.stories:
+            for s in list(cmdline_args.stories):
                 no = run_story_evaluation(s, 'models/dialogue_embed')
                 correct_embed[s.split('/')[-1]].append(no)
 
@@ -86,7 +86,7 @@ if __name__ == '__main__':
                                 output_path='models/dialogue_keras'
                                 )
 
-            for s in cmdline_args.stories:
+            for s in list(cmdline_args.stories):
                 no = run_story_evaluation(s, 'models/dialogue_keras')
                 correct_keras[s.split('/')[-1]].append(no)
 
