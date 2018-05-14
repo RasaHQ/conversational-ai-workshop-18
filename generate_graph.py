@@ -34,12 +34,12 @@ def create_argument_parser():
     parser.add_argument(
             '--data',
             type=str,
-            default='data/train',
+            default='data_bAbI/train',
             help="training data")
     parser.add_argument(
             '--epochs',
             type=int,
-            default=2000,
+            default=200,
             help="number of epochs")
 
     utils.add_logging_option_arguments(parser)
@@ -97,16 +97,16 @@ if __name__ == '__main__':
             #
             # correct_embed_noattn.append(no)
             #
-            # train_domain_policy(cmdline_args.data,
-            #                     starspace=False,
-            #                     exclusion_file=cmdline_args.exclude,
-            #                     exclusion_percentage=i,
-            #                     output_path='models/dialogue_keras'
-            #                     )
-            #
-            # no = run_story_evaluation(cmdline_args.stories,
-            #                           'models/dialogue_keras')
-            # correct_keras.append(no)
+            train_domain_policy(cmdline_args.data,
+                                starspace=False,
+                                exclusion_file=cmdline_args.exclude,
+                                exclusion_percentage=i,
+                                output_path='models/dialogue_keras'
+                                )
+
+            no = run_story_evaluation(cmdline_args.stories,
+                                      'models/dialogue_keras')
+            correct_keras.append(no)
         num_correct['keras'].append(correct_keras)
         num_correct['embed'].append(correct_embed)
         num_correct['embed_noattn'].append(correct_embed_noattn)

@@ -32,9 +32,9 @@ def train_domain_policy(story_filename,
     else:
         featurizer = MaxHistoryTrackerFeaturizer(
                         LabelTokenizerSingleStateFeaturizer(),
-                        max_history=20)
+                        max_history=44)
         policies = [KerasPolicy(featurizer)]
-        epochs = 400
+        epochs = 200
 
     agent = CustomAgent("bAbI_domain.yml",
                         policies=policies)
@@ -57,8 +57,8 @@ if __name__ == '__main__':
     logging.basicConfig(level="DEBUG")
     train_domain_policy(story_filename="data_bAbI/train/",
                         output_path='models/dialogue_embed',
-                        # exclusion_file='data/train/hotel_chitchat.md',
-                        # exclusion_percentage=100,
+                        exclusion_file='data_bAbI/train/babi_task5_trn_rasa.md',
+                        exclusion_percentage=50,
                         embed_dim=20
                         )
     logger.info("Finished training domain policy.")
