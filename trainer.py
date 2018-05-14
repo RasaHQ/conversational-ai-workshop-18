@@ -29,12 +29,14 @@ def train_domain_policy(story_filename,
                         LabelTokenizerSingleStateFeaturizer())
         policies = [EmbeddingPolicy(featurizer)]
         epochs = epoch_no
+        rnn_size = 32
     else:
         featurizer = MaxHistoryTrackerFeaturizer(
                         LabelTokenizerSingleStateFeaturizer(),
                         max_history=20)
         policies = [KerasPolicy(featurizer)]
         epochs = 400
+        rnn_size = 64
 
     agent = CustomAgent("domain.yml",
                         policies=policies)
@@ -45,7 +47,7 @@ def train_domain_policy(story_filename,
                            exclusion_percentage=exclusion_percentage)
 
     agent.train(data,
-                rnn_size=64,
+                rnn_size=rnn_size,
                 epochs=epochs,
                 embed_dim=embed_dim,
                 use_attention=True)
@@ -55,8 +57,7 @@ def train_domain_policy(story_filename,
 
 if __name__ == '__main__':
     logging.basicConfig(level="DEBUG")
-    train_domain_policy(story_filename="data/train/",
-                        output_path='models/dialogue_keras',
-                        exclusion_file='data/train/restaurant_happy.md',
-                        exclusion_percentage=20)
+    train_domain_policy(story_filename="data-complicated/train/hotel",
+                        output_path='models/dialogue_embed',
+                        embed_dim=20)
     logger.info("Finished training domain policy.")
