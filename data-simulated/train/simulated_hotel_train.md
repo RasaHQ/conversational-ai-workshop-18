@@ -966,25 +966,6 @@
     - utter_explain_enddate_hotel
     - utter_ask_enddate
 
-## Generated Story -5569927242522602373
-* request_hotel
-    - utter_ask_details
-* inform{"people": "4"}
-    - slot{"people": "4"}
-    - utter_ask_location
-* inform{"location": "london"}
-    - slot{"location": "london"}
-    - utter_ask_price
-* inform{"price": "cheap"}
-    - slot{"price": "cheap"}
-    - utter_ask_cuisine
-* explain
-    - utter_explain_cuisine_restaurant
-    - utter_ask_cuisine
-* explain
-    - utter_explain_cuisine_restaurant
-    - utter_ask_cuisine
-
 ## Generated Story 6118400076211702408
 * request_hotel
     - utter_ask_details
@@ -1638,4 +1619,3 @@
 * explain
     - utter_explain_people_hotel
     - utter_ask_people
-
