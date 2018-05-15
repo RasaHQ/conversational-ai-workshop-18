@@ -1,0 +1,31276 @@
+## story_07392915
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01607572
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris,people=six,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09074215
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,people=two,price=moderate]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03612493
+* greet
+ - utter_ask_howcanhelp
+* inform[location=london,people=two,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08770655
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,location=london,price=expensive]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07449843
+* greet
+ - utter_ask_howcanhelp
+* inform[people=two,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_location
+* inform[location=london]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* inform[location=rome]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05810027
+* greet
+ - utter_ask_howcanhelp
+* inform[people=two,price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02876711
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,location=madrid,price=cheap]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00893189
+* greet
+ - utter_ask_howcanhelp
+* inform[people=eight]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08804455
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,location=madrid,price=expensive]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04651283
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,people=two,price=moderate]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04815169
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,people=six,price=expensive]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08768255
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,location=london,price=expensive]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09481443
+* greet
+ - utter_ask_howcanhelp
+* inform[location=madrid,people=two,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08016891
+* greet
+ - utter_ask_howcanhelp
+* inform[people=four]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[location=rome]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00705210
+* greet
+ - utter_ask_howcanhelp
+* inform[location=rome,people=eight]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07109532
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris,people=four]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06899590
+* greet
+ - utter_ask_howcanhelp
+* inform[price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01342301
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,people=eight,price=moderate]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07621709
+* greet
+ - utter_ask_howcanhelp
+* inform[location=madrid,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02108916
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05635582
+* greet
+ - utter_ask_howcanhelp
+* inform[people=two,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09301716
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris,people=four,price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01383368
+* greet
+ - utter_ask_howcanhelp
+* inform[people=eight]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09792096
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,people=eight,price=expensive]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03847873
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,people=four,price=cheap]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01817780
+* greet
+ - utter_ask_howcanhelp
+* inform[people=four,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03614600
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,people=four]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09395306
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,people=eight,price=expensive]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[people=four]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02940346
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,location=london,price=moderate]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=rome]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01455859
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,location=london,people=four]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08883323
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,price=cheap]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06985729
+* greet
+ - utter_ask_howcanhelp
+* inform[price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02446996
+* greet
+ - utter_ask_howcanhelp
+* inform[location=london,people=two]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[people=four]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07234695
+* greet
+ - utter_ask_howcanhelp
+* inform[location=london,people=eight,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=rome]
+ - utter_ask_moreupdates
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06406099
+* greet
+ - utter_ask_howcanhelp
+* inform[location=london]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* inform[location=rome]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00976259
+* greet
+ - utter_ask_howcanhelp
+* inform[people=six]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09228697
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,location=london,price=expensive]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03539628
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,location=london,price=cheap]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07224208
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,price=cheap]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04468946
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,location=madrid]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=eight]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08246226
+* greet
+ - utter_ask_howcanhelp
+* inform[location=madrid,people=eight,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04854780
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,people=eight,price=moderate]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00567597
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,location=london]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04258794
+* greet
+ - utter_ask_howcanhelp
+* inform[price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08625140
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,location=bombay,price=cheap]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02437013
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,location=bombay,people=two]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07721489
+* greet
+ - utter_ask_howcanhelp
+* inform[price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09969738
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,location=paris]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01704800
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,location=madrid,people=eight]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[location=rome]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00725183
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,price=cheap]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[location=rome]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07055975
+* greet
+ - utter_ask_howcanhelp
+* inform[location=london,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* inform[people=four]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05510735
+* greet
+ - utter_ask_howcanhelp
+* inform[people=eight]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03087217
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,location=london,people=two]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=rome]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03411239
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,location=paris,price=expensive]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09561817
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,location=rome]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* inform[location=london]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06497037
+* greet
+ - utter_ask_howcanhelp
+* inform[location=london,people=eight,price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03862237
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,location=rome,people=four]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=paris]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05285236
+* greet
+ - utter_ask_howcanhelp
+* inform[people=two]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03827836
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,people=two,price=cheap]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06668212
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,location=madrid,people=eight]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=rome]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05634392
+* greet
+ - utter_ask_howcanhelp
+* inform[location=madrid,people=six]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05733935
+* greet
+ - utter_ask_howcanhelp
+* inform[people=eight,price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00064369
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,location=rome,people=two]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02470838
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09685721
+* greet
+ - utter_ask_howcanhelp
+* inform[location=london]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04265508
+* greet
+ - utter_ask_howcanhelp
+* inform[location=madrid,people=four,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09067595
+* greet
+ - utter_ask_howcanhelp
+* inform[people=two]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02390593
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=london]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04552683
+* greet
+ - utter_ask_howcanhelp
+* inform[price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07739166
+* greet
+ - utter_ask_howcanhelp
+* inform[people=six]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06221559
+* greet
+ - utter_ask_howcanhelp
+* inform[location=bombay]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* inform[location=london]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05474073
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,location=london]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=paris]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04192860
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,price=moderate]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[location=london]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08494788
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,people=two,price=cheap]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06826751
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,location=rome,people=two]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01605544
+* greet
+ - utter_ask_howcanhelp
+* inform[people=four]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02056364
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,location=bombay]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* inform[people=four]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07612618
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,price=moderate]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05901210
+* greet
+ - utter_ask_howcanhelp
+* inform[price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=london]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07228305
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,location=bombay,price=cheap]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09769769
+* greet
+ - utter_ask_howcanhelp
+* inform[people=two]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=london]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00706590
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,price=moderate]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02963114
+* greet
+ - utter_ask_howcanhelp
+* inform[people=eight,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_location
+* inform[location=london]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04003991
+* greet
+ - utter_ask_howcanhelp
+* inform[people=four]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=rome]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01651098
+* greet
+ - utter_ask_howcanhelp
+* inform[people=six]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09756855
+* greet
+ - utter_ask_howcanhelp
+* inform[people=two,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_location
+* inform[location=london]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05978137
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,location=paris]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* inform[location=rome]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03250198
+* greet
+ - utter_ask_howcanhelp
+* inform[location=madrid,people=eight,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07632910
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03859867
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,people=eight]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07901370
+* greet
+ - utter_ask_howcanhelp
+* inform[people=eight]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[location=london]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02920750
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,location=bombay,people=six]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=rome]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04815487
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00452550
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,people=two]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09208407
+* greet
+ - utter_ask_howcanhelp
+* inform[location=bombay,people=four]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07664652
+* greet
+ - utter_ask_howcanhelp
+* inform[location=bombay]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08298473
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,price=cheap]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04831220
+* greet
+ - utter_ask_howcanhelp
+* inform[location=madrid,people=eight]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00680418
+* greet
+ - utter_ask_howcanhelp
+* inform[people=eight,price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[people=four]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03997747
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris,people=four,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=london]
+ - utter_ask_moreupdates
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* inform[people=eight]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08275076
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,location=bombay,people=four]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[location=rome]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08103526
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,people=eight,price=cheap]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03137765
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=london]
+ - utter_ask_moreupdates
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06083686
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,location=madrid,people=four]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[location=london]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08360372
+* greet
+ - utter_ask_howcanhelp
+* inform[people=eight]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06310418
+* greet
+ - utter_ask_howcanhelp
+* inform[people=four]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07171830
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris,people=four]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07550686
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,location=madrid]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=eight]
+ - utter_ask_moreupdates
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02826308
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,people=two,price=moderate]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01533562
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,location=madrid]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01253786
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,people=four]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04697703
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,price=expensive]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=london]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06062311
+* greet
+ - utter_ask_howcanhelp
+* inform[location=rome,people=two,price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04025368
+* greet
+ - utter_ask_howcanhelp
+* inform[location=london]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04946370
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08912330
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00965917
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=rome]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04796212
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris,people=four,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06068935
+* greet
+ - utter_ask_howcanhelp
+* inform[people=four]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[location=london]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07304326
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05423749
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01734144
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07769730
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,location=paris,price=moderate]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07514393
+* greet
+ - utter_ask_howcanhelp
+* inform[price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=london]
+ - utter_ask_moreupdates
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04672079
+* greet
+ - utter_ask_howcanhelp
+* inform[people=four,price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02241013
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,price=expensive]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04508832
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06243663
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01559181
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,location=madrid,price=cheap]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01447194
+* greet
+ - utter_ask_howcanhelp
+* inform[people=eight]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01537661
+* greet
+ - utter_ask_howcanhelp
+* inform[location=rome,people=six]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09658299
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,location=madrid,price=moderate]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04579475
+* greet
+ - utter_ask_howcanhelp
+* inform[people=two,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04561549
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,people=four]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02365263
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,location=london,price=expensive]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[location=rome]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01468490
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05601680
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,price=moderate]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* inform[people=eight]
+ - utter_ask_moreupdates
+* inform[location=london]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02138907
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,people=six,price=moderate]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* inform[people=eight]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09541217
+* greet
+ - utter_ask_howcanhelp
+* inform[location=madrid,people=two,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[location=london]
+ - utter_ask_moreupdates
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07031008
+* greet
+ - utter_ask_howcanhelp
+* inform[location=rome,people=six,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02675086
+* greet
+ - utter_ask_howcanhelp
+* inform[location=london,people=six,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07245550
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,people=two,price=expensive]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09065557
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,price=cheap]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02867175
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris,people=two,price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07915390
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,location=london]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=rome]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07238941
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,location=rome]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01156275
+* greet
+ - utter_ask_howcanhelp
+* inform[location=madrid,people=eight,price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[people=four]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00881477
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,location=paris]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03419486
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,people=six]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05131575
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,people=four]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03104649
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,location=paris,price=cheap]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08742802
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02736336
+* greet
+ - utter_ask_howcanhelp
+* inform[location=bombay,people=two]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05640880
+* greet
+ - utter_ask_howcanhelp
+* inform[location=madrid]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00769984
+* greet
+ - utter_ask_howcanhelp
+* inform[location=bombay]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03198428
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,people=six,price=moderate]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09993057
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,location=rome,people=two]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03011485
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris,people=four,price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02089337
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,location=rome,people=eight]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02707174
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,price=cheap]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=eight]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09074080
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,people=four,price=expensive]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00023625
+* greet
+ - utter_ask_howcanhelp
+* inform[people=two]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03292092
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06439020
+* greet
+ - utter_ask_howcanhelp
+* inform[location=bombay,people=six]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07671597
+* greet
+ - utter_ask_howcanhelp
+* inform[location=rome,people=two]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06926094
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris,people=six,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00146872
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris,people=two,price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03053530
+* greet
+ - utter_ask_howcanhelp
+* inform[location=madrid]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=london]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04407455
+* greet
+ - utter_ask_howcanhelp
+* inform[price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02854111
+* greet
+ - utter_ask_howcanhelp
+* inform[location=bombay]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=rome]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01413220
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,location=london,people=four]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01388817
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,location=london]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05515343
+* greet
+ - utter_ask_howcanhelp
+* inform[people=two,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_location
+* inform[location=london]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=eight]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04614969
+* greet
+ - utter_ask_howcanhelp
+* inform[people=two]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00295102
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,location=london]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=rome]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04827994
+* greet
+ - utter_ask_howcanhelp
+* inform[people=four,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09005572
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,location=london,people=six]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=rome]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07510328
+* greet
+ - utter_ask_howcanhelp
+* inform[location=madrid]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04495225
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=eight]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01808769
+* greet
+ - utter_ask_howcanhelp
+* inform[location=rome,people=eight,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01294163
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,price=moderate]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01700242
+* greet
+ - utter_ask_howcanhelp
+* inform[price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01285385
+* greet
+ - utter_ask_howcanhelp
+* inform[price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04595968
+* greet
+ - utter_ask_howcanhelp
+* inform[people=four]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01935252
+* greet
+ - utter_ask_howcanhelp
+* inform[price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02219722
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,people=six,price=expensive]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* inform[location=rome]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07576698
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,people=four,price=expensive]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01110428
+* greet
+ - utter_ask_howcanhelp
+* inform[location=rome,price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* inform[location=london]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02282996
+* greet
+ - utter_ask_howcanhelp
+* inform[location=london,price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=rome]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05235599
+* greet
+ - utter_ask_howcanhelp
+* inform[location=rome,people=eight,price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03417558
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,location=madrid]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=london]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01934061
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07959767
+* greet
+ - utter_ask_howcanhelp
+* inform[people=two]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* inform[people=four]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02626071
+* greet
+ - utter_ask_howcanhelp
+* inform[price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02891724
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,people=four,price=moderate]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07542106
+* greet
+ - utter_ask_howcanhelp
+* inform[location=london,people=four]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05922092
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,people=two,price=cheap]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07323063
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris,people=eight]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02477976
+* greet
+ - utter_ask_howcanhelp
+* inform[location=madrid]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04034521
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,people=four]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09022629
+* greet
+ - utter_ask_howcanhelp
+* inform[location=bombay,people=six]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[location=rome]
+ - utter_ask_moreupdates
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08579638
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris,people=eight,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02780575
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01174035
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02500513
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=paris]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08965535
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,people=four,price=expensive]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06318514
+* greet
+ - utter_ask_howcanhelp
+* inform[location=bombay,people=two]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* inform[location=london]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09685543
+* greet
+ - utter_ask_howcanhelp
+* inform[location=bombay]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09190215
+* greet
+ - utter_ask_howcanhelp
+* inform[people=six]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03944704
+* greet
+ - utter_ask_howcanhelp
+* inform[people=four,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08289815
+* greet
+ - utter_ask_howcanhelp
+* inform[location=bombay]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09387137
+* greet
+ - utter_ask_howcanhelp
+* inform[price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[location=london]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01032681
+* greet
+ - utter_ask_howcanhelp
+* inform[people=eight,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07384237
+* greet
+ - utter_ask_howcanhelp
+* inform[people=eight,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_location
+* inform[location=london]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04083972
+* greet
+ - utter_ask_howcanhelp
+* inform[location=madrid]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* inform[location=london]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09459098
+* greet
+ - utter_ask_howcanhelp
+* inform[location=madrid,people=four,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02122974
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,location=paris,people=eight]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00531611
+* greet
+ - utter_ask_howcanhelp
+* inform[price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02270432
+* greet
+ - utter_ask_howcanhelp
+* inform[location=bombay,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07974674
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,price=moderate]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02796870
+* greet
+ - utter_ask_howcanhelp
+* inform[location=rome,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03048121
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06459137
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,people=eight]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01852086
+* greet
+ - utter_ask_howcanhelp
+* inform[people=four]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02394541
+* greet
+ - utter_ask_howcanhelp
+* inform[people=four]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02218190
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,people=six]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[location=london]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05678056
+* greet
+ - utter_ask_howcanhelp
+* inform[people=two,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_location
+* inform[location=london]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=paris]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04968790
+* greet
+ - utter_ask_howcanhelp
+* inform[location=bombay,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04867159
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,people=four]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* inform[location=rome]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03632685
+* greet
+ - utter_ask_howcanhelp
+* inform[people=eight]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06604900
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,price=expensive]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06118058
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,people=two,price=moderate]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=eight]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02452055
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,location=rome,price=expensive]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00116125
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,location=london,price=cheap]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05793918
+* greet
+ - utter_ask_howcanhelp
+* inform[location=london,people=four]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=rome]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07024030
+* greet
+ - utter_ask_howcanhelp
+* inform[location=london,people=two]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06485628
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03387120
+* greet
+ - utter_ask_howcanhelp
+* inform[people=six,price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_location
+* inform[location=london]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[location=rome]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00803243
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05306093
+* greet
+ - utter_ask_howcanhelp
+* inform[location=bombay,people=six]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06354307
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,people=four]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00466361
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05527477
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,location=london]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=rome]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04124715
+* greet
+ - utter_ask_howcanhelp
+* inform[people=six]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=eight]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[location=rome]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04306987
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,location=bombay]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07580258
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,location=rome,price=moderate]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08466752
+* greet
+ - utter_ask_howcanhelp
+* inform[price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07896392
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=paris]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01820676
+* greet
+ - utter_ask_howcanhelp
+* inform[location=rome,people=six,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09422205
+* greet
+ - utter_ask_howcanhelp
+* inform[location=madrid,people=two,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07693115
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,location=paris,people=four]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00240389
+* greet
+ - utter_ask_howcanhelp
+* inform[location=london]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09932022
+* greet
+ - utter_ask_howcanhelp
+* inform[people=two]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02568383
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,people=six]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01691848
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,people=four]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00593233
+* greet
+ - utter_ask_howcanhelp
+* inform[location=rome,people=six]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05811369
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris,people=six]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00910944
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,price=expensive]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[location=rome]
+ - utter_ask_moreupdates
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00565108
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,location=london]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05230682
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,location=bombay,people=four]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02779370
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,location=paris,price=cheap]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04419055
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,location=rome,people=four]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02086995
+* greet
+ - utter_ask_howcanhelp
+* inform[people=six]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=rome]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03510148
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,people=six,price=expensive]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00944664
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,people=two,price=cheap]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* inform[people=four]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06042032
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,people=six]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07614673
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,location=rome,price=moderate]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00278119
+* greet
+ - utter_ask_howcanhelp
+* inform[location=madrid,people=eight,price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[people=four]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03638519
+* greet
+ - utter_ask_howcanhelp
+* inform[location=bombay,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03009255
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,location=paris,price=cheap]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* inform[people=four]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06054184
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,people=six,price=cheap]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08420722
+* greet
+ - utter_ask_howcanhelp
+* inform[location=bombay,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[location=london]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04808159
+* greet
+ - utter_ask_howcanhelp
+* inform[people=two,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=london]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02786108
+* greet
+ - utter_ask_howcanhelp
+* inform[people=two,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05906913
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00005830
+* greet
+ - utter_ask_howcanhelp
+* inform[location=rome]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01628240
+* greet
+ - utter_ask_howcanhelp
+* inform[price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02619376
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,price=expensive]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04726923
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,people=eight]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[location=london]
+ - utter_ask_moreupdates
+* inform[people=four]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03486904
+* greet
+ - utter_ask_howcanhelp
+* inform[price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09953180
+* greet
+ - utter_ask_howcanhelp
+* inform[location=madrid,people=six]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08783445
+* greet
+ - utter_ask_howcanhelp
+* inform[price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=rome]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00629716
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,people=four]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09863826
+* greet
+ - utter_ask_howcanhelp
+* inform[location=rome]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02586491
+* greet
+ - utter_ask_howcanhelp
+* inform[price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03120146
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,people=four]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04089281
+* greet
+ - utter_ask_howcanhelp
+* inform[people=two,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_location
+* inform[location=london]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* inform[people=eight]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03421836
+* greet
+ - utter_ask_howcanhelp
+* inform[location=london,people=six,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08664632
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,people=two,price=cheap]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00623599
+* greet
+ - utter_ask_howcanhelp
+* inform[location=bombay]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[location=london]
+ - utter_ask_moreupdates
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06933482
+* greet
+ - utter_ask_howcanhelp
+* inform[people=two,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[location=london]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05001145
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,location=paris,people=eight]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00670970
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09422768
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,location=rome,price=cheap]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04151472
+* greet
+ - utter_ask_howcanhelp
+* inform[location=london,price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08154906
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris,people=two]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=london]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05403405
+* greet
+ - utter_ask_howcanhelp
+* inform[price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07696306
+* greet
+ - utter_ask_howcanhelp
+* inform[location=madrid,people=eight]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05353615
+* greet
+ - utter_ask_howcanhelp
+* inform[people=two]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[location=rome]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05164291
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,location=bombay]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00924009
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09834610
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=london]
+ - utter_ask_moreupdates
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02370801
+* greet
+ - utter_ask_howcanhelp
+* inform[location=madrid,people=two,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=eight]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07835656
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,location=paris,price=moderate]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00908458
+* greet
+ - utter_ask_howcanhelp
+* inform[price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* inform[people=eight]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01361707
+* greet
+ - utter_ask_howcanhelp
+* inform[people=four]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08690140
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,location=paris,people=eight]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09714011
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,location=paris,people=two]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[location=london]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08808164
+* greet
+ - utter_ask_howcanhelp
+* inform[location=madrid]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04409751
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,location=london,price=cheap]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06288319
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,people=two,price=moderate]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02633628
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,people=six,price=moderate]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=london]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02392694
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,location=rome,people=eight]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09478760
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,price=expensive]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04795282
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05152295
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,location=madrid,price=moderate]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01273144
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,location=bombay,price=expensive]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07262916
+* greet
+ - utter_ask_howcanhelp
+* inform[location=bombay,people=eight]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01500255
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,location=bombay,people=two]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07424594
+* greet
+ - utter_ask_howcanhelp
+* inform[location=rome,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=eight]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04821851
+* greet
+ - utter_ask_howcanhelp
+* inform[location=madrid,people=six,price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=paris]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05349937
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,people=two]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07121823
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,location=london,price=cheap]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=rome]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00438295
+* greet
+ - utter_ask_howcanhelp
+* inform[people=four]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00512053
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,location=rome]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07135384
+* greet
+ - utter_ask_howcanhelp
+* inform[people=four]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01158204
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,people=six,price=cheap]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* inform[people=eight]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07272234
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,people=four,price=moderate]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09749229
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[location=london]
+ - utter_ask_moreupdates
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08693773
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,location=london,people=two]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* inform[people=eight]
+ - utter_ask_moreupdates
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07370092
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,people=six,price=cheap]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00576644
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[location=rome]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04287019
+* greet
+ - utter_ask_howcanhelp
+* inform[people=two,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06816315
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,people=eight,price=cheap]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03968980
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris,people=four,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02594440
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris,people=eight]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00770808
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,location=rome,people=four]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09806951
+* greet
+ - utter_ask_howcanhelp
+* inform[people=four]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06657851
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08522177
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,people=two]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04357706
+* greet
+ - utter_ask_howcanhelp
+* inform[location=bombay]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01202018
+* greet
+ - utter_ask_howcanhelp
+* inform[location=bombay,people=six,price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02898339
+* greet
+ - utter_ask_howcanhelp
+* inform[people=six,price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[location=rome]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05998345
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,price=expensive]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00290709
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris,people=four,price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[location=london]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05634039
+* greet
+ - utter_ask_howcanhelp
+* inform[people=two]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05305680
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,location=london,price=moderate]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01048976
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris,people=eight,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=london]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07147818
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,price=expensive]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00049375
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris,people=eight,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06849368
+* greet
+ - utter_ask_howcanhelp
+* inform[people=four]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09443891
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,location=bombay]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06533324
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,people=eight,price=expensive]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01379499
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,people=two,price=moderate]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03606567
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,location=bombay,price=cheap]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01302355
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,people=four,price=moderate]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07736933
+* greet
+ - utter_ask_howcanhelp
+* inform[location=rome,people=six,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01059141
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,people=four,price=expensive]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=london]
+ - utter_ask_moreupdates
+* inform[people=eight]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01799579
+* greet
+ - utter_ask_howcanhelp
+* inform[price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07030791
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=london]
+ - utter_ask_moreupdates
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08359977
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,location=london,people=four]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=paris]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04210855
+* greet
+ - utter_ask_howcanhelp
+* inform[location=madrid,people=six,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06557416
+* greet
+ - utter_ask_howcanhelp
+* inform[location=rome,people=eight]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04797414
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06022168
+* greet
+ - utter_ask_howcanhelp
+* inform[price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04111470
+* greet
+ - utter_ask_howcanhelp
+* inform[location=bombay,people=eight,price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05293744
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,location=rome,people=six]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04504261
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09372712
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris,people=six,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02537041
+* greet
+ - utter_ask_howcanhelp
+* inform[people=four]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09271644
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,location=paris,people=eight]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02423021
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,people=eight,price=moderate]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05934242
+* greet
+ - utter_ask_howcanhelp
+* inform[price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[location=london]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04901106
+* greet
+ - utter_ask_howcanhelp
+* inform[location=bombay,price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05005705
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,people=six,price=cheap]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[location=london]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02143265
+* greet
+ - utter_ask_howcanhelp
+* inform[location=bombay]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09930358
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,location=paris]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07615099
+* greet
+ - utter_ask_howcanhelp
+* inform[people=two]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03280178
+* greet
+ - utter_ask_howcanhelp
+* inform[people=six,price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01294556
+* greet
+ - utter_ask_howcanhelp
+* inform[people=eight]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00467441
+* greet
+ - utter_ask_howcanhelp
+* inform[price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* inform[location=rome]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03604620
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,location=rome,people=two]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04637432
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,price=moderate]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02621261
+* greet
+ - utter_ask_howcanhelp
+* inform[people=eight,price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_location
+* inform[location=london]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=rome]
+ - utter_ask_moreupdates
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06598035
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,price=moderate]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=london]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04419782
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris,people=eight,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05581716
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01709320
+* greet
+ - utter_ask_howcanhelp
+* inform[people=six]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=eight]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03095850
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,people=four,price=cheap]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09553728
+* greet
+ - utter_ask_howcanhelp
+* inform[people=four,price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04053830
+* greet
+ - utter_ask_howcanhelp
+* inform[location=london,people=four,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=rome]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04450650
+* greet
+ - utter_ask_howcanhelp
+* inform[price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04324118
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,people=eight,price=cheap]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01345970
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,people=four,price=moderate]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* inform[location=rome]
+ - utter_ask_moreupdates
+* inform[people=eight]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00857385
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00006643
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,location=paris,price=moderate]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00446773
+* greet
+ - utter_ask_howcanhelp
+* inform[location=london,people=eight]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04819392
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris,people=two]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=london]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08679404
+* greet
+ - utter_ask_howcanhelp
+* inform[people=two]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04281532
+* greet
+ - utter_ask_howcanhelp
+* inform[location=london,people=six,price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06501200
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,location=rome,people=two]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09860038
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,people=four]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04828563
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,people=two]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=rome]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02540384
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03294589
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,people=six,price=cheap]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03654944
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,location=paris,price=moderate]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* inform[people=eight]
+ - utter_ask_moreupdates
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01437930
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,location=paris,price=moderate]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[location=london]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05158179
+* greet
+ - utter_ask_howcanhelp
+* inform[people=four]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04850402
+* greet
+ - utter_ask_howcanhelp
+* inform[location=madrid,people=two]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08152100
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,price=cheap]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03390492
+* greet
+ - utter_ask_howcanhelp
+* inform[location=rome]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[location=london]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02039495
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,location=madrid,price=cheap]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08549589
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,location=london]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[people=four]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07370525
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,location=rome,people=two]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[people=four]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02519023
+* greet
+ - utter_ask_howcanhelp
+* inform[people=four,price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_location
+* inform[location=london]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03992548
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,location=rome,price=moderate]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00391870
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,location=rome,people=four]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[location=london]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08457117
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,price=cheap]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05494665
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,people=two,price=cheap]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03997896
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,location=paris,price=cheap]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02636846
+* greet
+ - utter_ask_howcanhelp
+* inform[people=eight]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* inform[people=four]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02417018
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,location=madrid,people=six]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[location=london]
+ - utter_ask_moreupdates
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04942369
+* greet
+ - utter_ask_howcanhelp
+* inform[people=four]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08566465
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,location=paris,people=two]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03498765
+* greet
+ - utter_ask_howcanhelp
+* inform[location=rome]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=eight]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06277702
+* greet
+ - utter_ask_howcanhelp
+* inform[location=london,people=eight,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03378501
+* greet
+ - utter_ask_howcanhelp
+* inform[location=rome]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* inform[people=eight]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02321630
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,location=paris,people=six]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00801638
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,people=six,price=cheap]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=london]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03906555
+* greet
+ - utter_ask_howcanhelp
+* inform[location=bombay,people=eight,price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05468700
+* greet
+ - utter_ask_howcanhelp
+* inform[people=two,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08133323
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* inform[people=four]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08207549
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris,people=two]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07709813
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,location=paris]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03813090
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,location=bombay]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00004786
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,price=cheap]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=eight]
+ - utter_ask_moreupdates
+* inform[location=london]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01791073
+* greet
+ - utter_ask_howcanhelp
+* inform[location=rome,people=four]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09070570
+* greet
+ - utter_ask_howcanhelp
+* inform[people=four]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=rome]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04164354
+* greet
+ - utter_ask_howcanhelp
+* inform[people=six]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05164521
+* greet
+ - utter_ask_howcanhelp
+* inform[price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09501747
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,location=madrid,price=cheap]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05669213
+* greet
+ - utter_ask_howcanhelp
+* inform[price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08104566
+* greet
+ - utter_ask_howcanhelp
+* inform[people=eight,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07447910
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,people=six,price=cheap]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04832599
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,people=four,price=cheap]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=eight]
+ - utter_ask_moreupdates
+* inform[location=rome]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04427550
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,location=london,price=moderate]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* inform[location=rome]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05705239
+* greet
+ - utter_ask_howcanhelp
+* inform[people=two,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08783436
+* greet
+ - utter_ask_howcanhelp
+* inform[location=rome,people=eight,price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* inform[people=four]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02267667
+* greet
+ - utter_ask_howcanhelp
+* inform[people=eight,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08794731
+* greet
+ - utter_ask_howcanhelp
+* inform[price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[location=rome]
+ - utter_ask_moreupdates
+* inform[people=four]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04999423
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,price=expensive]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[people=eight]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03640283
+* greet
+ - utter_ask_howcanhelp
+* inform[location=madrid]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03139469
+* greet
+ - utter_ask_howcanhelp
+* inform[location=rome,people=eight,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05206809
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,people=two]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04429677
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,location=paris,people=four]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02874149
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* inform[location=london]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00787248
+* greet
+ - utter_ask_howcanhelp
+* inform[location=london,people=six,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04841249
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08838275
+* greet
+ - utter_ask_howcanhelp
+* inform[location=rome]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02808929
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,people=two,price=moderate]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03291584
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,people=eight]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* inform[people=four]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02803845
+* greet
+ - utter_ask_howcanhelp
+* inform[location=london,people=two]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03209908
+* greet
+ - utter_ask_howcanhelp
+* inform[location=rome]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06206984
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,price=cheap]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06775550
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09651936
+* greet
+ - utter_ask_howcanhelp
+* inform[people=four]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=london]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05744484
+* greet
+ - utter_ask_howcanhelp
+* inform[location=bombay,people=two,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02535343
+* greet
+ - utter_ask_howcanhelp
+* inform[price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* inform[location=london]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06862561
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,price=cheap]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=eight]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01160684
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,location=madrid,people=six]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05695273
+* greet
+ - utter_ask_howcanhelp
+* inform[location=madrid]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[location=rome]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01436137
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,people=four]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=london]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08815476
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,price=moderate]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01479971
+* greet
+ - utter_ask_howcanhelp
+* inform[people=eight]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[location=london]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09997549
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,location=madrid,people=six]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07647750
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,location=paris]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02487684
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,price=moderate]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01699723
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,people=two]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=rome]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06407801
+* greet
+ - utter_ask_howcanhelp
+* inform[people=four,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[location=london]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06511953
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03487022
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,location=london,people=two]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02192253
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* inform[people=four]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03547449
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,location=london,people=six]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=rome]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03528055
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00873994
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[location=london]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03098259
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,location=bombay,price=expensive]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06582074
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,location=paris]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=eight]
+ - utter_ask_moreupdates
+* inform[location=london]
+ - utter_ask_moreupdates
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01650887
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,location=paris,price=moderate]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* inform[location=rome]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00240913
+* greet
+ - utter_ask_howcanhelp
+* inform[location=london,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07087891
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,price=moderate]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00384999
+* greet
+ - utter_ask_howcanhelp
+* inform[location=london]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02653145
+* greet
+ - utter_ask_howcanhelp
+* inform[location=london,people=six,price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01719398
+* greet
+ - utter_ask_howcanhelp
+* inform[location=madrid,people=eight]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09674625
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,people=four]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04108699
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,people=six,price=moderate]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* inform[people=eight]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01637170
+* greet
+ - utter_ask_howcanhelp
+* inform[location=madrid]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06382881
+* greet
+ - utter_ask_howcanhelp
+* inform[people=two]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[location=london]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00302378
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,location=bombay]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09504396
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,people=two,price=moderate]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04411956
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,location=paris,price=moderate]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* inform[location=london]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08146782
+* greet
+ - utter_ask_howcanhelp
+* inform[location=rome,people=six,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07642077
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07472189
+* greet
+ - utter_ask_howcanhelp
+* inform[price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09235456
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,price=moderate]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[people=four]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04283182
+* greet
+ - utter_ask_howcanhelp
+* inform[price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05725374
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,people=two,price=expensive]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[location=rome]
+ - utter_ask_moreupdates
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06064635
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,people=four]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[location=london]
+ - utter_ask_moreupdates
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07683069
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05198572
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,people=six,price=moderate]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07975989
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,people=six,price=expensive]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=london]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00837432
+* greet
+ - utter_ask_howcanhelp
+* inform[people=eight]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07386685
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,location=rome]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=london]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05299514
+* greet
+ - utter_ask_howcanhelp
+* inform[location=rome,price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=london]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01691921
+* greet
+ - utter_ask_howcanhelp
+* inform[people=two]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=rome]
+ - utter_ask_moreupdates
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05178320
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,price=cheap]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04547638
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,people=six]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07813460
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,location=london,price=cheap]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07441496
+* greet
+ - utter_ask_howcanhelp
+* inform[location=bombay,people=two,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01724665
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,location=bombay]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06706482
+* greet
+ - utter_ask_howcanhelp
+* inform[people=four,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07400427
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,people=six,price=cheap]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09395112
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,location=paris,price=moderate]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06310127
+* greet
+ - utter_ask_howcanhelp
+* inform[location=bombay,people=four]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* inform[location=london]
+ - utter_ask_moreupdates
+* inform[people=eight]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04899204
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris,people=two,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=london]
+ - utter_ask_moreupdates
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04643179
+* greet
+ - utter_ask_howcanhelp
+* inform[people=four,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_location
+* inform[location=london]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04465888
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,location=london]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03259038
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris,people=four]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05388309
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,price=expensive]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03019723
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,people=six,price=expensive]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01543263
+* greet
+ - utter_ask_howcanhelp
+* inform[people=four,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_location
+* inform[location=london]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04480167
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,location=london,price=expensive]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[location=rome]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07506560
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,location=madrid]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05171825
+* greet
+ - utter_ask_howcanhelp
+* inform[people=two,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03375968
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09822552
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,location=bombay,people=six]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=rome]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02435544
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01115873
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,people=four,price=cheap]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=london]
+ - utter_ask_moreupdates
+* inform[people=eight]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05938901
+* greet
+ - utter_ask_howcanhelp
+* inform[people=eight,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=london]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09416521
+* greet
+ - utter_ask_howcanhelp
+* inform[price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03582290
+* greet
+ - utter_ask_howcanhelp
+* inform[price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=london]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04695290
+* greet
+ - utter_ask_howcanhelp
+* inform[people=four,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=eight]
+ - utter_ask_moreupdates
+* inform[location=rome]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05951309
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,people=six]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[people=eight]
+ - utter_ask_moreupdates
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07552602
+* greet
+ - utter_ask_howcanhelp
+* inform[price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=eight]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03933309
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,price=cheap]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07048909
+* greet
+ - utter_ask_howcanhelp
+* inform[location=london,people=two]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08096176
+* greet
+ - utter_ask_howcanhelp
+* inform[people=eight,price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_location
+* inform[location=london]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02577307
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,people=four,price=cheap]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02305064
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05032137
+* greet
+ - utter_ask_howcanhelp
+* inform[location=london,people=six,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[location=rome]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00065016
+* greet
+ - utter_ask_howcanhelp
+* inform[location=london,price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02187758
+* greet
+ - utter_ask_howcanhelp
+* inform[location=madrid]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=london]
+ - utter_ask_moreupdates
+* inform[people=four]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05246800
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris,people=eight]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05563494
+* greet
+ - utter_ask_howcanhelp
+* inform[people=eight,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03869086
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,price=cheap]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09290416
+* greet
+ - utter_ask_howcanhelp
+* inform[price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01487759
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,location=rome,price=expensive]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06110276
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,people=six,price=moderate]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08304819
+* greet
+ - utter_ask_howcanhelp
+* inform[location=madrid,people=six]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04511580
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,location=london]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=rome]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09175976
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04683408
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* inform[people=four]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01350264
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06773526
+* greet
+ - utter_ask_howcanhelp
+* inform[people=eight]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[location=london]
+ - utter_ask_moreupdates
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08872614
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris,people=four]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02253711
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,location=madrid,people=two]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* inform[people=four]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08134964
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02796164
+* greet
+ - utter_ask_howcanhelp
+* inform[people=six]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07824475
+* greet
+ - utter_ask_howcanhelp
+* inform[people=eight]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05154274
+* greet
+ - utter_ask_howcanhelp
+* inform[price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=rome]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00272775
+* greet
+ - utter_ask_howcanhelp
+* inform[people=six]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08816141
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,people=two]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02647420
+* greet
+ - utter_ask_howcanhelp
+* inform[people=two]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04174079
+* greet
+ - utter_ask_howcanhelp
+* inform[price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[location=rome]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01147829
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09636622
+* greet
+ - utter_ask_howcanhelp
+* inform[location=london,people=four,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08485587
+* greet
+ - utter_ask_howcanhelp
+* inform[location=rome,people=eight,price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06276360
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,people=six]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02024749
+* greet
+ - utter_ask_howcanhelp
+* inform[people=four]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04818845
+* greet
+ - utter_ask_howcanhelp
+* inform[people=six]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09751429
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,location=bombay,price=moderate]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06193631
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,location=paris,people=eight]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07914344
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,price=moderate]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00015390
+* greet
+ - utter_ask_howcanhelp
+* inform[price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=london]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06432932
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,people=six,price=cheap]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06863823
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,location=paris,price=expensive]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03985821
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,people=eight,price=cheap]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[location=rome]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00715232
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03706267
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,people=six]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06079971
+* greet
+ - utter_ask_howcanhelp
+* inform[location=bombay,people=two,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=london]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01974694
+* greet
+ - utter_ask_howcanhelp
+* inform[people=four]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06828899
+* greet
+ - utter_ask_howcanhelp
+* inform[location=rome,people=eight,price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00912908
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,people=six]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* inform[people=four]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00940340
+* greet
+ - utter_ask_howcanhelp
+* inform[location=madrid,people=eight,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07911480
+* greet
+ - utter_ask_howcanhelp
+* inform[people=two,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01449598
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,location=paris,people=six]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06676059
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,location=london]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05977552
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,people=eight,price=expensive]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09203140
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris,people=eight]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03841643
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,price=moderate]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=paris]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05301720
+* greet
+ - utter_ask_howcanhelp
+* inform[location=rome]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09962039
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=london]
+ - utter_ask_moreupdates
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04497751
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,people=four]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06215178
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,people=two,price=moderate]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02905820
+* greet
+ - utter_ask_howcanhelp
+* inform[location=madrid,people=four]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* inform[people=eight]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09520750
+* greet
+ - utter_ask_howcanhelp
+* inform[location=bombay,people=eight,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01629028
+* greet
+ - utter_ask_howcanhelp
+* inform[people=four,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_location
+* inform[location=london]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[location=rome]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04766088
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,location=rome,price=cheap]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05746671
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* inform[people=eight]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02465057
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,location=paris]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00090695
+* greet
+ - utter_ask_howcanhelp
+* inform[price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=london]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04185687
+* greet
+ - utter_ask_howcanhelp
+* inform[people=six]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=eight]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02906906
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,location=paris,price=moderate]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04599076
+* greet
+ - utter_ask_howcanhelp
+* inform[people=two]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08593697
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,price=cheap]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05991012
+* greet
+ - utter_ask_howcanhelp
+* inform[location=madrid]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06588691
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,location=bombay,people=four]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04424336
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,location=madrid,people=six]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06091865
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,price=expensive]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=london]
+ - utter_ask_moreupdates
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05973882
+* greet
+ - utter_ask_howcanhelp
+* inform[people=four]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05990052
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00969750
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,people=six,price=cheap]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[location=london]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01254750
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,price=cheap]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* inform[people=four]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03695671
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris,people=eight,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04781886
+* greet
+ - utter_ask_howcanhelp
+* inform[location=rome]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06588807
+* greet
+ - utter_ask_howcanhelp
+* inform[people=four]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* inform[people=eight]
+ - utter_ask_moreupdates
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06627026
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,location=paris,price=moderate]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* inform[location=rome]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00442518
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03890727
+* greet
+ - utter_ask_howcanhelp
+* inform[location=rome]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=london]
+ - utter_ask_moreupdates
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00984368
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,people=four]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04388260
+* greet
+ - utter_ask_howcanhelp
+* inform[people=two,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02333870
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,location=madrid,price=cheap]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06993718
+* greet
+ - utter_ask_howcanhelp
+* inform[location=rome,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=eight]
+ - utter_ask_moreupdates
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09841820
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,location=paris]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=london]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00861855
+* greet
+ - utter_ask_howcanhelp
+* inform[people=four]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00028235
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,price=cheap]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[location=london]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00797921
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,location=madrid,people=four]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07013666
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,location=rome,price=moderate]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=paris]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02390850
+* greet
+ - utter_ask_howcanhelp
+* inform[location=london,price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03441782
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,people=two]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04834063
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=eight]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00198055
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09870320
+* greet
+ - utter_ask_howcanhelp
+* inform[location=madrid,people=two,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[people=four]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02037247
+* greet
+ - utter_ask_howcanhelp
+* inform[people=eight]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07830860
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,people=six,price=moderate]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06372445
+* greet
+ - utter_ask_howcanhelp
+* inform[price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=london]
+ - utter_ask_moreupdates
+* inform[people=four]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02222189
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,price=expensive]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02114093
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* inform[people=four]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06903067
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[people=four]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02210311
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04850363
+* greet
+ - utter_ask_howcanhelp
+* inform[people=six,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_location
+* inform[location=london]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00400524
+* greet
+ - utter_ask_howcanhelp
+* inform[location=london,people=eight,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01252645
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,people=eight]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00636241
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09379061
+* greet
+ - utter_ask_howcanhelp
+* inform[location=london,people=two,price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* inform[people=eight]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00103216
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01654292
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[people=eight]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04657704
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,location=rome,price=cheap]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* inform[people=eight]
+ - utter_ask_moreupdates
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04504576
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* inform[location=rome]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04882486
+* greet
+ - utter_ask_howcanhelp
+* inform[people=eight]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01716067
+* greet
+ - utter_ask_howcanhelp
+* inform[location=london]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05982005
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,location=madrid,price=expensive]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08635023
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,people=eight]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03843528
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,location=london,price=cheap]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09806103
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08933657
+* greet
+ - utter_ask_howcanhelp
+* inform[people=two,price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02671046
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,location=paris]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=rome]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08270674
+* greet
+ - utter_ask_howcanhelp
+* inform[people=six]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06648203
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,location=madrid,price=cheap]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=eight]
+ - utter_ask_moreupdates
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05452506
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,people=eight,price=cheap]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[location=london]
+ - utter_ask_moreupdates
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00492984
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,location=bombay]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[people=four]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09853146
+* greet
+ - utter_ask_howcanhelp
+* inform[location=madrid]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02771753
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,price=moderate]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02741646
+* greet
+ - utter_ask_howcanhelp
+* inform[price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00258059
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,people=two,price=moderate]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* inform[location=london]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01854888
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,location=madrid]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06933498
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,people=eight,price=moderate]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06173358
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,price=moderate]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02247197
+* greet
+ - utter_ask_howcanhelp
+* inform[people=four]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01720686
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,people=eight,price=cheap]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08008209
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,location=london,people=four]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=eight]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04234392
+* greet
+ - utter_ask_howcanhelp
+* inform[people=four]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02279188
+* greet
+ - utter_ask_howcanhelp
+* inform[people=two]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[location=rome]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06471153
+* greet
+ - utter_ask_howcanhelp
+* inform[location=madrid]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05885924
+* greet
+ - utter_ask_howcanhelp
+* inform[location=london,people=two,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05833370
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,people=eight]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09513806
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,location=bombay]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00465907
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[people=eight]
+ - utter_ask_moreupdates
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04878758
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,price=moderate]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05444381
+* greet
+ - utter_ask_howcanhelp
+* inform[location=rome,people=eight,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06887123
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,location=paris,price=moderate]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00256404
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,people=four]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04855963
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,location=madrid,price=cheap]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=rome]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07372501
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=rome]
+ - utter_ask_moreupdates
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09677690
+* greet
+ - utter_ask_howcanhelp
+* inform[price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=paris]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06518117
+* greet
+ - utter_ask_howcanhelp
+* inform[location=madrid]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08077474
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,people=four]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08048973
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,location=madrid,price=cheap]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09890857
+* greet
+ - utter_ask_howcanhelp
+* inform[price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08116432
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,people=two,price=expensive]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07859286
+* greet
+ - utter_ask_howcanhelp
+* inform[price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* inform[location=rome]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02355698
+* greet
+ - utter_ask_howcanhelp
+* inform[people=four]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06171051
+* greet
+ - utter_ask_howcanhelp
+* inform[location=madrid,people=two,price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04707928
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,price=expensive]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07459982
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,people=two]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06916139
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,location=paris,people=eight]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01160423
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07554166
+* greet
+ - utter_ask_howcanhelp
+* inform[people=eight]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[location=rome]
+ - utter_ask_moreupdates
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00002440
+* greet
+ - utter_ask_howcanhelp
+* inform[location=london]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00169114
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,people=two,price=moderate]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07502503
+* greet
+ - utter_ask_howcanhelp
+* inform[location=bombay,people=six]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03149399
+* greet
+ - utter_ask_howcanhelp
+* inform[people=six,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04441615
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,price=cheap]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00150195
+* greet
+ - utter_ask_howcanhelp
+* inform[location=bombay]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=london]
+ - utter_ask_moreupdates
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07198151
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,people=four,price=expensive]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07136367
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,people=two,price=moderate]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09870473
+* greet
+ - utter_ask_howcanhelp
+* inform[location=bombay,people=six,price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03271447
+* greet
+ - utter_ask_howcanhelp
+* inform[price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02709553
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,location=london,people=two]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[location=rome]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07712981
+* greet
+ - utter_ask_howcanhelp
+* inform[price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* inform[location=rome]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08823085
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,location=madrid,price=cheap]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09500134
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,location=paris,price=cheap]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04170817
+* greet
+ - utter_ask_howcanhelp
+* inform[people=four]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08588293
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,location=paris,people=six]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09988423
+* greet
+ - utter_ask_howcanhelp
+* inform[location=madrid,people=six]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06732191
+* greet
+ - utter_ask_howcanhelp
+* inform[location=bombay,people=six]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01940009
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,location=bombay]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04277772
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,people=six]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08728923
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,location=bombay,people=eight]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* inform[location=rome]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01548343
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,people=four]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08368631
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,location=london,people=six]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04567793
+* greet
+ - utter_ask_howcanhelp
+* inform[location=london]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03180918
+* greet
+ - utter_ask_howcanhelp
+* inform[location=london,people=six]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07115138
+* greet
+ - utter_ask_howcanhelp
+* inform[people=eight,price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02485553
+* greet
+ - utter_ask_howcanhelp
+* inform[price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=eight]
+ - utter_ask_moreupdates
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00438310
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,location=paris,price=expensive]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04883959
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,location=paris]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=rome]
+ - utter_ask_moreupdates
+* inform[people=eight]
+ - utter_ask_moreupdates
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04883920
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,location=rome,price=expensive]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09763222
+* greet
+ - utter_ask_howcanhelp
+* inform[price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=rome]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05072372
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris,people=two,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=london]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05900181
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,people=six,price=moderate]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04685192
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04827579
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris,people=six]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06332977
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,price=moderate]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=london]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02261606
+* greet
+ - utter_ask_howcanhelp
+* inform[location=rome]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=eight]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03310691
+* greet
+ - utter_ask_howcanhelp
+* inform[people=four,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_location
+* inform[location=london]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07012371
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,location=madrid,people=four]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08943300
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,location=paris,price=cheap]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05286543
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[location=rome]
+ - utter_ask_moreupdates
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08024951
+* greet
+ - utter_ask_howcanhelp
+* inform[location=madrid,price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01620546
+* greet
+ - utter_ask_howcanhelp
+* inform[location=bombay,people=eight,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05634005
+* greet
+ - utter_ask_howcanhelp
+* inform[people=eight]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01442148
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,location=rome,people=eight]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[location=london]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00593451
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris,people=six]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=rome]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08608344
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,location=rome,people=two]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03469150
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris,people=six,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=rome]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01496247
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,location=london]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02741161
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,price=moderate]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00699054
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,location=london]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08169309
+* greet
+ - utter_ask_howcanhelp
+* inform[people=eight]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05100050
+* greet
+ - utter_ask_howcanhelp
+* inform[people=eight,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00306086
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,people=six,price=expensive]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02018116
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,location=paris]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06664055
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris,people=eight]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[people=four]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06986412
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,location=paris,price=cheap]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=eight]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05034296
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,location=rome]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03479867
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,people=four,price=moderate]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01237550
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,location=london,people=two]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04004229
+* greet
+ - utter_ask_howcanhelp
+* inform[location=rome]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09412555
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,people=six,price=expensive]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08481535
+* greet
+ - utter_ask_howcanhelp
+* inform[location=london]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02692009
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,location=bombay,people=two]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01958822
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris,people=six]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01401125
+* greet
+ - utter_ask_howcanhelp
+* inform[price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* inform[people=four]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05669771
+* greet
+ - utter_ask_howcanhelp
+* inform[price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* inform[location=london]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00806352
+* greet
+ - utter_ask_howcanhelp
+* inform[price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03552486
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,people=four,price=cheap]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=rome]
+ - utter_ask_moreupdates
+* inform[people=eight]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07074569
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=eight]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08360291
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,location=madrid,people=six]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=london]
+ - utter_ask_moreupdates
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01270391
+* greet
+ - utter_ask_howcanhelp
+* inform[location=bombay]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06845947
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,location=london,people=two]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=paris]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02353047
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris,people=four,price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00956281
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris,people=six,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[location=london]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00859359
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,location=london,people=two]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=paris]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06587466
+* greet
+ - utter_ask_howcanhelp
+* inform[price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* inform[people=four]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01358272
+* greet
+ - utter_ask_howcanhelp
+* inform[price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04292276
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=rome]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02369017
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,people=eight]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03462022
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01485569
+* greet
+ - utter_ask_howcanhelp
+* inform[location=london]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06150890
+* greet
+ - utter_ask_howcanhelp
+* inform[people=four]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* inform[location=rome]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02147095
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06790261
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,people=four]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05296418
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,location=bombay,people=six]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00258066
+* greet
+ - utter_ask_howcanhelp
+* inform[people=six]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=rome]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01021305
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,people=two]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03873941
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,location=bombay]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09689978
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,location=london]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01562145
+* greet
+ - utter_ask_howcanhelp
+* inform[people=four,price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09187671
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,price=moderate]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05972233
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,location=madrid,people=two]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03457958
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris,price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02465932
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,location=rome,people=two]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05578821
+* greet
+ - utter_ask_howcanhelp
+* inform[location=london,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00485641
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,location=madrid]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00385269
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,people=four,price=cheap]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09060846
+* greet
+ - utter_ask_howcanhelp
+* inform[location=rome]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03622759
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00282978
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris,people=two,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03597157
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05766283
+* greet
+ - utter_ask_howcanhelp
+* inform[location=london]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05367879
+* greet
+ - utter_ask_howcanhelp
+* inform[people=two,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04640921
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,location=rome,price=cheap]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09731571
+* greet
+ - utter_ask_howcanhelp
+* inform[people=two,price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01672820
+* greet
+ - utter_ask_howcanhelp
+* inform[people=four]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08944129
+* greet
+ - utter_ask_howcanhelp
+* inform[location=bombay,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=london]
+ - utter_ask_moreupdates
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* inform[people=eight]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00258997
+* greet
+ - utter_ask_howcanhelp
+* inform[location=rome,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* inform[location=london]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03388372
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,location=paris,price=expensive]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02333212
+* greet
+ - utter_ask_howcanhelp
+* inform[location=rome,people=four]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09965646
+* greet
+ - utter_ask_howcanhelp
+* inform[people=eight,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_location
+* inform[location=london]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07759354
+* greet
+ - utter_ask_howcanhelp
+* inform[location=rome,people=two,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01653865
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,location=madrid,price=cheap]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03282587
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[location=london]
+ - utter_ask_moreupdates
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01510519
+* greet
+ - utter_ask_howcanhelp
+* inform[people=four,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=london]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04456210
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,people=two,price=moderate]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07555530
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,location=london]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04643251
+* greet
+ - utter_ask_howcanhelp
+* inform[price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08665207
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,location=madrid]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03754774
+* greet
+ - utter_ask_howcanhelp
+* inform[location=london]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01723243
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,location=bombay]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05159814
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,location=madrid,price=moderate]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08701195
+* greet
+ - utter_ask_howcanhelp
+* inform[people=eight,price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09201921
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,location=madrid]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08868660
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,people=two,price=expensive]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[location=rome]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07905453
+* greet
+ - utter_ask_howcanhelp
+* inform[location=rome]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04913026
+* greet
+ - utter_ask_howcanhelp
+* inform[price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=london]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05775601
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,price=cheap]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=eight]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02142131
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,people=two]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09338742
+* greet
+ - utter_ask_howcanhelp
+* inform[price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00492406
+* greet
+ - utter_ask_howcanhelp
+* inform[location=london]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* inform[location=rome]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08367713
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,people=two,price=moderate]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07497644
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,people=eight,price=cheap]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* inform[people=four]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08799293
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,people=two,price=moderate]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02349660
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,people=eight]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=london]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01562639
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,price=moderate]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01780414
+* greet
+ - utter_ask_howcanhelp
+* inform[location=madrid,people=two,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00045491
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=rome]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09132628
+* greet
+ - utter_ask_howcanhelp
+* inform[people=four]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01227566
+* greet
+ - utter_ask_howcanhelp
+* inform[people=eight,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03701757
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,location=london]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=rome]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08440797
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,people=eight,price=cheap]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[location=london]
+ - utter_ask_moreupdates
+* inform[people=four]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07749651
+* greet
+ - utter_ask_howcanhelp
+* inform[location=rome,people=four,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03626865
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,location=london]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03056965
+* greet
+ - utter_ask_howcanhelp
+* inform[location=london,people=four]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05712558
+* greet
+ - utter_ask_howcanhelp
+* inform[people=four]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06953479
+* greet
+ - utter_ask_howcanhelp
+* inform[location=bombay]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03630351
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[location=rome]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04183161
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,price=moderate]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08307120
+* greet
+ - utter_ask_howcanhelp
+* inform[location=madrid,people=four,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09528661
+* greet
+ - utter_ask_howcanhelp
+* inform[location=rome]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01341929
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,people=four]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=london]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07129441
+* greet
+ - utter_ask_howcanhelp
+* inform[people=two]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08514285
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,people=eight,price=expensive]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* inform[location=london]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08345573
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,people=four,price=cheap]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09313555
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,location=paris]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06687466
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05220913
+* greet
+ - utter_ask_howcanhelp
+* inform[price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=rome]
+ - utter_ask_moreupdates
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07582238
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,people=four,price=expensive]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07658508
+* greet
+ - utter_ask_howcanhelp
+* inform[people=four,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_location
+* inform[location=london]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00671068
+* greet
+ - utter_ask_howcanhelp
+* inform[location=madrid,price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[location=rome]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08881550
+* greet
+ - utter_ask_howcanhelp
+* inform[location=madrid,price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03845983
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,location=rome]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=eight]
+ - utter_ask_moreupdates
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06825291
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,price=moderate]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09093473
+* greet
+ - utter_ask_howcanhelp
+* inform[price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=eight]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03191262
+* greet
+ - utter_ask_howcanhelp
+* inform[location=bombay]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03074552
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=london]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00249515
+* greet
+ - utter_ask_howcanhelp
+* inform[location=london,people=four,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09028793
+* greet
+ - utter_ask_howcanhelp
+* inform[location=madrid]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=paris]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02402863
+* greet
+ - utter_ask_howcanhelp
+* inform[price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03488031
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01198432
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,location=bombay]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05699336
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,price=cheap]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07396204
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,location=madrid]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02054509
+* greet
+ - utter_ask_howcanhelp
+* inform[people=two]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06464906
+* greet
+ - utter_ask_howcanhelp
+* inform[price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00437618
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07049075
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,location=paris]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* inform[location=rome]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00575884
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=rome]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09609659
+* greet
+ - utter_ask_howcanhelp
+* inform[location=bombay]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03088435
+* greet
+ - utter_ask_howcanhelp
+* inform[people=two]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04935872
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02981914
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,location=paris,people=two]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04426762
+* greet
+ - utter_ask_howcanhelp
+* inform[people=six,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_location
+* inform[location=london]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01294308
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,price=cheap]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[location=london]
+ - utter_ask_moreupdates
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07867247
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris,people=six,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=rome]
+ - utter_ask_moreupdates
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08388584
+* greet
+ - utter_ask_howcanhelp
+* inform[location=madrid,people=two,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=paris]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08679838
+* greet
+ - utter_ask_howcanhelp
+* inform[people=four]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03085320
+* greet
+ - utter_ask_howcanhelp
+* inform[people=four,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09050791
+* greet
+ - utter_ask_howcanhelp
+* inform[price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07421783
+* greet
+ - utter_ask_howcanhelp
+* inform[people=four,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00754150
+* greet
+ - utter_ask_howcanhelp
+* inform[price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02296069
+* greet
+ - utter_ask_howcanhelp
+* inform[people=eight,price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=london]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02896769
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,location=madrid,price=moderate]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=paris]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04885432
+* greet
+ - utter_ask_howcanhelp
+* inform[people=six]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04225589
+* greet
+ - utter_ask_howcanhelp
+* inform[people=four]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=eight]
+ - utter_ask_moreupdates
+* inform[location=rome]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00538042
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08233041
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,location=bombay,price=cheap]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01474942
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04131018
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,price=cheap]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02758957
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,location=paris,people=two]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03343889
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,price=moderate]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02583899
+* greet
+ - utter_ask_howcanhelp
+* inform[location=madrid,people=four,price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06950016
+* greet
+ - utter_ask_howcanhelp
+* inform[location=madrid,people=six,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05058737
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,people=six,price=expensive]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01150773
+* greet
+ - utter_ask_howcanhelp
+* inform[people=two,price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01867372
+* greet
+ - utter_ask_howcanhelp
+* inform[location=london,people=two]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=eight]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05540438
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,price=moderate]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[location=rome]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08056858
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,location=london,price=expensive]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08584809
+* greet
+ - utter_ask_howcanhelp
+* inform[people=eight]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07066897
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,price=cheap]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05702449
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,location=london]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04995971
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,price=cheap]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09900982
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,location=bombay,price=moderate]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* inform[location=rome]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01556491
+* greet
+ - utter_ask_howcanhelp
+* inform[people=four]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02877080
+* greet
+ - utter_ask_howcanhelp
+* inform[location=bombay,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02560435
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,location=paris,price=moderate]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09057375
+* greet
+ - utter_ask_howcanhelp
+* inform[people=two]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07255812
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,location=paris,price=expensive]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02241754
+* greet
+ - utter_ask_howcanhelp
+* inform[people=six,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03047386
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,location=madrid,price=expensive]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=london]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08621647
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,price=moderate]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02552841
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,location=london,price=expensive]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=eight]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03620308
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,location=paris,price=moderate]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* inform[people=four]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00430675
+* greet
+ - utter_ask_howcanhelp
+* inform[people=two,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06893138
+* greet
+ - utter_ask_howcanhelp
+* inform[location=madrid,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00765709
+* greet
+ - utter_ask_howcanhelp
+* inform[people=six]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01343535
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,location=london]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01243924
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,people=four,price=moderate]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03261740
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,people=four]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03981839
+* greet
+ - utter_ask_howcanhelp
+* inform[people=two,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02044756
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,location=bombay,people=two]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=rome]
+ - utter_ask_moreupdates
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04479121
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,location=paris,price=expensive]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08786101
+* greet
+ - utter_ask_howcanhelp
+* inform[location=rome,people=two,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00275787
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,location=london,people=four]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00912756
+* greet
+ - utter_ask_howcanhelp
+* inform[location=bombay]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04072970
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,people=six,price=moderate]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01768730
+* greet
+ - utter_ask_howcanhelp
+* inform[location=rome,price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05200548
+* greet
+ - utter_ask_howcanhelp
+* inform[location=london]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=two]
+ - utter_ask_moreupdates
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01550284
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,people=two]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01545439
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,price=expensive]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=eight]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02375814
+* greet
+ - utter_ask_howcanhelp
+* inform[location=madrid]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[location=london]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05199373
+* greet
+ - utter_ask_howcanhelp
+* inform[location=madrid,price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02019316
+* greet
+ - utter_ask_howcanhelp
+* inform[location=rome,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00028585
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris,price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=london]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00908819
+* greet
+ - utter_ask_howcanhelp
+* inform[location=rome,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09373619
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=four]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[location=rome]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05591489
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,price=expensive]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05853751
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06663801
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,location=madrid,people=six]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08327159
+* greet
+ - utter_ask_howcanhelp
+* inform[location=rome,people=eight]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* inform[location=london]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07383389
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,people=two,price=cheap]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07511848
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,location=london,people=four]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_02467916
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,location=paris,people=four]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08676934
+* greet
+ - utter_ask_howcanhelp
+* inform[people=eight,price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08277601
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=eight]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07926997
+* greet
+ - utter_ask_howcanhelp
+* inform[people=eight]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* inform[location=london]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06432689
+* greet
+ - utter_ask_howcanhelp
+* inform[location=bombay,price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=italian]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=french]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09932466
+* greet
+ - utter_ask_howcanhelp
+* inform[location=london,price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09946621
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,location=london,price=moderate]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03706736
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,price=expensive]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03810092
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,price=cheap]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=rome]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05620567
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,location=london,price=cheap]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06949742
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris,people=two,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03719180
+* greet
+ - utter_ask_howcanhelp
+* inform[price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=eight]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[location=rome]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05221824
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08291595
+* greet
+ - utter_ask_howcanhelp
+* inform[location=madrid,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_09799246
+* greet
+ - utter_ask_howcanhelp
+* inform[location=bombay,people=two]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07466904
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[location=paris]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07109058
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,location=rome,price=moderate]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00533492
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris,people=six]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=french]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08806637
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,location=paris,people=four]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=spanish]
+ - utter_ask_moreupdates
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08419514
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,location=london,people=four]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01335005
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,location=paris]
+ - utter_on_it
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00625217
+* greet
+ - utter_ask_howcanhelp
+* inform[price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01483629
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,people=six]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=london]
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05117216
+* greet
+ - utter_ask_howcanhelp
+* inform[location=rome,people=eight,price=expensive]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_05933144
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06876775
+* greet
+ - utter_ask_howcanhelp
+* inform[location=paris,people=four,price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08597234
+* greet
+ - utter_ask_howcanhelp
+* inform[people=six]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03433967
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=spanish,people=six,price=moderate]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00390602
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=british,location=london,people=six]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=cheap]
+ - utter_ask_moreupdates
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_01565216
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=madrid]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ask_price
+* inform[price=moderate]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* inform[people=six]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_03262044
+* greet
+ - utter_ask_howcanhelp
+* inform[price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=spanish]
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_numpeople
+* inform[people=eight]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=madrid]
+ - utter_ask_moreupdates
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[cuisine=british]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_07469807
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_numpeople
+* inform[people=four]
+ - utter_ask_price
+* inform[price=expensive]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00242235
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=french,people=four,price=cheap]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=bombay]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* inform[people=two]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08623465
+* greet
+ - utter_ask_howcanhelp
+* inform[price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=indian]
+ - utter_ask_location
+* inform[location=paris]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_04903494
+* greet
+ - utter_ask_howcanhelp
+* inform[price=moderate]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[people=six]
+ - utter_ask_moreupdates
+* inform[cuisine=italian]
+ - utter_ask_moreupdates
+* inform[location=bombay]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_00518237
+* greet
+ - utter_ask_howcanhelp
+* inform[price=cheap]
+ - utter_on_it
+ - utter_ask_cuisine
+* inform[cuisine=british]
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_numpeople
+* inform[people=six]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[location=paris]
+ - utter_ask_moreupdates
+* inform[price=expensive]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_08307960
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=italian,location=rome,people=eight]
+ - utter_on_it
+ - utter_ask_price
+* inform[price=cheap]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[cuisine=indian]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=phone]
+ - utter_suggest
+* request_info[info=address]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
+## story_06143037
+* greet
+ - utter_ask_howcanhelp
+* inform[cuisine=indian,price=cheap]
+ - utter_on_it
+ - utter_ask_location
+* inform[location=rome]
+ - utter_ask_numpeople
+* inform[people=two]
+ - utter_ack_dosearch
+ - utter_search_restaurants
+* inform[price=moderate]
+ - utter_ask_moreupdates
+* inform[people=four]
+ - utter_ask_moreupdates
+* deny
+ - utter_ack_dosearch
+ - utter_search_restaurants
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* deny
+ - utter_ack_findalternatives
+ - utter_suggest
+* affirm
+ - utter_ack_makereservation
+* request_info[info=address]
+ - utter_suggest
+* request_info[info=phone]
+ - utter_suggest
+* thankyou
+ - utter_ask_helpmore
+
