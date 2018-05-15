@@ -847,7 +847,7 @@
     - utter_more_info_restaurant
     - utter_ask_cuisine
 * explain
-    - utter_explain_cuisine
+    - utter_explain_cuisine_restaurant
     - utter_ask_cuisine
 
 ## Generated Story 4803662585436590829
