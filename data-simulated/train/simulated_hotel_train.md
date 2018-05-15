@@ -1094,7 +1094,7 @@
     - utter_ask_price
 * correct{"enddate": "May 26th"}
     - slot{"enddate": "May 26th"}
-    - utter_enddate_location_hotel
+    - utter_correct_enddate_hotel
     - utter_ask_price
 
 ## Generated Story -8098550946587096077
