@@ -48,7 +48,7 @@ def create_argument_parser():
             default="stories",
             choices=["stories", "simulated"],
             help="whether to evaluate on stories or on a simulated user")
-            
+
 
     utils.add_logging_option_arguments(parser)
     return parser
@@ -68,7 +68,7 @@ if __name__ == '__main__':
     num_correct = defaultdict(list)
 
     logging.basicConfig(level='INFO')
-    percentages = [70]
+    percentages = [0, 5, 25, 50, 70, 90, 95, 100]
     count = 0
     while count < 1:
         correct_keras = []
@@ -113,7 +113,7 @@ if __name__ == '__main__':
                                 exclusion_percentage=i,
                                 output_path='models/dialogue_keras'
                                 )
-            
+
             no = run_story_evaluation(cmdline_args.stories,
                                       'models/dialogue_keras')
             correct_keras.append(no)
