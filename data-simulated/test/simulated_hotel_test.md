@@ -260,37 +260,6 @@
     - utter_explain_enddate_hotel
     - utter_ask_enddate
 
-## Generated Story -431115641608710512
-* request_hotel
-    - utter_ask_details
-* inform{"people": "4"}
-    - slot{"people": "4"}
-    - utter_ask_location
-* chitchat
-    - utter_chitchat
-    - utter_ask_location
-* explain
-    - utter_explain_location_hotel
-    - utter_ask_location
-
-
-## Generated Story -1283106925127762824
-* request_hotel
-    - utter_ask_details
-* inform{"startdate": "May 25th"}
-    - slot{"startdate": "May 25th"}
-    - utter_ask_enddate
-* inform{"enddate": "tomorrow"}
-    - slot{"enddate": "tomorrow"}
-    - utter_ask_price
-* correct{"enddate": "tomorrow"}
-    - slot{"enddate": "tomorrow"}
-    - utter_correct_enddate_hotel
-    - utter_ask_price
-* did_that_work
-    - utter_more_info_hotel
-    - utter_ask_price
-
 ## Generated Story 8756205337718803326
 * request_hotel
     - utter_ask_details
