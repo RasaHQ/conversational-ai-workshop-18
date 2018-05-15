@@ -57,7 +57,7 @@ def create_argument_parser():
 if __name__ == '__main__':
     # configure_logging()
     # Running as standalone python application
-    logging.basicConfig(level="DEBUG")
+    logging.basicConfig(level="INFO")
     from collections import defaultdict
     from rasa_core.training.dsl import StoryFileReader
     from rasa_core.domain import TemplateDomain
@@ -75,6 +75,7 @@ if __name__ == '__main__':
         correct_embed = []
         correct_embed_noattn = []
         for i in percentages:
+            logging.info("Starting exclusion round {}/{}".format(percentages.index(i)+1, len(percentages)))
             train_domain_policy(cmdline_args.data,
                                 starspace=True,
                                 exclusion_file=cmdline_args.exclude,
