@@ -68,9 +68,9 @@ if __name__ == '__main__':
     num_correct = defaultdict(list)
 
     logging.basicConfig(level='INFO')
-    percentages = [0, 5, 25, 50, 70, 90, 95, 100]
+    percentages = [70]
     count = 0
-    while count < 3:
+    while count < 1:
         correct_keras = []
         correct_embed = []
         correct_embed_noattn = []
@@ -100,23 +100,23 @@ if __name__ == '__main__':
             #                     embed_dim=20,
             #                     droprate_mem=1.0,
             #                     output_path='models/dialogue_embed_noattn'
-            #                     )
-            #
+              #                  )
+
             # no = run_story_evaluation(cmdline_args.stories,
             #                           'models/dialogue_embed_noattn')
             #
             # correct_embed_noattn.append(no)
             #
-            # train_domain_policy(cmdline_args.data,
-            #                     starspace=False,
-            #                     exclusion_file=cmdline_args.exclude,
-            #                     exclusion_percentage=i,
-            #                     output_path='models/dialogue_keras'
-            #                     )
-            #
-            # no = run_story_evaluation(cmdline_args.stories,
-            #                           'models/dialogue_keras')
-            # correct_keras.append(no)
+            train_domain_policy(cmdline_args.data,
+                                starspace=False,
+                                exclusion_file=cmdline_args.exclude,
+                                exclusion_percentage=i,
+                                output_path='models/dialogue_keras'
+                                )
+            
+            no = run_story_evaluation(cmdline_args.stories,
+                                      'models/dialogue_keras')
+            correct_keras.append(no)
         num_correct['keras'].append(correct_keras)
         num_correct['embed'].append(correct_embed)
         num_correct['embed_noattn'].append(correct_embed_noattn)
