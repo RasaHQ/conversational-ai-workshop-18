@@ -45,11 +45,11 @@ def train_domain_policy(story_filename,
                            exclusion_percentage=exclusion_percentage)
 
     agent.train(data,
-                rnn_size=32,
+                rnn_size=64,
                 epochs=epochs,
                 embed_dim=embed_dim,
                 use_attention=True,
-		batch_size=8)
+                batch_size=[8, 32])
 
     agent.persist(model_path=output_path)
 
