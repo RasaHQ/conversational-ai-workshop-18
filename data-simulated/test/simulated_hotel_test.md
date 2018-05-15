@@ -467,3 +467,20 @@
 * did_that_work
     - utter_more_info_hotel
     - utter_ask_price
+
+## Generated Story -7997648478954047137
+* request_hotel
+    - utter_ask_details
+* inform{"startdate": "May 25th", "price": "cheap"}
+    - slot{"startdate": "May 25th"}
+    - slot{"price": "cheap"}
+    - utter_ask_enddate
+* explain
+    - utter_explain_enddate_hotel
+    - utter_ask_enddate
+* explain
+    - utter_explain_enddate_hotel
+    - utter_ask_enddate
+* did_that_work
+    - utter_more_info_hotel
+    - utter_ask_enddate
