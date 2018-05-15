@@ -43,6 +43,13 @@ class SimulatedUser(object):
         self.state = np.random.choice(UserState, p=p)
 
     def pick_entities(self):
+        try:
+            requested = self.last_system_utter.split("utter_ask_")[1]
+            if requested not in self.preferences.keys():
+                requested = None
+        except:
+            requested = None
+
         # override state if none or all slots have already been provided
         if len(self.preferences) == len(self.provided):
             self.state = UserState.CORRECT
@@ -57,9 +64,13 @@ class SimulatedUser(object):
             candidates = self.provided
         else:
             return ""
-        ents = np.random.choice(list(candidates),
-                                size=n_ent,
-                                replace=False)
+        if self.state == UserState.INFORM and requested is not None:
+            ents = [requested]
+        else:
+            ents = np.random.choice(list(candidates),
+                                    size=n_ent,
+                                    replace=False)
+            
         #print(ents)
         self.provided = self.provided.union(set(ents))
 
