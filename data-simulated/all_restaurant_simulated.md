@@ -60,7 +60,7 @@
     - utter_suggest_restaurant
 * correct{"price": "mid-range"}
     - slot{"price": "mid-range"}
-    - utter_correct_people_restaurant
+    - utter_correct_price_restaurant
     - action_search_restaurant
     - slot{"restaurant":"results"}
     - utter_suggest_restaurant
@@ -159,13 +159,10 @@
     - utter_ask_price
 * did_that_work
     - utter_more_info_restaurant
-    - utter_ask_cuisine
+    - utter_ask_price
 * chitchat
     - utter_chitchat
-    - utter_ask_cuisine
-* did_that_work
-    - utter_more_info_restaurant
-    - utter_ask_cuisine
+    - utter_ask_price
 
 
 ## Generated Story 5854594747809472876
@@ -702,7 +699,7 @@
     - utter_ask_price
 * correct{"cuisine": "italian"}
     - slot{"cuisine": "italian"}
-    - utter_correct_cuisine_italian
+    - utter_correct_cuisine_restaurant
     - utter_ask_price
 
 ## Generated Story -8209594532697157485
@@ -937,4 +934,3 @@
 * did_that_work
     - utter_more_info_restaurant
     - utter_ask_location
-
