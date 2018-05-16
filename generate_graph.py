@@ -85,10 +85,10 @@ if __name__ == '__main__':
                                 )
 
             if cmdline_args.eval_mode == "simulated":
-                no = evaluate_policy('models/dialogue_embed')
+                no = evaluate_policy('models/dialogue_embed' + str(percentages.index(i)+1)
             else:
                 no = run_story_evaluation(cmdline_args.stories,
-                                          'models/dialogue_embed')
+                                          'models/dialogue_embed' + str(percentages.index(i)+1)
 
             correct_embed.append(no)
 
@@ -115,7 +115,7 @@ if __name__ == '__main__':
                                 )
 
             no = run_story_evaluation(cmdline_args.stories,
-                                      'models/dialogue_keras')
+                                      'models/dialogue_keras' + str(percentages.index(i)+1)
             correct_keras.append(no)
         num_correct['keras'].append(correct_keras)
         num_correct['embed'].append(correct_embed)
