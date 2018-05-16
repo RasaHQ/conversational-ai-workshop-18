@@ -72,8 +72,9 @@ if __name__ == '__main__':
     while count < 1:
         correct_keras = []
         correct_embed = []
-        correct_embed_noattn = []
+        correct_keras_bin = []
         for i in percentages:
+            curr_pcnt = str(percentages.index(i)+1
             logging.info("Starting exclusion round {}/{}".format(percentages.index(i)+1, len(percentages)))
             train_domain_policy(cmdline_args.data,
                                 starspace=True,
@@ -81,45 +82,42 @@ if __name__ == '__main__':
                                 exclusion_percentage=i,
                                 epoch_no=cmdline_args.epochs,
                                 embed_dim=20,
-                                output_path='models/dialogue_embed' + str(percentages.index(i)+1)
+                                output_path='models/dialogue_embed' + curr_pcnt
                                 )
 
             if cmdline_args.eval_mode == "simulated":
-                no = evaluate_policy('models/dialogue_embed' + str(percentages.index(i)+1)
+                no = evaluate_policy('models/dialogue_embed' + curr_pcnt
             else:
                 no = run_story_evaluation(cmdline_args.stories,
-                                          'models/dialogue_embed' + str(percentages.index(i)+1)
+                                          'models/dialogue_embed' + curr_pcnt
 
             correct_embed.append(no)
 
-            # train_domain_policy(cmdline_args.data,
-            #                     starspace=True,
-            #                     exclusion_file=cmdline_args.exclude,
-            #                     exclusion_percentage=i,
-            #                     epoch_no=cmdline_args.epochs,
-            #                     embed_dim=20,
-            #                     droprate_mem=1.0,
-            #                     output_path='models/dialogue_embed_noattn'
-              #                  )
-
-            # no = run_story_evaluation(cmdline_args.stories,
-            #                           'models/dialogue_embed_noattn')
-            #
-            # correct_embed_noattn.append(no)
-            #
             train_domain_policy(cmdline_args.data,
                                 starspace=False,
                                 exclusion_file=cmdline_args.exclude,
                                 exclusion_percentage=i,
-                                output_path='models/dialogue_keras' + str(percentages.index(i)+1)
+                                output_path='models/dialogue_keras' + curr_pcnt
                                 )
 
             no = run_story_evaluation(cmdline_args.stories,
-                                      'models/dialogue_keras' + str(percentages.index(i)+1)
+                                      'models/dialogue_keras' + curr_pcnt
             correct_keras.append(no)
+
+            train_domain_policy(cmdline_args.data,
+                                starspace=False,
+                                exclusion_file=cmdline_args.exclude,
+                                exclusion_percentage=i,
+                                output_path='models/dialogue_keras_bin' + curr_pcnt,
+                                binary_feat=True
+                                )
+
+            no = run_story_evaluation(cmdline_args.stories,
+                                      'models/dialogue_keras_bin' + curr_pcnt
+            correct_keras_bin.append(no)
         num_correct['keras'].append(correct_keras)
         num_correct['embed'].append(correct_embed)
-        num_correct['embed_noattn'].append(correct_embed_noattn)
+        num_correct['keras_bin'].append(keras_bin)
         count += 1
     percentages = [100-x for x in percentages]
 
