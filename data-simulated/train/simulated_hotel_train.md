@@ -10,6 +10,19 @@
 * explain
     - utter_explain_enddate_hotel
     - utter_ask_enddate
+* inform{"enddate": "10.03.2018"}
+    - utter_ask_price
+* inform{"price": "expensive"}
+    - utter_ask_location
+* inform{"location": "paris"}
+    - utter_ask_people
+* inform{"people": "4"}
+    - utter_filled_slots
+    - action_search_hotel
+    - slot{"hotel": "hotel"}
+    - utter_suggest_hotel
+* affirm
+    - utter_happy
 
 ## Generated Story -2016230675575359615
 * request_hotel
@@ -23,6 +36,19 @@
 * chitchat
     - utter_chitchat
     - utter_ask_enddate
+* inform{"enddate": "10.03.2018"}
+    - utter_ask_price
+* inform{"price": "expensive"}
+    - utter_ask_location
+* inform{"location": "paris"}
+    - utter_ask_people
+* inform{"people": "4"}
+    - utter_filled_slots
+    - action_search_hotel
+    - slot{"hotel": "hotel"}
+    - utter_suggest_hotel
+* affirm
+    - utter_happy
 
 ## Generated Story 4883852117397942198
 * request_hotel
@@ -43,6 +69,15 @@
 * explain
     - utter_explain_enddate_hotel
     - utter_ask_enddate
+* inform{"enddate": "10.03.2018"}
+    - utter_ask_location
+* inform{"location": "paris"}
+    - utter_filled_slots
+    - action_search_hotel
+    - slot{"hotel": "hotel"}
+    - utter_suggest_hotel
+* affirm
+    - utter_happy
 
 ## Generated Story -4155943676772991256
 * request_hotel
@@ -57,6 +92,19 @@
     - slot{"startdate": "next week"}
     - utter_correct_startdate_hotel
     - utter_ask_enddate
+* inform{"enddate": "10.03.2018"}
+    - utter_ask_price
+* inform{"price": "expensive"}
+    - utter_ask_location
+* inform{"location": "paris"}
+    - utter_ask_people
+* inform{"people": "4"}
+    - utter_filled_slots
+    - action_search_hotel
+    - slot{"hotel": "hotel"}
+    - utter_suggest_hotel
+* affirm
+    - utter_happy
 
 ## Generated Story -1274354813326186979
 * request_hotel
@@ -77,6 +125,15 @@
 * chitchat
     - utter_chitchat
     - utter_ask_enddate
+* inform{"enddate": "10.03.2018"}
+    - utter_ask_location
+* inform{"location": "paris"}
+    - utter_filled_slots
+    - action_search_hotel
+    - slot{"hotel": "hotel"}
+    - utter_suggest_hotel
+* affirm
+    - utter_happy
 
 ## Generated Story 7307804793036707017
 * request_hotel
@@ -97,6 +154,17 @@
 * explain
     - utter_explain_price_hotel
     - utter_ask_price
+* inform{"price": "expensive"}
+    - utter_ask_startdate
+* inform{"startdate": "10.03.2018"}
+    - utter_ask_enddate
+* inform{"enddate": "10.03.2018"}
+    - utter_filled_slots
+    - action_search_hotel
+    - slot{"hotel": "hotel"}
+    - utter_suggest_hotel
+* affirm
+    - utter_happy
 
 ## Generated Story -4377383468731851742
 * request_hotel
@@ -118,6 +186,17 @@
     - slot{"people": "4"}
     - utter_correct_people_hotel
     - utter_ask_price
+* inform{"price": "expensive"}
+    - utter_ask_startdate
+* inform{"startdate": "10.03.2018"}
+    - utter_ask_enddate
+* inform{"enddate": "10.03.2018"}
+    - utter_filled_slots
+    - action_search_hotel
+    - slot{"hotel": "hotel"}
+    - utter_suggest_hotel
+* affirm
+    - utter_happy
 
 ## Generated Story 2120810106318217739
 * request_hotel
@@ -135,6 +214,19 @@
     - slot{"location": "paris"}
     - utter_correct_location_hotel
     - utter_ask_people
+* inform{"people": "4"}
+    - utter_ask_price
+* inform{"price": "expensive"}
+    - utter_ask_startdate
+* inform{"startdate": "10.03.2018"}
+    - utter_ask_enddate
+* inform{"enddate": "10.03.2018"}
+    - utter_filled_slots
+    - action_search_hotel
+    - slot{"hotel": "hotel"}
+    - utter_suggest_hotel
+* affirm
+    - utter_happy
 
 ## Generated Story 9173004962293499764
 * request_hotel
@@ -166,6 +258,8 @@
     - action_search_hotel
     - slot{"hotel": "hotel"}
     - utter_suggest_hotel
+* affirm
+    - utter_happy
 
 ## Generated Story 2628958171188267867
 * request_hotel
@@ -179,6 +273,19 @@
 * explain
     - utter_explain_people_hotel
     - utter_ask_people
+* inform{"people": "4"}
+    - utter_ask_price
+* inform{"price": "expensive"}
+    - utter_ask_startdate
+* inform{"startdate": "10.03.2018"}
+    - utter_ask_enddate
+* inform{"enddate": "10.03.2018"}
+    - utter_filled_slots
+    - action_search_hotel
+    - slot{"hotel": "hotel"}
+    - utter_suggest_hotel
+* affirm
+        - utter_happy
 
 ## Generated Story 1685090242406500402
 * request_hotel
@@ -202,6 +309,15 @@
 * explain
     - utter_explain_location_hotel
     - utter_ask_location
+* inform{"location": "paris"}
+    - utter_ask_people
+* inform{"people": "4"}
+    - utter_filled_slots
+    - action_search_hotel
+    - slot{"hotel": "hotel"}
+    - utter_suggest_hotel
+* affirm
+    - utter_happy
 
 ## Generated Story 7029919470882550615
 * request_hotel
@@ -216,6 +332,19 @@
 * did_that_work
     - utter_more_info_hotel
     - utter_ask_enddate
+* inform{"enddate": "10.03.2018"}
+    - utter_ask_price
+* inform{"price": "expensive"}
+    - utter_ask_location
+* inform{"location": "paris"}
+    - utter_ask_people
+* inform{"people": "4"}
+    - utter_filled_slots
+    - action_search_hotel
+    - slot{"hotel": "hotel"}
+    - utter_suggest_hotel
+* affirm
+    - utter_happy
 
 ## Generated Story -9136482170730611021
 * request_hotel
@@ -245,6 +374,17 @@
 * did_that_work
     - utter_more_info_hotel
     - utter_ask_startdate
+* inform{"startdate": "10.03.2018"}
+    - utter_ask_enddate
+* inform{"enddate": "10.03.2018"}
+    - utter_ask_location
+* inform{"location": "paris"}
+    - utter_filled_slots
+    - action_search_hotel
+    - slot{"hotel": "hotel"}
+    - utter_suggest_hotel
+* affirm
+    - utter_happy
 
 ## Generated Story 6126634125194604292
 * request_hotel
@@ -261,6 +401,17 @@
 * did_that_work
     - utter_more_info_hotel
     - utter_ask_price
+* inform{"price": "expensive"}
+    - utter_ask_startdate
+* inform{"startdate": "10.03.2018"}
+    - utter_ask_enddate
+* inform{"enddate": "10.03.2018"}
+    - utter_filled_slots
+    - action_search_hotel
+    - slot{"hotel": "hotel"}
+    - utter_suggest_hotel
+* affirm
+    - utter_happy
 
 ## Generated Story -417820108794993882
 * request_hotel
@@ -275,6 +426,17 @@
     - slot{"location": "london"}
     - utter_correct_location_hotel
     - utter_ask_price
+* inform{"price": "expensive"}
+    - utter_ask_startdate
+* inform{"startdate": "10.03.2018"}
+    - utter_ask_enddate
+* inform{"enddate": "10.03.2018"}
+    - utter_filled_slots
+    - action_search_hotel
+    - slot{"hotel": "hotel"}
+    - utter_suggest_hotel
+* affirm
+    - utter_happy
 
 ## Generated Story 8569607195157226943
 * request_hotel
@@ -305,6 +467,15 @@
     - slot{"price": "mid-range"}
     - utter_correct_price_hotel
     - utter_ask_enddate
+* inform{"enddate": "10.03.2018"}
+    - utter_ask_location
+* inform{"location": "paris"}
+    - utter_filled_slots
+    - action_search_hotel
+    - slot{"hotel": "hotel"}
+    - utter_suggest_hotel
+* affirm
+    - utter_happy
 
 ## Generated Story -1636298539059010529
 * request_hotel
@@ -322,6 +493,19 @@
 * did_that_work
     - utter_more_info_hotel
     - utter_ask_enddate
+* inform{"enddate": "10.03.2018"}
+    - utter_ask_price
+* inform{"price": "expensive"}
+    - utter_ask_location
+* inform{"location": "paris"}
+    - utter_ask_people
+* inform{"people": "4"}
+    - utter_filled_slots
+    - action_search_hotel
+    - slot{"hotel": "hotel"}
+    - utter_suggest_hotel
+* affirm
+    - utter_happy
 
 ## Generated Story -1976434779256682036
 * request_hotel
@@ -336,6 +520,19 @@
     - slot{"location": "rome"}
     - utter_correct_location_hotel
     - utter_ask_people
+* inform{"people": "4"}
+    - utter_ask_price
+* inform{"price": "expensive"}
+    - utter_ask_startdate
+* inform{"startdate": "10.03.2018"}
+    - utter_ask_enddate
+* inform{"enddate": "10.03.2018"}
+    - utter_filled_slots
+    - action_search_hotel
+    - slot{"hotel": "hotel"}
+    - utter_suggest_hotel
+* affirm
+    - utter_happy
 
 ## Generated Story 3530936682833259559
 * request_hotel
@@ -353,6 +550,19 @@
 * did_that_work
     - utter_more_info_hotel
     - utter_ask_people
+* inform{"people": "4"}
+    - utter_ask_startdate
+* inform{"startdate": "10.03.2018"}
+    - utter_ask_enddate
+* inform{"enddate": "10.03.2018"}
+    - utter_ask_location
+* inform{"location": "paris"}
+    - utter_filled_slots
+    - action_search_hotel
+    - slot{"hotel": "hotel"}
+    - utter_suggest_hotel
+* affirm
+    - utter_happy
 
 ## Generated Story 8798487188356031983
 * request_hotel
@@ -392,6 +602,8 @@
     - action_search_hotel
     - slot{"hotel": "hotel"}
     - utter_suggest_hotel
+* affirm
+    - utter_happy
 
 ## Generated Story -4245128213284785903
 * request_hotel
@@ -405,6 +617,19 @@
 * did_that_work
     - utter_more_info_hotel
     - utter_ask_startdate
+* inform{"startdate": "10.03.2018"}
+    - utter_ask_location
+* inform{"location": "paris"}
+    - utter_ask_price
+* inform{"price": "expensive"}
+    - utter_ask_people
+* inform{"people": "4"}
+    - utter_filled_slots
+    - action_search_hotel
+    - slot{"hotel": "hotel"}
+    - utter_suggest_hotel
+* affirm
+    - utter_happy
 
 ## Generated Story -8191146713080950144
 * request_hotel
@@ -418,6 +643,19 @@
 * explain
     - utter_explain_people_hotel
     - utter_ask_people
+* inform{"people": "4"}
+    - utter_ask_price
+* inform{"price": "expensive"}
+    - utter_ask_startdate
+* inform{"startdate": "10.03.2018"}
+    - utter_ask_enddate
+* inform{"enddate": "10.03.2018"}
+    - utter_filled_slots
+    - action_search_hotel
+    - slot{"hotel": "hotel"}
+    - utter_suggest_hotel
+* affirm
+    - utter_happy
 
 ## Generated Story 6414425509425784419
 * request_hotel
@@ -441,6 +679,15 @@
 * chitchat
     - utter_chitchat
     - utter_ask_location
+* inform{"location": "paris"}
+    - utter_ask_people
+* inform{"people": "4"}
+    - utter_filled_slots
+    - action_search_hotel
+    - slot{"hotel": "hotel"}
+    - utter_suggest_hotel
+* affirm
+    - utter_happy
 
 ## Generated Story -5728975931820977598
 * request_hotel
@@ -463,6 +710,13 @@
 * chitchat
     - utter_chitchat
     - utter_ask_location
+* inform{"location": "paris"}
+    - utter_filled_slots
+    - action_search_hotel
+    - slot{"hotel": "hotel"}
+    - utter_suggest_hotel
+* affirm
+    - utter_happy
 
 ## Generated Story -4892544019489261987
 * request_hotel
@@ -476,6 +730,19 @@
 * explain
     - utter_explain_location_hotel
     - utter_ask_location
+* inform{"location": "paris"}
+    - utter_ask_price
+* inform{"price": "expensive"}
+    - utter_ask_startdate
+* inform{"startdate": "10.03.2018"}
+    - utter_ask_enddate
+* inform{"enddate": "10.03.2018"}
+    - utter_filled_slots
+    - action_search_hotel
+    - slot{"hotel": "hotel"}
+    - utter_suggest_hotel
+* affirm
+    - utter_happy
 
 ## Generated Story 6377256771280559561
 * request_hotel
@@ -506,6 +773,20 @@
 * explain
     - utter_explain_startdate_hotel
     - utter_ask_startdate
+* inform{"startdate": "tomorrow"}
+    - slot{"startdate": "tomorrow"}
+    - utter_ask_location
+* inform{"location": "london"}
+    - slot{"location": "london"}
+    - utter_ask_people
+* inform{"people": "4"}
+    - slot{"people": "4"}
+    - utter_filled_slots
+    - action_search_hotel
+    - slot{"hotel": "hotel"}
+    - utter_suggest_hotel
+* affirm
+    - utter_happy
 
 ## Generated Story -7806461591440014522
 * request_hotel
@@ -535,6 +816,15 @@
 * explain
     - utter_explain_enddate_hotel
     - utter_ask_enddate
+* inform{"enddate": "10.03.2018"}
+    - utter_ask_location
+* inform{"location": "paris"}
+    - utter_filled_slots
+    - action_search_hotel
+    - slot{"hotel": "hotel"}
+    - utter_suggest_hotel
+* affirm
+    - utter_happy
 
 ## Generated Story -4622570743824213124
 * request_hotel
@@ -573,6 +863,8 @@
     - action_search_hotel
     - slot{"hotel": "hotel"}
     - utter_suggest_hotel
+* affirm
+    - utter_happy
 
 ## Generated Story -8167005639967367862
 * request_hotel
@@ -587,6 +879,19 @@
 * did_that_work
     - utter_more_info_hotel
     - utter_ask_startdate
+* inform{"startdate": "10.03.2018"}
+    - utter_ask_location
+* inform{"location": "paris"}
+    - utter_ask_price
+* inform{"price": "expensive"}
+    - utter_ask_people
+* inform{"people": "4"}
+    - utter_filled_slots
+    - action_search_hotel
+    - slot{"hotel": "hotel"}
+    - utter_suggest_hotel
+* affirm
+    - utter_happy
 
 ## Generated Story 2298677876080303416
 * request_hotel
@@ -615,6 +920,13 @@
 * chitchat
     - utter_chitchat
     - utter_ask_people
+* inform{"people": "4"}
+    - utter_filled_slots
+    - action_search_hotel
+    - slot{"hotel": "hotel"}
+    - utter_suggest_hotel
+* affirm
+    - utter_happy
 
 ## Generated Story 2354048503062275729
 * request_hotel
@@ -628,6 +940,19 @@
 * explain
     - utter_explain_enddate_hotel
     - utter_ask_enddate
+* inform{"enddate": "10.03.2018"}
+    - utter_ask_price
+* inform{"price": "expensive"}
+    - utter_ask_location
+* inform{"location": "paris"}
+    - utter_ask_people
+* inform{"people": "4"}
+    - utter_filled_slots
+    - action_search_hotel
+    - slot{"hotel": "hotel"}
+    - utter_suggest_hotel
+* affirm
+    - utter_happy
 
 ## Generated Story -5568287998497575386
 * request_hotel
@@ -642,6 +967,19 @@
 * explain
     - utter_explain_people_hotel
     - utter_ask_people
+* inform{"people": "4"}
+    - utter_ask_price
+* inform{"price": "expensive"}
+    - utter_ask_startdate
+* inform{"startdate": "10.03.2018"}
+    - utter_ask_enddate
+* inform{"enddate": "10.03.2018"}
+    - utter_filled_slots
+    - action_search_hotel
+    - slot{"hotel": "hotel"}
+    - utter_suggest_hotel
+* affirm
+    - utter_happy
 
 ## Generated Story 1993489198506904049
 * request_hotel
