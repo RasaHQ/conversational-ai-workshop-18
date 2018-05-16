@@ -159,28 +159,26 @@
 * affirm
     - utter_happy
 
-## Generated Story -7619175073147269387
+## Generated Story -7795096423415267175
 * request_hotel
     - utter_ask_details
-* inform{"startdate": "May 25th", "location": "rome"}
-    - slot{"startdate": "May 25th"}
+* inform{"people": "1", "location": "rome"}
+    - slot{"people": "1"}
     - slot{"location": "rome"}
-    - utter_ask_people
-* inform{"people": "6"}
-    - slot{"people": "6"}
     - utter_ask_price
 * inform{"price": "mid-range"}
     - slot{"price": "mid-range"}
+    - utter_ask_startdate
+* inform{"startdate": "May 25th"}
+    - slot{"startdate": "May 25th"}
     - utter_ask_enddate
-* inform{"enddate": "tomorrow"}
-    - slot{"enddate": "tomorrow"}
+* inform{"enddate": "10.03.2018"}
     - utter_filled_slots
     - action_search_hotel
     - slot{"hotel": "hotel"}
     - utter_suggest_hotel
 * affirm
     - utter_happy
-
 
 ## Generated Story -633443905704416777
 * request_hotel
