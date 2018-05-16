@@ -311,19 +311,19 @@
     - utter_explain_location_hotel
     - utter_ask_location
 * inform{"location": "paris"}
-    - utter_ask_price
+    - utter_ask_startdate
 * did_that_work
     - utter_more_info_hotel
-    - utter_ask_price
-* inform{"price": "expensive"}
     - utter_ask_startdate
+* inform{"startdate": "May 25th"}
+    - utter_ask_price
 * explain
-    - utter_explain_startdate_hotel
-    - utter_ask_startdate
+    - utter_explain_price_hotel
+    - utter_ask_price
 * did_that_work
     - utter_more_info_hotel
-    - utter_ask_startdate
-* inform{"startdate": "10.03.2018"}
+    - utter_ask_price
+* inform{"price": "cheap"}
     - utter_filled_slots
     - action_search_hotel
     - slot{"hotel": "hotel"}

@@ -2264,6 +2264,7 @@
     - utter_ask_startdate
 * correct{"enddate": "tomorrow"}
     - slot{"enddate": "tomorrow"}
+    - utter_correct_enddate_hotel
     - utter_ask_startdate
 * inform{"startdate": "10.03.2018"}
     - utter_ask_location
