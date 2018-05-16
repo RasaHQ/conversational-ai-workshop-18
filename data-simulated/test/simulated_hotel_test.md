@@ -195,8 +195,9 @@
     - utter_explain_location_hotel
     - utter_ask_location
 * did_that_work
+    - utter_more_info_hotel
+    - utter_ask_location
 
-utter_ask_price
 ## Generated Story -6349392819907338742
 * request_hotel
     - utter_ask_details
@@ -507,4 +508,3 @@ utter_ask_price
 * explain
     - utter_explain_enddate_hotel
     - utter_ask_enddate
-
