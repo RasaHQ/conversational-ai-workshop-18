@@ -38,14 +38,14 @@ def train_domain_policy(story_filename,
                         max_history=38)
         policies = [KerasPolicy(featurizer)]
         epochs = 200
-        batch_size=16
+        batch_size=32
     else:
         featurizer = MaxHistoryTrackerFeaturizer(
                         LabelTokenizerSingleStateFeaturizer(),
                         max_history=38)
         policies = [KerasPolicy(featurizer)]
         epochs = 200
-        batch_size=16
+        batch_size=32
 
     agent = CustomAgent("domain.yml",
                         policies=policies)
