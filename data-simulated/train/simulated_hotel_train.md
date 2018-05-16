@@ -2317,7 +2317,7 @@
     - utter_ask_price
 * inform{"price": "cheap"}
     - slot{"price": "cheap"}
-    - utter_ask_cuisine
+    - utter_ask_startdate
 * inform{"startdate": "today"}
     - slot{"startdate": "today"}
     - utter_ask_enddate
