@@ -21,6 +21,9 @@
     - action_search_hotel
     - slot{"hotel": "hotel"}
     - utter_suggest_hotel
+* did_that_work
+    - utter_worked_hotel
+    - utter_suggest_hotel
 * affirm
     - utter_happy
 
@@ -46,6 +49,12 @@
     - utter_filled_slots
     - action_search_hotel
     - slot{"hotel": "hotel"}
+    - utter_suggest_hotel
+* did_that_work
+    - utter_worked_hotel
+    - utter_suggest_hotel
+* did_that_work
+    - utter_worked_hotel
     - utter_suggest_hotel
 * affirm
     - utter_happy
@@ -102,6 +111,9 @@
     - utter_filled_slots
     - action_search_hotel
     - slot{"hotel": "hotel"}
+    - utter_suggest_hotel
+* did_that_work
+    - utter_worked_hotel
     - utter_suggest_hotel
 * affirm
     - utter_happy
@@ -163,6 +175,9 @@
     - action_search_hotel
     - slot{"hotel": "hotel"}
     - utter_suggest_hotel
+* did_that_work
+    - utter_worked_hotel
+    - utter_suggest_hotel
 * affirm
     - utter_happy
 
@@ -195,6 +210,9 @@
     - action_search_hotel
     - slot{"hotel": "hotel"}
     - utter_suggest_hotel
+* did_that_work
+    - utter_worked_hotel
+    - utter_suggest_hotel
 * affirm
     - utter_happy
 
@@ -224,6 +242,12 @@
     - utter_filled_slots
     - action_search_hotel
     - slot{"hotel": "hotel"}
+    - utter_suggest_hotel
+* did_that_work
+    - utter_worked_hotel
+    - utter_suggest_hotel
+* did_that_work
+    - utter_worked_hotel
     - utter_suggest_hotel
 * affirm
     - utter_happy
@@ -258,6 +282,9 @@
     - action_search_hotel
     - slot{"hotel": "hotel"}
     - utter_suggest_hotel
+* did_that_work
+    - utter_worked_hotel
+    - utter_suggest_hotel
 * affirm
     - utter_happy
 
@@ -283,6 +310,9 @@
     - utter_filled_slots
     - action_search_hotel
     - slot{"hotel": "hotel"}
+    - utter_suggest_hotel
+* did_that_work
+    - utter_worked_hotel
     - utter_suggest_hotel
 * affirm
         - utter_happy
@@ -316,6 +346,9 @@
     - action_search_hotel
     - slot{"hotel": "hotel"}
     - utter_suggest_hotel
+* did_that_work
+    - utter_worked_hotel
+    - utter_suggest_hotel
 * affirm
     - utter_happy
 
@@ -342,6 +375,9 @@
     - utter_filled_slots
     - action_search_hotel
     - slot{"hotel": "hotel"}
+    - utter_suggest_hotel
+* did_that_work
+    - utter_worked_hotel
     - utter_suggest_hotel
 * affirm
     - utter_happy
@@ -383,6 +419,9 @@
     - action_search_hotel
     - slot{"hotel": "hotel"}
     - utter_suggest_hotel
+* did_that_work
+    - utter_worked_hotel
+    - utter_suggest_hotel
 * affirm
     - utter_happy
 
@@ -409,6 +448,9 @@
     - utter_filled_slots
     - action_search_hotel
     - slot{"hotel": "hotel"}
+    - utter_suggest_hotel
+* did_that_work
+    - utter_worked_hotel
     - utter_suggest_hotel
 * affirm
     - utter_happy
@@ -474,6 +516,9 @@
     - action_search_hotel
     - slot{"hotel": "hotel"}
     - utter_suggest_hotel
+* did_that_work
+    - utter_worked_hotel
+    - utter_suggest_hotel
 * affirm
     - utter_happy
 
@@ -504,6 +549,9 @@
     - action_search_hotel
     - slot{"hotel": "hotel"}
     - utter_suggest_hotel
+* did_that_work
+    - utter_worked_hotel
+    - utter_suggest_hotel
 * affirm
     - utter_happy
 
@@ -530,6 +578,12 @@
     - utter_filled_slots
     - action_search_hotel
     - slot{"hotel": "hotel"}
+    - utter_suggest_hotel
+* did_that_work
+    - utter_worked_hotel
+    - utter_suggest_hotel
+* did_that_work
+    - utter_worked_hotel
     - utter_suggest_hotel
 * affirm
     - utter_happy
@@ -560,6 +614,9 @@
     - utter_filled_slots
     - action_search_hotel
     - slot{"hotel": "hotel"}
+    - utter_suggest_hotel
+* did_that_work
+    - utter_worked_hotel
     - utter_suggest_hotel
 * affirm
     - utter_happy
@@ -602,6 +659,9 @@
     - action_search_hotel
     - slot{"hotel": "hotel"}
     - utter_suggest_hotel
+* did_that_work
+    - utter_worked_hotel
+    - utter_suggest_hotel
 * affirm
     - utter_happy
 
@@ -628,6 +688,9 @@
     - action_search_hotel
     - slot{"hotel": "hotel"}
     - utter_suggest_hotel
+* did_that_work
+    - utter_worked_hotel
+    - utter_suggest_hotel
 * affirm
     - utter_happy
 
@@ -653,6 +716,15 @@
     - utter_filled_slots
     - action_search_hotel
     - slot{"hotel": "hotel"}
+    - utter_suggest_hotel
+* did_that_work
+    - utter_worked_hotel
+    - utter_suggest_hotel
+* did_that_work
+    - utter_worked_hotel
+    - utter_suggest_hotel
+* did_that_work
+    - utter_worked_hotel
     - utter_suggest_hotel
 * affirm
     - utter_happy
@@ -686,6 +758,9 @@
     - action_search_hotel
     - slot{"hotel": "hotel"}
     - utter_suggest_hotel
+* did_that_work
+    - utter_worked_hotel
+    - utter_suggest_hotel
 * affirm
     - utter_happy
 
@@ -715,6 +790,9 @@
     - action_search_hotel
     - slot{"hotel": "hotel"}
     - utter_suggest_hotel
+* did_that_work
+    - utter_worked_hotel
+    - utter_suggest_hotel
 * affirm
     - utter_happy
 
@@ -740,6 +818,18 @@
     - utter_filled_slots
     - action_search_hotel
     - slot{"hotel": "hotel"}
+    - utter_suggest_hotel
+* did_that_work
+    - utter_worked_hotel
+    - utter_suggest_hotel
+* did_that_work
+    - utter_worked_hotel
+    - utter_suggest_hotel
+* did_that_work
+    - utter_worked_hotel
+    - utter_suggest_hotel
+* did_that_work
+    - utter_worked_hotel
     - utter_suggest_hotel
 * affirm
     - utter_happy
@@ -889,6 +979,12 @@
     - utter_filled_slots
     - action_search_hotel
     - slot{"hotel": "hotel"}
+    - utter_suggest_hotel
+* did_that_work
+    - utter_worked_hotel
+    - utter_suggest_hotel
+* did_that_work
+    - utter_worked_hotel
     - utter_suggest_hotel
 * affirm
     - utter_happy
