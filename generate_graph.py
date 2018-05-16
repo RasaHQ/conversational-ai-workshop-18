@@ -67,14 +67,14 @@ if __name__ == '__main__':
     num_correct = defaultdict(list)
 
     logging.basicConfig(level='INFO')
-    percentages = [0]
+    percentages = [0, 50, 100]
     count = 0
     while count < 1:
         correct_keras = []
         correct_embed = []
         correct_keras_bin = []
         for i in percentages:
-            curr_pcnt = str(percentages.index(i)+1
+            curr_pcnt = str(percentages.index(i)+1)
             logging.info("Starting exclusion round {}/{}".format(percentages.index(i)+1, len(percentages)))
             train_domain_policy(cmdline_args.data,
                                 starspace=True,
