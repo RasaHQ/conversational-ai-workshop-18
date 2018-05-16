@@ -48,15 +48,18 @@ def train_domain_policy(story_filename,
                 rnn_size=64,
                 epochs=epochs,
                 embed_dim=embed_dim,
-                use_attention=True)
+                use_attention=True,
+                skip_cells=True,
+                attn_shift_range=5,
+                batch_size=16)
 
     agent.persist(model_path=output_path)
 
 
 if __name__ == '__main__':
     logging.basicConfig(level="DEBUG")
-    train_domain_policy(story_filename="data/train/",
+    train_domain_policy(story_filename="data-simulated/train/simulated_hotel_train.md",
                         output_path='models/dialogue_keras',
-                        exclusion_file='data/train/restaurant_happy.md',
-                        exclusion_percentage=20)
+                        exclusion_file='data-simulated/all_hotel_simulated.md',
+                        exclusion_percentage=0)
     logger.info("Finished training domain policy.")
