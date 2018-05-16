@@ -20,6 +20,12 @@
     - action_search_restaurant
     - slot{"restaurant": "restaurant"}
     - utter_suggest_restaurant
+* did_that_work
+    - utter_worked_restaurant
+    - utter_suggest_restaurant
+* did_that_work
+    - utter_worked_restaurant
+    - utter_suggest_restaurant
 * affirm
     - utter_happy
 
@@ -48,6 +54,9 @@
     - utter_filled_slots
     - action_search_restaurant
     - slot{"restaurant": "restaurant"}
+    - utter_suggest_restaurant
+* did_that_work
+    - utter_worked_restaurant
     - utter_suggest_restaurant
 * affirm
     - utter_happy
@@ -95,7 +104,11 @@
     - action_search_restaurant
     - slot{"restaurant":"results"}
     - utter_suggest_restaurant
-
+* did_that_work
+    - utter_worked_restaurant
+    - utter_suggest_restaurant
+* affirm
+    - utter_happy
 
 ## Generated Story -3230699913544241199
 * request_restaurant
@@ -128,9 +141,11 @@
     - action_search_restaurant
     - slot{"restaurant": "restaurant"}
     - utter_suggest_restaurant
+* did_that_work
+    - utter_worked_restaurant
+    - utter_suggest_restaurant
 * affirm
     - utter_happy
-
 
 
 ## Generated Story 1452092598283439681
@@ -157,6 +172,12 @@
     - utter_filled_slots
     - action_search_restaurant
     - slot{"restaurant": "restaurant"}
+    - utter_suggest_restaurant
+* did_that_work
+    - utter_worked_restaurant
+    - utter_suggest_restaurant
+* did_that_work
+    - utter_worked_restaurant
     - utter_suggest_restaurant
 * affirm
     - utter_happy
@@ -186,6 +207,15 @@
     - action_search_restaurant
     - slot{"restaurant": "restaurant"}
     - utter_suggest_restaurant
+* did_that_work
+    - utter_worked_restaurant
+    - utter_suggest_restaurant
+* did_that_work
+    - utter_worked_restaurant
+    - utter_suggest_restaurant
+* did_that_work
+    - utter_worked_restaurant
+    - utter_suggest_restaurant
 * affirm
     - utter_happy
 
@@ -213,6 +243,9 @@
     - utter_filled_slots
     - action_search_restaurant
     - slot{"restaurant": "restaurant"}
+    - utter_suggest_restaurant
+* did_that_work
+    - utter_worked_restaurant
     - utter_suggest_restaurant
 * affirm
     - utter_happy
@@ -249,6 +282,9 @@
     - action_search_restaurant
     - slot{"restaurant": "restaurant"}
     - utter_suggest_restaurant
+* did_that_work
+    - utter_worked_restaurant
+    - utter_suggest_restaurant
 * affirm
     - utter_happy
 
@@ -281,6 +317,9 @@
     - action_search_restaurant
     - slot{"restaurant": "restaurant"}
     - utter_suggest_restaurant
+* did_that_work
+    - utter_worked_restaurant
+    - utter_suggest_restaurant
 * affirm
     - utter_happy
 
@@ -311,6 +350,12 @@
     - action_search_restaurant
     - slot{"restaurant": "restaurant"}
     - utter_suggest_restaurant
+* did_that_work
+    - utter_worked_restaurant
+    - utter_suggest_restaurant
+* did_that_work
+    - utter_worked_restaurant
+    - utter_suggest_restaurant
 * affirm
     - utter_happy
 
@@ -338,6 +383,12 @@
     - utter_filled_slots
     - action_search_restaurant
     - slot{"restaurant": "restaurant"}
+    - utter_suggest_restaurant
+* did_that_work
+    - utter_worked_restaurant
+    - utter_suggest_restaurant
+* did_that_work
+    - utter_worked_restaurant
     - utter_suggest_restaurant
 * affirm
     - utter_happy
@@ -379,6 +430,9 @@
     - action_search_restaurant
     - slot{"restaurant":"results"}
     - utter_suggest_restaurant
+* did_that_work
+    - utter_worked_restaurant
+    - utter_suggest_restaurant
 * affirm
     - utter_happy
 
@@ -407,6 +461,9 @@
     - utter_filled_slots
     - action_search_restaurant
     - slot{"restaurant": "restaurant"}
+    - utter_suggest_restaurant
+* did_that_work
+    - utter_worked_restaurant
     - utter_suggest_restaurant
 * affirm
     - utter_happy
@@ -438,6 +495,12 @@
     - action_search_restaurant
     - slot{"restaurant": "restaurant"}
     - utter_suggest_restaurant
+* did_that_work
+    - utter_worked_restaurant
+    - utter_suggest_restaurant
+* did_that_work
+    - utter_worked_restaurant
+    - utter_suggest_restaurant
 * affirm
     - utter_happy
 
@@ -468,6 +531,9 @@
     - utter_filled_slots
     - action_search_restaurant
     - slot{"restaurant": "restaurant"}
+    - utter_suggest_restaurant
+* did_that_work
+    - utter_worked_restaurant
     - utter_suggest_restaurant
 * affirm
     - utter_happy
@@ -1016,6 +1082,9 @@
     - action_search_restaurant
     - slot{"restaurant": "restaurant"}
     - utter_suggest_restaurant
+* chitchat
+    - utter_chitchat
+    - utter_suggest_restaurant
 * affirm
     - utter_happy
 
@@ -1042,6 +1111,9 @@
     - action_search_restaurant
     - slot{"restaurant": "restaurant"}
     - utter_suggest_restaurant
+* chitchat
+    - utter_chitchat
+    - utter_suggest_restaurant
 * affirm
     - utter_happy
 
@@ -1067,6 +1139,12 @@
     - action_search_restaurant
     - slot{"restaurant": "restaurant"}
     - utter_suggest_restaurant
+* chitchat
+    - utter_chitchat
+    - utter_suggest_restaurant
+* chitchat
+    - utter_chitchat
+    - utter_suggest_restaurant
 * affirm
     - utter_happy
 
@@ -1091,6 +1169,9 @@
     - utter_filled_slots
     - action_search_restaurant
     - slot{"restaurant": "restaurant"}
+    - utter_suggest_restaurant
+* chitchat
+    - utter_chitchat
     - utter_suggest_restaurant
 * affirm
     - utter_happy
@@ -1120,6 +1201,9 @@
     - action_search_restaurant
     - slot{"restaurant": "restaurant"}
     - utter_suggest_restaurant
+* chitchat
+    - utter_chitchat
+    - utter_suggest_restaurant
 * affirm
     - utter_happy
 
@@ -1144,6 +1228,12 @@
     - utter_filled_slots
     - action_search_restaurant
     - slot{"restaurant": "restaurant"}
+    - utter_suggest_restaurant
+* chitchat
+    - utter_chitchat
+    - utter_suggest_restaurant
+* chitchat
+    - utter_chitchat
     - utter_suggest_restaurant
 * affirm
     - utter_happy
@@ -1179,6 +1269,12 @@
     - action_search_restaurant
     - slot{"restaurant": "restaurant"}
     - utter_suggest_restaurant
+* chitchat
+    - utter_chitchat
+    - utter_suggest_restaurant
+* chitchat
+    - utter_chitchat
+    - utter_suggest_restaurant
 * affirm
     - utter_happy
 
@@ -1207,6 +1303,9 @@
     - action_search_restaurant
     - slot{"restaurant": "restaurant"}
     - utter_suggest_restaurant
+* chitchat
+    - utter_chitchat
+    - utter_suggest_restaurant
 * affirm
     - utter_happy
 
@@ -1234,6 +1333,9 @@
     - action_search_restaurant
     - slot{"restaurant": "restaurant"}
     - utter_suggest_restaurant
+* chitchat
+    - utter_chitchat
+    - utter_suggest_restaurant
 * affirm
     - utter_happy
 
@@ -1258,6 +1360,9 @@
     - utter_filled_slots
     - action_search_restaurant
     - slot{"restaurant": "restaurant"}
+    - utter_suggest_restaurant
+* chitchat
+    - utter_chitchat
     - utter_suggest_restaurant
 * affirm
     - utter_happy
@@ -1284,6 +1389,12 @@
     - action_search_restaurant
     - slot{"restaurant": "restaurant"}
     - utter_suggest_restaurant
+* chitchat
+    - utter_chitchat
+    - utter_suggest_restaurant
+* chitchat
+    - utter_chitchat
+    - utter_suggest_restaurant
 * affirm
     - utter_happy
 
@@ -1308,6 +1419,15 @@
     - utter_filled_slots
     - action_search_restaurant
     - slot{"restaurant": "restaurant"}
+    - utter_suggest_restaurant
+* chitchat
+    - utter_chitchat
+    - utter_suggest_restaurant
+* chitchat
+    - utter_chitchat
+    - utter_suggest_restaurant
+* chitchat
+    - utter_chitchat
     - utter_suggest_restaurant
 * affirm
     - utter_happy
@@ -1334,6 +1454,12 @@
     - action_search_restaurant
     - slot{"restaurant": "restaurant"}
     - utter_suggest_restaurant
+* chitchat
+    - utter_chitchat
+    - utter_suggest_restaurant
+* chitchat
+    - utter_chitchat
+    - utter_suggest_restaurant
 * affirm
     - utter_happy
 
@@ -1358,6 +1484,15 @@
     - utter_filled_slots
     - action_search_restaurant
     - slot{"restaurant": "restaurant"}
+    - utter_suggest_restaurant
+* chitchat
+    - utter_chitchat
+    - utter_suggest_restaurant
+* chitchat
+    - utter_chitchat
+    - utter_suggest_restaurant
+* chitchat
+    - utter_chitchat
     - utter_suggest_restaurant
 * affirm
     - utter_happy
@@ -1399,6 +1534,9 @@
     - action_search_restaurant
     - slot{"restaurant": "restaurant"}
     - utter_suggest_restaurant
+* chitchat
+    - utter_chitchat
+    - utter_suggest_restaurant
 * affirm
     - utter_happy
 
@@ -1423,6 +1561,12 @@
     - utter_filled_slots
     - action_search_restaurant
     - slot{"restaurant": "restaurant"}
+    - utter_suggest_restaurant
+* chitchat
+    - utter_chitchat
+    - utter_suggest_restaurant
+* chitchat
+    - utter_chitchat
     - utter_suggest_restaurant
 * affirm
     - utter_happy
