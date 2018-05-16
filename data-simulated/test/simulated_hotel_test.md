@@ -578,7 +578,7 @@
     - utter_more_info_hotel
     - utter_ask_price
 * explain
-    - utter_explain_startdate_hotel
+    - utter_explain_price_hotel
     - utter_ask_price
 * inform{"price": "expensive"}
     - utter_ask_people
