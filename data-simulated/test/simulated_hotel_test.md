@@ -379,8 +379,7 @@
     - utter_ask_price
 * inform{"price": "expensive"}
     - utter_ask_startdate
-* correct{"startdate": "x"}
-    - utter_correct_startdate_hotel
+* inform{"startdate": "x"}
     - utter_ask_enddate
 * correct{"startdate": "x"}
     - utter_correct_startdate_hotel
