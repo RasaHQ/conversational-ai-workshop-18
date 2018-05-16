@@ -8,7 +8,8 @@ import logging
 from core_extensions.policy_trainer import CustomAgent
 from rasa_core.featurizers import (LabelTokenizerSingleStateFeaturizer,
                                    FullDialogueTrackerFeaturizer,
-                                   MaxHistoryTrackerFeaturizer)
+                                   MaxHistoryTrackerFeaturizer,
+                                   BinarySingleStateFeaturizer)
 from rasa_core.policies.embedding_policy import EmbeddingPolicy
 from rasa_core.policies.keras_policy import KerasPolicy
 
@@ -21,7 +22,8 @@ def train_domain_policy(story_filename,
                         exclusion_percentage=None,
                         starspace=True,
                         epoch_no=2000,
-                        embed_dim=10):
+                        embed_dim=10,
+                        binary_feat=False):
     """Trains a new deterministic domain policy using the stories
     (json format) in `story_filename`."""
     if starspace:
@@ -29,6 +31,12 @@ def train_domain_policy(story_filename,
                         LabelTokenizerSingleStateFeaturizer())
         policies = [EmbeddingPolicy(featurizer)]
         epochs = epoch_no
+    elif binary_feat:
+        featurizer = MaxHistoryTrackerFeaturizer(
+                        BinarySingleStateFeaturizer(),
+                        max_history=20)
+        policies = [KerasPolicy(featurizer)]
+        epochs = 400
     else:
         featurizer = MaxHistoryTrackerFeaturizer(
                         LabelTokenizerSingleStateFeaturizer(),
