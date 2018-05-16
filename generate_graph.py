@@ -86,10 +86,10 @@ if __name__ == '__main__':
                                 )
 
             if cmdline_args.eval_mode == "simulated":
-                no = evaluate_policy('models/dialogue_embed' + curr_pcnt
+                no = evaluate_policy('models/dialogue_embed' + curr_pcnt)
             else:
                 no = run_story_evaluation(cmdline_args.stories,
-                                          'models/dialogue_embed' + curr_pcnt
+                                          'models/dialogue_embed' + curr_pcnt)
 
             correct_embed.append(no)
 
@@ -101,7 +101,7 @@ if __name__ == '__main__':
                                 )
 
             no = run_story_evaluation(cmdline_args.stories,
-                                      'models/dialogue_keras' + curr_pcnt
+                                      'models/dialogue_keras' + curr_pcnt)
             correct_keras.append(no)
 
             train_domain_policy(cmdline_args.data,
@@ -113,7 +113,7 @@ if __name__ == '__main__':
                                 )
 
             no = run_story_evaluation(cmdline_args.stories,
-                                      'models/dialogue_keras_bin' + curr_pcnt
+                                      'models/dialogue_keras_bin' + curr_pcnt)
             correct_keras_bin.append(no)
         num_correct['keras'].append(correct_keras)
         num_correct['embed'].append(correct_embed)
