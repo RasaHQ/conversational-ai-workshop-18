@@ -67,9 +67,9 @@ if __name__ == '__main__':
     num_correct = defaultdict(list)
 
     logging.basicConfig(level='INFO')
-    percentages = [0, 50, 100]
+    percentages = [0, 5, 25, 50, 70, 90, 95, 100]
     count = 0
-    while count < 1:
+    while count < 3:
         correct_keras = []
         correct_embed = []
         correct_keras_bin = []
@@ -117,7 +117,7 @@ if __name__ == '__main__':
             correct_keras_bin.append(no)
         num_correct['keras'].append(correct_keras)
         num_correct['embed'].append(correct_embed)
-        num_correct['keras_bin'].append(keras_bin)
+        num_correct['keras_bin'].append(correct_keras_bin)
         count += 1
     percentages = [100-x for x in percentages]
 

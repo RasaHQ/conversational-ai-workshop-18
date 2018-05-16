@@ -31,18 +31,21 @@ def train_domain_policy(story_filename,
                         LabelTokenizerSingleStateFeaturizer())
         policies = [EmbeddingPolicy(featurizer)]
         epochs = epoch_no
+        batch_size=[8,32]
     elif binary_feat:
         featurizer = MaxHistoryTrackerFeaturizer(
                         BinarySingleStateFeaturizer(),
                         max_history=38)
         policies = [KerasPolicy(featurizer)]
         epochs = 200
+        batch_size=16
     else:
         featurizer = MaxHistoryTrackerFeaturizer(
                         LabelTokenizerSingleStateFeaturizer(),
                         max_history=38)
         policies = [KerasPolicy(featurizer)]
         epochs = 200
+        batch_size=16
 
     agent = CustomAgent("domain.yml",
                         policies=policies)
@@ -59,7 +62,7 @@ def train_domain_policy(story_filename,
                 use_attention=True,
                 skip_cells=True,
                 attn_shift_range=5,
-                batch_size=[8, 64])
+                batch_size=batch_size)
 
     agent.persist(model_path=output_path)
 
