@@ -403,6 +403,13 @@
 * explain
     - utter_explain_people_restaurant
     - utter_ask_people
+* inform{"people": "4"}
+    - utter_filled_slots
+    - action_search_restaurant
+    - slot{"restaurant": "restaurant"}
+    - utter_suggest_restaurant
+* affirm
+    - utter_happy
 
 
 ## Generated Story 8415484272864759934
@@ -424,6 +431,15 @@
     - slot{"people": "1"}
     - utter_correct_people_restaurant
     - utter_ask_price
+* inform{"price": "expensive"}
+    - utter_ask_cuisine
+* inform{"cuisine": "italian"}
+    - utter_filled_slots
+    - action_search_restaurant
+    - slot{"restaurant": "restaurant"}
+    - utter_suggest_restaurant
+* affirm
+    - utter_happy
 
 
 ## Generated Story 8816761424745395625
@@ -448,6 +464,14 @@
 * explain
     - utter_explain_location_restaurant
     - utter_ask_location
+* inform{"location": "paris"}
+    - utter_filled_slots
+    - action_search_restaurant
+    - slot{"restaurant": "restaurant"}
+    - utter_suggest_restaurant
+* affirm
+    - utter_happy
+
 
 ## Generated Story 1074034796281423152
 * request_restaurant
@@ -465,6 +489,13 @@
 * explain
     - utter_explain_location_restaurant
     - utter_ask_location
+* inform{"location": "paris"}
+    - utter_filled_slots
+    - action_search_restaurant
+    - slot{"restaurant": "restaurant"}
+    - utter_suggest_restaurant
+* affirm
+    - utter_happy
 
 
 ## Generated Story 5703123541088815095
@@ -479,11 +510,23 @@
     - utter_ask_people
 * chitchat
     - utter_chitchat
-    - utter_ask_cuisine
+    - utter_ask_people
 * correct{"location": "rome"}
     - slot{"location": "rome"}
     - utter_correct_location_restaurant
+    - utter_ask_people
+* inform{"people": "4"}
+    - utter_ask_price
+* inform{"price": "expensive"}
     - utter_ask_cuisine
+* inform{"cuisine": "italian"}
+    - utter_filled_slots
+    - action_search_restaurant
+    - slot{"restaurant": "restaurant"}
+    - utter_suggest_restaurant
+* affirm
+    - utter_happy
+
 
 ## Generated Story -1455208811812364750
 * request_restaurant
@@ -500,6 +543,16 @@
 * explain
     - utter_explain_location_restaurant
     - utter_ask_location
+* inform{"location": "paris"}
+    - utter_ask_people
+* inform{"people": "4"}
+    - utter_filled_slots
+    - action_search_restaurant
+    - slot{"restaurant": "restaurant"}
+    - utter_suggest_restaurant
+* affirm
+    - utter_happy
+
 
 ## Generated Story 4438794933926816664
 * request_restaurant
@@ -537,6 +590,9 @@
     - action_search_restaurant
     - slot{"restaurant":"results"}
     - utter_suggest_restaurant
+* affirm
+    - utter_happy
+
 
 ## Generated Story -6672029863110169452
 * request_restaurant
@@ -557,6 +613,16 @@
 * explain
     - utter_explain_price_restaurant
     - utter_ask_price
+* inform{"price": "expensive"}
+    - utter_ask_cuisine
+* inform{"cuisine": "italian"}
+    - utter_filled_slots
+    - action_search_restaurant
+    - slot{"restaurant": "restaurant"}
+    - utter_suggest_restaurant
+* affirm
+    - utter_happy
+
 
 ## Generated Story 5030307886271057142
 * request_restaurant
@@ -571,6 +637,18 @@
     - slot{"location": "paris"}
     - utter_correct_location_restaurant
     - utter_ask_people
+* inform{"people": "4"}
+    - utter_ask_price
+* inform{"price": "expensive"}
+    - utter_ask_cuisine
+* inform{"cuisine": "italian"}
+    - utter_filled_slots
+    - action_search_restaurant
+    - slot{"restaurant": "restaurant"}
+    - utter_suggest_restaurant
+* affirm
+    - utter_happy
+
 
 ## Generated Story 61924096214932807
 * request_restaurant
@@ -587,6 +665,16 @@
 * explain
     - utter_explain_price_restaurant
     - utter_ask_price
+* inform{"price": "expensive"}
+    - utter_ask_cuisine
+* inform{"cuisine": "italian"}
+    - utter_filled_slots
+    - action_search_restaurant
+    - slot{"restaurant": "restaurant"}
+    - utter_suggest_restaurant
+* affirm
+    - utter_happy
+
 
 ## Generated Story -2820988936373814771
 * request_restaurant
@@ -615,6 +703,16 @@
 * explain
     - utter_explain_location_restaurant
     - utter_ask_location
+* inform{"location": "paris"}
+    - utter_ask_people
+* inform{"people": "4"}
+    - utter_filled_slots
+    - action_search_restaurant
+    - slot{"restaurant": "restaurant"}
+    - utter_suggest_restaurant
+* affirm
+    - utter_happy
+
 
 ## Generated Story -1960358913774682002
 * request_restaurant
@@ -635,6 +733,16 @@
     - slot{"location": "london"}
     - utter_correct_location_restaurant
     - utter_ask_price
+* inform{"price": "expensive"}
+    - utter_ask_cuisine
+* inform{"cuisine": "italian"}
+    - utter_filled_slots
+    - action_search_restaurant
+    - slot{"restaurant": "restaurant"}
+    - utter_suggest_restaurant
+* affirm
+    - utter_happy
+
 
 ## Generated Story -8694893665571774584
 * request_restaurant
@@ -649,6 +757,7 @@
 * chitchat
     - utter_chitchat
     - utter_ask_price
+
 
 ## Generated Story 2033230819050515992
 * request_restaurant
@@ -665,6 +774,16 @@
 * explain
     - utter_explain_location_restaurant
     - utter_ask_location
+* inform{"location":"rome"}
+    - utter_ask_people
+* inform{"people": "1"}
+    - utter_filled_slots
+    - action_search_restaurant
+    - slot{"restaurant": "restaurant"}
+    - utter_suggest_restaurant
+* affirm
+    - utter_happy
+
 
 ## Generated Story 8702181221388649157
 * request_restaurant
@@ -679,6 +798,16 @@
     - slot{"cuisine": "chinese"}
     - utter_correct_cuisine_restaurant
     - utter_ask_price
+    - utter_ask_location
+* inform{"location": "paris"}
+    - utter_ask_people
+* inform{"people": "4"}
+    - utter_filled_slots
+    - action_search_restaurant
+    - slot{"restaurant": "restaurant"}
+    - utter_suggest_restaurant
+* affirm
+    - utter_happy
 
 ## Generated Story -4390789948531939425
 * request_restaurant
@@ -699,6 +828,14 @@
     - slot{"people": "4"}
     - utter_correct_people_restaurant
     - utter_ask_cuisine
+* inform{"cuisine": "chinese"}
+    - utter_filled_slots
+    - action_search_restaurant
+    - slot{"restaurant": "restaurant"}
+    - utter_suggest_restaurant
+* affirm
+    - utter_happy
+
 
 ## Generated Story 4623050297171388983
 * request_restaurant
@@ -713,6 +850,17 @@
     - slot{"cuisine": "french"}
     - utter_correct_cuisine_restaurant
     - utter_ask_price
+* inform{"price": "expensive"}
+    - utter_ask_location
+* inform{"location": "paris"}
+    - utter_ask_people
+* inform{"people": "4"}
+    - utter_filled_slots
+    - action_search_restaurant
+    - slot{"restaurant": "restaurant"}
+    - utter_suggest_restaurant
+* affirm
+    - utter_happy
 
 
 ## Generated Story 8482744598176193653
@@ -727,6 +875,17 @@
 * explain
     - utter_explain_price_restaurant
     - utter_ask_price   
+* inform{"price": "expensive"}
+    - utter_ask_location
+* inform{"location": "paris"}
+    - utter_ask_people
+* inform{"people": "4"}
+    - utter_filled_slots
+    - action_search_restaurant
+    - slot{"restaurant": "restaurant"}
+    - utter_suggest_restaurant
+* affirm
+    - utter_happy
 
 ## Generated Story -5037852676024300992
 * request_restaurant
@@ -773,8 +932,18 @@
     - utter_more_info_restaurant
     - utter_ask_price
 * explain
-    - utter_explain_cuisine_restaurant
+    - utter_explain_price_restaurant
     - utter_ask_price
+* inform{"price": "expensive"}
+    - utter_ask_cuisine
+* inform{"cuisine": "french"}
+    - utter_filled_slots
+    - action_search_restaurant
+    - slot{"restaurant": "restaurant"}
+    - utter_suggest_restaurant
+* affirm
+    - utter_happy
+
 
 ## Generated Story 2794466410122766925
 * request_restaurant
@@ -791,6 +960,16 @@
 * explain
     - utter_explain_location_restaurant
     - utter_ask_location
+* inform{"location": "paris"}
+    - utter_ask_people
+* inform{"people": "4"}
+    - utter_filled_slots
+    - action_search_restaurant
+    - slot{"restaurant": "restaurant"}
+    - utter_suggest_restaurant
+* affirm
+    - utter_happy
+
 
 ## Generated Story -4597439819468904984
 * request_restaurant
@@ -805,6 +984,16 @@
 * did_that_work
     - utter_more_info_restaurant
     - utter_ask_price
+* inform{"price": "expensive"}
+    - utter_ask_location
+* inform{"location": "paris"}
+    - utter_filled_slots
+    - action_search_restaurant
+    - slot{"restaurant": "restaurant"}
+    - utter_suggest_restaurant
+* affirm
+    - utter_happy
+
 
 ## Generated Story -4977951358594275605
 * request_restaurant
@@ -818,6 +1007,18 @@
 * did_that_work
     - utter_more_info_restaurant
     - utter_ask_price
+* inform{"price": "expensive"}
+    - utter_ask_location
+* inform{"location": "paris"}
+    - utter_ask_people
+* inform{"people": "4"}
+    - utter_filled_slots
+    - action_search_restaurant
+    - slot{"restaurant": "restaurant"}
+    - utter_suggest_restaurant
+* affirm
+    - utter_happy
+
 
 ## Generated Story -1007374986053400669
 * request_restaurant
@@ -832,6 +1033,18 @@
     - slot{"cuisine": "italian"}
     - utter_correct_cuisine_restaurant
     - utter_ask_price
+* inform{"price": "expensive"}
+    - utter_ask_location
+* inform{"location": "paris"}
+    - utter_ask_people
+* inform{"people": "4"}
+    - utter_filled_slots
+    - action_search_restaurant
+    - slot{"restaurant": "restaurant"}
+    - utter_suggest_restaurant
+* affirm
+    - utter_happy
+
 
 ## Generated Story -8209594532697157485
 * request_restaurant
@@ -845,6 +1058,17 @@
 * explain
     - utter_explain_people_restaurant
     - utter_ask_people
+* inform{"people": "4"}
+    - utter_ask_cuisine
+* inform{"cuisine": "italian"}
+    - utter_ask_location
+* inform{"location": "paris"}
+    - utter_filled_slots
+    - action_search_restaurant
+    - slot{"restaurant": "restaurant"}
+    - utter_suggest_restaurant
+* affirm
+    - utter_happy
 
 
 ## Generated Story 8538074372841459949
@@ -859,6 +1083,17 @@
 * did_that_work
     - utter_more_info_restaurant
     - utter_ask_price
+* inform{"price": "expensive"}
+    - utter_ask_location
+* inform{"location": "paris"}
+    - utter_ask_people
+* inform{"people": "4"}
+    - utter_filled_slots
+    - action_search_restaurant
+    - slot{"restaurant": "restaurant"}
+    - utter_suggest_restaurant
+* affirm
+    - utter_happy
 
 ## Generated Story -3893861693456217619
 * request_restaurant
@@ -876,6 +1111,17 @@
     - slot{"price": "cheap"}
     - utter_correct_price_restaurant
     - utter_ask_people
+* inform{"people": "4"}
+    - utter_ask_cuisine
+* inform{"cuisine": "italian"}
+    - utter_ask_location
+* inform{"location": "paris"}
+    - utter_filled_slots
+    - action_search_restaurant
+    - slot{"restaurant": "restaurant"}
+    - utter_suggest_restaurant
+* affirm
+    - utter_happy
 
 
 ## Generated Story -7349421752051932629
@@ -890,6 +1136,18 @@
 * did_that_work
     - utter_more_info_restaurant
     - utter_ask_price
+* inform{"price": "expensive"}
+    - utter_ask_location
+* inform{"location": "paris"}
+    - utter_ask_people
+* inform{"people": "4"}
+    - utter_filled_slots
+    - action_search_restaurant
+    - slot{"restaurant": "restaurant"}
+    - utter_suggest_restaurant
+* affirm
+    - utter_happy
+
 
 ## Generated Story 3679034546170012421
 * request_restaurant
@@ -916,6 +1174,13 @@
     - slot{"cuisine": "chinese"}
     - utter_correct_cuisine_restaurant
     - utter_ask_location
+* inform{"location": "london"}
+    - utter_filled_slots
+    - action_search_restaurant
+    - slot{"restaurant": "restaurant"}
+    - utter_suggest_restaurant
+* affirm
+    - utter_happy
 
 
 ## Generated Story 5864841072222426667
@@ -933,6 +1198,18 @@
 * explain
     - utter_explain_people_restaurant
     - utter_ask_people
+* inform{"people": "4"}
+    - utter_ask_cuisine
+* inform{"cuisine": "italian"}
+    - utter_ask_location
+* inform{"location": "paris"}
+    - utter_filled_slots
+    - action_search_restaurant
+    - slot{"restaurant": "restaurant"}
+    - utter_suggest_restaurant
+* affirm
+    - utter_happy
+
 
 ## Generated Story 8910081089962091554
 * request_restaurant
@@ -948,6 +1225,17 @@
     - slot{"cuisine": "italian"}
     - utter_correct_cuisine_restaurant
     - utter_ask_price
+* inform{"price": "expensive"}
+    - utter_ask_location
+* inform{"location": "paris"}
+    - utter_ask_people
+* inform{"people": "4"}
+    - utter_filled_slots
+    - action_search_restaurant
+    - slot{"restaurant": "restaurant"}
+    - utter_suggest_restaurant
+* affirm
+    - utter_happy
 
 ## Generated Story 4951610683748594432
 * request_restaurant
@@ -964,6 +1252,15 @@
 * explain
     - utter_explain_price_restaurant
     - utter_ask_price
+* inform{"price": "expensive"}
+    - utter_ask_cuisine
+* inform{"cuisine": "italian"}
+    - utter_filled_slots
+    - action_search_restaurant
+    - slot{"restaurant": "restaurant"}
+    - utter_suggest_restaurant
+* affirm
+    - utter_happy
 
 ## Generated Story -7009556792129000746
 * request_restaurant
@@ -980,6 +1277,16 @@
 * explain
     - utter_explain_cuisine_restaurant
     - utter_ask_cuisine
+* inform{"cuisine": "italian"}
+    - utter_ask_location
+* inform{"location": "paris"}
+    - utter_filled_slots
+    - action_search_restaurant
+    - slot{"restaurant": "restaurant"}
+    - utter_suggest_restaurant
+* affirm
+    - utter_happy
+
 
 ## Generated Story 4803662585436590829
 * request_restaurant
@@ -993,6 +1300,17 @@
 * explain
     - utter_explain_people_restaurant
     - utter_ask_people
+* inform{"people": "4"}
+    - utter_ask_cuisine
+* inform{"cuisine": "italian"}
+    - utter_ask_location
+* inform{"location": "paris"}
+    - utter_filled_slots
+    - action_search_restaurant
+    - slot{"restaurant": "restaurant"}
+    - utter_suggest_restaurant
+* affirm
+    - utter_happy
 
 ## Generated Story 8702181221388649157
 * request_restaurant
@@ -1007,6 +1325,17 @@
     - slot{"cuisine": "chinese"}
     - utter_correct_cuisine_restaurant
     - utter_ask_price
+* inform{"price": "expensive"}
+    - utter_ask_location
+* inform{"location": "paris"}
+    - utter_ask_people
+* inform{"people": "4"}
+    - utter_filled_slots
+    - action_search_restaurant
+    - slot{"restaurant": "restaurant"}
+    - utter_suggest_restaurant
+* affirm
+    - utter_happy
 
 ## Generated Story 584180253540252584
 * request_restaurant
@@ -1021,6 +1350,17 @@
 * did_that_work
     - utter_more_info_restaurant
     - utter_ask_price
+* inform{"price": "mid-range"}
+    - slot{"price": "mid-range"}
+    - utter_ask_location
+* inform{"location": "paris"}
+    - slot{"location": "paris"}
+    - utter_filled_slots
+    - action_search_restaurant
+    - slot{"restaurant": "restaurant"}
+    - utter_suggest_restaurant
+* affirm
+    - utter_happy
 
 
 ## Generated Story 4436622233732960065
@@ -1052,6 +1392,16 @@
     - slot{"price": "mid-range"}
     - utter_correct_price_restaurant
     - utter_ask_cuisine
+* inform{"cuisine": "chinese"}
+    - utter_ask_location
+* inform{"location": "rome"}
+    - utter_filled_slots
+    - action_search_restaurant
+    - slot{"restaurant": "restaurant"}
+    - utter_suggest_restaurant
+* affirm
+    - utter_happy
+
 
 ## Generated Story 7486960989920511211
 * request_restaurant
@@ -1065,3 +1415,14 @@
 * did_that_work
     - utter_more_info_restaurant
     - utter_ask_location
+* inform{"location": "paris"}
+    - utter_ask_price
+* inform{"price": "expensive"}
+    - utter_ask_cuisine
+* inform{"cuisine": "italian"}
+    - utter_filled_slots
+    - action_search_restaurant
+    - slot{"restaurant": "restaurant"}
+    - utter_suggest_restaurant
+* affirm
+    - utter_happy
