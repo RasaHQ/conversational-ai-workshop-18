@@ -22,7 +22,7 @@ def train_domain_policy(story_filename,
                         exclusion_percentage=None,
                         starspace=True,
                         epoch_no=2000,
-                        embed_dim=10,
+                        embed_dim=20,
                         binary_feat=False):
     """Trains a new deterministic domain policy using the stories
     (json format) in `story_filename`."""
@@ -30,7 +30,7 @@ def train_domain_policy(story_filename,
         featurizer = FullDialogueTrackerFeaturizer(
                         LabelTokenizerSingleStateFeaturizer())
         policies = [EmbeddingPolicy(featurizer)]
-        epochs = epoch_no
+        epochs = 2000
         batch_size=[8,32]
     elif binary_feat:
         featurizer = MaxHistoryTrackerFeaturizer(
@@ -59,8 +59,8 @@ def train_domain_policy(story_filename,
                 rnn_size=64,
                 epochs=epochs,
                 embed_dim=embed_dim,
-                use_attention=True,
                 skip_cells=True,
+                sparse_attention=False,
                 attn_shift_range=5,
                 batch_size=batch_size)
 
@@ -69,8 +69,8 @@ def train_domain_policy(story_filename,
 
 if __name__ == '__main__':
     logging.basicConfig(level="DEBUG")
-    train_domain_policy(story_filename="data-simulated/train/simulated_hotel_train.md",
-                        output_path='models/dialogue_keras',
-                        exclusion_file='data-simulated/all_hotel_simulated.md',
+    train_domain_policy(story_filename="data-simulated/train/",
+                        output_path='models/dialogue_embed',
+                        exclusion_file='data-simulated/train/simulated_hotel_train.md',
                         exclusion_percentage=0)
     logger.info("Finished training domain policy.")

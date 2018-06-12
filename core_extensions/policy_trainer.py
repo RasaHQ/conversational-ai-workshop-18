@@ -45,10 +45,7 @@ def load_data(
 
         g = TrainingDataGenerator(graph, domain,
                                   remove_duplicates,
-                                  augmentation_factor,
-                                  max_number_of_trackers,
-                                  tracker_limit,
-                                  use_story_concatenation)
+                                  augmentation_factor=augmentation_factor)
         return g.generate()
     else:
         return []
