@@ -315,7 +315,7 @@
     - utter_worked_hotel
     - utter_suggest_hotel
 * affirm
-        - utter_happy
+    - utter_happy
 
 ## Generated Story 1685090242406500402
 * request_hotel

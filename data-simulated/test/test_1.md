@@ -31,3 +31,15 @@
 * explain
     - utter_explain_price_hotel
     - utter_ask_price
+* inform{"price": "expensive"}
+    - utter_ask_people
+* inform{"people": "4"}
+    - utter_filled_slots
+    - action_search_hotel
+    - slot{"hotel": "hotel"}
+    - utter_suggest_hotel
+* chitchat
+    - utter_chitchat
+    - utter_suggest_hotel
+* affirm
+    - utter_happy
