@@ -70,9 +70,10 @@ if __name__ == '__main__':
     percentages = [0, 5, 25, 50, 70, 90, 95, 100]
     count = 0
     while count < 3:
-        correct_keras = []
         correct_embed = []
-        correct_keras_bin = []
+        correct_embed_no_attn_before = []
+        correct_embed_no_attn_after = []
+        correct_embed_no_attn = []
         for i in percentages:
             curr_pcnt = str(percentages.index(i)+1)
             logging.info("Starting exclusion round {}/{}".format(percentages.index(i)+1, len(percentages)))
@@ -94,30 +95,46 @@ if __name__ == '__main__':
             correct_embed.append(no)
 
             train_domain_policy(cmdline_args.data,
-                                starspace=False,
+                                starspace=True,
                                 exclusion_file=cmdline_args.exclude,
                                 exclusion_percentage=i,
-                                output_path='models/dialogue_keras' + curr_pcnt
+                                output_path='models/dialogue_embed_no_attn_before' + curr_pcnt,
+                                attn_before_rnn=False,
                                 )
 
             no = run_story_evaluation(cmdline_args.stories,
-                                      'models/dialogue_keras' + curr_pcnt)
-            correct_keras.append(no)
+                                      'models/dialogue_embed_no_attn_before' + curr_pcnt)
+            correct_embed_no_attn_before.append(no)
 
             train_domain_policy(cmdline_args.data,
-                                starspace=False,
+                                starspace=True,
                                 exclusion_file=cmdline_args.exclude,
                                 exclusion_percentage=i,
-                                output_path='models/dialogue_keras_bin' + curr_pcnt,
-                                binary_feat=True
+                                output_path='models/dialogue_embed_no_attn_after' + curr_pcnt,
+                                attn_after_rnn=False,
                                 )
 
             no = run_story_evaluation(cmdline_args.stories,
-                                      'models/dialogue_keras_bin' + curr_pcnt)
-            correct_keras_bin.append(no)
-        num_correct['keras'].append(correct_keras)
+                                      'models/dialogue_embed_no_attn_after' + curr_pcnt)
+            correct_embed_no_attn_after.append(no)
+
+            train_domain_policy(cmdline_args.data,
+                                starspace=True,
+                                exclusion_file=cmdline_args.exclude,
+                                exclusion_percentage=i,
+                                output_path='models/dialogue_embed_no_attn' + curr_pcnt,
+                                attn_after_rnn=False,
+                                attn_before_rnn=False,
+                                )
+
+            no = run_story_evaluation(cmdline_args.stories,
+                                      'models/dialogue_embed_no_attn' + curr_pcnt)
+            correct_embed_no_attn.append(no)
+
         num_correct['embed'].append(correct_embed)
-        num_correct['keras_bin'].append(correct_keras_bin)
+        num_correct['embed_no_attn_before'].append(correct_embed_no_attn_before)
+        num_correct['embed_no_attn_after'].append(correct_embed_no_attn_after)
+        num_correct['embed_no_attn'].append(correct_embed_no_attn)
         count += 1
     percentages = [100-x for x in percentages]
 

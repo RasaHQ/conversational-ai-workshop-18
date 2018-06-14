@@ -21,16 +21,20 @@ def train_domain_policy(story_filename,
                         exclusion_file=None,
                         exclusion_percentage=None,
                         starspace=True,
+                        split_symbol='_',
                         epoch_no=2000,
                         embed_dim=20,
+                        attn_shift_range=5,
+                        attn_before_rnn=True,
+                        attn_after_rnn=True,
                         binary_feat=False):
     """Trains a new deterministic domain policy using the stories
     (json format) in `story_filename`."""
     if starspace:
         featurizer = FullDialogueTrackerFeaturizer(
-                        LabelTokenizerSingleStateFeaturizer())
+                        LabelTokenizerSingleStateFeaturizer(split_symbol=split_symbol))
         policies = [EmbeddingPolicy(featurizer)]
-        epochs = 2000
+        epochs = epoch_no
         batch_size=[8,32]
     elif binary_feat:
         featurizer = MaxHistoryTrackerFeaturizer(
@@ -59,9 +63,10 @@ def train_domain_policy(story_filename,
                 rnn_size=64,
                 epochs=epochs,
                 embed_dim=embed_dim,
-                skip_cells=True,
                 sparse_attention=False,
-                attn_shift_range=5,
+                attn_shift_range=attn_shift_range,
+                attn_before_rnn=attn_before_rnn,
+                attn_after_rnn=attn_after_rnn,
                 batch_size=batch_size)
 
     agent.persist(model_path=output_path)
@@ -72,5 +77,6 @@ if __name__ == '__main__':
     train_domain_policy(story_filename="data-simulated/train/",
                         output_path='models/dialogue_embed',
                         exclusion_file='data-simulated/train/simulated_hotel_train.md',
-                        exclusion_percentage=0)
+                        exclusion_percentage=0,
+                        embed_dim=20)
     logger.info("Finished training domain policy.")
