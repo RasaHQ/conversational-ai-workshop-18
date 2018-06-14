@@ -83,6 +83,7 @@ if __name__ == '__main__':
                                 exclusion_percentage=i,
                                 epoch_no=cmdline_args.epochs,
                                 embed_dim=20,
+                                calc_acc_ones_in_epochs=0,
                                 output_path='models/dialogue_embed' + curr_pcnt
                                 )
 
@@ -100,6 +101,7 @@ if __name__ == '__main__':
                                 exclusion_percentage=i,
                                 output_path='models/dialogue_embed_no_attn_before' + curr_pcnt,
                                 attn_before_rnn=False,
+                                calc_acc_ones_in_epochs=0,
                                 )
 
             no = run_story_evaluation(cmdline_args.stories,
@@ -112,6 +114,7 @@ if __name__ == '__main__':
                                 exclusion_percentage=i,
                                 output_path='models/dialogue_embed_no_attn_after' + curr_pcnt,
                                 attn_after_rnn=False,
+                                calc_acc_ones_in_epochs=0,
                                 )
 
             no = run_story_evaluation(cmdline_args.stories,
@@ -125,6 +128,7 @@ if __name__ == '__main__':
                                 output_path='models/dialogue_embed_no_attn' + curr_pcnt,
                                 attn_after_rnn=False,
                                 attn_before_rnn=False,
+                                calc_acc_ones_in_epochs=0,
                                 )
 
             no = run_story_evaluation(cmdline_args.stories,

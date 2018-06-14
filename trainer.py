@@ -27,6 +27,7 @@ def train_domain_policy(story_filename,
                         attn_shift_range=5,
                         attn_before_rnn=True,
                         attn_after_rnn=True,
+                        calc_acc_ones_in_epochs=20,
                         binary_feat=False):
     """Trains a new deterministic domain policy using the stories
     (json format) in `story_filename`."""
@@ -67,7 +68,8 @@ def train_domain_policy(story_filename,
                 attn_shift_range=attn_shift_range,
                 attn_before_rnn=attn_before_rnn,
                 attn_after_rnn=attn_after_rnn,
-                batch_size=batch_size)
+                batch_size=batch_size,
+                calc_acc_ones_in_epochs=calc_acc_ones_in_epochs)
 
     agent.persist(model_path=output_path)
 
