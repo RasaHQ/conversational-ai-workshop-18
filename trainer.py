@@ -80,5 +80,9 @@ if __name__ == '__main__':
                         output_path='models/dialogue_embed',
                         exclusion_file='data-simulated/train/simulated_hotel_train.md',
                         exclusion_percentage=0,
-                        embed_dim=20)
+                        embed_dim=20,
+                        epoch_no=2000,
+                        attn_before_rnn=True,
+                        attn_after_rnn=True,
+                        )
     logger.info("Finished training domain policy.")
