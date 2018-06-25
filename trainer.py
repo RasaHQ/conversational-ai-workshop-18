@@ -33,7 +33,8 @@ def train_domain_policy(story_filename,
     (json format) in `story_filename`."""
     if starspace:
         featurizer = FullDialogueTrackerFeaturizer(
-                        LabelTokenizerSingleStateFeaturizer(split_symbol=split_symbol))
+                        #LabelTokenizerSingleStateFeaturizer(split_symbol=split_symbol))
+                        BinarySingleStateFeaturizer())
         policies = [EmbeddingPolicy(featurizer)]
         epochs = epoch_no
         batch_size=[8,32]
