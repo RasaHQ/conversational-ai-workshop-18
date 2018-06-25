@@ -75,7 +75,7 @@ if __name__ == '__main__':
         correct_embed_no_attn_after = []
         correct_embed_no_attn = []
         for i in percentages:
-            curr_pcnt = str(percentages.index(i)+1) + 'split_symbol=+'
+            curr_pcnt = str(percentages.index(i)+1) + 'bin'
             logging.info("Starting exclusion round {}/{}".format(percentages.index(i)+1, len(percentages)))
             train_domain_policy(cmdline_args.data,
                                 starspace=True,
