@@ -75,7 +75,7 @@ if __name__ == '__main__':
         correct_embed_no_attn_after = []
         correct_embed_no_attn = []
         for i in percentages:
-            curr_pcnt = str(percentages.index(i)+1) + 'bin'
+            curr_pcnt = str(percentages.index(i)+1) + 'lt'
             logging.info("Starting exclusion round {}/{}".format(percentages.index(i)+1, len(percentages)))
             train_domain_policy(cmdline_args.data,
                                 starspace=True,
@@ -85,7 +85,7 @@ if __name__ == '__main__':
                                 epoch_no=cmdline_args.epochs,
                                 embed_dim=20,
                                 calc_acc_ones_in_epochs=0,
-                                split_symbol='+'
+                                # split_symbol='+'
                                 )
 
             if cmdline_args.eval_mode == "simulated":
@@ -105,7 +105,7 @@ if __name__ == '__main__':
                                 embed_dim=20,
                                 calc_acc_ones_in_epochs=0,
                                 attn_before_rnn=False,
-                                split_symbol='+'
+                                # split_symbol='+'
                                 )
 
             no = run_story_evaluation(cmdline_args.stories,
@@ -121,7 +121,7 @@ if __name__ == '__main__':
                                 embed_dim=20,
                                 calc_acc_ones_in_epochs=0,
                                 attn_after_rnn=False,
-                                split_symbol='+'
+                                # split_symbol='+'
                                 )
 
             no = run_story_evaluation(cmdline_args.stories,
@@ -138,7 +138,7 @@ if __name__ == '__main__':
                                 calc_acc_ones_in_epochs=0,
                                 attn_after_rnn=False,
                                 attn_before_rnn=False,
-                                split_symbol='+'
+                                # split_symbol='+'
                                 )
 
             no = run_story_evaluation(cmdline_args.stories,

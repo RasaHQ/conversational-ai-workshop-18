@@ -47,20 +47,20 @@ embed_noattn_std = np.std(results['embed_no_attn'], axis=0)
 plt.plot(results['no_of_stories'], embed, label='new embed', marker='.', color='#f22e4e')
 plt.fill_between(results['no_of_stories'], [x-y for x,y in zip(embed,embed_std)], [x+y for x,y in zip(embed,embed_std)], color='#f22e4e', alpha=0.2)
 
-plt.plot(results['no_of_stories'], embed_noattn_before, label='new embed_noattn_before', marker='.', color='#6b2def')
+plt.plot(results['no_of_stories'], embed_noattn_before, label='new embed no attn before', marker='.', color='#6b2def')
 plt.fill_between(results['no_of_stories'], [x-y for x,y in zip(embed_noattn_before,embed_noattn_before_std)], [x+y for x,y in zip(embed_noattn_before,embed_noattn_before_std)], color='#6b2def', alpha=0.2)
 
-plt.plot(results['no_of_stories'], embed_noattn_after, label='old embed = new embed_noattn_after', marker='.', color='#42f48c')
+plt.plot(results['no_of_stories'], embed_noattn_after, label='new embed no attn after', marker='.', color='#42f48c')
 plt.fill_between(results['no_of_stories'], [x-y for x,y in zip(embed_noattn_after,embed_noattn_after_std)], [x+y for x,y in zip(embed_noattn_after,embed_noattn_after_std)], color='#42f48c', alpha=0.2)
 
-plt.plot(results['no_of_stories'], embed_noattn, label='embed (no attention)', marker='.', color='#727272')
+plt.plot(results['no_of_stories'], embed_noattn, label='new embed no atten', marker='.', color='#727272')
 plt.fill_between(results['no_of_stories'], [x-y for x,y in zip(embed_noattn,embed_noattn_std)], [x+y for x,y in zip(embed_noattn,embed_noattn_std)], color='#727272', alpha=0.2)
 
 # plt.plot(didthatwork_no['no_of_stories'], memo, '--', label='memoization', color='#727272')
 plt.xlabel('number of stories present')
 plt.ylabel('accuracy')
-# plt.xlim([0.0, 30.0])
-# plt.ylim([0, 1.02])
+plt.xlim([0, 80])
+plt.ylim([0, 30])
 
 plt.legend(loc=0)
 plt.savefig('embed_ablation.pdf', format='pdf')
