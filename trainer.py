@@ -22,12 +22,11 @@ def train_domain_policy(story_filename,
                         exclusion_percentage=None,
                         starspace=True,
                         split_symbol='_',
-                        epoch_no=2000,
+                        epoch_no=1000,
                         embed_dim=20,
                         attn_shift_range=5,
                         attn_before_rnn=True,
                         attn_after_rnn=True,
-                        calc_acc_ones_in_epochs=20,
                         binary_feat=False):
     """Trains a new deterministic domain policy using the stories
     (json format) in `story_filename`."""
@@ -37,21 +36,21 @@ def train_domain_policy(story_filename,
                         # BinarySingleStateFeaturizer())
         policies = [EmbeddingPolicy(featurizer)]
         epochs = epoch_no
-        batch_size=[8,32]
+        batch_size = [8, 20]
     elif binary_feat:
         featurizer = MaxHistoryTrackerFeaturizer(
                         BinarySingleStateFeaturizer(),
                         max_history=38)
         policies = [KerasPolicy(featurizer)]
         epochs = 200
-        batch_size=32
+        batch_size = 32
     else:
         featurizer = MaxHistoryTrackerFeaturizer(
                         LabelTokenizerSingleStateFeaturizer(),
                         max_history=38)
         policies = [KerasPolicy(featurizer)]
         epochs = 200
-        batch_size=32
+        batch_size = 32
 
     agent = CustomAgent("domain.yml",
                         policies=policies)
@@ -69,8 +68,7 @@ def train_domain_policy(story_filename,
                 attn_shift_range=attn_shift_range,
                 attn_before_rnn=attn_before_rnn,
                 attn_after_rnn=attn_after_rnn,
-                batch_size=batch_size,
-                calc_acc_ones_in_epochs=calc_acc_ones_in_epochs)
+                batch_size=batch_size)
 
     agent.persist(model_path=output_path)
 
@@ -82,7 +80,7 @@ if __name__ == '__main__':
                         exclusion_file='data-simulated/train/simulated_hotel_train.md',
                         exclusion_percentage=0,
                         embed_dim=20,
-                        epoch_no=2000,
+                        epoch_no=1000,
                         attn_before_rnn=True,
                         attn_after_rnn=True,
                         )

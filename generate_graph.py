@@ -40,7 +40,7 @@ def create_argument_parser():
     parser.add_argument(
             '--epochs',
             type=int,
-            default=2000,
+            default=1000,
             help="number of epochs")
     parser.add_argument(
             '--eval_mode',
@@ -84,7 +84,6 @@ if __name__ == '__main__':
                                 output_path='models/dialogue_embed' + curr_pcnt,
                                 epoch_no=cmdline_args.epochs,
                                 embed_dim=20,
-                                calc_acc_ones_in_epochs=0,
                                 # split_symbol='+'
                                 )
 
@@ -103,7 +102,6 @@ if __name__ == '__main__':
                                 output_path='models/dialogue_embed_no_attn_before' + curr_pcnt,
                                 epoch_no=cmdline_args.epochs,
                                 embed_dim=20,
-                                calc_acc_ones_in_epochs=0,
                                 attn_before_rnn=False,
                                 # split_symbol='+'
                                 )
@@ -119,7 +117,6 @@ if __name__ == '__main__':
                                 output_path='models/dialogue_embed_no_attn_after' + curr_pcnt,
                                 epoch_no=cmdline_args.epochs,
                                 embed_dim=20,
-                                calc_acc_ones_in_epochs=0,
                                 attn_after_rnn=False,
                                 # split_symbol='+'
                                 )
@@ -135,7 +132,6 @@ if __name__ == '__main__':
                                 output_path='models/dialogue_embed_no_attn' + curr_pcnt,
                                 epoch_no=cmdline_args.epochs,
                                 embed_dim=20,
-                                calc_acc_ones_in_epochs=0,
                                 attn_after_rnn=False,
                                 attn_before_rnn=False,
                                 # split_symbol='+'
