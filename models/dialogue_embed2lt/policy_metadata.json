@@ -1,0 +1,26 @@
+{
+  "action_fingerprints": {
+    "action_listen": {
+      "slots": [
+        "startdate", 
+        "price", 
+        "enddate", 
+        "location", 
+        "people"
+      ]
+    }, 
+    "action_search_hotel": {
+      "slots": [
+        "hotel"
+      ]
+    }
+  }, 
+  "policy_names": [
+    "rasa_core.policies.embedding_policy.EmbeddingPolicy"
+  ], 
+  "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble", 
+  "max_histories": [
+    null
+  ], 
+  "rasa_core": "0.10.0a2"
+}
