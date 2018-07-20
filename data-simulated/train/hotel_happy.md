@@ -220,3 +220,21 @@
     - utter_suggest_hotel
 * affirm
     - utter_happy
+
+## Generated Story 1942533987084426839
+* request_hotel
+    - utter_ask_details
+* inform{"startdate": "May 25th", "location": "paris", "people": "6"}
+    - slot{"startdate": "May 25th"}
+    - slot{"location": "paris"}
+    - slot{"people": "6"}
+    - utter_ask_price
+* inform{"price": "expensive"}
+    - utter_ask_enddate
+* inform{"enddate": "10.03.2018"}
+    - utter_filled_slots
+    - action_search_hotel
+    - slot{"hotel": "hotel"}
+    - utter_suggest_hotel
+* affirm
+    - utter_happy
