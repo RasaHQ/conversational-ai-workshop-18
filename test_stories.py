@@ -15,6 +15,8 @@ from rasa_core.events import ActionExecuted, UserUttered
 from rasa_core.interpreter import RegexInterpreter
 from rasa_core.training import extract_story_graph
 from rasa_core.training.generator import TrainingDataGenerator
+from rasa_core.channels.channel import CollectingOutputChannel
+from rasa_core.channels import UserMessage
 
 logger = logging.getLogger(__name__)
 
@@ -79,17 +81,37 @@ def run_story_evaluation(story_file, policy_model_path,
 
         for i, event in enumerate(events[1:]):
             if isinstance(event, UserUttered):
-                result = agent.start_message_handling(event.text, sender_id)
-                preds.append(result["next_action"])
+
+                msg = UserMessage(event.text,
+                                  CollectingOutputChannel(),
+                                  sender_id)
+                agent.log_message(msg)
+                result = agent.predict_next(sender_id=sender_id)
+                next_action = 'action_listen'
+                best_score = 0
+                for actions_scores in result["scores"]:
+                    if actions_scores['score'] > best_score:
+                        next_action = actions_scores['action']
+                        best_score = actions_scores['score']
+
+                preds.append((next_action, best_score))
+
+                action_to_log = None
 
             elif isinstance(event, ActionExecuted):
                 if action_to_log is not None:
-                    actual.append(action_to_log)
-                    result = agent.continue_message_handling(sender_id,
-                                                             action_to_log,
-                                                             events_to_log)
-                    if result["next_action"]:
-                        preds.append(result["next_action"])
+                    result = agent.predict_next(sender_id=sender_id)
+                    next_action = 'action_listen'
+                    best_score = 0
+                    for actions_scores in result["scores"]:
+                        if actions_scores['score'] > best_score:
+                            next_action = actions_scores['action']
+                            best_score = actions_scores['score']
+
+                    preds.append((next_action, best_score))
+
+                agent.execute_action(sender_id, event.action_name, CollectingOutputChannel())
+                actual.append(event.action_name)
                 action_to_log = event.action_name
                 events_to_log = []
 
@@ -97,8 +119,8 @@ def run_story_evaluation(story_file, policy_model_path,
                 events_to_log.append(event)
 
         # final unlogged action
-        if action_to_log is not None:
-            actual.append(action_to_log)
+        # if action_to_log is not None:
+        #     actual.append(action_to_log)
 
         print("=====================")
         print("actions in story: {}".format(len(actual)))
@@ -113,10 +135,10 @@ def run_story_evaluation(story_file, policy_model_path,
 
         if preds != actual:
             for idx, a in enumerate(actual):
-                if a == preds[idx]:
+                if a == preds[idx][0]:
                     print(a)
                 else:
-                    print("{:30} {:30}".format(a, preds[idx]))
+                    print("{:30} {}".format(a, preds[idx]))
 
     logger.info("{} stories correct out of {}".format(num_correct,
                                                       len(completed_trackers)))

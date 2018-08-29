@@ -18,7 +18,7 @@
     - utter_ask_people
 * inform{"people": "4"}
     - utter_filled_slots
-    - action_search_hotel
+    - utter_search_hotel
     - slot{"hotel": "hotel"}
     - utter_suggest_hotel
 * did_that_work
@@ -47,7 +47,7 @@
     - utter_ask_people
 * inform{"people": "4"}
     - utter_filled_slots
-    - action_search_hotel
+    - utter_search_hotel
     - slot{"hotel": "hotel"}
     - utter_suggest_hotel
 * did_that_work
@@ -82,7 +82,7 @@
     - utter_ask_location
 * inform{"location": "paris"}
     - utter_filled_slots
-    - action_search_hotel
+    - utter_search_hotel
     - slot{"hotel": "hotel"}
     - utter_suggest_hotel
 * affirm
@@ -109,7 +109,7 @@
     - utter_ask_people
 * inform{"people": "4"}
     - utter_filled_slots
-    - action_search_hotel
+    - utter_search_hotel
     - slot{"hotel": "hotel"}
     - utter_suggest_hotel
 * did_that_work
@@ -141,7 +141,7 @@
     - utter_ask_location
 * inform{"location": "paris"}
     - utter_filled_slots
-    - action_search_hotel
+    - utter_search_hotel
     - slot{"hotel": "hotel"}
     - utter_suggest_hotel
 * affirm
@@ -172,7 +172,7 @@
     - utter_ask_enddate
 * inform{"enddate": "10.03.2018"}
     - utter_filled_slots
-    - action_search_hotel
+    - utter_search_hotel
     - slot{"hotel": "hotel"}
     - utter_suggest_hotel
 * did_that_work
@@ -207,7 +207,7 @@
     - utter_ask_enddate
 * inform{"enddate": "10.03.2018"}
     - utter_filled_slots
-    - action_search_hotel
+    - utter_search_hotel
     - slot{"hotel": "hotel"}
     - utter_suggest_hotel
 * did_that_work
@@ -240,7 +240,7 @@
     - utter_ask_enddate
 * inform{"enddate": "10.03.2018"}
     - utter_filled_slots
-    - action_search_hotel
+    - utter_search_hotel
     - slot{"hotel": "hotel"}
     - utter_suggest_hotel
 * did_that_work
@@ -279,7 +279,7 @@
 * inform{"location": "paris"}
     - slot{"location": "paris"}
     - utter_filled_slots
-    - action_search_hotel
+    - utter_search_hotel
     - slot{"hotel": "hotel"}
     - utter_suggest_hotel
 * did_that_work
@@ -308,7 +308,7 @@
     - utter_ask_enddate
 * inform{"enddate": "10.03.2018"}
     - utter_filled_slots
-    - action_search_hotel
+    - utter_search_hotel
     - slot{"hotel": "hotel"}
     - utter_suggest_hotel
 * did_that_work
@@ -343,7 +343,7 @@
     - utter_ask_people
 * inform{"people": "4"}
     - utter_filled_slots
-    - action_search_hotel
+    - utter_search_hotel
     - slot{"hotel": "hotel"}
     - utter_suggest_hotel
 * did_that_work
@@ -373,7 +373,7 @@
     - utter_ask_people
 * inform{"people": "4"}
     - utter_filled_slots
-    - action_search_hotel
+    - utter_search_hotel
     - slot{"hotel": "hotel"}
     - utter_suggest_hotel
 * did_that_work
@@ -416,7 +416,7 @@
     - utter_ask_location
 * inform{"location": "paris"}
     - utter_filled_slots
-    - action_search_hotel
+    - utter_search_hotel
     - slot{"hotel": "hotel"}
     - utter_suggest_hotel
 * did_that_work
@@ -446,7 +446,7 @@
     - utter_ask_enddate
 * inform{"enddate": "10.03.2018"}
     - utter_filled_slots
-    - action_search_hotel
+    - utter_search_hotel
     - slot{"hotel": "hotel"}
     - utter_suggest_hotel
 * did_that_work
@@ -474,7 +474,7 @@
     - utter_ask_enddate
 * inform{"enddate": "10.03.2018"}
     - utter_filled_slots
-    - action_search_hotel
+    - utter_search_hotel
     - slot{"hotel": "hotel"}
     - utter_suggest_hotel
 * affirm
@@ -513,7 +513,7 @@
     - utter_ask_location
 * inform{"location": "paris"}
     - utter_filled_slots
-    - action_search_hotel
+    - utter_search_hotel
     - slot{"hotel": "hotel"}
     - utter_suggest_hotel
 * did_that_work
@@ -546,7 +546,7 @@
     - utter_ask_people
 * inform{"people": "4"}
     - utter_filled_slots
-    - action_search_hotel
+    - utter_search_hotel
     - slot{"hotel": "hotel"}
     - utter_suggest_hotel
 * did_that_work
@@ -576,7 +576,7 @@
     - utter_ask_enddate
 * inform{"enddate": "10.03.2018"}
     - utter_filled_slots
-    - action_search_hotel
+    - utter_search_hotel
     - slot{"hotel": "hotel"}
     - utter_suggest_hotel
 * did_that_work
@@ -612,7 +612,7 @@
     - utter_ask_location
 * inform{"location": "paris"}
     - utter_filled_slots
-    - action_search_hotel
+    - utter_search_hotel
     - slot{"hotel": "hotel"}
     - utter_suggest_hotel
 * did_that_work
@@ -644,19 +644,19 @@
     - slot{"startdate": "next week"}
     - slot{"enddate": "tomorrow"}
     - utter_filled_slots
-    - action_search_hotel
+    - utter_search_hotel
     - slot{"hotel": "hotel"}
     - utter_suggest_hotel
 * correct{"enddate": "May 26th"}
     - slot{"enddate": "May 26th"}
     - utter_correct_enddate_hotel
-    - action_search_hotel
+    - utter_search_hotel
     - slot{"hotel": "hotel"}
     - utter_suggest_hotel
 * correct{"location": "rome"}
     - slot{"location": "rome"}
     - utter_correct_location_hotel
-    - action_search_hotel
+    - utter_search_hotel
     - slot{"hotel": "hotel"}
     - utter_suggest_hotel
 * did_that_work
@@ -685,7 +685,7 @@
     - utter_ask_people
 * inform{"people": "4"}
     - utter_filled_slots
-    - action_search_hotel
+    - utter_search_hotel
     - slot{"hotel": "hotel"}
     - utter_suggest_hotel
 * did_that_work
