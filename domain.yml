@@ -12,9 +12,9 @@ slots:
   info:
     type: unfeaturized
   restaurant:
-    type: text
+    type: unfeaturized
   hotel:
-    type: text
+    type: unfeaturized
   startdate:
     type: unfeaturized
   enddate:

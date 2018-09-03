@@ -58,9 +58,9 @@ def run_story_evaluation(story_file, policy_model_path,
                                       interpreter)
 
     g = TrainingDataGenerator(story_graph, agent.domain,
-                               use_story_concatenation=False,
-                               tracker_limit=100,
-                               augmentation_factor=0)
+                              use_story_concatenation=False,
+                              tracker_limit=100,
+                              augmentation_factor=0)
     completed_trackers = g.generate()
 
     logger.info(
@@ -94,7 +94,7 @@ def run_story_evaluation(story_file, policy_model_path,
                         next_action = actions_scores['action']
                         best_score = actions_scores['score']
 
-                preds.append((next_action, best_score))
+                preds.append(next_action)
 
                 action_to_log = None
 
@@ -108,7 +108,7 @@ def run_story_evaluation(story_file, policy_model_path,
                             next_action = actions_scores['action']
                             best_score = actions_scores['score']
 
-                    preds.append((next_action, best_score))
+                    preds.append(next_action)
 
                 agent.execute_action(sender_id, event.action_name, CollectingOutputChannel())
                 actual.append(event.action_name)
@@ -135,7 +135,7 @@ def run_story_evaluation(story_file, policy_model_path,
 
         if preds != actual:
             for idx, a in enumerate(actual):
-                if a == preds[idx][0]:
+                if a == preds[idx]:
                     print(a)
                 else:
                     print("{:30} {}".format(a, preds[idx]))
