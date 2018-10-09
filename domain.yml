@@ -180,6 +180,6 @@ actions:
   - utter_correct_enddate_hotel
   - utter_more_info_hotel
   - utter_more_info_restaurant
-  - utter_search_restaurant
-  - utter_search_hotel
+  - action_search_restaurant
+  - action_search_hotel
 
