@@ -4,59 +4,9 @@ from __future__ import division
 from __future__ import print_function
 from __future__ import unicode_literals
 
-from rasa_core.actions.action import Action
-from rasa_core.events import SlotSet
-from rasa_core.actions.forms import EntityFormField, FormAction
+from rasa_core_sdk import Action
+from rasa_core_sdk.events import SlotSet
 from services.apis import RestaurantAPI, HotelAPI
-
-
-class ActionRestaurant(FormAction):
-
-    RANDOMIZE = True
-
-    REQUIRED_FIELDS = [
-        EntityFormField("people", "people"),
-        EntityFormField("location", "location"),
-        EntityFormField("price", "price"),
-        EntityFormField("cuisine", "cuisine")
-    ]
-
-    OPTIONAL_FIELDS = [
-        EntityFormField("outdoor_seating", "outdoor_seating"),
-        EntityFormField("reservations", "reservations"),
-        EntityFormField("date_suitable", "date_suitable")
-    ]
-
-    def name(self):
-        return "action_restaurant"
-
-    def submit(self, dispatcher, tracker, domain):
-        dispatcher.utter_template('utter_finish')
-        return []
-
-
-class ActionHotel(FormAction):
-
-    REQUIRED_FIELDS = [
-        EntityFormField("people", "people"),
-        EntityFormField("location", "location"),
-        EntityFormField("price", "price"),
-        EntityFormField("date", "start_date"),
-        EntityFormField("date", "end_date")
-    ]
-
-    OPTIONAL_FIELDS = [
-        EntityFormField("has_gym", "has_gym"),
-        EntityFormField("has_spa", "has_spa"),
-        EntityFormField("breakfast", "breakfast")
-    ]
-
-    def name(self):
-        return "action_hotel"
-
-    def submit(self, dispatcher, tracker, domain):
-        dispatcher.utter_template('utter_finish')
-        return []
 
 
 class ActionSearchRestaurant(Action):
@@ -65,7 +15,7 @@ class ActionSearchRestaurant(Action):
         return "action_search_restaurant"
 
     def run(self, dispatcher, tracker, domain):
-        dispatcher.utter_template('utter_search')
+        dispatcher.utter_template('utter_search', tracker)
         restaurant_api = RestaurantAPI()
         restaurant = restaurant_api.search(tracker.get_slot('cuisine'))
 
@@ -78,7 +28,7 @@ class ActionSearchHotel(Action):
         return "action_search_hotel"
 
     def run(self, dispatcher, tracker, domain):
-        dispatcher.utter_template('utter_search')
+        dispatcher.utter_template('utter_search', tracker)
         hotel_api = HotelAPI()
         hotel = hotel_api.search(tracker.get_slot('location'))
 
