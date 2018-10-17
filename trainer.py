@@ -8,7 +8,8 @@ import logging
 from core_extensions.policy_trainer import CustomAgent
 from rasa_core.featurizers import (LabelTokenizerSingleStateFeaturizer,
                                    FullDialogueTrackerFeaturizer,
-                                   MaxHistoryTrackerFeaturizer)
+                                   MaxHistoryTrackerFeaturizer,
+                                   BinarySingleStateFeaturizer)
 from rasa_core.policies.embedding_policy import EmbeddingPolicy
 from rasa_core.policies.keras_policy import KerasPolicy
 
@@ -21,7 +22,8 @@ def train_domain_policy(story_filename,
                         exclusion_percentage=None,
                         starspace=True,
                         epoch_no=2000,
-                        embed_dim=10):
+                        embed_dim=10,
+                        binary_feat=False):
     """Trains a new deterministic domain policy using the stories
     (json format) in `story_filename`."""
     if starspace:
@@ -29,12 +31,21 @@ def train_domain_policy(story_filename,
                         LabelTokenizerSingleStateFeaturizer())
         policies = [EmbeddingPolicy(featurizer)]
         epochs = epoch_no
+        batch_size=[8,32]
+    elif binary_feat:
+        featurizer = MaxHistoryTrackerFeaturizer(
+                        BinarySingleStateFeaturizer(),
+                        max_history=38)
+        policies = [KerasPolicy(featurizer)]
+        epochs = 200
+        batch_size=32
     else:
         featurizer = MaxHistoryTrackerFeaturizer(
                         LabelTokenizerSingleStateFeaturizer(),
-                        max_history=20)
+                        max_history=38)
         policies = [KerasPolicy(featurizer)]
-        epochs = 400
+        epochs = 200
+        batch_size=32
 
     agent = CustomAgent("domain.yml",
                         policies=policies)
@@ -48,15 +59,18 @@ def train_domain_policy(story_filename,
                 rnn_size=64,
                 epochs=epochs,
                 embed_dim=embed_dim,
-                use_attention=True)
+                use_attention=True,
+                skip_cells=True,
+                attn_shift_range=5,
+                batch_size=batch_size)
 
     agent.persist(model_path=output_path)
 
 
 if __name__ == '__main__':
     logging.basicConfig(level="DEBUG")
-    train_domain_policy(story_filename="data/train/",
+    train_domain_policy(story_filename="data-simulated/train/simulated_hotel_train.md",
                         output_path='models/dialogue_keras',
-                        exclusion_file='data/train/restaurant_happy.md',
-                        exclusion_percentage=20)
+                        exclusion_file='data-simulated/all_hotel_simulated.md',
+                        exclusion_percentage=0)
     logger.info("Finished training domain policy.")
