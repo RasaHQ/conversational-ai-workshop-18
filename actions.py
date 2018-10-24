@@ -33,15 +33,3 @@ class ActionSearchHotel(Action):
         hotel = hotel_api.search(tracker.get_slot('location'))
 
         return [SlotSet('hotel', hotel)]
-
-
-class ActionExplain(Action):
-
-    def name(self):
-        return "action_explain"
-
-    def run(self, dispatcher, tracker, domain):
-        # TODO: actually implement this
-        dispatcher.utter_message('This means blabla')
-
-        return []

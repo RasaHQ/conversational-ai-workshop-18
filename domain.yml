@@ -178,4 +178,3 @@ actions:
   - utter_more_info_restaurant
   - action_search_restaurant
   - action_search_hotel
-  - action_explain
