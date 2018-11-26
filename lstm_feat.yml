@@ -1,0 +1,10 @@
+policy:
+  - name: KerasPolicy
+    batch_size: 32
+    epochs: 400
+    rnn_size: 64
+    featurizer:
+      - name: MaxHistoryTrackerFeaturizer
+        max_history: 38
+        state_featurizer:
+          - name: BinarySingleStateFeaturizer

@@ -10,9 +10,20 @@ help:
 	@echo "    run"
 	@echo "        Runs the bot on the commandline"
 
-train-core:
-	# TODO: fix
-	python -m rasa_core.train -s data/core/ -d domain.yml -o models/dialogue --epochs 300
+train-redp:
+	python -m rasa_core.train -s data/core/ -d domain.yml -o models/dialogue -c redp.yml --augmentation_factor 0
+
+train-lstm-bin:
+	python -m rasa_core.train -s data/core/ -d domain.yml -o models/dialogue -c lstm_bin.yml --augmentation_factor 0
+
+train-lstm-feat:
+	python -m rasa_core.train -s data/core/ -d domain.yml -o models/dialogue -c lstm_feat.yml --augmentation_factor 0
+
+train-compare:
+	python -m rasa_core.train compare --stories data/core/ -d domain.yml -o comparison_models -c redp.yml lstm_bin.yml lstm_feat.yml --augmentation_factor 0 --runs 5
+
+evaluate-compare:
+	python -m rasa_core.evaluate compare --stories data/core/ --core comparison_models -o results/
 
 run-core:
 	python -m rasa_core.run --core models/dialogue --endpoints endpoints.yml
