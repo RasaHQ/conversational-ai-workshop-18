@@ -34,9 +34,18 @@ def train_domain_policy(story_filename,
         featurizer = FullDialogueTrackerFeaturizer(
                         LabelTokenizerSingleStateFeaturizer(split_symbol=split_symbol))
                         # BinarySingleStateFeaturizer())
-        policies = [EmbeddingPolicy(featurizer)]
         epochs = epoch_no
-        batch_size = [8, 20]
+        batch_size = [8, 16]
+        policies = [EmbeddingPolicy(featurizer,
+                                    rnn_size=64,
+                                    epochs=epochs,
+                                    embed_dim=embed_dim,
+                                    sparse_attention=False,
+                                    attn_shift_range=attn_shift_range,
+                                    attn_before_rnn=attn_before_rnn,
+                                    attn_after_rnn=attn_after_rnn,
+                                    batch_size=batch_size)]
+
     elif binary_feat:
         featurizer = MaxHistoryTrackerFeaturizer(
                         BinarySingleStateFeaturizer(),
@@ -80,7 +89,7 @@ if __name__ == '__main__':
                         exclusion_file='data-simulated/train/simulated_hotel_train.md',
                         exclusion_percentage=0,
                         embed_dim=20,
-                        epoch_no=1000,
+                        epoch_no=300,
                         attn_before_rnn=True,
                         attn_after_rnn=True,
                         )

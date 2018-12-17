@@ -39,8 +39,8 @@ actions:
 - utter_correct_enddate_hotel
 - utter_more_info_hotel
 - utter_more_info_restaurant
-- utter_search_restaurant
-- utter_search_hotel
+- action_search_restaurant
+- action_search_hotel
 config:
   store_entities_as_slots: true
 entities:
@@ -57,6 +57,7 @@ entities:
 - breakfast
 - startdate
 - enddate
+forms: []
 intents:
 - request_restaurant:
     use_entities: true
@@ -80,51 +81,67 @@ intents:
     use_entities: true
 slots:
   breakfast:
+    auto_fill: true
     initial_value: null
     type: rasa_core.slots.UnfeaturizedSlot
   cuisine:
+    auto_fill: true
     initial_value: null
     type: rasa_core.slots.UnfeaturizedSlot
   date_suitable:
+    auto_fill: true
     initial_value: null
     type: rasa_core.slots.UnfeaturizedSlot
   enddate:
+    auto_fill: true
     initial_value: null
     type: rasa_core.slots.UnfeaturizedSlot
   has_gym:
+    auto_fill: true
     initial_value: null
     type: rasa_core.slots.UnfeaturizedSlot
   has_spa:
+    auto_fill: true
     initial_value: null
     type: rasa_core.slots.UnfeaturizedSlot
   hotel:
+    auto_fill: true
     initial_value: null
     type: rasa_core.slots.TextSlot
   info:
+    auto_fill: true
     initial_value: null
     type: rasa_core.slots.UnfeaturizedSlot
   location:
+    auto_fill: true
     initial_value: null
     type: rasa_core.slots.UnfeaturizedSlot
   outdoor_seating:
+    auto_fill: true
     initial_value: null
     type: rasa_core.slots.UnfeaturizedSlot
   people:
+    auto_fill: true
     initial_value: null
     type: rasa_core.slots.UnfeaturizedSlot
   price:
+    auto_fill: true
     initial_value: null
     type: rasa_core.slots.UnfeaturizedSlot
   requested_slot:
+    auto_fill: true
     initial_value: null
     type: rasa_core.slots.UnfeaturizedSlot
   reservations:
+    auto_fill: true
     initial_value: null
     type: rasa_core.slots.UnfeaturizedSlot
   restaurant:
+    auto_fill: true
     initial_value: null
     type: rasa_core.slots.TextSlot
   startdate:
+    auto_fill: true
     initial_value: null
     type: rasa_core.slots.UnfeaturizedSlot
 templates:

@@ -28,6 +28,10 @@
     "prev_action_listen",
     "prev_action_restart",
     "prev_action_default_fallback",
+    "prev_action_deactivate_form",
+    "prev_action_revert_fallback_events",
+    "prev_action_default_ask_affirmation",
+    "prev_action_default_ask_rephrase",
     "prev_utter_ask_cuisine",
     "prev_utter_ask_people",
     "prev_utter_ask_location",
@@ -66,7 +70,7 @@
     "prev_utter_correct_enddate_hotel",
     "prev_utter_more_info_hotel",
     "prev_utter_more_info_restaurant",
-    "prev_utter_search_restaurant",
-    "prev_utter_search_hotel"
+    "prev_action_search_restaurant",
+    "prev_action_search_hotel"
   ]
 }
