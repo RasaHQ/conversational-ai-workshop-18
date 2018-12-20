@@ -183,3 +183,10 @@ actions:
   - action_search_restaurant
   - action_search_hotel
 
+topics:
+  - hotel
+  - restaurant
+  - chitchat
+  - explain
+  - did_that_work
+  - correct

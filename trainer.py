@@ -87,9 +87,9 @@ if __name__ == '__main__':
     train_domain_policy(story_filename="data-simulated/train/",
                         output_path='models/dialogue_embed',
                         exclusion_file='data-simulated/train/simulated_hotel_train.md',
-                        exclusion_percentage=0,
+                        exclusion_percentage=80,
                         embed_dim=20,
-                        epoch_no=300,
+                        epoch_no=800,
                         attn_before_rnn=True,
                         attn_after_rnn=True,
                         )

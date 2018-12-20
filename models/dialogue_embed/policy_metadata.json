@@ -2,11 +2,11 @@
   "action_fingerprints": {
     "action_listen": {
       "slots": [
-        "price",
-        "location",
-        "people",
         "enddate",
-        "startdate"
+        "people",
+        "startdate",
+        "price",
+        "location"
       ]
     },
     "action_search_hotel": {
@@ -15,7 +15,7 @@
       ]
     }
   },
-  "rasa_core": "0.13.0a3",
+  "rasa_core": "0.13.0a4",
   "python": "3.6.5",
   "max_histories": [
     null
@@ -24,5 +24,5 @@
   "policy_names": [
     "rasa_core.policies.embedding_policy.EmbeddingPolicy"
   ],
-  "trained_at": "20181217-113535"
+  "trained_at": "20181220-174502"
 }

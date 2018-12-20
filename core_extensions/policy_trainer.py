@@ -1,3 +1,6 @@
+import typing
+from typing import Optional, List, Text
+
 from rasa_core.training.dsl import StoryFileReader
 from rasa_nlu import utils as nlu_utils
 from rasa_core.interpreter import RegexInterpreter
@@ -5,6 +8,11 @@ from rasa_core.interpreter import RegexInterpreter
 from rasa_core.training.structures import StoryGraph
 from rasa_core.training.generator import TrainingDataGenerator
 from rasa_core.agent import Agent
+
+if typing.TYPE_CHECKING:
+    from rasa_core.domain import Domain
+    from rasa_core.trackers import DialogueStateTracker
+    from rasa_core.interpreter import NaturalLanguageInterpreter
 
 
 def extract_story_graph(
@@ -66,7 +74,7 @@ class StoryReader(StoryFileReader):
             # if (f.split('_')[1] == 'happy.md' or f.split('_')[1] ==
             #         exclusion_file.split('_')[1]):
             steps = StoryFileReader.read_from_file(f, domain, interpreter,
-                                                       template_variables)
+                                                   template_variables)
             if exclusion_file and exclusion_percentage != 0:
                 if f == exclusion_file:
                     idx = int(round(exclusion_percentage/100.0 * len(steps)))
