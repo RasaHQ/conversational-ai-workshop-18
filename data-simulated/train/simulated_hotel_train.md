@@ -1,6 +1,7 @@
 ## Generated Story -7886542752391645811
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"startdate": "May 25th"}
     - slot{"startdate": "May 25th"}
     - hotel: utter_ask_enddate
@@ -30,6 +31,7 @@
 ## Generated Story -2016230675575359615
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"startdate": "today"}
     - slot{"startdate": "today"}
     - hotel: utter_ask_enddate
@@ -62,6 +64,7 @@
 ## Generated Story 4883852117397942198
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"price": "cheap"}
     - slot{"price": "cheap"}
     - hotel: utter_ask_people
@@ -91,6 +94,7 @@
 ## Generated Story -4155943676772991256
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"startdate": "next week"}
     - slot{"startdate": "next week"}
     - hotel: utter_ask_enddate
@@ -121,6 +125,7 @@
 ## Generated Story -1274354813326186979
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"price": "expensive"}
     - slot{"price": "expensive"}
     - hotel: utter_ask_people
@@ -150,6 +155,7 @@
 ## Generated Story 7307804793036707017
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"people": "6"}
     - slot{"people": "6"}
     - hotel: utter_ask_location
@@ -184,6 +190,7 @@
 ## Generated Story -4377383468731851742
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"location": "london"}
     - slot{"location": "london"}
     - hotel: utter_ask_people
@@ -219,6 +226,7 @@
 ## Generated Story 2120810106318217739
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"location": "rome"}
     - slot{"location": "rome"}
     - hotel: utter_ask_people
@@ -255,6 +263,7 @@
 ## Generated Story 9173004962293499764
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"price": "expensive"}
     - slot{"price": "expensive"}
     - hotel: utter_ask_people
@@ -291,6 +300,7 @@
 ## Generated Story 2628958171188267867
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"location": "paris"}
     - slot{"location": "paris"}
     - hotel: utter_ask_people
@@ -320,6 +330,7 @@
 ## Generated Story 1685090242406500402
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"startdate": "next week"}
     - slot{"startdate": "next week"}
     - hotel: utter_ask_enddate
@@ -355,6 +366,7 @@
 ## Generated Story 7029919470882550615
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"startdate": "next week"}
     - slot{"startdate": "next week"}
     - hotel: utter_ask_enddate
@@ -385,6 +397,7 @@
 ## Generated Story -9136482170730611021
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"price": "cheap"}
     - slot{"price": "cheap"}
     - hotel: utter_ask_people
@@ -428,6 +441,7 @@
 ## Generated Story 6126634125194604292
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"people": "6"}
     - slot{"people": "6"}
     - hotel: utter_ask_location
@@ -458,6 +472,7 @@
 ## Generated Story -417820108794993882
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"location": "london"}
     - slot{"location": "london"}
     - hotel: utter_ask_people
@@ -483,6 +498,7 @@
 ## Generated Story 8569607195157226943
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"price": "mid-range"}
     - slot{"price": "mid-range"}
     - hotel: utter_ask_people
@@ -525,6 +541,7 @@
 ## Generated Story -1636298539059010529
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"startdate": "May 25th"}
     - slot{"startdate": "May 25th"}
     - hotel: utter_ask_enddate
@@ -558,6 +575,7 @@
 ## Generated Story -1976434779256682036
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"location": "paris"}
     - slot{"location": "paris"}
     - hotel: utter_ask_people
@@ -591,6 +609,7 @@
 ## Generated Story 3530936682833259559
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"price": "cheap"}
     - slot{"price": "cheap"}
     - hotel: utter_ask_people
@@ -624,6 +643,7 @@
 ## Generated Story 8798487188356031983
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"people": "4"}
     - slot{"people": "4"}
     - hotel: utter_ask_location
@@ -668,6 +688,7 @@
 ## Generated Story -4245128213284785903
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"enddate": "tomorrow"}
     - slot{"enddate": "tomorrow"}
     - hotel: utter_ask_startdate
@@ -697,6 +718,7 @@
 ## Generated Story -8191146713080950144
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"location": "rome"}
     - slot{"location": "rome"}
     - hotel: utter_ask_people
@@ -732,6 +754,7 @@
 ## Generated Story 6414425509425784419
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"startdate": "next week"}
     - slot{"startdate": "next week"}
     - hotel: utter_ask_enddate
@@ -767,6 +790,7 @@
 ## Generated Story -5728975931820977598
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"price": "mid-range"}
     - slot{"price": "mid-range"}
     - hotel: utter_ask_people
@@ -799,6 +823,7 @@
 ## Generated Story -4892544019489261987
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"people": "2"}
     - slot{"people": "2"}
     - hotel: utter_ask_location
@@ -837,6 +862,7 @@
 ## Generated Story 6377256771280559561
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"price": "mid-range", "enddate": "next week"}
     - slot{"price": "mid-range"}
     - slot{"enddate": "next week"}
@@ -881,6 +907,7 @@
 ## Generated Story -7806461591440014522
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"price": "cheap"}
     - slot{"price": "cheap"}
     - hotel: utter_ask_people
@@ -919,6 +946,7 @@
 ## Generated Story -4622570743824213124
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"startdate": "May 25th"}
     - slot{"startdate": "May 25th"}
     - hotel: utter_ask_enddate
@@ -959,6 +987,7 @@
 ## Generated Story -8167005639967367862
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"enddate": "May 26th"}
     - slot{"enddate": "May 26th"}
     - hotel: utter_ask_startdate
@@ -992,6 +1021,7 @@
 ## Generated Story 2298677876080303416
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"enddate": "next week"}
     - slot{"enddate": "next week"}
     - hotel: utter_ask_startdate
@@ -1027,6 +1057,7 @@
 ## Generated Story 2354048503062275729
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"startdate": "today"}
     - slot{"startdate": "today"}
     - hotel: utter_ask_enddate
@@ -1053,6 +1084,7 @@
 ## Generated Story -5568287998497575386
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"location": "paris"}
     - slot{"location": "paris"}
     - hotel: utter_ask_people
@@ -1080,6 +1112,7 @@
 ## Generated Story 1993489198506904049
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"enddate": "next week"}
     - slot{"enddate": "next week"}
     - hotel: utter_ask_startdate
@@ -1107,6 +1140,7 @@
 ## Generated Story 460877518176879910
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"startdate": "today"}
     - slot{"startdate": "today"}
     - hotel: utter_ask_enddate
@@ -1133,6 +1167,7 @@
 ## Generated Story 460877518176879910
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"startdate": "today"}
     - slot{"startdate": "today"}
     - hotel: utter_ask_enddate
@@ -1159,6 +1194,7 @@
 ## Generated Story -984969290790501507
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"location": "rome"}
     - slot{"location": "rome"}
     - hotel: utter_ask_people
@@ -1186,6 +1222,7 @@
 ## Generated Story 8731682222915754367
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"price": "expensive"}
     - slot{"price": "expensive"}
     - hotel: utter_ask_people
@@ -1227,6 +1264,7 @@
 ## Generated Story -9062156691468594191
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"people": "4"}
     - slot{"people": "4"}
     - hotel: utter_ask_location
@@ -1254,6 +1292,7 @@
 ## Generated Story -248636324534589386
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"location": "rome"}
     - slot{"location": "rome"}
     - hotel: utter_ask_people
@@ -1286,6 +1325,7 @@
 ## Generated Story -7610825832938952225
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"price": "expensive"}
     - slot{"price": "expensive"}
     - hotel: utter_ask_people
@@ -1316,6 +1356,7 @@
 ## Generated Story 8055972029495514177
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"startdate": "next week"}
     - slot{"startdate": "next week"}
     - hotel: utter_ask_enddate
@@ -1342,6 +1383,7 @@
 ## Generated Story -7408274441860134933
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"location": "paris"}
     - slot{"location": "paris"}
     - hotel: utter_ask_people
@@ -1377,6 +1419,7 @@
 ## Generated Story -6821548152705280771
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"people": "2", "enddate": "May 26th"}
     - slot{"people": "2"}
     - slot{"enddate": "May 26th"}
@@ -1405,6 +1448,7 @@
 ## Generated Story -6890079884555190401
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"location": "rome"}
     - slot{"location": "rome"}
     - hotel: utter_ask_people
@@ -1432,6 +1476,7 @@
 ## Generated Story 8246622124448048208
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"people": "4"}
     - slot{"people": "4"}
     - hotel: utter_ask_location
@@ -1459,6 +1504,7 @@
 ## Generated Story 1397011895366220691
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"location": "london"}
     - slot{"location": "london"}
     - hotel: utter_ask_people
@@ -1499,6 +1545,7 @@
 ## Generated Story 6510365135677203478
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"startdate": "next week"}
     - slot{"startdate": "next week"}
     - hotel: utter_ask_enddate
@@ -1526,6 +1573,7 @@
 ## Generated Story 6118400076211702408
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"startdate": "today", "location": "rome"}
     - slot{"startdate": "today"}
     - slot{"location": "rome"}
@@ -1552,6 +1600,7 @@
 ## Generated Story 1873242173921385874
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"location": "london"}
     - slot{"location": "london"}
     - hotel: utter_ask_people
@@ -1580,6 +1629,7 @@
 ## Generated Story 876333698881437444
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"enddate": "tomorrow"}
     - slot{"enddate": "tomorrow"}
     - hotel: utter_ask_startdate
@@ -1622,6 +1672,7 @@
 ## Generated Story -9213467561920366838
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"people": "2"}
     - slot{"people": "2"}
     - hotel: utter_ask_location
@@ -1648,6 +1699,7 @@
 ## Generated Story -7619175073147269387
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"startdate": "May 25th", "location": "rome"}
     - slot{"startdate": "May 25th"}
     - slot{"location": "rome"}
@@ -1683,6 +1735,7 @@
 ## Generated Story -8797333378697904114
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"location": "london"}
     - slot{"location": "london"}
     - hotel: utter_ask_people
@@ -1709,6 +1762,7 @@
 ## Generated Story -8098550946587096077
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"enddate": "May 26th"}
     - slot{"enddate": "May 26th"}
     - hotel: utter_ask_startdate
@@ -1741,6 +1795,7 @@
 ## Generated Story 965944888666945465
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"enddate": "next week"}
     - slot{"enddate": "next week"}
     - hotel: utter_ask_startdate
@@ -1767,6 +1822,7 @@
 ## Generated Story 7610421385077740115
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"location": "london"}
     - slot{"location": "london"}
     - hotel: utter_ask_people
@@ -1793,6 +1849,7 @@
 ## Generated Story -3019312067209215162
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"startdate": "May 25th"}
     - slot{"startdate": "May 25th"}
     - hotel: utter_ask_enddate
@@ -1821,6 +1878,7 @@
 ## Generated Story 769607181822342811
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"people": "2"}
     - slot{"people": "2"}
     - hotel: utter_ask_location
@@ -1848,6 +1906,7 @@
 ## Generated Story 4981076060672777254
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"location": "rome"}
     - slot{"location": "rome"}
     - hotel: utter_ask_people
@@ -1880,6 +1939,7 @@
 ## Generated Story -6175087097443004415
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"location": "paris"}
     - slot{"location": "paris"}
     - hotel: utter_ask_people
@@ -1917,6 +1977,7 @@
 ## Generated Story -8620446332333691845
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"enddate": "next week"}
     - slot{"enddate": "next week"}
     - hotel: utter_ask_startdate
@@ -1951,6 +2012,7 @@
 ## Generated Story 992275257838962018
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"people": "4"}
     - slot{"people": "4"}
     - hotel: utter_ask_location
@@ -1985,6 +2047,7 @@
 ## Generated Story 1847998520898611037
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"location": "london"}
     - slot{"location": "london"}
     - hotel: utter_ask_people
@@ -2027,6 +2090,7 @@
 ## Generated Story -633443905704416777
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"startdate": "today", "people": "2"}
     - slot{"startdate": "today"}
     - slot{"people": "2"}
@@ -2061,6 +2125,7 @@
 ## Generated Story 8298432240511047795
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"people": "2"}
     - slot{"people": "2"}
     - hotel: utter_ask_location
@@ -2094,6 +2159,7 @@
 ## Generated Story 215722250464778445
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"location": "paris"}
     - slot{"location": "paris"}
     - hotel: utter_ask_people
@@ -2128,6 +2194,7 @@
 ## Generated Story 6831386654549966129
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"price": "mid-range"}
     - slot{"price": "mid-range"}
     - hotel: utter_ask_people
@@ -2159,6 +2226,7 @@
 ## Generated Story -6881450920903631119
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"people": "6"}
     - slot{"people": "6"}
     - hotel: utter_ask_location
@@ -2192,6 +2260,7 @@
 ## Generated Story -446032599677574593
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"people": "4"}
     - slot{"people": "4"}
     - hotel: utter_ask_location
@@ -2224,6 +2293,7 @@
 ## Generated Story -7342525516064688202
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"people": "2"}
     - slot{"people": "2"}
     - hotel: utter_ask_location
@@ -2256,6 +2326,7 @@
 ## Generated Story -4822309142769915453
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"enddate": "tomorrow"}
     - slot{"enddate": "tomorrow"}
     - hotel: utter_ask_startdate
@@ -2292,6 +2363,7 @@
 ## Generated Story 6738253362774247051
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"people": "4", "enddate": "tomorrow"}
     - slot{"people": "4"}
     - slot{"enddate": "tomorrow"}
@@ -2327,6 +2399,7 @@
 ## Generated Story 3734868848816599930
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"enddate": "May 26th"}
     - slot{"enddate": "May 26th"}
     - hotel: utter_ask_startdate
@@ -2358,6 +2431,7 @@
 ## Generated Story 34765273882144065
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"people": "4"}
     - slot{"people": "4"}
     - hotel: utter_ask_location
@@ -2393,6 +2467,7 @@
 ## Generated Story 276978480102911357
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"location": "paris"}
     - slot{"location": "paris"}
     - hotel: utter_ask_people
@@ -2427,6 +2502,7 @@
 ## Generated Story -1066423376724531861
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"startdate": "today"}
     - slot{"startdate": "today"}
     - hotel: utter_ask_enddate
@@ -2460,6 +2536,7 @@
 ## Generated Story -1802389827003708839
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"startdate": "today"}
     - slot{"startdate": "today"}
     - hotel: utter_ask_enddate
@@ -2491,6 +2568,7 @@
 ## Generated Story -6544064798950701442
 * request_hotel
     - hotel: utter_ask_details
+    - slot{"hotel": null}
 * inform{"location": "london"}
     - slot{"location": "london"}
     - hotel: utter_ask_people

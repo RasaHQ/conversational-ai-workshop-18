@@ -2,16 +2,31 @@
   "action_fingerprints": {
     "action_listen": {
       "slots": [
-        "enddate",
-        "people",
-        "startdate",
+        "location",
         "price",
-        "location"
+        "cuisine",
+        "people",
+        "enddate",
+        "startdate"
+      ]
+    },
+    "utter_ask_details": {
+      "slots": [
+        "hotel",
+        "restaurant"
       ]
     },
     "action_search_hotel": {
       "slots": [
         "hotel"
+      ]
+    },
+    "utter_happy": {
+      "slots": []
+    },
+    "action_search_restaurant": {
+      "slots": [
+        "restaurant"
       ]
     }
   },
@@ -24,5 +39,5 @@
   "policy_names": [
     "rasa_core.policies.embedding_policy.EmbeddingPolicy"
   ],
-  "trained_at": "20181220-174502"
+  "trained_at": "20190104-150658"
 }
