@@ -1,4 +1,4 @@
-policy:
+policies:
   - name: EmbeddingPolicy
     rnn_size: 64
     topic_rnn_size: 32
