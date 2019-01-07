@@ -2,31 +2,31 @@
   "action_fingerprints": {
     "action_listen": {
       "slots": [
-        "people",
         "price",
-        "location",
-        "cuisine",
         "enddate",
-        "startdate"
+        "startdate",
+        "cuisine",
+        "people",
+        "location"
       ]
     },
     "utter_ask_details": {
       "slots": [
-        "restaurant",
-        "hotel"
+        "hotel",
+        "restaurant"
       ]
     },
-    "action_search_restaurant": {
+    "action_search_hotel": {
       "slots": [
-        "restaurant"
+        "hotel"
       ]
     },
     "utter_happy": {
       "slots": []
     },
-    "action_search_hotel": {
+    "action_search_restaurant": {
       "slots": [
-        "hotel"
+        "restaurant"
       ]
     }
   },
@@ -38,7 +38,7 @@
   "policy_names": [
     "rasa_core.policies.embedding_policy.EmbeddingPolicy"
   ],
-  "trained_at": "20190104-183000",
+  "trained_at": "20190107-125602",
   "rasa_core": "0.13.0a5",
   "tensorflow": "1.12.0",
   "sklearn": "0.19.1"

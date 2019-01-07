@@ -92,6 +92,6 @@ if __name__ == '__main__':
                         attn_before_rnn=True,
                         attn_after_rnn=True,
                         skip_time=False,
-                        use_topics=False,
+                        use_topics=True,
                         )
     logger.info("Finished training domain policy.")
