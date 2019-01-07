@@ -37,7 +37,7 @@ def train_domain_policy(story_filename,
                         LabelTokenizerSingleStateFeaturizer(split_symbol=split_symbol))
                         # BinarySingleStateFeaturizer())
         epochs = epoch_no
-        batch_size = [8, 16]
+        batch_size = [4, 12]
         policies = [EmbeddingPolicy(featurizer,
                                     rnn_size=64,
                                     topic_rnn_size=32,
@@ -87,11 +87,11 @@ if __name__ == '__main__':
                         output_path='models/dialogue_embed',
                         exclusion_file='data-simulated/train/simulated_hotel_train.md',
                         exclusion_percentage=0,
-                        embed_dim=30,
-                        epoch_no=500,
+                        embed_dim=20,
+                        epoch_no=300,
                         attn_before_rnn=True,
                         attn_after_rnn=True,
                         skip_time=False,
-                        use_topics=True,
+                        use_topics=False,
                         )
     logger.info("Finished training domain policy.")
