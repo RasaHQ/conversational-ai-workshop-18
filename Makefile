@@ -20,10 +20,10 @@ train-lstm-feat:
 	python -m rasa_core.train -s data/core/ -d domain.yml -o models/dialogue -c lstm_feat.yml --augmentation 0
 
 train-compare:
-	nohup python -u -m rasa_core.train compare --stories data-simulated/train -d domain.yml -o comparison_models -c redp_topics.yml redp.yml --augmentation 0 --runs 5 > train.out &
+	nohup python -u -m rasa_core.train compare --stories data-simulated/train -d domain.yml -o comparison_models -c redp_topics.yml redp.yml redp_no_skip.yml --augmentation 0 --runs 5 > train.out &
 
 evaluate-compare:
-	nohup python -u -m rasa_core.evaluate compare --stories data-simulated/test --core comparison_models -o results/ > test.out &
+	python3 -m rasa_core.evaluate compare --stories data-simulated/test --core comparison_models -o results/
 
 run-core:
 	python -m rasa_core.run --core models/dialogue --endpoints endpoints.yml
