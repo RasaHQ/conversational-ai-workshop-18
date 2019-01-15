@@ -1,4 +1,4 @@
-policy:
+policies:
   - name: KerasPolicy
     batch_size: 32
     epochs: 400
