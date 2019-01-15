@@ -1,6 +1,6 @@
 # generalisation-example
-This is the bot we used for the experiments in our paper on "Few-shot
-Generalisation Across Dialogue Tasks".
+This is the bot we used for the experiments in our paper on "[Few-shot
+Generalisation Across Dialogue Tasks"](https://arxiv.org/abs/1811.11707).
 
 ## Installation
 To install all the requirements needed to use this bot, please run:
@@ -9,14 +9,34 @@ pip install -r requirements.txt
 ```
 
 ## Running the bot and experiments
-To train the core model, run:
+To train any of the individual models, run one of:
+- The embedding policy:
 ```
-make train-core
+make train-redp
 ```
+- The keras policy with a binary state featurizer
+```
+make train-lstm-bin
+```
+- The keras policy with a label tokenizer state featurizer:
+```
+make train-lstm-feat
+```
+
 
 To run the bot on the commandline, run:
 ```
 make run
+```
+
+To train the comparison models for the experiments from our paper, run:
+```
+make train-compare
+```
+
+To evaluate these models, run:
+```
+make evaluate-compare
 ```
 
 
