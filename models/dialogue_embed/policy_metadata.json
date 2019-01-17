@@ -2,12 +2,12 @@
   "action_fingerprints": {
     "action_listen": {
       "slots": [
-        "price",
-        "enddate",
         "startdate",
+        "enddate",
+        "location",
+        "price",
         "cuisine",
-        "people",
-        "location"
+        "people"
       ]
     },
     "utter_ask_details": {
@@ -38,7 +38,7 @@
   "policy_names": [
     "rasa_core.policies.embedding_policy.EmbeddingPolicy"
   ],
-  "trained_at": "20190107-125602",
+  "trained_at": "20190117-164458",
   "rasa_core": "0.13.0a5",
   "tensorflow": "1.12.0",
   "sklearn": "0.19.1"
