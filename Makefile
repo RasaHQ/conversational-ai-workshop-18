@@ -25,6 +25,12 @@ train-compare:
 evaluate-compare:
 	python3 -m rasa_core.evaluate compare --stories data-simulated/test --core comparison_models -o results/
 
+evaluate:
+	python3 -m rasa_core.evaluate --core models/dialogue_embed -s data-simulated/test
+
+evaluate-topics:
+	python3 -m rasa_core.evaluate --core models/dialogue_embed -s data-simulated/test --topics
+
 run-core:
 	python -m rasa_core.run --core models/dialogue --endpoints endpoints.yml
 

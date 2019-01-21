@@ -226,3 +226,11 @@ templates:
   - text: 'Yes, based on the info you gave me I recommend these hotels:'
   utter_worked_restaurant:
   - text: 'Yes, based on the info you gave me I recommend these restaurants:'
+topics:
+- null
+- hotel
+- restaurant
+- chitchat
+- explain
+- did_that_work
+- correct
