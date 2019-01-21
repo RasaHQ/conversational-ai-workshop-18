@@ -4,7 +4,7 @@
 * inform{"location": "paris"}
     - utter_ask_people
 * correct{"location": "paris"}
-    - utter_correct_location
+    - utter_correct_location_hotel
     - utter_ask_people
 * inform{"people": "4"}
     - utter_ask_price
@@ -28,7 +28,7 @@
 * inform{"people": "4"}
     - utter_ask_price
 * correct{"people": "5"}
-    - utter_correct_people
+    - utter_correct_people_hotel
     - utter_ask_price
 * inform{"price": "expensive"}
     - utter_ask_startdate
@@ -52,7 +52,7 @@
 * inform{"price": "expensive"}
     - utter_ask_startdate
 * correct{"price":"cheap"}
-    - utter_correct_price
+    - utter_correct_price_hotel
     - utter_ask_startdate
 * inform{"startdate": "10.03.2018"}
     - utter_ask_enddate
@@ -76,7 +76,7 @@
 * inform{"startdate": "10.03.2018"}
     - utter_ask_enddate
 * correct{"startdate": "x"}
-    - utter_correct_startdate
+    - utter_correct_startdate_hotel
     - utter_ask_enddate
 * inform{"enddate": "10.03.2018"}
     - utter_filled_slots
@@ -103,7 +103,7 @@
     - slot{"hotel": "hotel"}
     - utter_suggest_hotel
 * correct{"enddate": "x"}
-    - utter_correct_enddate
+    - utter_correct_enddate_hotel
     - action_search_hotel
     - slot{"hotel": "hotel"}    
     - utter_suggest_hotel
@@ -116,7 +116,7 @@
 * inform{"people": "4"}
     - utter_ask_location
 * correct{"people": "5"}
-    - utter_correct_people
+    - utter_correct_people_hotel
     - utter_ask_location
 * inform{"location": "paris"}
     - utter_ask_price
@@ -140,7 +140,7 @@
 * inform{"location": "paris"}
     - utter_ask_price
 * correct{"location": "rome"}
-    - utter_correct_location
+    - utter_correct_location_hotel
     - utter_ask_price
 * inform{"price": "expensive"}
     - utter_ask_startdate
@@ -164,7 +164,7 @@
 * inform{"price": "expensive"}
     - utter_ask_startdate
 * correct{"price": "cheap"}
-    - utter_correct_price
+    - utter_correct_price_hotel
     - utter_ask_startdate
 * inform{"startdate": "10.03.2018"}
     - utter_ask_enddate
@@ -188,7 +188,7 @@
 * inform{"startdate": "10.03.2018"}
     - utter_ask_enddate
 * correct{"startdate": "x"}
-    - utter_correct_startdate
+    - utter_correct_startdate_hotel
     - utter_ask_enddate
 * inform{"enddate": "10.03.2018"}
     - utter_filled_slots
@@ -215,7 +215,7 @@
     - slot{"hotel": "hotel"}
     - utter_suggest_hotel
 * correct{"enddate": "x"}
-    - utter_correct_enddate
+    - utter_correct_enddate_hotel
     - action_search_hotel
     - slot{"hotel": "hotel"}
     - utter_suggest_hotel
@@ -228,7 +228,7 @@
 * inform{"price": "expensive"}
     - utter_ask_people
 * correct{"price": "cheap"}
-    - utter_correct_price
+    - utter_correct_price_hotel
     - utter_ask_people
 * inform{"people": "4"}
     - utter_ask_startdate
@@ -252,7 +252,7 @@
 * inform{"people": "4"}
     - utter_ask_startdate
 * correct{"people": "5"}
-    - utter_correct_people
+    - utter_correct_people_hotel
     - utter_ask_startdate
 * inform{"startdate": "10.03.2018"}
     - utter_ask_enddate
@@ -276,7 +276,7 @@
 * inform{"startdate": "10.03.2018"}
     - utter_ask_enddate
 * correct{"startdate": "x"}
-    - utter_correct_startdate
+    - utter_correct_startdate_hotel
     - utter_ask_enddate
 * inform{"enddate": "10.03.2018"}
     - utter_ask_location
@@ -300,7 +300,7 @@
 * inform{"enddate": "10.03.2018"}
     - utter_ask_location
 * correct{"enddate": "x"}
-    - utter_correct_enddate
+    - utter_correct_enddate_hotel
     - utter_ask_location
 * inform{"location": "paris"}
     - utter_filled_slots
@@ -327,7 +327,7 @@
     - slot{"hotel": "hotel"}
     - utter_suggest_hotel
 * correct{"location": "rome"}
-    - utter_correct_location
+    - utter_correct_location_hotel
     - action_search_hotel
     - slot{"hotel": "hotel"}
     - utter_suggest_hotel
@@ -340,7 +340,7 @@
 * inform{"startdate": "10.03.2018"}
     - utter_ask_enddate
 * correct{"startdate": "x"}
-    - utter_correct_startdate
+    - utter_correct_startdate_hotel
     - utter_ask_enddate
 * inform{"enddate": "10.03.2018"}
     - utter_ask_price
@@ -364,7 +364,7 @@
 * inform{"enddate": "10.03.2018"}
     - utter_ask_price
 * correct{"enddate": "x"}
-    - utter_correct_enddate
+    - utter_correct_enddate_hotel
     - utter_ask_price
 * inform{"price": "expensive"}
     - utter_ask_location
@@ -388,7 +388,7 @@
 * inform{"price": "expensive"}
     - utter_ask_location
 * correct{"price": "cheap"}
-    - utter_correct_price
+    - utter_correct_price_hotel
     - utter_ask_location
 * inform{"location": "paris"}
     - utter_ask_people
@@ -412,7 +412,7 @@
 * inform{"location": "paris"}
     - utter_ask_people
 * correct{"location": "rome"}
-    - utter_correct_location
+    - utter_correct_location_hotel
     - utter_ask_people
 * inform{"people": "4"}
     - utter_filled_slots
@@ -439,7 +439,7 @@
     - slot{"hotel": "hotel"}
     - utter_suggest_hotel
 * correct{"people": "5"}
-    - utter_correct_people
+    - utter_correct_people_hotel
     - action_search_hotel
     - slot{"hotel": "hotel"}
     - utter_suggest_hotel
@@ -452,7 +452,7 @@
 * inform{"enddate": "10.03.2018"}
     - utter_ask_startdate
 * correct{"enddate": "x"}
-    - utter_correct_enddate
+    - utter_correct_enddate_hotel
     - utter_ask_startdate
 * inform{"startdate": "10.03.2018"}
     - utter_ask_location
@@ -476,7 +476,7 @@
 * inform{"startdate": "10.03.2018"}
     - utter_ask_location
 * correct{"startdate": "10.03.2018"}
-    - utter_correct_startdate
+    - utter_correct_startdate_hotel
     - utter_ask_location
 * inform{"location": "paris"}
     - utter_ask_price
@@ -500,7 +500,7 @@
 * inform{"location": "paris"}
     - utter_ask_price
 * correct{"location": "rome"}
-    - utter_correct_location
+    - utter_correct_location_hotel
     - utter_ask_price
 * inform{"price": "expensive"}
     - utter_ask_people
@@ -524,7 +524,7 @@
 * inform{"price": "expensive"}
     - utter_ask_people
 * correct{"price": "cheap"}
-    - utter_correct_price
+    - utter_correct_price_hotel
     - utter_ask_people
 * inform{"people": "4"}
     - utter_filled_slots
@@ -551,7 +551,7 @@
     - slot{"hotel": "hotel"}
     - utter_suggest_hotel
 * correct{"people":"3"}
-    - utter_correct_people
+    - utter_correct_people_hotel
     - action_search_hotel
     - slot{"hotel": "hotel"}
     - utter_suggest_hotel
