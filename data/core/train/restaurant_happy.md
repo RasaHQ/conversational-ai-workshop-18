@@ -1,144 +1,152 @@
 ## restaurant happy 1
 * request_restaurant
-    - utter_ask_details
+    - restaurant: utter_ask_details
+    - slot{"restaurant": null}
 * inform{"location": "paris"}
-    - utter_ask_people
+    - restaurant: utter_ask_people
 * inform{"people": "4"}
-    - utter_ask_price
+    - restaurant: utter_ask_price
 * inform{"price": "expensive"}
-    - utter_ask_cuisine
+    - restaurant: utter_ask_cuisine
 * inform{"cuisine": "italian"}
-    - utter_filled_slots
-    - action_search_restaurant
-    - slot{"restaurant": "restaurant"}
-    - utter_suggest_restaurant
+    - restaurant: utter_filled_slots
+    - restaurant: action_search_restaurant
+    - restaurant: slot{"restaurant": "restaurant"}
+    - restaurant: utter_suggest_restaurant
 * affirm
-    - utter_happy
+    - restaurant: utter_happy
 
 ## restaurant happy 2
 * request_restaurant
-    - utter_ask_details
+    - restaurant: utter_ask_details
+    - slot{"restaurant": null}
 * inform{"people": "4"}
-    - utter_ask_location
+    - restaurant: utter_ask_location
 * inform{"location": "paris"}
-    - utter_ask_price
+    - restaurant: utter_ask_price
 * inform{"price": "expensive"}
-    - utter_ask_cuisine
+    - restaurant: utter_ask_cuisine
 * inform{"cuisine": "italian"}
-    - utter_filled_slots
-    - action_search_restaurant
-    - slot{"restaurant": "restaurant"}
-    - utter_suggest_restaurant
+    - restaurant: utter_filled_slots
+    - restaurant: action_search_restaurant
+    - restaurant: slot{"restaurant": "restaurant"}
+    - restaurant: utter_suggest_restaurant
 * affirm
-    - utter_happy
+    - restaurant: utter_happy
 
 ## restaurant happy 3
 * request_restaurant
-    - utter_ask_details
+    - restaurant: utter_ask_details
+    - slot{"restaurant": null}
 * inform{"price": "expensive"}
-    - utter_ask_people
+    - restaurant: utter_ask_people
 * inform{"people": "4"}
-    - utter_ask_cuisine
+    - restaurant: utter_ask_cuisine
 * inform{"cuisine": "italian"}
-    - utter_ask_location
+    - restaurant: utter_ask_location
 * inform{"location": "paris"}
-    - utter_filled_slots
-    - action_search_restaurant
-    - slot{"restaurant": "restaurant"}
-    - utter_suggest_restaurant
+    - restaurant: utter_filled_slots
+    - restaurant: action_search_restaurant
+    - restaurant: slot{"restaurant": "restaurant"}
+    - restaurant: utter_suggest_restaurant
 * affirm
-    - utter_happy
+    - restaurant: utter_happy
 
 ## restaurant happy 4
 * request_restaurant
-    - utter_ask_details
+    - restaurant: utter_ask_details
+    - slot{"restaurant": null}
 * inform{"cuisine": "italian"}
-    - utter_ask_price
+    - restaurant: utter_ask_price
 * inform{"price": "expensive"}
-    - utter_ask_location
+    - restaurant: utter_ask_location
 * inform{"location": "paris"}
-    - utter_ask_people
+    - restaurant: utter_ask_people
 * inform{"people": "4"}
-    - utter_filled_slots
-    - action_search_restaurant
-    - slot{"restaurant": "restaurant"}
-    - utter_suggest_restaurant
+    - restaurant: utter_filled_slots
+    - restaurant: action_search_restaurant
+    - restaurant: slot{"restaurant": "restaurant"}
+    - restaurant: utter_suggest_restaurant
 * affirm
-    - utter_happy
+    - restaurant: utter_happy
 
 
 ## Generated Story 8130156986372571232
 * request_restaurant
-    - utter_ask_details
+    - restaurant: utter_ask_details
+    - slot{"restaurant": null}
 * inform{"people": "4", "location": "paris"}
-    - slot{"people": "4"}
-    - slot{"location": "paris"}
-    - utter_ask_price
+    - restaurant: slot{"people": "4"}
+    - restaurant: slot{"location": "paris"}
+    - restaurant: utter_ask_price
 * inform{"price": "expensive"}
-    - slot{"price":"expensive"}
-    - utter_ask_cuisine
+    - restaurant: slot{"price":"expensive"}
+    - restaurant: utter_ask_cuisine
 * inform{"cuisine": "french"}
-    - utter_filled_slots
-    - action_search_restaurant
-    - slot{"restaurant": "restaurant"}
-    - utter_suggest_restaurant
+    - restaurant: utter_filled_slots
+    - restaurant: action_search_restaurant
+    - restaurant: slot{"restaurant": "restaurant"}
+    - restaurant: utter_suggest_restaurant
 * affirm
-    - utter_happy
+    - restaurant: utter_happy
 
 ## Generated Story 1074034796281423152
 * request_restaurant
-    - utter_ask_details
+    - restaurant: utter_ask_details
+    - slot{"restaurant": null}
 * inform{"people": "4", "cuisine": "french"}
-    - slot{"people": "4"}
-    - slot{"cuisine": "french"}
-    - utter_ask_price
+    - restaurant: slot{"people": "4"}
+    - restaurant: slot{"cuisine": "french"}
+    - restaurant: utter_ask_price
 * inform{"price": "mid-range"}
-    - slot{"price": "mid-range"}
-    - utter_ask_location
+    - restaurant: slot{"price": "mid-range"}
+    - restaurant: utter_ask_location
 * inform{"location": "paris"}
-    - slot{"location": "paris"}
-    - utter_filled_slots
-    - action_search_restaurant
-    - slot{"restaurant": "restaurant"}
-    - utter_suggest_restaurant
+    - restaurant: slot{"location": "paris"}
+    - restaurant: utter_filled_slots
+    - restaurant: action_search_restaurant
+    - restaurant: slot{"restaurant": "restaurant"}
+    - restaurant: utter_suggest_restaurant
 * affirm
-    - utter_happy
+    - restaurant: utter_happy
 
 
 ## Generated Story -4597439819468904984
 * request_restaurant
-    - utter_ask_details
+    - restaurant: utter_ask_details
+    - slot{"restaurant": null}
 * inform{"people": "2", "cuisine": "french"}
-    - slot{"people": "2"}
-    - slot{"cuisine": "french"}
-    - utter_ask_price
+    - restaurant: slot{"people": "2"}
+    - restaurant: slot{"cuisine": "french"}
+    - restaurant: utter_ask_price
 * inform{"price": "cheap"}
-    - slot{"price": "cheap"}
-    - utter_ask_location
+    - restaurant: slot{"price": "cheap"}
+    - restaurant: utter_ask_location
 * inform{"location": "paris"}
-    - slot{"location": "paris"}
-    - utter_filled_slots
-    - action_search_restaurant
-    - slot{"restaurant": "restaurant"}
-    - utter_suggest_restaurant
+    - restaurant: slot{"location": "paris"}
+    - restaurant: utter_filled_slots
+    - restaurant: action_search_restaurant
+    - restaurant: slot{"restaurant": "restaurant"}
+    - restaurant: utter_suggest_restaurant
 * affirm
-    - utter_happy
+    - restaurant: utter_happy
 
 ## Generated Story 584180253540252584
 * request_restaurant
-    - utter_ask_details
+    - restaurant: utter_ask_details
+    - slot{"restaurant": null}
 * inform{"people": "4", "cuisine": "italian"}
-    - slot{"people": "4"}
-    - slot{"cuisine": "italian"}
-    - utter_ask_price
+    - restaurant: slot{"people": "4"}
+    - restaurant: slot{"cuisine": "italian"}
+    - restaurant: utter_ask_price
 * inform{"price": "cheap"}
-    - slot{"price": "cheap"}
-    - utter_ask_location
+    - restaurant: slot{"price": "cheap"}
+    - restaurant: utter_ask_location
 * inform{"location": "paris"}
-    - slot{"location": "paris"}
-    - utter_filled_slots
-    - action_search_restaurant
-    - slot{"restaurant": "restaurant"}
-    - utter_suggest_restaurant
+    - restaurant: slot{"location": "paris"}
+    - restaurant: utter_filled_slots
+    - restaurant: action_search_restaurant
+    - restaurant: slot{"restaurant": "restaurant"}
+    - restaurant: utter_suggest_restaurant
 * affirm
-    - utter_happy
+    - restaurant: utter_happy

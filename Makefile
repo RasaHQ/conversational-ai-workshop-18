@@ -10,6 +10,9 @@ help:
 	@echo "    run"
 	@echo "        Runs the bot on the commandline"
 
+train-memo:
+	python3 -m rasa_core.train -s data-simulated/train -d domain.yml -o models/dialogue_memo -c memo.yml --augmentation 0
+
 train-redp:
 	python -m rasa_core.train -s data/core/ -d domain.yml -o models/dialogue -c redp.yml --augmentation 0
 
@@ -24,6 +27,16 @@ train-compare:
 
 evaluate-compare:
 	python -m rasa_core.evaluate compare --stories data/core/ --core comparison_models -o results/
+	nohup python -u -m rasa_core.train compare --stories data-simulated/train -d domain.yml -o comparison_models -c redp_topics.yml redp.yml redp_no_skip.yml --augmentation 10 --runs 5 > train.out &
+
+evaluate-compare:
+	python3 -m rasa_core.evaluate compare --stories data-simulated/test --core comparison_models -o results/
+
+evaluate:
+	python3 -m rasa_core.evaluate --core models/dialogue_memo -s data-simulated/test
+
+evaluate-topics:
+	python3 -m rasa_core.evaluate --core models/dialogue_embed -s data-simulated/test --topics
 
 run-core:
 	python -m rasa_core.run --core models/dialogue --endpoints endpoints.yml

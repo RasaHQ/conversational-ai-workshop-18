@@ -1,0 +1,34 @@
+{
+  "max_histories": [
+    20
+  ], 
+  "python": "2.7.14", 
+  "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble", 
+  "rasa_core": "0.12.0a4", 
+  "trained_at": "20181009-200149", 
+  "policy_names": [
+    "rasa_core.policies.keras_policy.KerasPolicy"
+  ], 
+  "action_fingerprints": {
+    "action_search_restaurant": {
+      "slots": [
+        "restaurant"
+      ]
+    }, 
+    "action_search_hotel": {
+      "slots": [
+        "hotel"
+      ]
+    }, 
+    "action_listen": {
+      "slots": [
+        "startdate", 
+        "enddate", 
+        "people", 
+        "price", 
+        "cuisine", 
+        "location"
+      ]
+    }
+  }
+}

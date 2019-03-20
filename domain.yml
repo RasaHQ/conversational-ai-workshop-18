@@ -136,6 +136,10 @@ templates:
     - "No, I still need some more information from you to find a hotel."
   utter_more_info_restaurant:
     - "No, I still need some more information from you to find a restaurant."
+  utter_search_hotel:
+    - "Searching hotel"
+  utter_search_restaurant:
+    - "Searching restaurant"
 
 actions:
   - utter_ask_cuisine
@@ -178,3 +182,11 @@ actions:
   - utter_more_info_restaurant
   - action_search_restaurant
   - action_search_hotel
+
+topics:
+  - hotel
+  - restaurant
+  - chitchat
+  - explain
+  - did_that_work
+  - correct

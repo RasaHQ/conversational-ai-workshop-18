@@ -1,0 +1,14 @@
+policies:
+  - name: AugmentedMemoizationPolicy
+    max_history: 1
+#  - name: AugmentedMemoizationPolicy
+#    max_history: 2
+#  - name: AugmentedMemoizationPolicy
+#    max_history: 3
+#  - name: AugmentedMemoizationPolicy
+#    max_history: 4
+#  - name: AugmentedMemoizationPolicy
+#    max_history: 5
+#  - name: AugmentedMemoizationPolicy
+#    max_history: 6
+

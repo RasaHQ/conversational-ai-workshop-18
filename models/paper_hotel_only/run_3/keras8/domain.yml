@@ -1,0 +1,209 @@
+actions:
+- utter_ask_cuisine
+- utter_ask_people
+- utter_ask_location
+- utter_ask_price
+- utter_ask_startdate
+- utter_ask_enddate
+- utter_search
+- utter_finish
+- utter_suggest_restaurant
+- utter_suggest_hotel
+- utter_happy
+- utter_explain_details_hotel
+- utter_explain_details_restaurant
+- utter_explain_enddate_hotel
+- utter_explain_location_hotel
+- utter_explain_location_restaurant
+- utter_explain_people_hotel
+- utter_explain_people_restaurant
+- utter_explain_price_hotel
+- utter_explain_price_restaurant
+- utter_explain_startdate_hotel
+- utter_explain_cuisine_restaurant
+- utter_worked_hotel
+- utter_worked_restaurant
+- utter_chitchat
+- utter_ask_details
+- utter_filled_slots
+- utter_correct_location_hotel
+- utter_correct_location_restaurant
+- utter_correct_cuisine_restaurant
+- utter_correct_price_hotel
+- utter_correct_price_restaurant
+- utter_correct_people_hotel
+- utter_correct_people_restaurant
+- utter_correct_startdate_hotel
+- utter_correct_enddate_hotel
+- utter_more_info_hotel
+- utter_more_info_restaurant
+- action_search_restaurant
+- action_search_hotel
+config:
+  store_entities_as_slots: true
+entities:
+- location
+- info
+- people
+- price
+- cuisine
+- outdoor_seating
+- reservations
+- date_suitable
+- has_gym
+- has_spa
+- breakfast
+- startdate
+- enddate
+intents:
+- inform:
+    use_entities: true
+- about:
+    use_entities: true
+- explain:
+    use_entities: true
+- did_that_work:
+    use_entities: true
+- request_hotel:
+    use_entities: true
+- chitchat:
+    use_entities: true
+- request_restaurant:
+    use_entities: true
+- request_info:
+    use_entities: true
+- affirm:
+    use_entities: true
+- correct:
+    use_entities: true
+slots:
+  breakfast:
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
+  cuisine:
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
+  date_suitable:
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
+  enddate:
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
+  has_gym:
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
+  has_spa:
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
+  hotel:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  info:
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
+  location:
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
+  outdoor_seating:
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
+  people:
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
+  price:
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
+  requested_slot:
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
+  reservations:
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
+  restaurant:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  startdate:
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
+templates:
+  utter_ask_cuisine:
+  - text: What kind of cuisine would you like?
+  utter_ask_details:
+  - text: Anything specific?
+  utter_ask_enddate:
+  - text: When should your hotel stay end?
+  utter_ask_location:
+  - text: Where?
+  utter_ask_people:
+  - text: How many people will you be?
+  utter_ask_price:
+  - text: What price range?
+  utter_ask_startdate:
+  - text: When should your hotel stay start?
+  utter_chitchat:
+  - text: Bla bla
+  utter_correct_cuisine_restaurant:
+  - text: Ok, I've changed the cuisine to {cuisine}
+  utter_correct_enddate_hotel:
+  - text: Ok, I've changed your checkout date to {enddate}
+  utter_correct_location_hotel:
+  - text: Ok, I've changed the location to {location}
+  utter_correct_location_restaurant:
+  - text: Ok, I've changed the location to {location}
+  utter_correct_people_hotel:
+  - text: Ok, I've changed the number of people to {people}
+  utter_correct_people_restaurant:
+  - text: Ok, I've changed the number of people to {people}
+  utter_correct_price_hotel:
+  - text: Ok, I've changed the price to {price}
+  utter_correct_price_restaurant:
+  - text: Ok, I've changed the price to {price}
+  utter_correct_startdate_hotel:
+  - text: Ok, I've changed your check in date to {startdate}
+  utter_explain_cuisine_restaurant:
+  - text: Knowing which cuisine you want will help me narrow down the results.
+  utter_explain_details_hotel:
+  - text: I need some details on your trip to find a suitable hotel
+  utter_explain_details_restaurant:
+  - text: I need some details to find you a suitable place to eat
+  utter_explain_enddate_hotel:
+  - text: I need to know when you'll check out
+  utter_explain_location_hotel:
+  - text: To show you relevant results, I'll have to know where you are going
+  utter_explain_location_restaurant:
+  - text: To show you relevant results, I'll have to know what city we're looking
+      in.
+  utter_explain_people_hotel:
+  - text: I'll need to know how many of you there are to check which rooms are suitable.
+  utter_explain_people_restaurant:
+  - text: I'll need to know how many of you there are to check if a table is available.
+  utter_explain_price_hotel:
+  - text: Knowing an approximate price range lets me narrow down search results.
+  utter_explain_price_restaurant:
+  - text: Knowing an approximate price range lets me narrow down search results.
+  utter_explain_startdate_hotel:
+  - text: I'll need to know when you want to go to check availability.
+  utter_filled_slots:
+  - text: Ok, I have all the information I need now.
+  utter_finish:
+  - text: Ok, I have everything I need now.
+  utter_happy:
+  - text: Great!
+  utter_more_info_hotel:
+  - text: No, I still need some more information from you to find a hotel.
+  utter_more_info_restaurant:
+  - text: No, I still need some more information from you to find a restaurant.
+  utter_search:
+  - text: I'm looking for restaurants
+  utter_search_hotel:
+  - text: Searching hotel
+  utter_search_restaurant:
+  - text: Searching restaurant
+  utter_suggest_hotel:
+  - text: 'Here is what I found: {hotel}. Does that work?'
+  utter_suggest_restaurant:
+  - text: 'Here is what I found: {restaurant}. Does that work?'
+  utter_worked_hotel:
+  - text: 'Yes, based on the info you gave me I recommend these hotels:'
+  utter_worked_restaurant:
+  - text: 'Yes, based on the info you gave me I recommend these restaurants:'

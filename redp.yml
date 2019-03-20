@@ -2,3 +2,14 @@ policies:
   - name: EmbeddingPolicy
     epochs: 2000
     attn_shift_range: 5
+    rnn_size: 64
+    topic_rnn_size: 32
+    embed_dim: 20
+    sparse_attention: False
+    batch_size: [8, 32]
+    epochs: 1000
+    attn_shift_range: 5
+    attn_before_rnn: True
+    attn_after_rnn: True
+    skip_time: True
+    use_topics: False

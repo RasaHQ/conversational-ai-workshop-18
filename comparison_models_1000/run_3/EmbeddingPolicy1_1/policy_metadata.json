@@ -1,0 +1,42 @@
+{
+  "action_fingerprints": {
+    "action_listen": {
+      "slots": [
+        "people",
+        "cuisine",
+        "startdate",
+        "location",
+        "enddate",
+        "price"
+      ]
+    },
+    "utter_ask_details": {
+      "slots": [
+        "restaurant",
+        "hotel"
+      ]
+    },
+    "action_search_restaurant": {
+      "slots": [
+        "restaurant"
+      ]
+    },
+    "action_search_hotel": {
+      "slots": [
+        "hotel"
+      ]
+    }
+  },
+  "python": "3.6.4",
+  "max_histories": [
+    null
+  ],
+  "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble",
+  "policy_names": [
+    "rasa_core.policies.embedding_policy.EmbeddingPolicy"
+  ],
+  "trained_at": "20190109-160904",
+  "rasa_core": "0.13.0a5",
+  "tensorflow": "1.10.0",
+  "sklearn": "0.19.1"
+}
