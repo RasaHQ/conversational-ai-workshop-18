@@ -57,6 +57,8 @@ entities:
 - breakfast
 - startdate
 - enddate
+flags:
+- null
 forms: []
 intents:
 - request_restaurant:
@@ -230,7 +232,4 @@ topics:
 - null
 - hotel
 - restaurant
-- chitchat
-- explain
-- did_that_work
-- correct
+- chitchat-explain-correct-didthatwork

@@ -2,35 +2,52 @@
   "action_fingerprints": {
     "action_listen": {
       "slots": [
-        "startdate",
         "enddate",
-        "location",
         "price",
-        "cuisine",
-        "people"
+        "startdate",
+        "location",
+        "people",
+        "cuisine"
       ]
     },
-    "utter_ask_details": {
+    "restaurant: utter_ask_details": {
       "slots": [
-        "hotel",
         "restaurant"
       ]
     },
-    "action_search_hotel": {
+    "restaurant: action_search_restaurant": {
+      "slots": [
+        "restaurant"
+      ]
+    },
+    "restaurant: utter_happy": {
+      "slots": []
+    },
+    "hotel: utter_ask_details": {
       "slots": [
         "hotel"
       ]
     },
-    "utter_happy": {
+    "hotel: action_search_hotel": {
+      "slots": [
+        "hotel"
+      ]
+    },
+    "hotel: utter_happy": {
       "slots": []
     },
-    "action_search_restaurant": {
+    "chitchat-explain-correct-didthatwork: action_search_hotel": {
+      "slots": [
+        "hotel"
+      ]
+    },
+    "chitchat-explain-correct-didthatwork: action_search_restaurant": {
       "slots": [
         "restaurant"
       ]
     }
   },
-  "python": "3.6.5",
+  "python": "3.6.8",
   "max_histories": [
     null
   ],
@@ -38,8 +55,8 @@
   "policy_names": [
     "rasa_core.policies.embedding_policy.EmbeddingPolicy"
   ],
-  "trained_at": "20190117-164458",
-  "rasa_core": "0.13.0a5",
+  "trained_at": "20190321-134830",
+  "rasa_core": "0.13.1",
   "tensorflow": "1.12.0",
-  "sklearn": "0.19.1"
+  "sklearn": "0.20.2"
 }

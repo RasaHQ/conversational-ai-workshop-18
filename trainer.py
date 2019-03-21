@@ -74,18 +74,16 @@ def train_domain_policy(story_filename,
                            exclusion_file=exclusion_file,
                            exclusion_percentage=exclusion_percentage)
 
-    agent.train(data,
-                rnn_size=64,
-                epochs=epochs)
+    agent.train(data)
 
     agent.persist(model_path=output_path)
 
 
 if __name__ == '__main__':
     logging.basicConfig(level="DEBUG")
-    train_domain_policy(story_filename="data-simulated/train/",
+    train_domain_policy(story_filename="data/core/train/",
                         output_path='models/dialogue_embed',
-                        exclusion_file='data-simulated/train/simulated_hotel_train.md',
+                        exclusion_file='data/core/train/simulated_hotel_train.md',
                         exclusion_percentage=0,
                         embed_dim=20,
                         epoch_no=300,

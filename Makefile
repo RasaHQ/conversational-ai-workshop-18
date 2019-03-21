@@ -33,10 +33,10 @@ evaluate-compare:
 	python3 -m rasa_core.evaluate compare --stories data-simulated/test --core comparison_models -o results/
 
 evaluate:
-	python3 -m rasa_core.evaluate --core models/dialogue_memo -s data-simulated/test
+	python3 -m rasa_core.evaluate --core models/dialogue_embed -s data/core/test
 
 evaluate-topics:
-	python3 -m rasa_core.evaluate --core models/dialogue_embed -s data-simulated/test --topics
+	python3 -m rasa_core.evaluate --core models/dialogue_embed -s data/core/test --topics
 
 run-core:
 	python -m rasa_core.run --core models/dialogue --endpoints endpoints.yml

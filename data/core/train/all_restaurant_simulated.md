@@ -6,11 +6,11 @@
     - slot{"people": "6"}
     - restaurant: utter_ask_location
 * did_that_work
-    - did_that_work: utter_more_info_restaurant
-    - did_that_work: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_more_info_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * explain
-    - explain: utter_explain_location_restaurant
-    - explain: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_explain_location_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * inform{"location": "rome"}
     - slot{"location": "rome"}
     - restaurant: utter_ask_price
@@ -22,11 +22,11 @@
     - slot{"restaurant": "restaurant"}
     - restaurant: utter_suggest_restaurant
 * did_that_work
-    - did_that_work: utter_worked_restaurant
-    - did_that_work: utter_suggest_restaurant
+    - chitchat-explain-correct-didthatwork: utter_worked_restaurant
+    - chitchat-explain-correct-didthatwork: utter_suggest_restaurant
 * did_that_work
-    - did_that_work: utter_worked_restaurant
-    - did_that_work: utter_suggest_restaurant
+    - chitchat-explain-correct-didthatwork: utter_worked_restaurant
+    - chitchat-explain-correct-didthatwork: utter_suggest_restaurant
 * affirm
     - restaurant: utter_happy
 
@@ -40,12 +40,12 @@
     - restaurant: utter_ask_price
 * correct{"cuisine": "french"}
     - slot{"cuisine": "french"}
-    - correct: utter_correct_cuisine_restaurant
-    - correct: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_correct_cuisine_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * correct{"cuisine": "italian"}
     - slot{"cuisine": "italian"}
-    - correct: utter_correct_cuisine_restaurant
-    - correct: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_correct_cuisine_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * inform{"price": "expensive"}
     - restaurant: utter_ask_location
 * inform{"location": "london"}
@@ -58,8 +58,8 @@
     - slot{"restaurant": "restaurant"}
     - restaurant: utter_suggest_restaurant
 * did_that_work
-    - did_that_work: utter_worked_restaurant
-    - did_that_work: utter_suggest_restaurant
+    - chitchat-explain-correct-didthatwork: utter_worked_restaurant
+    - chitchat-explain-correct-didthatwork: utter_suggest_restaurant
 * affirm
     - restaurant: utter_happy
 
@@ -85,31 +85,31 @@
     - restaurant: utter_suggest_restaurant
 * correct{"cuisine": "italian"}
     - slot{"cuisine": "italian"}
-    - correct: utter_correct_cuisine_restaurant
-    - correct: action_search_restaurant
+    - chitchat-explain-correct-didthatwork: utter_correct_cuisine_restaurant
+    - chitchat-explain-correct-didthatwork: action_search_restaurant
     - slot{"restaurant":"results"}
-    - correct: utter_suggest_restaurant
+    - chitchat-explain-correct-didthatwork: utter_suggest_restaurant
 * correct{"people": "2"}
     - slot{"people": "2"}
-    - correct: utter_correct_people_restaurant
-    - correct: action_search_restaurant
+    - chitchat-explain-correct-didthatwork: utter_correct_people_restaurant
+    - chitchat-explain-correct-didthatwork: action_search_restaurant
     - slot{"restaurant":"results"}
-    - correct: utter_suggest_restaurant
+    - chitchat-explain-correct-didthatwork: utter_suggest_restaurant
 * correct{"price": "mid-range"}
     - slot{"price": "mid-range"}
-    - correct: utter_correct_price_restaurant
-    - correct: action_search_restaurant
+    - chitchat-explain-correct-didthatwork: utter_correct_price_restaurant
+    - chitchat-explain-correct-didthatwork: action_search_restaurant
     - slot{"restaurant":"results"}
-    - correct: utter_suggest_restaurant
+    - chitchat-explain-correct-didthatwork: utter_suggest_restaurant
 * correct{"people": "4"}
     - slot{"people": "4"}
-    - correct: utter_correct_people_restaurant
-    - correct: action_search_restaurant
+    - chitchat-explain-correct-didthatwork: utter_correct_people_restaurant
+    - chitchat-explain-correct-didthatwork: action_search_restaurant
     - slot{"restaurant":"results"}
-    - correct: utter_suggest_restaurant
+    - chitchat-explain-correct-didthatwork: utter_suggest_restaurant
 * did_that_work
-    - did_that_work: utter_worked_restaurant
-    - did_that_work: utter_suggest_restaurant
+    - chitchat-explain-correct-didthatwork: utter_worked_restaurant
+    - chitchat-explain-correct-didthatwork: utter_suggest_restaurant
 * affirm
     - restaurant: utter_happy
 
@@ -124,18 +124,18 @@
     - slot{"price": "mid-range"}
     - restaurant: utter_ask_location
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * did_that_work
-    - did_that_work: utter_more_info_restaurant
-    - did_that_work: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_more_info_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * did_that_work
-    - did_that_work: utter_more_info_restaurant
-    - did_that_work: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_more_info_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * correct{"price": "expensive"}
     - slot{"price": "expensive"}
-    - correct: utter_correct_price_restaurant
-    - correct: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_correct_price_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * inform{"location": "paris"}
     - slot{"location": "paris"}
     - restaurant: utter_ask_people
@@ -146,8 +146,8 @@
     - slot{"restaurant": "restaurant"}
     - restaurant: utter_suggest_restaurant
 * did_that_work
-    - did_that_work: utter_worked_restaurant
-    - did_that_work: utter_suggest_restaurant
+    - chitchat-explain-correct-didthatwork: utter_worked_restaurant
+    - chitchat-explain-correct-didthatwork: utter_suggest_restaurant
 * affirm
     - restaurant: utter_happy
 
@@ -161,11 +161,11 @@
     - restaurant: utter_ask_people
 * correct{"location": "rome"}
     - slot{"location": "rome"}
-    - correct: utter_correct_location_restaurant
-    - correct: utter_ask_people
+    - chitchat-explain-correct-didthatwork: utter_correct_location_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_people
 * explain
-    - explain: utter_explain_people_restaurant
-    - explain: utter_ask_people
+    - chitchat-explain-correct-didthatwork: utter_explain_people_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_people
 * inform{"people": "4"}
     - slot{"people": "4"}
     - restaurant: utter_ask_price
@@ -179,11 +179,11 @@
     - slot{"restaurant": "restaurant"}
     - restaurant: utter_suggest_restaurant
 * did_that_work
-    - did_that_work: utter_worked_restaurant
-    - did_that_work: utter_suggest_restaurant
+    - chitchat-explain-correct-didthatwork: utter_worked_restaurant
+    - chitchat-explain-correct-didthatwork: utter_suggest_restaurant
 * did_that_work
-    - did_that_work: utter_worked_restaurant
-    - did_that_work: utter_suggest_restaurant
+    - chitchat-explain-correct-didthatwork: utter_worked_restaurant
+    - chitchat-explain-correct-didthatwork: utter_suggest_restaurant
 * affirm
     - restaurant: utter_happy
 
@@ -196,11 +196,11 @@
     - slot{"location": "london"}
     - restaurant: utter_ask_people
 * explain
-    - explain: utter_explain_people_restaurant
-    - explain: utter_ask_people
+    - chitchat-explain-correct-didthatwork: utter_explain_people_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_people
 * did_that_work
-    - did_that_work: utter_more_info_restaurant
-    - did_that_work: utter_ask_people
+    - chitchat-explain-correct-didthatwork: utter_more_info_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_people
 * inform{"people": "4"}
     - slot{"people": "4"}
     - restaurant: utter_ask_price
@@ -214,14 +214,14 @@
     - slot{"restaurant": "restaurant"}
     - restaurant: utter_suggest_restaurant
 * did_that_work
-    - did_that_work: utter_worked_restaurant
-    - did_that_work: utter_suggest_restaurant
+    - chitchat-explain-correct-didthatwork: utter_worked_restaurant
+    - chitchat-explain-correct-didthatwork: utter_suggest_restaurant
 * did_that_work
-    - did_that_work: utter_worked_restaurant
-    - did_that_work: utter_suggest_restaurant
+    - chitchat-explain-correct-didthatwork: utter_worked_restaurant
+    - chitchat-explain-correct-didthatwork: utter_suggest_restaurant
 * did_that_work
-    - did_that_work: utter_worked_restaurant
-    - did_that_work: utter_suggest_restaurant
+    - chitchat-explain-correct-didthatwork: utter_worked_restaurant
+    - chitchat-explain-correct-didthatwork: utter_suggest_restaurant
 * affirm
     - restaurant: utter_happy
 
@@ -234,14 +234,14 @@
     - slot{"location": "paris"}
     - restaurant: utter_ask_price
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * did_that_work
-    - did_that_work: utter_more_info_restaurant
-    - did_that_work: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_more_info_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * inform{"price": "expensive"}
     - slot{"price": "expensive"}
     - restaurant: utter_ask_cuisine
@@ -252,8 +252,8 @@
     - slot{"restaurant": "restaurant"}
     - restaurant: utter_suggest_restaurant
 * did_that_work
-    - did_that_work: utter_worked_restaurant
-    - did_that_work: utter_suggest_restaurant
+    - chitchat-explain-correct-didthatwork: utter_worked_restaurant
+    - chitchat-explain-correct-didthatwork: utter_suggest_restaurant
 * affirm
     - restaurant: utter_happy
 
@@ -266,21 +266,21 @@
     - slot{"people": "6"}
     - restaurant: utter_ask_location
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * inform{"location": "paris"}
     - slot{"location": "paris"}
     - restaurant: utter_ask_price
 * correct{"location": "rome"}
     - slot{"location": "rome"}
-    - correct: utter_correct_location_restaurant
-    - correct: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_correct_location_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * did_that_work
-    - did_that_work: utter_more_info_restaurant
-    - did_that_work: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_more_info_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * inform{"price": "expensive"}
     - slot{"price": "expensive"}
     - restaurant: utter_ask_cuisine
@@ -291,8 +291,8 @@
     - slot{"restaurant": "restaurant"}
     - restaurant: utter_suggest_restaurant
 * did_that_work
-    - did_that_work: utter_worked_restaurant
-    - did_that_work: utter_suggest_restaurant
+    - chitchat-explain-correct-didthatwork: utter_worked_restaurant
+    - chitchat-explain-correct-didthatwork: utter_suggest_restaurant
 * affirm
     - restaurant: utter_happy
 
@@ -306,8 +306,8 @@
     - slot{"people": "6"}
     - restaurant: utter_ask_location
 * explain
-    - explain: utter_explain_location_restaurant
-    - explain: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_explain_location_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * inform{"location": "paris"}
     - slot{"location": "paris"}
     - restaurant: utter_ask_price
@@ -315,11 +315,11 @@
     - slot{"price": "expensive"}
     - restaurant: utter_ask_cuisine
 * did_that_work
-    - did_that_work: utter_more_info_restaurant
-    - did_that_work: utter_ask_cuisine
+    - chitchat-explain-correct-didthatwork: utter_more_info_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_cuisine
 * explain
-    - explain: utter_explain_cuisine_restaurant
-    - explain: utter_ask_cuisine
+    - chitchat-explain-correct-didthatwork: utter_explain_cuisine_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_cuisine
 * inform{"cuisine": "chinese"}
     - slot{"cuisine": "chinese"}
     - restaurant: utter_filled_slots
@@ -327,8 +327,8 @@
     - slot{"restaurant": "restaurant"}
     - restaurant: utter_suggest_restaurant
 * did_that_work
-    - did_that_work: utter_worked_restaurant
-    - did_that_work: utter_suggest_restaurant
+    - chitchat-explain-correct-didthatwork: utter_worked_restaurant
+    - chitchat-explain-correct-didthatwork: utter_suggest_restaurant
 * affirm
     - restaurant: utter_happy
 
@@ -343,12 +343,12 @@
     - slot{"price": "mid-range"}
     - restaurant: utter_ask_people
 * did_that_work
-    - did_that_work: utter_more_info_restaurant
-    - did_that_work: utter_ask_people
+    - chitchat-explain-correct-didthatwork: utter_more_info_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_people
 * correct{"price": "mid-range"}
     - slot{"price": "mid-range"}
-    - correct: utter_correct_price_restaurant
-    - correct: utter_ask_people
+    - chitchat-explain-correct-didthatwork: utter_correct_price_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_people
 * inform{"people": "2"}
     - slot{"people": "2"}
     - restaurant: utter_ask_location
@@ -361,11 +361,11 @@
     - slot{"restaurant": "restaurant"}
     - restaurant: utter_suggest_restaurant
 * did_that_work
-    - did_that_work: utter_worked_restaurant
-    - did_that_work: utter_suggest_restaurant
+    - chitchat-explain-correct-didthatwork: utter_worked_restaurant
+    - chitchat-explain-correct-didthatwork: utter_suggest_restaurant
 * did_that_work
-    - did_that_work: utter_worked_restaurant
-    - did_that_work: utter_suggest_restaurant
+    - chitchat-explain-correct-didthatwork: utter_worked_restaurant
+    - chitchat-explain-correct-didthatwork: utter_suggest_restaurant
 * affirm
     - restaurant: utter_happy
 
@@ -378,11 +378,11 @@
     - slot{"cuisine": "french"}
     - restaurant: utter_ask_price
 * explain
-    - explain: utter_explain_price_restaurant
-    - explain: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_explain_price_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * explain
-    - explain: utter_explain_price_restaurant
-    - explain: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_explain_price_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * inform{"price": "expensive"}
     - slot{"price": "expensive"}
     - restaurant: utter_ask_location
@@ -396,11 +396,11 @@
     - slot{"restaurant": "restaurant"}
     - restaurant: utter_suggest_restaurant
 * did_that_work
-    - did_that_work: utter_worked_restaurant
-    - did_that_work: utter_suggest_restaurant
+    - chitchat-explain-correct-didthatwork: utter_worked_restaurant
+    - chitchat-explain-correct-didthatwork: utter_suggest_restaurant
 * did_that_work
-    - did_that_work: utter_worked_restaurant
-    - did_that_work: utter_suggest_restaurant
+    - chitchat-explain-correct-didthatwork: utter_worked_restaurant
+    - chitchat-explain-correct-didthatwork: utter_suggest_restaurant
 * affirm
     - restaurant: utter_happy
 
@@ -416,11 +416,11 @@
     - slot{"price": "expensive"}
     - restaurant: utter_ask_location
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * inform{"location": "london"}
     - slot{"location": "london"}
     - restaurant: utter_ask_people
@@ -432,19 +432,19 @@
     - restaurant: utter_suggest_restaurant
 * correct{"people": "4"}
     - slot{"people": "4"}
-    - correct: utter_correct_people_restaurant
-    - correct: action_search_restaurant
+    - chitchat-explain-correct-didthatwork: utter_correct_people_restaurant
+    - chitchat-explain-correct-didthatwork: action_search_restaurant
     - slot{"restaurant":"results"}
-    - correct: utter_suggest_restaurant
+    - chitchat-explain-correct-didthatwork: utter_suggest_restaurant
 * correct{"location": "rome"}
     - slot{"location": "rome"}
-    - correct: utter_correct_location_restaurant
-    - correct: action_search_restaurant
+    - chitchat-explain-correct-didthatwork: utter_correct_location_restaurant
+    - chitchat-explain-correct-didthatwork: action_search_restaurant
     - slot{"restaurant":"results"}
-    - correct: utter_suggest_restaurant
+    - chitchat-explain-correct-didthatwork: utter_suggest_restaurant
 * did_that_work
-    - did_that_work: utter_worked_restaurant
-    - did_that_work: utter_suggest_restaurant
+    - chitchat-explain-correct-didthatwork: utter_worked_restaurant
+    - chitchat-explain-correct-didthatwork: utter_suggest_restaurant
 * affirm
     - restaurant: utter_happy
 
@@ -456,8 +456,8 @@
     - slot{"cuisine": "italian"}
     - restaurant: utter_ask_price
 * explain
-    - explain: utter_explain_price_restaurant
-    - explain: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_explain_price_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * inform{"price": "expensive"}
     - slot{"price": "expensive"}
     - restaurant: utter_ask_location
@@ -465,19 +465,19 @@
     - slot{"location": "paris"}
     - restaurant: utter_ask_people
 * did_that_work
-    - did_that_work: utter_more_info_restaurant
-    - did_that_work: utter_ask_people
+    - chitchat-explain-correct-didthatwork: utter_more_info_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_people
 * explain
-    - explain: utter_explain_people_restaurant
-    - explain: utter_ask_people
+    - chitchat-explain-correct-didthatwork: utter_explain_people_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_people
 * inform{"people": "4"}
     - restaurant: utter_filled_slots
     - restaurant: action_search_restaurant
     - slot{"restaurant": "restaurant"}
     - restaurant: utter_suggest_restaurant
 * did_that_work
-    - did_that_work: utter_worked_restaurant
-    - did_that_work: utter_suggest_restaurant
+    - chitchat-explain-correct-didthatwork: utter_worked_restaurant
+    - chitchat-explain-correct-didthatwork: utter_suggest_restaurant
 * affirm
     - restaurant: utter_happy
 
@@ -493,15 +493,15 @@
     - slot{"location": "rome"}
     - restaurant: utter_ask_price
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * correct{"people": "1"}
     - slot{"people": "1"}
-    - correct: utter_correct_people_restaurant
-    - correct: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_correct_people_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * inform{"price": "expensive"}
     - restaurant: utter_ask_cuisine
 * inform{"cuisine": "italian"}
@@ -510,11 +510,11 @@
     - slot{"restaurant": "restaurant"}
     - restaurant: utter_suggest_restaurant
 * did_that_work
-    - did_that_work: utter_worked_restaurant
-    - did_that_work: utter_suggest_restaurant
+    - chitchat-explain-correct-didthatwork: utter_worked_restaurant
+    - chitchat-explain-correct-didthatwork: utter_suggest_restaurant
 * did_that_work
-    - did_that_work: utter_worked_restaurant
-    - did_that_work: utter_suggest_restaurant
+    - chitchat-explain-correct-didthatwork: utter_worked_restaurant
+    - chitchat-explain-correct-didthatwork: utter_suggest_restaurant
 * affirm
     - restaurant: utter_happy
 
@@ -528,8 +528,8 @@
     - restaurant: utter_ask_people
 * correct{"price": "expensive"}
     - slot{"price": "expensive"}
-    - correct: utter_correct_price_restaurant
-    - correct: utter_ask_people
+    - chitchat-explain-correct-didthatwork: utter_correct_price_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_people
 * inform{"people": "6"}
     - slot{"people": "6"}
     - restaurant: utter_ask_cuisine
@@ -537,19 +537,19 @@
     - slot{"cuisine": "italian"}
     - restaurant: utter_ask_location
 * did_that_work
-    - did_that_work: utter_more_info_restaurant
-    - did_that_work: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_more_info_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * explain
-    - explain: utter_explain_location_restaurant
-    - explain: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_explain_location_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * inform{"location": "paris"}
     - restaurant: utter_filled_slots
     - restaurant: action_search_restaurant
     - slot{"restaurant": "restaurant"}
     - restaurant: utter_suggest_restaurant
 * did_that_work
-    - did_that_work: utter_worked_restaurant
-    - did_that_work: utter_suggest_restaurant
+    - chitchat-explain-correct-didthatwork: utter_worked_restaurant
+    - chitchat-explain-correct-didthatwork: utter_suggest_restaurant
 * affirm
     - restaurant: utter_happy
 
@@ -566,11 +566,11 @@
     - slot{"price": "mid-range"}
     - restaurant: utter_ask_location
 * explain
-    - explain: utter_explain_location_restaurant
-    - explain: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_explain_location_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * explain
-    - explain: utter_explain_location_restaurant
-    - explain: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_explain_location_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * inform{"location": "paris"}
     - restaurant: utter_filled_slots
     - restaurant: action_search_restaurant
@@ -589,15 +589,15 @@
     - restaurant: utter_ask_people
 * correct{"location": "rome"}
     - slot{"location": "rome"}
-    - correct: utter_correct_location_restaurant
-    - correct: utter_ask_people
+    - chitchat-explain-correct-didthatwork: utter_correct_location_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_people
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_ask_people
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_ask_people
 * correct{"location": "rome"}
     - slot{"location": "rome"}
-    - correct: utter_correct_location_restaurant
-    - correct: utter_ask_people
+    - chitchat-explain-correct-didthatwork: utter_correct_location_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_people
 * inform{"people": "4"}
     - restaurant: utter_ask_price
 * inform{"price": "expensive"}
@@ -619,14 +619,14 @@
     - slot{"cuisine": "italian"}
     - restaurant: utter_ask_price
 * explain
-    - explain: utter_explain_price_restaurant
-    - explain: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_explain_price_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * inform{"price": "mid-range"}
     - slot{"price": "mid-range"}
     - restaurant: utter_ask_location
 * explain
-    - explain: utter_explain_location_restaurant
-    - explain: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_explain_location_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * inform{"location": "paris"}
     - restaurant: utter_ask_people
 * inform{"people": "4"}
@@ -649,14 +649,14 @@
     - slot{"people": "6"}
     - restaurant: utter_ask_cuisine
 * did_that_work
-    - did_that_work: utter_more_info_restaurant
-    - did_that_work: utter_ask_cuisine
+    - chitchat-explain-correct-didthatwork: utter_more_info_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_cuisine
 * inform{"cuisine": "chinese"}
     - slot{"cuisine": "chinese"}
     - restaurant: utter_ask_location
 * did_that_work
-    - did_that_work: utter_more_info_restaurant
-    - did_that_work: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_more_info_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * inform{"location": "paris"}
     - slot{"location": "paris"}
     - restaurant: utter_filled_slots
@@ -665,16 +665,16 @@
     - restaurant: utter_suggest_restaurant
 * correct{"cuisine": "french"}
     - slot{"cuisine": "french"}
-    - correct: utter_correct_cuisine_restaurant
-    - correct: action_search_restaurant
+    - chitchat-explain-correct-didthatwork: utter_correct_cuisine_restaurant
+    - chitchat-explain-correct-didthatwork: action_search_restaurant
     - slot{"restaurant":"results"}
-    - correct: utter_suggest_restaurant
+    - chitchat-explain-correct-didthatwork: utter_suggest_restaurant
 * correct{"price": "mid-range"}
     - slot{"price": "mid-range"}
-    - correct: utter_correct_cuisine_restaurant
-    - correct: action_search_restaurant
+    - chitchat-explain-correct-didthatwork: utter_correct_cuisine_restaurant
+    - chitchat-explain-correct-didthatwork: action_search_restaurant
     - slot{"restaurant":"results"}
-    - correct: utter_suggest_restaurant
+    - chitchat-explain-correct-didthatwork: utter_suggest_restaurant
 * affirm
     - restaurant: utter_happy
 
@@ -688,17 +688,17 @@
     - restaurant: utter_ask_people
 * correct{"location": "rome"}
     - slot{"location": "rome"}
-    - correct: utter_correct_location_restaurant
-    - correct: utter_ask_people
+    - chitchat-explain-correct-didthatwork: utter_correct_location_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_people
 * inform{"people": "6"}
     - slot{"people": "6"}
     - restaurant: utter_ask_price
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * explain
-    - explain: utter_explain_price_restaurant
-    - explain: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_explain_price_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * inform{"price": "expensive"}
     - restaurant: utter_ask_cuisine
 * inform{"cuisine": "italian"}
@@ -718,12 +718,12 @@
     - slot{"location": "paris"}
     - restaurant: utter_ask_people
 * explain
-    - explain: utter_explain_people_restaurant
-    - explain: utter_ask_people
+    - chitchat-explain-correct-didthatwork: utter_explain_people_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_people
 * correct{"location": "paris"}
     - slot{"location": "paris"}
-    - correct: utter_correct_location_restaurant
-    - correct: utter_ask_people
+    - chitchat-explain-correct-didthatwork: utter_correct_location_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_people
 * inform{"people": "4"}
     - restaurant: utter_ask_price
 * inform{"price": "expensive"}
@@ -748,11 +748,11 @@
     - slot{"people": "6"}
     - restaurant: utter_ask_price
 * explain
-    - explain: utter_explain_price_restaurant
-    - explain: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_explain_price_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * explain
-    - explain: utter_explain_price_restaurant
-    - explain: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_explain_price_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * inform{"price": "expensive"}
     - restaurant: utter_ask_cuisine
 * inform{"cuisine": "italian"}
@@ -772,26 +772,26 @@
     - slot{"cuisine": "french"}
     - restaurant: utter_ask_price
 * did_that_work
-    - did_that_work: utter_more_info_restaurant
-    - did_that_work: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_more_info_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * inform{"price": "expensive"}
     - slot{"price": "expensive"}
     - restaurant: utter_ask_location
 * did_that_work
-    - did_that_work: utter_more_info_restaurant
-    - did_that_work: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_more_info_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * explain
-    - explain: utter_explain_location_restaurant
-    - explain: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_explain_location_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * inform{"location": "paris"}
     - restaurant: utter_ask_people
 * inform{"people": "4"}
@@ -814,15 +814,15 @@
     - slot{"location": "paris"}
     - restaurant: utter_ask_price
 * explain
-    - explain: utter_explain_price_restaurant
-    - explain: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_explain_price_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * did_that_work
-    - did_that_work: utter_more_info_restaurant
-    - did_that_work: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_more_info_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * correct{"location": "london"}
     - slot{"location": "london"}
-    - correct: utter_correct_location_restaurant
-    - correct: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_correct_location_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * inform{"price": "expensive"}
     - restaurant: utter_ask_cuisine
 * inform{"cuisine": "italian"}
@@ -843,17 +843,17 @@
     - restaurant: utter_ask_price
 * correct{"cuisine": "chinese"}
     - slot{"cuisine": "chinese"}
-    - correct: utter_correct_cuisine_restaurant
-    - correct: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_correct_cuisine_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * inform{"price": "mid-range"}
     - slot{"price": "mid-range"}
     - restaurant: utter_ask_location
 * explain
-    - explain: utter_explain_location_restaurant
-    - explain: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_explain_location_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * inform{"location":"rome"}
     - restaurant: utter_ask_people
 * inform{"people": "1"}
@@ -876,11 +876,11 @@
     - slot{"price": "mid-range"}
     - restaurant: utter_ask_location
 * did_that_work
-    - did_that_work: utter_more_info_restaurant
-    - did_that_work: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_more_info_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * explain
-    - explain: utter_explain_location_restaurant
-    - explain: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_explain_location_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * inform{"location":"rome"}
     - restaurant: utter_ask_people
 * inform{"people": "1"}
@@ -900,12 +900,12 @@
     - slot{"cuisine": "italian"}
     - restaurant: utter_ask_price
 * did_that_work
-    - did_that_work: utter_more_info_restaurant
-    - did_that_work: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_more_info_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * correct{"cuisine": "chinese"}
     - slot{"cuisine": "chinese"}
-    - correct: utter_correct_cuisine_restaurant
-    - correct: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_correct_cuisine_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * inform{"price": "mid-range"}
     - slot{"price": "mid-range"}
     - restaurant: utter_ask_location
@@ -930,15 +930,15 @@
     - slot{"location": "london"}
     - restaurant: utter_ask_price
 * did_that_work
-    - did_that_work: utter_more_info_restaurant
-    - did_that_work: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_more_info_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * inform{"price": "expensive"}
     - slot{"price": "expensive"}
     - restaurant: utter_ask_cuisine
 * correct{"people": "4"}
     - slot{"people": "4"}
-    - correct: utter_correct_people_restaurant
-    - correct: utter_ask_cuisine
+    - chitchat-explain-correct-didthatwork: utter_correct_people_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_cuisine
 * inform{"cuisine": "chinese"}
     - restaurant: utter_filled_slots
     - restaurant: action_search_restaurant
@@ -956,12 +956,12 @@
     - slot{"cuisine": "chinese"}
     - restaurant: utter_ask_price
 * did_that_work
-    - did_that_work: utter_more_info_restaurant
-    - did_that_work: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_more_info_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * correct{"cuisine": "french"}
     - slot{"cuisine": "french"}
-    - correct: utter_correct_cuisine_restaurant
-    - correct: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_correct_cuisine_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * inform{"price": "expensive"}
     - restaurant: utter_ask_location
 * inform{"location": "paris"}
@@ -983,11 +983,11 @@
     - slot{"cuisine": "french"}
     - restaurant: utter_ask_price
 * explain
-    - explain: utter_explain_price_restaurant
-    - explain: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_explain_price_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * explain
-    - explain: utter_explain_price_restaurant
-    - explain: utter_ask_price   
+    - chitchat-explain-correct-didthatwork: utter_explain_price_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_price   
 * inform{"price": "expensive"}
     - restaurant: utter_ask_location
 * inform{"location": "paris"}
@@ -1021,10 +1021,10 @@
     - restaurant: utter_suggest_restaurant
 * correct{"price": "mid-range"}
     - slot{"price": "mid-range"}
-    - correct: utter_correct_price_restaurant
-    - correct: action_search_restaurant
+    - chitchat-explain-correct-didthatwork: utter_correct_price_restaurant
+    - chitchat-explain-correct-didthatwork: action_search_restaurant
     - slot{"restaurant":"results"}
-    - correct: utter_suggest_restaurant
+    - chitchat-explain-correct-didthatwork: utter_suggest_restaurant
 * affirm
     - restaurant: utter_happy
 
@@ -1036,20 +1036,20 @@
     - slot{"location": "paris"}
     - restaurant: utter_ask_people
 * did_that_work
-    - did_that_work: utter_more_info_restaurant
-    - did_that_work: utter_ask_people
+    - chitchat-explain-correct-didthatwork: utter_more_info_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_people
 * inform{"people": "6"}
     - slot{"people": "6"}
     - restaurant: utter_ask_price
 * did_that_work
-    - did_that_work: utter_more_info_restaurant
-    - did_that_work: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_more_info_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * did_that_work
-    - did_that_work: utter_more_info_restaurant
-    - did_that_work: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_more_info_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * explain
-    - explain: utter_explain_price_restaurant
-    - explain: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_explain_price_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * inform{"price": "expensive"}
     - restaurant: utter_ask_cuisine
 * inform{"cuisine": "french"}
@@ -1072,11 +1072,11 @@
     - slot{"price": "cheap"}
     - restaurant: utter_ask_location
 * did_that_work
-    - did_that_work: utter_more_info_restaurant
-    - did_that_work: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_more_info_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * explain
-    - explain: utter_explain_location_restaurant
-    - explain: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_explain_location_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * inform{"location": "paris"}
     - restaurant: utter_ask_people
 * inform{"people": "4"}
@@ -1097,11 +1097,11 @@
     - slot{"cuisine": "french"}
     - restaurant: utter_ask_price
 * explain
-    - explain: utter_explain_price_restaurant
-    - explain: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_explain_price_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * did_that_work
-    - did_that_work: utter_more_info_restaurant
-    - did_that_work: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_more_info_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * inform{"price": "expensive"}
     - restaurant: utter_ask_location
 * inform{"location": "paris"}
@@ -1121,11 +1121,11 @@
     - slot{"cuisine": "french"}
     - restaurant: utter_ask_price
 * explain
-    - explain: utter_explain_price_restaurant
-    - explain: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_explain_price_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * did_that_work
-    - did_that_work: utter_more_info_restaurant
-    - did_that_work: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_more_info_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * inform{"price": "expensive"}
     - restaurant: utter_ask_location
 * inform{"location": "paris"}
@@ -1136,8 +1136,8 @@
     - slot{"restaurant": "restaurant"}
     - restaurant: utter_suggest_restaurant
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_suggest_restaurant
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_suggest_restaurant
 * affirm
     - restaurant: utter_happy
 
@@ -1150,12 +1150,12 @@
     - slot{"cuisine": "italian"}
     - restaurant: utter_ask_price
 * did_that_work
-    - did_that_work: utter_more_info_restaurant
-    - did_that_work: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_more_info_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * correct{"cuisine": "italian"}
     - slot{"cuisine": "italian"}
-    - correct: utter_correct_cuisine_restaurant
-    - correct: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_correct_cuisine_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * inform{"price": "expensive"}
     - restaurant: utter_ask_location
 * inform{"location": "paris"}
@@ -1166,8 +1166,8 @@
     - slot{"restaurant": "restaurant"}
     - restaurant: utter_suggest_restaurant
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_suggest_restaurant
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_suggest_restaurant
 * affirm
     - restaurant: utter_happy
 
@@ -1180,11 +1180,11 @@
     - slot{"price": "expensive"}
     - restaurant: utter_ask_people
 * explain
-    - explain: utter_explain_people_restaurant
-    - explain: utter_ask_people
+    - chitchat-explain-correct-didthatwork: utter_explain_people_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_people
 * explain
-    - explain: utter_explain_people_restaurant
-    - explain: utter_ask_people
+    - chitchat-explain-correct-didthatwork: utter_explain_people_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_people
 * inform{"people": "4"}
     - restaurant: utter_ask_cuisine
 * inform{"cuisine": "italian"}
@@ -1195,11 +1195,11 @@
     - slot{"restaurant": "restaurant"}
     - restaurant: utter_suggest_restaurant
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_suggest_restaurant
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_suggest_restaurant
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_suggest_restaurant
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_suggest_restaurant
 * affirm
     - restaurant: utter_happy
 
@@ -1212,11 +1212,11 @@
     - slot{"cuisine": "french"}
     - restaurant: utter_ask_price
 * did_that_work
-    - did_that_work: utter_more_info_restaurant
-    - did_that_work: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_more_info_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * did_that_work
-    - did_that_work: utter_more_info_restaurant
-    - did_that_work: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_more_info_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * inform{"price": "expensive"}
     - restaurant: utter_ask_location
 * inform{"location": "paris"}
@@ -1227,8 +1227,8 @@
     - slot{"restaurant": "restaurant"}
     - restaurant: utter_suggest_restaurant
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_suggest_restaurant
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_suggest_restaurant
 * affirm
     - restaurant: utter_happy
 
@@ -1240,15 +1240,15 @@
     - slot{"price": "expensive"}
     - restaurant: utter_ask_people
 * explain
-    - explain: utter_explain_people_restaurant
-    - explain: utter_ask_people
+    - chitchat-explain-correct-didthatwork: utter_explain_people_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_people
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_ask_people
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_ask_people
 * correct{"price": "cheap"}
     - slot{"price": "cheap"}
-    - correct: utter_correct_price_restaurant
-    - correct: utter_ask_people
+    - chitchat-explain-correct-didthatwork: utter_correct_price_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_people
 * inform{"people": "4"}
     - restaurant: utter_ask_cuisine
 * inform{"cuisine": "italian"}
@@ -1259,8 +1259,8 @@
     - slot{"restaurant": "restaurant"}
     - restaurant: utter_suggest_restaurant
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_suggest_restaurant
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_suggest_restaurant
 * affirm
     - restaurant: utter_happy
 
@@ -1273,11 +1273,11 @@
     - slot{"cuisine": "chinese"}
     - restaurant: utter_ask_price
 * did_that_work
-    - did_that_work: utter_more_info_restaurant
-    - did_that_work: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_more_info_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * did_that_work
-    - did_that_work: utter_more_info_restaurant
-    - did_that_work: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_more_info_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * inform{"price": "expensive"}
     - restaurant: utter_ask_location
 * inform{"location": "paris"}
@@ -1288,11 +1288,11 @@
     - slot{"restaurant": "restaurant"}
     - restaurant: utter_suggest_restaurant
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_suggest_restaurant
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_suggest_restaurant
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_suggest_restaurant
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_suggest_restaurant
 * affirm
     - restaurant: utter_happy
 
@@ -1311,29 +1311,29 @@
     - slot{"cuisine": "chinese"}
     - restaurant: utter_ask_location
 * explain
-    - explain: utter_explain_location_restaurant
-    - explain: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_explain_location_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * did_that_work
-    - did_that_work: utter_more_info_restaurant
-    - did_that_work: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_more_info_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * correct{"cuisine": "chinese"}
     - slot{"cuisine": "chinese"}
-    - correct: utter_correct_cuisine_restaurant
-    - correct: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_correct_cuisine_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * inform{"location": "london"}
     - restaurant: utter_filled_slots
     - restaurant: action_search_restaurant
     - slot{"restaurant": "restaurant"}
     - restaurant: utter_suggest_restaurant
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_suggest_restaurant
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_suggest_restaurant
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_suggest_restaurant
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_suggest_restaurant
 * affirm
     - restaurant: utter_happy
 
@@ -1346,14 +1346,14 @@
     - slot{"price": "mid-range"}
     - restaurant: utter_ask_people
 * did_that_work
-    - did_that_work: utter_more_info_restaurant
-    - did_that_work: utter_ask_people
+    - chitchat-explain-correct-didthatwork: utter_more_info_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_people
 * did_that_work
-    - did_that_work: utter_more_info_restaurant
-    - did_that_work: utter_ask_people
+    - chitchat-explain-correct-didthatwork: utter_more_info_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_people
 * explain
-    - explain: utter_explain_people_restaurant
-    - explain: utter_ask_people
+    - chitchat-explain-correct-didthatwork: utter_explain_people_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_people
 * inform{"people": "4"}
     - restaurant: utter_ask_cuisine
 * inform{"cuisine": "italian"}
@@ -1364,8 +1364,8 @@
     - slot{"restaurant": "restaurant"}
     - restaurant: utter_suggest_restaurant
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_suggest_restaurant
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_suggest_restaurant
 * affirm
     - restaurant: utter_happy
 
@@ -1379,12 +1379,12 @@
     - restaurant: utter_ask_price
 * correct{"cuisine": "french"}
     - slot{"cuisine": "french"}
-    - correct: utter_correct_cuisine_restaurant
-    - correct: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_correct_cuisine_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * correct{"cuisine": "italian"}
     - slot{"cuisine": "italian"}
-    - correct: utter_correct_cuisine_restaurant
-    - correct: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_correct_cuisine_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * inform{"price": "expensive"}
     - restaurant: utter_ask_location
 * inform{"location": "paris"}
@@ -1395,8 +1395,8 @@
     - slot{"restaurant": "restaurant"}
     - restaurant: utter_suggest_restaurant
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_suggest_restaurant
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_suggest_restaurant
 * affirm
     - restaurant: utter_happy
 
@@ -1411,11 +1411,11 @@
     - slot{"location": "rome"}
     - restaurant: utter_ask_price
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * explain
-    - explain: utter_explain_price_restaurant
-    - explain: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_explain_price_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * inform{"price": "expensive"}
     - restaurant: utter_ask_cuisine
 * inform{"cuisine": "italian"}
@@ -1424,8 +1424,8 @@
     - slot{"restaurant": "restaurant"}
     - restaurant: utter_suggest_restaurant
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_suggest_restaurant
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_suggest_restaurant
 * affirm
     - restaurant: utter_happy
 
@@ -1440,11 +1440,11 @@
     - slot{"people": "6"}
     - restaurant: utter_ask_cuisine
 * did_that_work
-    - did_that_work: utter_more_info_restaurant
-    - did_that_work: utter_ask_cuisine
+    - chitchat-explain-correct-didthatwork: utter_more_info_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_cuisine
 * explain
-    - explain: utter_explain_cuisine_restaurant
-    - explain: utter_ask_cuisine
+    - chitchat-explain-correct-didthatwork: utter_explain_cuisine_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_cuisine
 * inform{"cuisine": "italian"}
     - restaurant: utter_ask_location
 * inform{"location": "paris"}
@@ -1453,11 +1453,11 @@
     - slot{"restaurant": "restaurant"}
     - restaurant: utter_suggest_restaurant
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_suggest_restaurant
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_suggest_restaurant
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_suggest_restaurant
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_suggest_restaurant
 * affirm
     - restaurant: utter_happy
 
@@ -1470,11 +1470,11 @@
     - slot{"price": "mid-range"}
     - restaurant: utter_ask_people
 * did_that_work
-    - did_that_work: utter_more_info_restaurant
-    - did_that_work: utter_ask_people
+    - chitchat-explain-correct-didthatwork: utter_more_info_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_people
 * explain
-    - explain: utter_explain_people_restaurant
-    - explain: utter_ask_people
+    - chitchat-explain-correct-didthatwork: utter_explain_people_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_people
 * inform{"people": "4"}
     - restaurant: utter_ask_cuisine
 * inform{"cuisine": "italian"}
@@ -1485,14 +1485,14 @@
     - slot{"restaurant": "restaurant"}
     - restaurant: utter_suggest_restaurant
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_suggest_restaurant
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_suggest_restaurant
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_suggest_restaurant
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_suggest_restaurant
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_suggest_restaurant
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_suggest_restaurant
 * affirm
     - restaurant: utter_happy
 
@@ -1504,12 +1504,12 @@
     - slot{"cuisine": "italian"}
     - restaurant: utter_ask_price
 * did_that_work
-    - did_that_work: utter_more_info_restaurant
-    - did_that_work: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_more_info_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * correct{"cuisine": "chinese"}
     - slot{"cuisine": "chinese"}
-    - correct: utter_correct_cuisine_restaurant
-    - correct: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_correct_cuisine_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * inform{"price": "expensive"}
     - restaurant: utter_ask_location
 * inform{"location": "paris"}
@@ -1520,11 +1520,11 @@
     - slot{"restaurant": "restaurant"}
     - restaurant: utter_suggest_restaurant
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_suggest_restaurant
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_suggest_restaurant
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_suggest_restaurant
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_suggest_restaurant
 * affirm
     - restaurant: utter_happy
 
@@ -1537,11 +1537,11 @@
     - slot{"cuisine": "italian"}
     - restaurant: utter_ask_price
 * did_that_work
-    - did_that_work: utter_more_info_restaurant
-    - did_that_work: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_more_info_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * did_that_work
-    - did_that_work: utter_more_info_restaurant
-    - did_that_work: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_more_info_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * inform{"price": "mid-range"}
     - slot{"price": "mid-range"}
     - restaurant: utter_ask_location
@@ -1552,14 +1552,14 @@
     - slot{"restaurant": "restaurant"}
     - restaurant: utter_suggest_restaurant
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_suggest_restaurant
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_suggest_restaurant
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_suggest_restaurant
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_suggest_restaurant
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_suggest_restaurant
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_suggest_restaurant
 * affirm
     - restaurant: utter_happy
 
@@ -1573,27 +1573,27 @@
     - restaurant: utter_ask_people
 * correct{"price": "cheap"}
     - slot{"price": "cheap"}
-    - correct: utter_correct_price_restaurant
-    - correct: utter_ask_people
+    - chitchat-explain-correct-didthatwork: utter_correct_price_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_people
 * inform{"people": "1"}
     - slot{"people": "1"}
     - restaurant: utter_ask_cuisine
 * did_that_work
-    - did_that_work: utter_more_info_restaurant
-    - did_that_work: utter_ask_cuisine
+    - chitchat-explain-correct-didthatwork: utter_more_info_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_cuisine
 * did_that_work
-    - did_that_work: utter_more_info_restaurant
-    - did_that_work: utter_ask_cuisine
+    - chitchat-explain-correct-didthatwork: utter_more_info_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_cuisine
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_ask_cuisine
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_ask_cuisine
 * did_that_work
-    - did_that_work: utter_more_info_restaurant
-    - did_that_work: utter_ask_cuisine
+    - chitchat-explain-correct-didthatwork: utter_more_info_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_cuisine
 * correct{"price": "mid-range"}
     - slot{"price": "mid-range"}
-    - correct: utter_correct_price_restaurant
-    - correct: utter_ask_cuisine
+    - chitchat-explain-correct-didthatwork: utter_correct_price_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_cuisine
 * inform{"cuisine": "chinese"}
     - restaurant: utter_ask_location
 * inform{"location": "rome"}
@@ -1602,8 +1602,8 @@
     - slot{"restaurant": "restaurant"}
     - restaurant: utter_suggest_restaurant
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_suggest_restaurant
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_suggest_restaurant
 * affirm
     - restaurant: utter_happy
 
@@ -1616,11 +1616,11 @@
     - slot{"people": "2"}
     - restaurant: utter_ask_location
 * explain
-    - explain: utter_explain_location_restaurant
-    - explain: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_explain_location_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * did_that_work
-    - did_that_work: utter_more_info_restaurant
-    - did_that_work: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_more_info_restaurant
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * inform{"location": "paris"}
     - restaurant: utter_ask_price
 * inform{"price": "expensive"}
@@ -1631,10 +1631,10 @@
     - slot{"restaurant": "restaurant"}
     - restaurant: utter_suggest_restaurant
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_suggest_restaurant
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_suggest_restaurant
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_suggest_restaurant
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_suggest_restaurant
 * affirm
     - restaurant: utter_happy

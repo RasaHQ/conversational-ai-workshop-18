@@ -186,7 +186,4 @@ actions:
 topics:
   - hotel
   - restaurant
-  - chitchat
-  - explain
-  - did_that_work
-  - correct
+  - chitchat-explain-correct-didthatwork

@@ -71,6 +71,11 @@
     "prev_utter_more_info_hotel",
     "prev_utter_more_info_restaurant",
     "prev_action_search_restaurant",
-    "prev_action_search_hotel"
+    "prev_action_search_hotel",
+    "prev_topic_None",
+    "prev_topic_hotel",
+    "prev_topic_restaurant",
+    "prev_topic_chitchat-explain-correct-didthatwork",
+    "prev_flag_None"
   ]
 }

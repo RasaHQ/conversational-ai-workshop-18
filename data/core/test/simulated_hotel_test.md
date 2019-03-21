@@ -6,11 +6,11 @@
     - slot{"people": "4"}
     - hotel: utter_ask_location
 * did_that_work
-    - did_that_work: utter_more_info_hotel
-    - did_that_work: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_more_info_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * explain
-    - explain: utter_explain_location_hotel
-    - explain: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_explain_location_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * inform{"location": "paris"}
     - hotel: utter_ask_price
 * inform{"price": "expensive"}
@@ -18,19 +18,19 @@
 * inform{"startdate": "10.03.2018"}
     - hotel: utter_ask_enddate
 * explain
-    - explain: utter_explain_enddate_hotel
-    - explain: utter_ask_enddate
+    - chitchat-explain-correct-didthatwork: utter_explain_enddate_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_enddate
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_ask_enddate
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_ask_enddate
 * inform{"enddate": "10.03.2018"}
     - hotel: utter_filled_slots
     - hotel: action_search_hotel
     - slot{"hotel": "hotel"}
     - hotel: utter_suggest_hotel
 * did_that_work
-    - did_that_work: utter_worked_hotel
-    - did_that_work: utter_suggest_hotel
+    - chitchat-explain-correct-didthatwork: utter_worked_hotel
+    - chitchat-explain-correct-didthatwork: utter_suggest_hotel
 * affirm
     - hotel: utter_happy
 
@@ -42,8 +42,8 @@
     - slot{"startdate": "today"}
     - hotel: utter_ask_enddate
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_ask_enddate
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_ask_enddate
 * inform{"enddate": "May 26th"}
     - slot{"enddate": "May 26th"}
     - hotel: utter_ask_price
@@ -51,14 +51,14 @@
     - slot{"price": "mid-range"}
     - hotel: utter_ask_location
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * explain
-    - explain: utter_explain_location_hotel
-    - explain: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_explain_location_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * inform{"location": "paris"}
     - hotel: utter_ask_people
 * inform{"people": "4"}
@@ -67,8 +67,8 @@
     - slot{"hotel": "hotel"}
     - hotel: utter_suggest_hotel
 * did_that_work
-    - did_that_work: utter_worked_hotel
-    - did_that_work: utter_suggest_hotel
+    - chitchat-explain-correct-didthatwork: utter_worked_hotel
+    - chitchat-explain-correct-didthatwork: utter_suggest_hotel
 * affirm
     - hotel: utter_happy
 
@@ -80,11 +80,11 @@
     - slot{"price": "expensive"}
     - hotel: utter_ask_people
 * did_that_work
-    - did_that_work: utter_more_info_hotel
-    - did_that_work: utter_ask_people
+    - chitchat-explain-correct-didthatwork: utter_more_info_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_people
 * explain
-    - explain: utter_explain_people_hotel
-    - explain: utter_ask_people
+    - chitchat-explain-correct-didthatwork: utter_explain_people_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_people
 * inform{"people": "4"}
     - hotel: utter_ask_startdate
 * inform{"startdate": "10.03.2018"}
@@ -92,11 +92,11 @@
 * inform{"enddate": "10.03.2018"}
     - hotel: utter_ask_location
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * inform{"location": "paris"}
     - hotel: utter_filled_slots
     - hotel: action_search_hotel
@@ -120,19 +120,19 @@
     - slot{"startdate": "May 25th"}
     - hotel: utter_ask_enddate
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_ask_enddate
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_ask_enddate
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_ask_enddate
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_ask_enddate
 * inform{"enddate": "10.03.2018"}
     - hotel: utter_filled_slots
     - hotel: action_search_hotel
     - slot{"hotel": "hotel"}
     - hotel: utter_suggest_hotel
 * did_that_work
-    - did_that_work: utter_worked_hotel
-    - did_that_work: utter_suggest_hotel
+    - chitchat-explain-correct-didthatwork: utter_worked_hotel
+    - chitchat-explain-correct-didthatwork: utter_suggest_hotel
 * affirm
     - hotel: utter_happy
 
@@ -144,25 +144,25 @@
     - slot{"location": "london"}
     - hotel: utter_ask_people
 * did_that_work
-    - did_that_work: utter_more_info_hotel
-    - did_that_work: utter_ask_people
+    - chitchat-explain-correct-didthatwork: utter_more_info_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_people
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_ask_people
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_ask_people
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_ask_people
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_ask_people
 * correct{"location": "london"}
     - slot{"location": "london"}
-    - correct: utter_correct_location_hotel
-    - correct: utter_ask_people
+    - chitchat-explain-correct-didthatwork: utter_correct_location_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_people
 * inform{"people": "4"}
     - hotel: utter_ask_price
 * inform{"price": "expensive"}
     - hotel: utter_ask_startdate
 * explain
-    - explain: utter_explain_startdate_hotel
-    - explain: utter_ask_startdate
+    - chitchat-explain-correct-didthatwork: utter_explain_startdate_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_startdate
 * inform{"startdate": "10.03.2018"}
     - hotel: utter_ask_enddate
 * inform{"enddate": "10.03.2018"}
@@ -172,10 +172,10 @@
     - hotel: utter_suggest_hotel
 * correct{"enddate": "tomorrow"}
     - slot{"enddate": "tomorrow"}
-    - correct: utter_correct_enddate_hotel
-    - correct: action_search_hotel
+    - chitchat-explain-correct-didthatwork: utter_correct_enddate_hotel
+    - chitchat-explain-correct-didthatwork: action_search_hotel
     - slot{"hotel": "hotel"}
-    - correct: utter_suggest_hotel
+    - chitchat-explain-correct-didthatwork: utter_suggest_hotel
 * affirm
     - hotel: utter_happy
 
@@ -187,18 +187,18 @@
     - slot{"enddate": "next week"}
     - hotel: utter_ask_startdate
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_ask_startdate
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_ask_startdate
 * inform{"startdate": "May 25th"}
     - slot{"startdate": "May 25th"}
     - hotel: utter_ask_location
 * correct{"enddate": "tomorrow"}
     - slot{"enddate": "tomorrow"}
-    - correct: utter_correct_enddate_hotel
-    - correct: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_correct_enddate_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * explain
-    - explain: utter_explain_location_hotel
-    - explain: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_explain_location_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * inform{"location": "paris"}
     - hotel: utter_ask_price
 * inform{"price": "expensive"}
@@ -209,11 +209,11 @@
     - slot{"hotel": "hotel"}
     - hotel: utter_suggest_hotel
 * did_that_work
-    - did_that_work: utter_worked_hotel
-    - did_that_work: utter_suggest_hotel
+    - chitchat-explain-correct-didthatwork: utter_worked_hotel
+    - chitchat-explain-correct-didthatwork: utter_suggest_hotel
 * did_that_work
-    - did_that_work: utter_worked_hotel
-    - did_that_work: utter_suggest_hotel
+    - chitchat-explain-correct-didthatwork: utter_worked_hotel
+    - chitchat-explain-correct-didthatwork: utter_suggest_hotel
 * affirm
     - hotel: utter_happy
 
@@ -225,21 +225,21 @@
     - slot{"price": "mid-range"}
     - hotel: utter_ask_people
 * did_that_work
-    - did_that_work: utter_more_info_hotel
-    - did_that_work: utter_ask_people
+    - chitchat-explain-correct-didthatwork: utter_more_info_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_people
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_ask_people
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_ask_people
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_ask_people
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_ask_people
 * did_that_work
-    - did_that_work: utter_more_info_hotel
-    - did_that_work: utter_ask_people
+    - chitchat-explain-correct-didthatwork: utter_more_info_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_people
 * correct{"price": "expensive"}
     - slot{"price": "expensive"}
-    - correct: utter_correct_price_hotel
-    - correct: utter_ask_people
+    - chitchat-explain-correct-didthatwork: utter_correct_price_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_people
 * inform{"people": "4"}
     - hotel: utter_ask_startdate
 * inform{"startdate": "10.03.2018"}
@@ -252,11 +252,11 @@
     - slot{"hotel": "hotel"}
     - hotel: utter_suggest_hotel
 * did_that_work
-    - did_that_work: utter_worked_hotel
-    - did_that_work: utter_suggest_hotel
+    - chitchat-explain-correct-didthatwork: utter_worked_hotel
+    - chitchat-explain-correct-didthatwork: utter_suggest_hotel
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_suggest_hotel
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_suggest_hotel
 * affirm
     - hotel: utter_happy
 
@@ -268,21 +268,21 @@
     - slot{"price": "mid-range"}
     - hotel: utter_ask_people
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_ask_people
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_ask_people
 * did_that_work
-    - did_that_work: utter_more_info_hotel
-    - did_that_work: utter_ask_people
+    - chitchat-explain-correct-didthatwork: utter_more_info_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_people
 * inform{"people": "4"}
     - hotel: utter_ask_startdate
 * inform{"startdate": "10.03.2018"}
     - hotel: utter_ask_enddate
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_ask_enddate
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_ask_enddate
 * explain
-    - explain: utter_explain_enddate_hotel
-    - explain: utter_ask_enddate
+    - chitchat-explain-correct-didthatwork: utter_explain_enddate_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_enddate
 * inform{"enddate": "10.03.2018"}
     - hotel: utter_ask_location
 * inform{"location": "paris"}
@@ -291,11 +291,11 @@
     - slot{"hotel": "hotel"}
     - hotel: utter_suggest_hotel
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_suggest_hotel
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_suggest_hotel
 * did_that_work
-    - did_that_work: utter_worked_hotel
-    - did_that_work: utter_suggest_hotel
+    - chitchat-explain-correct-didthatwork: utter_worked_hotel
+    - chitchat-explain-correct-didthatwork: utter_suggest_hotel
 * affirm
     - hotel: utter_happy
 
@@ -308,30 +308,30 @@
     - slot{"people": "2"}
     - hotel: utter_ask_location
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * explain
-    - explain: utter_explain_location_hotel
-    - explain: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_explain_location_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * inform{"location": "paris"}
     - hotel: utter_ask_startdate
 * did_that_work
-    - did_that_work: utter_more_info_hotel
-    - did_that_work: utter_ask_startdate
+    - chitchat-explain-correct-didthatwork: utter_more_info_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_startdate
 * inform{"startdate": "May 25th"}
     - hotel: utter_ask_price
 * explain
-    - explain: utter_explain_price_hotel
-    - explain: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_explain_price_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * did_that_work
-    - did_that_work: utter_more_info_hotel
-    - did_that_work: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_more_info_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * inform{"price": "cheap"}
     - hotel: utter_filled_slots
     - hotel: action_search_hotel
@@ -354,17 +354,17 @@
     - slot{"location": "rome"}
     - hotel: utter_ask_price
 * explain
-    - explain: utter_explain_price_hotel
-    - explain: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_explain_price_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * correct{"enddate": "May 26th"}
     - slot{"enddate": "May 26th"}
-    - correct: utter_correct_enddate_hotel
-    - correct: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_correct_enddate_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * inform{"price": "expensive"}
     - hotel: utter_ask_people
 * did_that_work
-    - did_that_work: utter_more_info_hotel
-    - did_that_work: utter_ask_people
+    - chitchat-explain-correct-didthatwork: utter_more_info_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_people
 * inform{"people": "4"}
     - hotel: utter_filled_slots
     - hotel: action_search_hotel
@@ -381,11 +381,11 @@
     - slot{"people": "6"}
     - hotel: utter_ask_location
 * explain
-    - explain: utter_explain_location_hotel
-    - explain: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_explain_location_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * did_that_work
-    - did_that_work: utter_more_info_hotel
-    - did_that_work: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_more_info_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * inform{"location": "paris"}
     - hotel: utter_ask_price
 * inform{"price": "expensive"}
@@ -393,11 +393,11 @@
 * inform{"startdate": "x"}
     - hotel: utter_ask_enddate
 * correct{"startdate": "x"}
-    - correct: utter_correct_startdate_hotel
-    - correct: utter_ask_enddate
+    - chitchat-explain-correct-didthatwork: utter_correct_startdate_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_enddate
 * did_that_work
-    - did_that_work: utter_more_info_hotel
-    - did_that_work: utter_ask_enddate
+    - chitchat-explain-correct-didthatwork: utter_more_info_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_enddate
 * inform{"startdate": "10.03.2018"}
     - hotel: utter_ask_enddate
 * inform{"enddate": "10.03.2018"}
@@ -416,17 +416,17 @@
     - slot{"people": "6"}
     - hotel: utter_ask_location
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * inform{"location": "rome"}
     - slot{"location": "rome"}
     - hotel: utter_ask_price
 * explain
-    - explain: utter_explain_price_hotel
-    - explain: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_explain_price_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * inform{"price": "expensive"}
     - slot{"price": "expensive"}
     - hotel: utter_ask_startdate
@@ -434,16 +434,16 @@
     - slot{"startdate": "May 25th"}
     - hotel: utter_ask_enddate
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_ask_enddate
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_ask_enddate
 * inform{"enddate": "10.03.2018"}
     - hotel: utter_filled_slots
     - hotel: action_search_hotel
     - slot{"hotel": "hotel"}
     - hotel: utter_suggest_hotel
 * did_that_work
-    - did_that_work: utter_worked_hotel
-    - did_that_work: utter_suggest_hotel
+    - chitchat-explain-correct-didthatwork: utter_worked_hotel
+    - chitchat-explain-correct-didthatwork: utter_suggest_hotel
 * affirm
     - hotel: utter_happy
 
@@ -458,32 +458,32 @@
     - slot{"people": "1"}
     - hotel: utter_ask_price
 * did_that_work
-    - did_that_work: utter_more_info_hotel
-    - did_that_work: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_more_info_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * inform{"price": "expensive"}
     - hotel: utter_ask_startdate
 * explain
-    - explain: utter_explain_startdate_hotel
-    - explain: utter_ask_startdate
+    - chitchat-explain-correct-didthatwork: utter_explain_startdate_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_startdate
 * explain
-    - explain: utter_explain_startdate_hotel
-    - explain: utter_ask_startdate
+    - chitchat-explain-correct-didthatwork: utter_explain_startdate_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_startdate
 * inform{"startdate": "10.03.2018"}
     - hotel: utter_ask_enddate
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_ask_enddate
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_ask_enddate
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_ask_enddate
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_ask_enddate
 * inform{"enddate": "10.03.2018"}
     - hotel: utter_filled_slots
     - hotel: action_search_hotel
     - slot{"hotel": "hotel"}
     - hotel: utter_suggest_hotel
 * did_that_work
-    - did_that_work: utter_worked_hotel
-    - did_that_work: utter_suggest_hotel
+    - chitchat-explain-correct-didthatwork: utter_worked_hotel
+    - chitchat-explain-correct-didthatwork: utter_suggest_hotel
 * affirm
     - hotel: utter_happy
 
@@ -496,45 +496,45 @@
     - hotel: utter_ask_people
 * correct{"price": "cheap"}
     - slot{"price": "cheap"}
-    - correct: utter_correct_price_hotel
-    - correct: utter_ask_people
+    - chitchat-explain-correct-didthatwork: utter_correct_price_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_people
 * explain
-    - explain: utter_explain_people_hotel
-    - explain: utter_ask_people
+    - chitchat-explain-correct-didthatwork: utter_explain_people_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_people
 * explain
-    - explain: utter_explain_people_hotel
-    - explain: utter_ask_people
+    - chitchat-explain-correct-didthatwork: utter_explain_people_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_people
 * inform{"people": "2"}
     - slot{"people": "2"}
     - hotel: utter_ask_startdate
 * did_that_work
-    - did_that_work: utter_more_info_hotel
-    - did_that_work: utter_ask_startdate
+    - chitchat-explain-correct-didthatwork: utter_more_info_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_startdate
 * explain
-    - explain: utter_explain_startdate_hotel
-    - explain: utter_ask_startdate
+    - chitchat-explain-correct-didthatwork: utter_explain_startdate_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_startdate
 * correct{"people": "4"}
     - slot{"people": "4"}
-    - correct: utter_correct_people_hotel
-    - correct: utter_ask_startdate
+    - chitchat-explain-correct-didthatwork: utter_correct_people_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_startdate
 * inform{"startdate": "10.03.2018"}
     - hotel: utter_ask_enddate
 * inform{"enddate": "10.03.2018"}
     - hotel: utter_ask_location
 * did_that_work
-    - did_that_work: utter_more_info_hotel
-    - did_that_work: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_more_info_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * inform{"location": "paris"}
     - hotel: utter_filled_slots
     - hotel: action_search_hotel
     - slot{"hotel": "hotel"}
     - hotel: utter_suggest_hotel
 * did_that_work
-    - did_that_work: utter_worked_hotel
-    - did_that_work: utter_suggest_hotel
+    - chitchat-explain-correct-didthatwork: utter_worked_hotel
+    - chitchat-explain-correct-didthatwork: utter_suggest_hotel
 * affirm
     - hotel: utter_happy
 
@@ -546,23 +546,23 @@
     - slot{"price": "cheap"}
     - hotel: utter_ask_people
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_ask_people
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_ask_people
 * explain
-    - explain: utter_explain_people_hotel
-    - explain: utter_ask_people
+    - chitchat-explain-correct-didthatwork: utter_explain_people_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_people
 * inform{"people": "4"}
     - hotel: utter_ask_startdate
 * inform{"startdate": "10.03.2018"}
     - hotel: utter_ask_enddate
 * did_that_work
-    - did_that_work: utter_more_info_hotel
-    - did_that_work: utter_ask_enddate
+    - chitchat-explain-correct-didthatwork: utter_more_info_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_enddate
 * inform{"enddate": "10.03.2018"}
     - hotel: utter_ask_location
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * inform{"location": "paris"}
     - hotel: utter_filled_slots
     - hotel: action_search_hotel
@@ -580,34 +580,34 @@
     - hotel: utter_ask_startdate
 * correct{"enddate": "May 26th"}
     - slot{"enddate": "May 26th"}
-    - correct: utter_correct_enddate_hotel
-    - correct: utter_ask_startdate
+    - chitchat-explain-correct-didthatwork: utter_correct_enddate_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_startdate
 * explain
-    - explain: utter_explain_startdate_hotel
-    - explain: utter_ask_startdate
+    - chitchat-explain-correct-didthatwork: utter_explain_startdate_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_startdate
 * inform{"startdate": "10.03.2018"}
     - hotel: utter_ask_location
 * inform{"location": "paris"}
     - hotel: utter_ask_price
 * did_that_work
-    - did_that_work: utter_more_info_hotel
-    - did_that_work: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_more_info_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * explain
-    - explain: utter_explain_price_hotel
-    - explain: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_explain_price_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * inform{"price": "expensive"}
     - hotel: utter_ask_people
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_ask_people
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_ask_people
 * inform{"people": "4"}
     - hotel: utter_filled_slots
     - hotel: action_search_hotel
     - slot{"hotel": "hotel"}
     - hotel: utter_suggest_hotel
 * did_that_work
-    - did_that_work: utter_worked_hotel
-    - did_that_work: utter_suggest_hotel
+    - chitchat-explain-correct-didthatwork: utter_worked_hotel
+    - chitchat-explain-correct-didthatwork: utter_suggest_hotel
 * affirm
     - hotel: utter_happy
 
@@ -622,29 +622,29 @@
     - slot{"location": "rome"}
     - hotel: utter_ask_price
 * did_that_work
-    - did_that_work: utter_more_info_hotel
-    - did_that_work: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_more_info_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * inform{"price": "expensive"}
     - hotel: utter_ask_startdate
 * correct{"location": "x"}
-    - correct: utter_correct_location_hotel
-    - correct: utter_ask_startdate
+    - chitchat-explain-correct-didthatwork: utter_correct_location_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_startdate
 * correct{"people": "x"}
-    - correct: utter_correct_people_hotel
-    - correct: utter_ask_startdate
+    - chitchat-explain-correct-didthatwork: utter_correct_people_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_startdate
 * inform{"startdate": "10.03.2018"}
     - hotel: utter_ask_enddate
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_ask_enddate
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_ask_enddate
 * inform{"enddate": "10.03.2018"}
     - hotel: utter_filled_slots
     - hotel: action_search_hotel
     - slot{"hotel": "hotel"}
     - hotel: utter_suggest_hotel
 * did_that_work
-    - did_that_work: utter_worked_hotel
-    - did_that_work: utter_suggest_hotel
+    - chitchat-explain-correct-didthatwork: utter_worked_hotel
+    - chitchat-explain-correct-didthatwork: utter_suggest_hotel
 * affirm
     - hotel: utter_happy
 
@@ -657,18 +657,18 @@
     - hotel: utter_ask_location
 * correct{"people": "4"}
     - slot{"people": "4"}
-    - correct: utter_correct_people_hotel
-    - correct: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_correct_people_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * correct{"people": "1"}
     - slot{"people": "1"}
-    - correct: utter_correct_people_hotel
-    - correct: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_correct_people_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * explain
-    - explain: utter_explain_location_hotel
-    - explain: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_explain_location_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * inform{"location": "paris"}
     - hotel: utter_ask_price
 * inform{"price": "expensive"}
@@ -681,8 +681,8 @@
     - slot{"hotel": "hotel"}
     - hotel: utter_suggest_hotel
 * did_that_work
-    - did_that_work: utter_worked_hotel
-    - did_that_work: utter_suggest_hotel
+    - chitchat-explain-correct-didthatwork: utter_worked_hotel
+    - chitchat-explain-correct-didthatwork: utter_suggest_hotel
 * affirm
     - hotel: utter_happy
 
@@ -694,14 +694,14 @@
     - slot{"people": "2"}
     - hotel: utter_ask_location
 * did_that_work
-    - did_that_work: utter_more_info_hotel
-    - did_that_work: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_more_info_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * did_that_work
-    - did_that_work: utter_more_info_hotel
-    - did_that_work: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_more_info_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * inform{"location": "paris"}
     - hotel: utter_ask_price
 * inform{"price": "expensive"}
@@ -709,14 +709,14 @@
 * inform{"startdate": "10.03.2018"}
     - hotel: utter_ask_enddate
 * explain
-    - explain: utter_explain_enddate_hotel
-    - explain: utter_ask_enddate
+    - chitchat-explain-correct-didthatwork: utter_explain_enddate_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_enddate
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_ask_enddate
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_ask_enddate
 * explain
-    - explain: utter_explain_enddate_hotel
-    - explain: utter_ask_enddate
+    - chitchat-explain-correct-didthatwork: utter_explain_enddate_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_enddate
 * inform{"enddate": "10.03.2018"}
     - hotel: utter_filled_slots
     - hotel: action_search_hotel
@@ -733,12 +733,12 @@
     - slot{"price": "mid-range"}
     - hotel: utter_ask_people
 * did_that_work
-    - did_that_work: utter_more_info_hotel
-    - did_that_work: utter_ask_people
+    - chitchat-explain-correct-didthatwork: utter_more_info_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_people
 * correct{"price": "expensive"}
     - slot{"price": "expensive"}
-    - correct: utter_correct_price_hotel
-    - correct: utter_ask_people
+    - chitchat-explain-correct-didthatwork: utter_correct_price_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_people
 * inform{"people": "4"}
     - hotel: utter_ask_startdate
 * inform{"startdate": "10.03.2018"}
@@ -747,24 +747,24 @@
     - hotel: utter_ask_location
 * correct{"price": "expensive"}
     - slot{"price": "expensive"}
-    - correct: utter_correct_price_hotel
-    - correct: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_correct_price_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * correct{"price": "expensive"}
     - slot{"price": "expensive"}
-    - correct: utter_correct_price_hotel
-    - correct: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_correct_price_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * correct{"price": "expensive"}
     - slot{"price": "expensive"}
-    - correct: utter_correct_price_hotel
-    - correct: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_correct_price_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * inform{"location": "paris"}
     - hotel: utter_filled_slots
     - hotel: action_search_hotel
     - slot{"hotel": "hotel"}
     - hotel: utter_suggest_hotel
 * did_that_work
-    - did_that_work: utter_worked_hotel
-    - did_that_work: utter_suggest_hotel
+    - chitchat-explain-correct-didthatwork: utter_worked_hotel
+    - chitchat-explain-correct-didthatwork: utter_suggest_hotel
 * affirm
     - hotel: utter_happy
 
@@ -776,39 +776,39 @@
     - slot{"people": "2"}
     - hotel: utter_ask_location
 * did_that_work
-    - did_that_work: utter_more_info_hotel
-    - did_that_work: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_more_info_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * inform{"location": "rome"}
     - slot{"location": "rome"}
     - hotel: utter_ask_price
 * did_that_work
-    - did_that_work: utter_more_info_hotel
-    - did_that_work: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_more_info_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * correct{"people": "1"}
     - slot{"people": "1"}
-    - correct: utter_correct_people_hotel
-    - correct: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_correct_people_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * did_that_work
-    - did_that_work: utter_more_info_hotel
-    - did_that_work: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_more_info_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * inform{"price": "expensive"}
     - hotel: utter_ask_startdate
 * did_that_work
-    - did_that_work: utter_more_info_hotel
-    - did_that_work: utter_ask_startdate
+    - chitchat-explain-correct-didthatwork: utter_more_info_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_startdate
 * inform{"startdate": "10.03.2018"}
     - hotel: utter_ask_enddate
 * did_that_work
-    - did_that_work: utter_more_info_hotel
-    - did_that_work: utter_ask_enddate
+    - chitchat-explain-correct-didthatwork: utter_more_info_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_enddate
 * inform{"enddate": "10.03.2018"}
     - hotel: utter_filled_slots
     - hotel: action_search_hotel
     - slot{"hotel": "hotel"}
     - hotel: utter_suggest_hotel
 * did_that_work
-    - did_that_work: utter_worked_hotel
-    - did_that_work: utter_suggest_hotel
+    - chitchat-explain-correct-didthatwork: utter_worked_hotel
+    - chitchat-explain-correct-didthatwork: utter_suggest_hotel
 * affirm
     - hotel: utter_happy
 
@@ -821,11 +821,11 @@
     - hotel: utter_ask_location
 * correct{"people": "1"}
     - slot{"people": "1"}
-    - correct: utter_correct_people_hotel
-    - correct: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_correct_people_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * explain
-    - explain: utter_explain_location_hotel
-    - explain: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_explain_location_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * inform{"location": "paris"}
     - hotel: utter_ask_price
 * inform{"price": "expensive"}
@@ -833,17 +833,17 @@
 * inform{"startdate": "10.03.2018"}
     - hotel: utter_ask_enddate
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_ask_enddate
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_ask_enddate
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_ask_enddate
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_ask_enddate
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_ask_enddate
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_ask_enddate
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_ask_enddate
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_ask_enddate
 * inform{"enddate": "10.03.2018"}
     - hotel: utter_filled_slots
     - hotel: action_search_hotel
@@ -860,26 +860,26 @@
     - slot{"price": "expensive"}
     - hotel: utter_ask_people
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_ask_people
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_ask_people
 * correct{"price": "mid-range"}
     - slot{"price": "mid-range"}
-    - correct: utter_correct_price_hotel
-    - correct: utter_ask_people
+    - chitchat-explain-correct-didthatwork: utter_correct_price_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_people
 * inform{"people": "4"}
     - hotel: utter_ask_startdate
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_ask_startdate
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_ask_startdate
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_ask_startdate
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_ask_startdate
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_ask_startdate
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_ask_startdate
 * did_that_work
-    - did_that_work: utter_more_info_hotel
-    - did_that_work: utter_ask_startdate
+    - chitchat-explain-correct-didthatwork: utter_more_info_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_startdate
 * inform{"startdate": "10.03.2018"}
     - hotel: utter_ask_enddate
 * inform{"enddate": "10.03.2018"}
@@ -890,8 +890,8 @@
     - slot{"hotel": "hotel"}
     - hotel: utter_suggest_hotel
 * did_that_work
-    - did_that_work: utter_worked_hotel
-    - did_that_work: utter_suggest_hotel
+    - chitchat-explain-correct-didthatwork: utter_worked_hotel
+    - chitchat-explain-correct-didthatwork: utter_suggest_hotel
 * affirm
     - hotel: utter_happy
 
@@ -904,27 +904,27 @@
     - hotel: utter_ask_startdate
 * correct{"enddate": "tomorrow"}
     - slot{"enddate": "tomorrow"}
-    - correct: utter_correct_enddate_hotel
-    - correct: utter_ask_startdate
+    - chitchat-explain-correct-didthatwork: utter_correct_enddate_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_startdate
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_ask_startdate
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_ask_startdate
 * inform{"startdate": "10.03.2018"}
     - hotel: utter_ask_location
 * inform{"location": "paris"}
     - hotel: utter_ask_price
 * did_that_work
-    - did_that_work: utter_more_info_hotel
-    - did_that_work: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_more_info_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * did_that_work
-    - did_that_work: utter_more_info_hotel
-    - did_that_work: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_more_info_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * did_that_work
-    - did_that_work: utter_more_info_hotel
-    - did_that_work: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_more_info_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * did_that_work
-    - did_that_work: utter_more_info_hotel
-    - did_that_work: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_more_info_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * inform{"price": "expensive"}
     - hotel: utter_ask_people
 * inform{"people": "4"}
@@ -933,8 +933,8 @@
     - slot{"hotel": "hotel"}
     - hotel: utter_suggest_hotel
 * did_that_work
-    - did_that_work: utter_worked_hotel
-    - did_that_work: utter_suggest_hotel
+    - chitchat-explain-correct-didthatwork: utter_worked_hotel
+    - chitchat-explain-correct-didthatwork: utter_suggest_hotel
 * affirm
     - hotel: utter_happy
 
@@ -946,12 +946,12 @@
     - slot{"price": "cheap"}
     - hotel: utter_ask_people
 * did_that_work
-    - did_that_work: utter_more_info_hotel
-    - did_that_work: utter_ask_people
+    - chitchat-explain-correct-didthatwork: utter_more_info_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_people
 * correct{"price": "cheap"}
     - slot{"price": "cheap"}
-    - correct: utter_correct_price_hotel
-    - correct: utter_ask_people
+    - chitchat-explain-correct-didthatwork: utter_correct_price_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_people
 * inform{"people": "4"}
     - hotel: utter_ask_startdate
 * inform{"startdate": "10.03.2018"}
@@ -964,14 +964,14 @@
     - slot{"hotel": "hotel"}
     - hotel: utter_suggest_hotel
 * did_that_work
-    - did_that_work: utter_worked_hotel
-    - did_that_work: utter_suggest_hotel
+    - chitchat-explain-correct-didthatwork: utter_worked_hotel
+    - chitchat-explain-correct-didthatwork: utter_suggest_hotel
 * did_that_work
-    - did_that_work: utter_worked_hotel
-    - did_that_work: utter_suggest_hotel
+    - chitchat-explain-correct-didthatwork: utter_worked_hotel
+    - chitchat-explain-correct-didthatwork: utter_suggest_hotel
 * did_that_work
-    - did_that_work: utter_worked_hotel
-    - did_that_work: utter_suggest_hotel
+    - chitchat-explain-correct-didthatwork: utter_worked_hotel
+    - chitchat-explain-correct-didthatwork: utter_suggest_hotel
 * affirm
     - hotel: utter_happy
 
@@ -986,24 +986,24 @@
     - hotel: utter_ask_price
 * correct{"startdate": "May 25th"}
     - slot{"startdate": "May 25th"}
-    - correct: utter_correct_startdate_hotel
-    - correct: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_correct_startdate_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * did_that_work
-    - did_that_work: utter_more_info_hotel
-    - did_that_work: utter_ask_price
+    - chitchat-explain-correct-didthatwork: utter_more_info_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_price
 * inform{"price": "expensive"}
     - hotel: utter_ask_enddate
 * explain
-    - explain: utter_explain_enddate_hotel
-    - explain: utter_ask_enddate
+    - chitchat-explain-correct-didthatwork: utter_explain_enddate_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_enddate
 * inform{"enddate": "10.03.2018"}
     - hotel: utter_filled_slots
     - hotel: action_search_hotel
     - slot{"hotel": "hotel"}
     - hotel: utter_suggest_hotel
 * did_that_work
-    - did_that_work: utter_worked_hotel
-    - did_that_work: utter_suggest_hotel
+    - chitchat-explain-correct-didthatwork: utter_worked_hotel
+    - chitchat-explain-correct-didthatwork: utter_suggest_hotel
 * affirm
     - hotel: utter_happy
 
@@ -1016,11 +1016,11 @@
     - hotel: utter_ask_location
 * correct{"people": "2"}
     - slot{"people": "2"}
-    - correct: utter_correct_people_hotel
-    - correct: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_correct_people_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * explain
-    - explain: utter_explain_location_hotel
-    - explain: utter_ask_location
+    - chitchat-explain-correct-didthatwork: utter_explain_location_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_location
 * inform{"location": "paris"}
     - hotel: utter_ask_price
 * inform{"price": "expensive"}
@@ -1028,28 +1028,28 @@
 * inform{"startdate": "10.03.2018"}
     - hotel: utter_ask_enddate
 * explain
-    - explain: utter_explain_enddate_hotel
-    - explain: utter_ask_enddate
+    - chitchat-explain-correct-didthatwork: utter_explain_enddate_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_enddate
 * explain
-    - explain: utter_explain_enddate_hotel
-    - explain: utter_ask_enddate
+    - chitchat-explain-correct-didthatwork: utter_explain_enddate_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_enddate
 * explain
-    - explain: utter_explain_enddate_hotel
-    - explain: utter_ask_enddate
+    - chitchat-explain-correct-didthatwork: utter_explain_enddate_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_enddate
 * explain
-    - explain: utter_explain_enddate_hotel
-    - explain: utter_ask_enddate
+    - chitchat-explain-correct-didthatwork: utter_explain_enddate_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_enddate
 * did_that_work
-    - did_that_work: utter_more_info_hotel
-    - did_that_work: utter_ask_enddate
+    - chitchat-explain-correct-didthatwork: utter_more_info_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_enddate
 * inform{"enddate": "10.03.2018"}
     - hotel: utter_filled_slots
     - hotel: action_search_hotel
     - slot{"hotel": "hotel"}
     - hotel: utter_suggest_hotel
 * did_that_work
-    - did_that_work: utter_worked_hotel
-    - did_that_work: utter_suggest_hotel
+    - chitchat-explain-correct-didthatwork: utter_worked_hotel
+    - chitchat-explain-correct-didthatwork: utter_suggest_hotel
 * affirm
     - hotel: utter_happy
 
@@ -1063,26 +1063,26 @@
     - hotel: utter_ask_enddate
 * correct{"startdate": "May 25th"}
     - slot{"startdate": "May 25th"}
-    - correct: utter_correct_startdate_hotel
-    - correct: utter_ask_enddate
+    - chitchat-explain-correct-didthatwork: utter_correct_startdate_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_enddate
 * did_that_work
-    - did_that_work: utter_more_info_hotel
-    - did_that_work: utter_ask_enddate
+    - chitchat-explain-correct-didthatwork: utter_more_info_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_enddate
 * inform{"enddate": "10.03.2018"}
     - hotel: utter_ask_location
 * inform{"location": "paris"}
     - hotel: utter_ask_people
 * did_that_work
-    - did_that_work: utter_more_info_hotel
-    - did_that_work: utter_ask_people
+    - chitchat-explain-correct-didthatwork: utter_more_info_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_people
 * inform{"people": "4"}
     - hotel: utter_filled_slots
     - hotel: action_search_hotel
     - slot{"hotel": "hotel"}
     - hotel: utter_suggest_hotel
 * did_that_work
-    - did_that_work: utter_worked_hotel
-    - did_that_work: utter_suggest_hotel
+    - chitchat-explain-correct-didthatwork: utter_worked_hotel
+    - chitchat-explain-correct-didthatwork: utter_suggest_hotel
 * affirm
     - hotel: utter_happy
 
@@ -1094,11 +1094,11 @@
     - slot{"enddate": "next week"}
     - hotel: utter_ask_startdate
 * explain
-    - explain: utter_explain_startdate_hotel
-    - explain: utter_ask_startdate
+    - chitchat-explain-correct-didthatwork: utter_explain_startdate_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_startdate
 * explain
-    - explain: utter_explain_startdate_hotel
-    - explain: utter_ask_startdate
+    - chitchat-explain-correct-didthatwork: utter_explain_startdate_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_startdate
 * inform{"startdate": "10.03.2018"}
     - hotel: utter_ask_location
 * inform{"location": "paris"}
@@ -1106,19 +1106,19 @@
 * inform{"price": "expensive"}
     - hotel: utter_ask_people
 * did_that_work
-    - did_that_work: utter_more_info_hotel
-    - did_that_work: utter_ask_people
+    - chitchat-explain-correct-didthatwork: utter_more_info_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_people
 * did_that_work
-    - did_that_work: utter_more_info_hotel
-    - did_that_work: utter_ask_people
+    - chitchat-explain-correct-didthatwork: utter_more_info_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_people
 * inform{"people": "4"}
     - hotel: utter_filled_slots
     - hotel: action_search_hotel
     - slot{"hotel": "hotel"}
     - hotel: utter_suggest_hotel
 * did_that_work
-    - did_that_work: utter_worked_hotel
-    - did_that_work: utter_suggest_hotel
+    - chitchat-explain-correct-didthatwork: utter_worked_hotel
+    - chitchat-explain-correct-didthatwork: utter_suggest_hotel
 * affirm
     - hotel: utter_happy
 
@@ -1131,18 +1131,18 @@
     - hotel: utter_ask_enddate
 * correct{"startdate": "next week"}
     - slot{"startdate": "next week"}
-    - correct: utter_correct_startdate_hotel
-    - correct: utter_ask_enddate
+    - chitchat-explain-correct-didthatwork: utter_correct_startdate_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_enddate
 * correct{"startdate": "next week"}
     - slot{"startdate": "next week"}
-    - correct: utter_correct_startdate_hotel
-    - correct: utter_ask_enddate
+    - chitchat-explain-correct-didthatwork: utter_correct_startdate_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_enddate
 * chitchat
-    - chitchat: utter_chitchat
-    - chitchat: utter_ask_enddate
+    - chitchat-explain-correct-didthatwork: utter_chitchat
+    - chitchat-explain-correct-didthatwork: utter_ask_enddate
 * explain
-    - explain: utter_explain_enddate_hotel
-    - explain: utter_ask_enddate
+    - chitchat-explain-correct-didthatwork: utter_explain_enddate_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_enddate
 * inform{"enddate": "10.03.2018"}
     - hotel: utter_ask_price
 * inform{"price": "expensive"}
@@ -1150,22 +1150,22 @@
 * inform{"location": "paris"}
     - hotel: utter_ask_people
 * correct{"location": "rome"}
-    - correct: utter_correct_location_hotel
-    - correct: utter_ask_people
+    - chitchat-explain-correct-didthatwork: utter_correct_location_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_people
 * correct{"price": "cheap"}
-    - correct: utter_correct_price_hotel
-    - correct: utter_ask_people
+    - chitchat-explain-correct-didthatwork: utter_correct_price_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_people
 * did_that_work
-    - did_that_work: utter_more_info_hotel
-    - did_that_work: utter_ask_people
+    - chitchat-explain-correct-didthatwork: utter_more_info_hotel
+    - chitchat-explain-correct-didthatwork: utter_ask_people
 * inform{"people": "4"}
     - hotel: utter_filled_slots
     - hotel: action_search_hotel
     - slot{"hotel": "hotel"}
     - hotel: utter_suggest_hotel
 * did_that_work
-    - did_that_work: utter_worked_hotel
-    - did_that_work: utter_suggest_hotel
+    - chitchat-explain-correct-didthatwork: utter_worked_hotel
+    - chitchat-explain-correct-didthatwork: utter_suggest_hotel
 * affirm
     - hotel: utter_happy
 
