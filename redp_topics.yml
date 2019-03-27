@@ -11,3 +11,4 @@ policies:
     attn_after_rnn: True
     skip_time: False
     use_topics: True
+  - name: FormPolicy
