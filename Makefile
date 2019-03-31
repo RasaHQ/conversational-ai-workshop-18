@@ -25,7 +25,10 @@ train_demo:
 	nohup python3 -u -m rasa_core.train --stories ~/rasa-demo/data/core-success -d ~/rasa-demo/domain.yml -o models_demo -c redp_topics.yml --augmentation 0 > train.out_demo
 
 train-compare:
-	nohup python -u -m rasa_core.train compare --stories ~/rasa-demo/data/core-success -d ~/rasa-demo/domain.yml -o comparison_models -c redp_topics.yml --augmentation 10 --runs 5 > train.out_demo 
+	python -m rasa_core.train compare --stories data/core/ -d domain.yml -o comparison_models -c redp.yml lstm_bin.yml lstm_feat.yml --augmentation 0 --runs 5
+
+evaluate-compare:
+	python -m rasa_core.evaluate compare --stories data/core/ --core comparison_models -o results/
 
 evaluate-compare:
 	python3 -m rasa_core.evaluate compare --stories data-simulated/test --core comparison_models -o results/
