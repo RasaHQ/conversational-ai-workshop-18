@@ -1,0 +1,104 @@
+{
+  "action_fingerprints": {
+    "action_listen": {
+      "slots": [
+        "email",
+        "nlu_part",
+        "name",
+        "product",
+        "current_api",
+        "package_manager",
+        "feedback_value",
+        "language"
+      ]
+    },
+    "getstarted_1: action_set_onboarding": {
+      "slots": [
+        "onboarding"
+      ]
+    },
+    "rasa_help: action_set_onboarding": {
+      "slots": [
+        "onboarding"
+      ]
+    },
+    "rasa_help: action_store_entity_extractor": {
+      "slots": [
+        "entity_extractor"
+      ]
+    },
+    "subscribe: action_store_email": {
+      "slots": [
+        "email"
+      ]
+    },
+    "subscribe: action_subscribe_newsletter": {
+      "slots": [
+        "subscribed"
+      ]
+    },
+    "sales: action_store_job": {
+      "slots": [
+        "job_function"
+      ]
+    },
+    "sales: action_store_usecase": {
+      "slots": [
+        "use_case"
+      ]
+    },
+    "sales: action_store_budget": {
+      "slots": [
+        "budget"
+      ]
+    },
+    "sales: action_store_name": {
+      "slots": [
+        "person_name"
+      ]
+    },
+    "sales: action_store_company": {
+      "slots": [
+        "company_name"
+      ]
+    },
+    "sales: action_store_email": {
+      "slots": [
+        "email"
+      ]
+    },
+    "sales: action_store_sales_info": {
+      "slots": [
+        "data_stored"
+      ]
+    },
+    "rasa_help: action_store_bot_language": {
+      "slots": [
+        "can_use_spacy"
+      ]
+    },
+    "greet_success: action_greet_user": {
+      "slots": [
+        "step",
+        "shown_privacy"
+      ]
+    },
+    "getstarted_3: action_store_problem_description": {
+      "slots": [
+        "problem_description"
+      ]
+    }
+  },
+  "python": "3.6.8",
+  "max_histories": [
+    null
+  ],
+  "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble",
+  "policy_names": [
+    "rasa_core.policies.embedding_policy.EmbeddingPolicy"
+  ],
+  "trained_at": "20190330-072342",
+  "rasa_core": "0.13.1",
+  "tensorflow": "1.12.0",
+  "sklearn": "0.20.2"
+}

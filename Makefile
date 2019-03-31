@@ -21,9 +21,11 @@ train-lstm-bin:
 
 train-lstm-feat:
 	python -m rasa_core.train -s data/core/ -d domain.yml -o models/dialogue -c lstm_feat.yml --augmentation 0
+train_demo:
+	nohup python3 -u -m rasa_core.train --stories ~/rasa-demo/data/core-success -d ~/rasa-demo/domain.yml -o models_demo -c redp_topics.yml --augmentation 0 > train.out_demo
 
 train-compare:
-	nohup python -u -m rasa_core.train compare --stories data-simulated/train -d domain.yml -o comparison_models -c redp_topics.yml redp.yml redp_no_skip.yml --augmentation 10 --runs 5 > train.out &
+	nohup python -u -m rasa_core.train compare --stories ~/rasa-demo/data/core-success -d ~/rasa-demo/domain.yml -o comparison_models -c redp_topics.yml --augmentation 10 --runs 5 > train.out_demo 
 
 evaluate-compare:
 	python3 -m rasa_core.evaluate compare --stories data-simulated/test --core comparison_models -o results/
