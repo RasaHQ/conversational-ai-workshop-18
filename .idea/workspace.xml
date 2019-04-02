@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f79f544c-bc17-4441-abd2-a24242ad3553" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results/model_comparison_graph.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results/story_confmat.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/topic_embed_experiments/merged_topics.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/topic_embed_experiments/model_comparison_topic_switch.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/topic_embed_experiments/model_comparison_topic_switch_graph.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/get_vectors_demobot-checkpoint.ipynb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/get_vectors_demobot.ipynb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results/results.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/topic_embed_experiments/failed_stories_testdata_demo.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/topic_embed_experiments/failed_stories_trainingdata_demo.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/topic_embed_experiments/topic_embedding_results.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Makefile" afterPath="$PROJECT_DIR$/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/topic_embed_experiments/topic_embedding_results.md" afterPath="$PROJECT_DIR$/topic_embed_experiments/topic_embedding_results.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -45,12 +33,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="topic_embedding_results.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="topic_embedding_results.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/topic_embed_experiments/topic_embedding_results.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="-455">
-                <caret line="18" column="4" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+              <first_editor relative-caret-position="60">
+                <caret line="4" column="67" lean-forward="false" selection-start-line="4" selection-start-column="67" selection-end-line="4" selection-end-column="67" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -58,7 +46,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="failed_stories_testdata_demo.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="failed_stories_testdata_demo.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/topic_embed_experiments/failed_stories_testdata_demo.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
@@ -264,7 +252,7 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26037195" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26037195" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -726,22 +714,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/topic_embed_experiments/topic_embedding_results.md">
+    <entry file="file://$PROJECT_DIR$/topic_embed_experiments/failed_stories_testdata_demo.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="-455">
-            <caret line="18" column="4" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+          <first_editor relative-caret-position="649">
+            <caret line="100" column="31" lean-forward="false" selection-start-line="100" selection-start-column="31" selection-end-line="100" selection-end-column="31" />
             <folding />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/topic_embed_experiments/failed_stories_testdata_demo.md">
+    <entry file="file://$PROJECT_DIR$/topic_embed_experiments/topic_embedding_results.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="649">
-            <caret line="100" column="31" lean-forward="false" selection-start-line="100" selection-start-column="31" selection-end-line="100" selection-end-column="31" />
+          <first_editor relative-caret-position="60">
+            <caret line="4" column="67" lean-forward="false" selection-start-line="4" selection-start-column="67" selection-end-line="4" selection-end-column="67" />
             <folding />
           </first_editor>
           <second_editor />

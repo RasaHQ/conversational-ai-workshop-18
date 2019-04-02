@@ -1,3 +1,14 @@
+## Experiments
+ - Merged topics (for all unhappy paths)
+ - Train topic embedding policy on demo-bot stories
+ 
+ Goal of those experiments is to analyze topic prediction accuracy.
+ 
+ Background:
+ The biggest power of embedding policy is either learnable skip time mask or 
+ topics switching, which effectively make it possible to save internal lstm memory 
+ unperturbed by unhappy dialogue path.
+
 ## Results
 
 ### Merged topics (for all unhappy paths)
