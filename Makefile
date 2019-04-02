@@ -37,7 +37,13 @@ evaluate:
 	python3 -m rasa_core.evaluate --core models/dialogue_memo -s data-simulated/test
 
 evaluate-topics:
-	python3 -m rasa_core.evaluate --core models/dialogue_embed -s data-simulated/test --topics
+	pythonw -m rasa_core.evaluate --core models_demo -s ~/RASA/rasa-demo/data/new_fail
+
+evaluate-topics2:
+	pythonw -m rasa_core.evaluate --core models_demo -s ~/RASA/rasa-demo/data/core-success
+
+eval-topics:
+	pythonw -m rasa_core.evaluate --core models/dialogue_embed -s data/core/test --topics
 
 run-core:
 	python -m rasa_core.run --core models/dialogue --endpoints endpoints.yml
