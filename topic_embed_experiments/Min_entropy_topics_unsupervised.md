@@ -13,4 +13,4 @@ We try what the NN learns if we minimize entropy of the topic distribution (unsu
 Since we do not give any criteria on how to assign or cluster the topics, we expect the model to learn one topic
 assignment for all actions.
 
-As expected, the policy does not perform well and simply learns to assign all actions to the same topic. 
+Results: As expected, the policy does not perform well and simply learns to assign all actions to the same topic. 
