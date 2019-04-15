@@ -9,7 +9,7 @@ Measure of uncertainty, or the expected amount of information in an even drawn f
 - high entropy --> uniform distribution
 
 ### Experiment
-We try what the NN learns if we minimize entropy of the topic distribution, in unsupervised fashion.
+We try what the NN learns if we minimize entropy of the topic distribution (unsupervised learning).
 Since we do not give any criteria on how to assign or cluster the topics, we expect the model to learn one topic
 assignment for all actions.
 
