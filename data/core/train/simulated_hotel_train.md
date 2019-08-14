@@ -2471,6 +2471,7 @@
     - utter_ask_price
 * correct{"startdate": "next week"}
     - slot{"startdate": "next week"}
+    - utter_correct_startdate_hotel
     - utter_ask_price
 * inform{"price": "expensive"}
     - utter_ask_location

@@ -864,6 +864,8 @@
     - slot{"cuisine": "chinese"}
     - utter_correct_cuisine_restaurant
     - utter_ask_price
+* inform{"price": "mid-range"}
+    - slot{"price": "mid-range"}
     - utter_ask_location
 * inform{"location": "paris"}
     - utter_ask_people
