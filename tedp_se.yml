@@ -1,0 +1,5 @@
+policies:
+  - name: EmbeddingPolicy
+    epochs: 500
+    batch_strategy: sequence
+    loss_type: entmax
