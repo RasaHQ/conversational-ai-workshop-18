@@ -1,5 +1,7 @@
 policies:
   - name: EmbeddingPolicy
+    max_history: 38
     epochs: 500
+    batch_size: [32, 64]
     batch_strategy: balanced
     loss_type: entmax
