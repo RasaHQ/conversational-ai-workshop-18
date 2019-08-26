@@ -3,4 +3,4 @@ policies:
     epochs: 2000
     attn_shift_range: 5
     attn_before_rnn: true
-    attn_after_rnn: true
+    attn_after_rnn: false
