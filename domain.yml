@@ -61,81 +61,81 @@ entities:
 
 templates:
   utter_ask_cuisine:
-    - "What kind of cuisine would you like?"
+    - text: "What kind of cuisine would you like?"
   utter_ask_people:
-    - "How many people will you be?"
+    - text: "How many people will you be?"
   utter_ask_location:
-    - "Where?"
+    - text: "Where?"
   utter_ask_price:
-    - "What price range?"
+    - text: "What price range?"
   utter_ask_startdate:
-    - "When should your hotel stay start?"
+    - text: "When should your hotel stay start?"
   utter_ask_enddate:
-    - "When should your hotel stay end?"
+    - text: "When should your hotel stay end?"
   utter_search:
-    - "I'm looking for restaurants"
+    - text: "I'm looking for restaurants"
   utter_finish:
-    - "Ok, I have everything I need now."
+    - text: "Ok, I have everything I need now."
   utter_suggest_restaurant:
-    - "Here is what I found: {restaurant}. Does that work?"
+    - text: "Here is what I found: {restaurant}. Does that work?"
   utter_suggest_hotel:
-    - "Here is what I found: {hotel}. Does that work?"
+    - text: "Here is what I found: {hotel}. Does that work?"
   utter_happy:
-    - "Great!"
+    - text: "Great!"
   utter_chitchat:
-    - "Bla bla"
+    - text: "Bla bla"
   utter_filled_slots:
-    - "Ok, I have all the information I need now."
+    - text: "Ok, I have all the information I need now."
   utter_ask_details:
-    - "Anything specific?"
+    - text: "Anything specific?"
   utter_explain_details_hotel:
-    - "I need some details on your trip to find a suitable hotel"
+    - text: "I need some details on your trip to find a suitable hotel"
   utter_explain_details_restaurant:
-    - "I need some details to find you a suitable place to eat"
+    - text: "I need some details to find you a suitable place to eat"
   utter_explain_startdate_hotel:
-    - "I'll need to know when you want to go to check availability."
+    - text: "I'll need to know when you want to go to check availability."
   utter_explain_enddate_hotel:
-    - "I need to know when you'll check out"
+    - text: "I need to know when you'll check out"
   utter_explain_location_hotel:
-    - "To show you relevant results, I'll have to know where you are going"
+    - text: "To show you relevant results, I'll have to know where you are going"
   utter_explain_location_restaurant:
-    - "To show you relevant results, I'll have to know what city we're looking in."
+    - text: "To show you relevant results, I'll have to know what city we're looking in."
   utter_explain_people_hotel:
-    - "I'll need to know how many of you there are to check which rooms are suitable."
+    - text: "I'll need to know how many of you there are to check which rooms are suitable."
   utter_explain_people_restaurant:
-    - "I'll need to know how many of you there are to check if a table is available."
+    - text: "I'll need to know how many of you there are to check if a table is available."
   utter_explain_price_hotel:
-    - "Knowing an approximate price range lets me narrow down search results."
+    - text: "Knowing an approximate price range lets me narrow down search results."
   utter_explain_price_restaurant:
-    - "Knowing an approximate price range lets me narrow down search results."
+    - text: "Knowing an approximate price range lets me narrow down search results."
   utter_explain_cuisine_restaurant:
-    - "Knowing which cuisine you want will help me narrow down the results."
+    - text: "Knowing which cuisine you want will help me narrow down the results."
   utter_correct_price_hotel:
-    - "Ok, I've changed the price to {price}"
+    - text: "Ok, I've changed the price to {price}"
   utter_correct_price_restaurant:
-    - "Ok, I've changed the price to {price}"
+    - text: "Ok, I've changed the price to {price}"
   utter_correct_people_hotel:
-    - "Ok, I've changed the number of people to {people}"
+    - text: "Ok, I've changed the number of people to {people}"
   utter_correct_people_restaurant:
-    - "Ok, I've changed the number of people to {people}"
+    - text: "Ok, I've changed the number of people to {people}"
   utter_correct_cuisine_restaurant:
-    - "Ok, I've changed the cuisine to {cuisine}"
+    - text: "Ok, I've changed the cuisine to {cuisine}"
   utter_correct_location_hotel:
-    - "Ok, I've changed the location to {location}"
+    - text: "Ok, I've changed the location to {location}"
   utter_correct_location_restaurant:
-    - "Ok, I've changed the location to {location}"
+    - text: "Ok, I've changed the location to {location}"
   utter_correct_enddate_hotel:
-    - "Ok, I've changed your checkout date to {enddate}"
+    - text: "Ok, I've changed your checkout date to {enddate}"
   utter_correct_startdate_hotel:
-    - "Ok, I've changed your check in date to {startdate}"
+    - text: "Ok, I've changed your check in date to {startdate}"
   utter_worked_hotel:
-    - "Yes, based on the info you gave me I recommend these hotels:"
+    - text: "Yes, based on the info you gave me I recommend these hotels:"
   utter_worked_restaurant:
-    - "Yes, based on the info you gave me I recommend these restaurants:"
+    - text: "Yes, based on the info you gave me I recommend these restaurants:"
   utter_more_info_hotel:
-    - "No, I still need some more information from you to find a hotel."
+    - text: "No, I still need some more information from you to find a hotel."
   utter_more_info_restaurant:
-    - "No, I still need some more information from you to find a restaurant."
+    - text: "No, I still need some more information from you to find a restaurant."
 
 actions:
   - utter_ask_cuisine
