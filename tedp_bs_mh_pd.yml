@@ -5,3 +5,4 @@ policies:
     batch_size: [32, 64]
     batch_strategy: balanced
     loss_type: softmax
+    var_layers: ["pre", "dial"]
